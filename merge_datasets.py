@@ -41,7 +41,7 @@ SCHEDULE_SESSIONS_PATH = 'schedule_sessions.csv'
 # Define constants
 USER_ID_PATTERN = r'(\d{2})(\d{2})(\d{4})_(\d{4})_Participant(\d+)'
 ALTERNATIVE_ID_PATTERN = r'ID(?:\s+is)?\s*(?::|-)?\s*(\d+)'
-TIMESTAMP_TOLERANCE = 300  # 5 minutes in seconds
+TIMESTAMP_TOLERANCE = 1800  # 30 minutes in seconds
 
 
 def convert_qualtrics_time_to_unix(time_str: str) -> float:
@@ -163,6 +163,16 @@ def extract_user_id_from_message(message: str) -> Optional[str]:
     alt_match = re.search(ALTERNATIVE_ID_PATTERN, message)
     if alt_match:
         return alt_match.group(1)
+    
+    # Try to find any mention of Participant followed by a number
+    participant_match = re.search(r'[Pp]articipant\s*(\d+)', message)
+    if participant_match:
+        return f"Participant{participant_match.group(1)}"
+    
+    # Try to find any decimal number that could be an ID
+    id_match = re.search(r'\b(\d{1,4})\b', message)
+    if id_match:
+        return id_match.group(1)
     
     return None
 
@@ -468,6 +478,64 @@ def align_datasets() -> pd.DataFrame:
     return enriched_data
 
 
+def clean_dataset(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Clean the aligned dataset by fixing data types and computing additional metrics.
+    
+    Args:
+        data: DataFrame with aligned data
+        
+    Returns:
+        Cleaned DataFrame
+    """
+    logger.info("Cleaning and finalizing dataset")
+    
+    # Create a copy to avoid modifying the original
+    cleaned_data = data.copy()
+    
+    # Fix data types for numeric columns
+    numeric_cols = [
+        'AverageUserMessageLength', 
+        'AverageAIMessageLength', 
+        'ConversationDuration',
+        'MessageCount',
+        'UserMessageCount',
+        'AIMessageCount'
+    ]
+    
+    for col in numeric_cols:
+        if col in cleaned_data.columns:
+            # Convert to float to avoid integer type errors
+            cleaned_data[col] = pd.to_numeric(cleaned_data[col], errors='coerce')
+    
+    # Calculate additional metrics
+    if 'UserMessageCount' in cleaned_data.columns and 'AIMessageCount' in cleaned_data.columns:
+        cleaned_data['MessageRatio'] = cleaned_data['UserMessageCount'] / cleaned_data['AIMessageCount']
+    
+    if 'ConversationDuration' in cleaned_data.columns:
+        # Convert duration to minutes for better readability
+        cleaned_data['ConversationDurationMinutes'] = cleaned_data['ConversationDuration'] / 60
+    
+    # Flag rows where we have a match
+    cleaned_data['HasMatch'] = ~cleaned_data['conversation_id'].isna()
+    
+    # Make treatment variable more consistent
+    if 'treatment' in cleaned_data.columns:
+        # Create a clean treatment variable
+        treatment_map = {
+            'control': 'Control',
+            'Control': 'Control', 
+            'assist': 'AI-assisted',
+            'AI-assisted': 'AI-assisted',
+            'guided': 'AI-guided',
+            'AI-guided': 'AI-guided'
+        }
+        
+        cleaned_data['treatment_clean'] = cleaned_data['treatment'].map(treatment_map)
+    
+    return cleaned_data
+
+
 def main():
     """Main function to run the alignment process"""
     logger.info("Starting alignment process")
@@ -511,20 +579,28 @@ def main():
                 all_msgs = "\n\n".join(formatted_msgs)
                 aligned_data.at[idx, 'conversation_messages'] = all_msgs
         
+        # Clean and finalize the dataset
+        cleaned_data = clean_dataset(aligned_data)
+        
         # Save to CSV
-        aligned_data.to_csv(OUTPUT_PATH, index=False)
+        cleaned_data.to_csv(OUTPUT_PATH, index=False)
         logger.info(f"Aligned data saved to {OUTPUT_PATH}")
         
         # Print summary
-        id_matches = len(aligned_data[aligned_data['MatchMethod'] == 'ExplicitID'])
-        time_matches = len(aligned_data[aligned_data['MatchMethod'] == 'Timestamp'])
-        unmatched = len(aligned_data[aligned_data['MatchMethod'].isna()])
+        id_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'ExplicitID'])
+        time_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'Timestamp'])
+        unmatched = len(cleaned_data[cleaned_data['MatchMethod'].isna()])
         
         logger.info(f"Match summary:")
         logger.info(f"  - Explicit ID matches: {id_matches}")
         logger.info(f"  - Timestamp matches: {time_matches}")
         logger.info(f"  - Unmatched: {unmatched}")
-        logger.info(f"  - Match rate: {((id_matches + time_matches) / len(aligned_data)) * 100:.2f}%")
+        logger.info(f"  - Match rate: {((id_matches + time_matches) / len(cleaned_data)) * 100:.2f}%")
+        
+        # Create a CSV with just the matched records for easier analysis
+        matched_data = cleaned_data[cleaned_data['HasMatch'] == True].copy()
+        matched_data.to_csv(OUTPUT_PATH.replace('.csv', '_matched_only.csv'), index=False)
+        logger.info(f"Saved {len(matched_data)} matched records to {OUTPUT_PATH.replace('.csv', '_matched_only.csv')}")
         
     except Exception as e:
         logger.error(f"Error in alignment process: {str(e)}")

@@ -74,25 +74,35 @@ The primary output is an enriched version of `iverdata.csv`, linking survey resp
 
 The unified dataset was created by merging the data sources based on participant identifiers and timestamps. A Python script (`merge_datasets.py`) was used to implement the matching algorithm.
 
-1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script found user IDs mentioned in 22 of the conversations.
-2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 5 minutes was used to account for minor timing discrepancies. *Note: This matching assumes participants started their survey and conversation around the same time.*
+1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script also looked for other ID formats like "Participant X" or simple numerical IDs.
+2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 30 minutes was used to account for timing discrepancies. *Note: This matching assumes participants started their survey and conversation around the same time.*
 3.  **Session Mapping:** The `schedule_sessions.csv` file was generated to map each participant's start time to a specific experimental session number.
 4.  **Conversation Metrics:** For each matched conversation, metrics were calculated including message counts, average message lengths, and conversation duration.
 5.  **Consolidation:** The final dataset (`aligned_unified_conversation_data.csv`) links each survey response to its corresponding session, conversation ID, extracted/inferred UserID, and includes the full text of the conversation.
 
 **Matching Results:**
 - Total survey responses: 604
-- Matches via explicit ID: 6
-- Matches via timestamp: 18
-- Total matched: 24 (4% match rate)
-- Unmatched: 580
+- Matches via explicit ID: 8
+- Matches via timestamp: 43
+- Total matched: 51 (8.44% match rate)
+- Unmatched: 553
 
 The relatively low match rate may be due to incomplete data, participants not following ID protocols, or technical issues during data collection.
 
 ## Usage Notes
 
-*   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established.
-*   **Missing Data:** Some survey responses may not have a corresponding conversation log, or vice-versa, due to technical issues or participants not completing all parts.
+*   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established. We used a 30-minute tolerance window for matching.
+*   **Missing Data:** Some survey responses may not have a corresponding conversation log, or vice-versa, due to technical issues or participants not completing all parts. For easier analysis, we provide a filtered version containing only the matched records (`aligned_unified_conversation_data_matched_only.csv`).
+*   **Data Enrichment:** The aligned dataset includes additional columns with conversation metrics:
+    * `MessageCount`: Total number of messages in the conversation
+    * `UserMessageCount`: Number of messages sent by the participant
+    * `AIMessageCount`: Number of messages sent by ChatGPT
+    * `MessageRatio`: Ratio of user messages to AI messages
+    * `AverageUserMessageLength`: Average length of user messages
+    * `AverageAIMessageLength`: Average length of AI messages
+    * `ConversationDuration`: Duration of the conversation in seconds
+    * `ConversationDurationMinutes`: Duration of the conversation in minutes
+    * `HasMatch`: Flag indicating whether this survey response was matched to a conversation
 *   **Anonymization:** While participant emails might be present in the raw survey data (`iverdata.csv`), ensure compliance with privacy regulations and ethical guidelines when using this data. User IDs provided are intended for linking purposes within the dataset context.
 
 ## License
