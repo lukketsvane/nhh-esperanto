@@ -1,19 +1,26 @@
 import Papa from "papaparse"
-import fs from 'fs/promises';
-import path from 'path';
 
 type DataRow = Record<string, any>
 
-// Use the local file paths
-const CSV_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_enhanced_dataset.csv');
-const CONVERSATIONS_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_conversations.csv');
-const PARTICIPANTS_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_participants.csv');
+// Hardcoded sample data for this demo (this would normally come from an API)
+const SAMPLE_DATA = `final_id,treatment_clean,gender,highgpa,testscore,index_confidence,index_motivation,index_complement,index_cheating,MessageCount,ConversationDurationMinutes
+1,Control,Female,1,75,3.5,4.2,2.8,1.5,15,18.3
+2,AI-assisted,Male,0,82,4.1,4.5,3.2,1.2,25,22.1
+3,AI-guided,Female,1,89,4.4,4.7,3.7,1.1,32,25.8
+4,Control,Male,0,71,3.2,3.9,2.5,1.7,12,15.4
+5,AI-assisted,Female,1,84,4.2,4.6,3.3,1.3,27,23.2
+6,AI-guided,Male,1,91,4.6,4.8,3.9,1.0,35,28.1
+7,Control,Female,0,73,3.3,4.0,2.7,1.6,14,17.2
+8,AI-assisted,Male,1,85,4.3,4.6,3.4,1.2,29,24.5
+9,AI-guided,Female,0,88,4.5,4.7,3.6,1.1,33,26.3
+10,Control,Male,1,72,3.4,4.1,2.6,1.8,13,16.8`;
 
 export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }> {
-  console.log(`Attempting to load data from: ${CSV_PATH}`)
+  console.log('Loading data from public directory');
   try {
-    // Read the file from the local filesystem
-    const csvText = await fs.readFile(CSV_PATH, 'utf8');
+    // Fetch the CSV file from the public directory
+    const response = await fetch('/data/nhh_esperanto_finalized_dataset.csv');
+    const csvText = await response.text();
 
     return new Promise((resolve, reject) => {
       Papa.parse<DataRow>(csvText, {
@@ -31,7 +38,7 @@ export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }
             return resolve({ data: [], columns: [] })
           }
 
-          console.log(`Successfully parsed ${results.data.length} rows from URL.`)
+          console.log(`Successfully parsed ${results.data.length} rows from CSV file.`)
 
           // Clean and process the data
           const cleanedData = results.data.map((row) => {
@@ -78,7 +85,7 @@ export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }
       })
     })
   } catch (error) {
-    console.error(`Error loading or parsing CSV from URL ${CSV_URL}:`, error)
+    console.error(`Error parsing CSV sample data:`, error)
     return { data: [], columns: [] }
   }
 }

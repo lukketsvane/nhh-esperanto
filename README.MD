@@ -89,22 +89,31 @@ python scripts/enhance_dataset.py
 
 ## Data Explorer Application
 
-The repository includes a Next.js application (in the `explorer-clean.tar.gz` archive) for exploring and visualizing the dataset.
+The repository includes a Next.js application for exploring and visualizing the dataset.
 
 To set up and run the explorer:
 
 ```bash
-# 1. Extract the archive
-mkdir -p explorer
-tar -xzvf explorer-clean.tar.gz -C explorer
-
-# 2. Install dependencies
+# 1. Install dependencies
 cd explorer
 npm install --legacy-peer-deps
 
-# 3. Run the development server
+# 2. Run the development server
 npm run dev
 ```
+
+### Explorer Architecture
+
+The data explorer uses a client-server architecture:
+
+1. **Server-side**: 
+   - API endpoints under `/api/data` read CSV files from the filesystem
+   - Serves data to the client for visualization and exploration
+
+2. **Client-side**:
+   - Interactive data tables with filtering and pagination
+   - Data visualization tools (charts, plots, etc.)
+   - Statistical analysis and summary views
 
 The explorer provides:
 - Interactive data tables with filtering
