@@ -583,6 +583,7 @@ def align_datasets() -> pd.DataFrame:
 def clean_dataset(data: pd.DataFrame) -> pd.DataFrame:
     """
     Clean the aligned dataset by fixing data types and computing additional metrics.
+    Also ensures all rows have a UserID.
     
     Args:
         data: DataFrame with aligned data
@@ -671,6 +672,38 @@ def clean_dataset(data: pd.DataFrame) -> pd.DataFrame:
             lambda x: round(max(0, x), 2) if not pd.isna(x) else 0
         )
     
+    # Ensure every response has a UserID
+    # First make sure the UserID column exists
+    if 'UserID' not in cleaned_data.columns:
+        cleaned_data['UserID'] = None
+    
+    # Generate UserIDs for responses that don't have one yet
+    user_id_counter = 1
+    for idx, row in cleaned_data.iterrows():
+        if pd.isna(row['UserID']) or row['UserID'] is None:
+            # If we have ResponseId, use that as a base
+            if not pd.isna(row['ResponseId']):
+                # Extract a shortened version of ResponseId to make it more readable
+                # ResponseId often looks like "R_2YrX7B6LLgDiXaH"
+                resp_id = row['ResponseId']
+                shortened_id = resp_id[-8:] if len(resp_id) > 8 else resp_id
+                cleaned_data.at[idx, 'UserID'] = f"AutoID_{shortened_id}"
+            else:
+                # Create a sequential ID
+                cleaned_data.at[idx, 'UserID'] = f"AutoID_{user_id_counter:03d}"
+                user_id_counter += 1
+    
+    # Add source indicator for UserIDs
+    cleaned_data['UserID_Source'] = 'Missing'
+    cleaned_data.loc[cleaned_data['MatchMethod'] == 'ExplicitID', 'UserID_Source'] = 'Explicit'
+    cleaned_data.loc[cleaned_data['MatchMethod'] == 'Timestamp', 'UserID_Source'] = 'Timestamp'
+    cleaned_data.loc[cleaned_data['UserID'].str.startswith('AutoID_', na=False), 'UserID_Source'] = 'Auto-generated'
+    
+    # Create a participant_id field that is a cleaned version of UserID for easier analysis
+    cleaned_data['participant_id'] = cleaned_data['UserID'].apply(
+        lambda x: re.sub(r'[^a-zA-Z0-9]', '', str(x)) if not pd.isna(x) else None
+    )
+    
     return cleaned_data
 
 
@@ -710,12 +743,33 @@ def create_unmatched_conversations_file(conv_data: pd.DataFrame, matched_conv_id
                 else:
                     first_user_msg = content
             
+            # Try to extract potential user ID
+            potential_id = extract_user_id_from_message(first_user_msg)
+            
+            # Format all messages for inspection
+            all_msgs = []
+            for _, msg in conv_msgs.sort_values('create_time').iterrows():
+                role = msg['author_role']
+                content = msg['message_content']
+                
+                # Clean up content format
+                if isinstance(content, str) and content.startswith("['") and content.endswith("']"):
+                    content = content[2:-2]
+                
+                if role == 'user' and content:  # Only include non-empty user messages
+                    all_msgs.append(f"{content}")
+            
+            # Join with delimiter for readability
+            all_user_messages = " | ".join(all_msgs)
+            
             # Add to the list
             unmatched_conv_data.append({
                 'conversation_id': conv_id,
                 'create_time': create_time,
                 'create_date': datetime.fromtimestamp(float(create_time)).strftime('%Y-%m-%d %H:%M'),
-                'first_user_message': first_user_msg
+                'first_user_message': first_user_msg,
+                'potential_user_id': potential_id,
+                'all_user_messages': all_user_messages[:500]  # Truncate to avoid oversize cells
             })
     
     # Create dataframe and save
@@ -725,6 +779,90 @@ def create_unmatched_conversations_file(conv_data: pd.DataFrame, matched_conv_id
         output_path = OUTPUT_PATH.replace('.csv', '_unmatched_conversations.csv')
         unmatched_df.to_csv(output_path, index=False)
         logger.info(f"Saved {len(unmatched_df)} unmatched conversations to {output_path}")
+
+
+def generate_final_dataset(cleaned_data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Generate a finalized dataset with all records properly labeled and processed.
+    
+    Args:
+        cleaned_data: DataFrame with cleaned data
+        
+    Returns:
+        Finalized DataFrame
+    """
+    logger.info("Generating final dataset")
+    
+    # Create a copy to avoid modifying the original
+    final_data = cleaned_data.copy()
+    
+    # Create a consistent participant identifier column
+    if 'participant_id' not in final_data.columns:
+        final_data['participant_id'] = final_data['UserID'].apply(
+            lambda x: re.sub(r'[^a-zA-Z0-9]', '', str(x)) if not pd.isna(x) else None
+        )
+    
+    # Try to infer session assignment for rows that don't have one
+    if 'Session' in final_data.columns:
+        # For rows without a session but with a start date, use the start date to determine session
+        for idx, row in final_data[pd.isna(final_data['Session'])].iterrows():
+            if not pd.isna(row['StartDate']):
+                date_str = row['StartDate'].split(' ')[0]  # Extract date part
+                
+                # Find other rows with same date that have a session assigned
+                same_date_rows = final_data[
+                    (final_data['StartDate'].str.startswith(date_str, na=False)) & 
+                    (~pd.isna(final_data['Session']))
+                ]
+                
+                if not same_date_rows.empty:
+                    # Use the most common session for this date
+                    most_common_session = same_date_rows['Session'].mode().iloc[0]
+                    final_data.at[idx, 'Session'] = most_common_session
+    
+    # Label suspected duplicates by finding rows with similar UserID or participant_id
+    final_data['is_duplicate'] = False
+    
+    # Group by participant_id to identify potential duplicates
+    if 'participant_id' in final_data.columns:
+        participant_counts = final_data['participant_id'].value_counts()
+        duplicate_participants = participant_counts[participant_counts > 1].index.tolist()
+        
+        # Mark rows with duplicate participant_id
+        for participant in duplicate_participants:
+            if pd.isna(participant):
+                continue
+                
+            # Get rows for this participant
+            participant_rows = final_data[final_data['participant_id'] == participant]
+            
+            if len(participant_rows) <= 1:
+                continue
+                
+            # Sort by timestamp if available, otherwise by index
+            if 'start_time_unix' in participant_rows.columns:
+                sorted_rows = participant_rows.sort_values('start_time_unix')
+            else:
+                sorted_rows = participant_rows
+                
+            # Mark all but the first occurrence as duplicates
+            for idx in sorted_rows.index[1:]:
+                final_data.at[idx, 'is_duplicate'] = True
+    
+    # Add a finalized status column
+    final_data['data_status'] = 'Complete'
+    
+    # Mark rows with missing key fields
+    if 'HasMatch' in final_data.columns:
+        final_data.loc[~final_data['HasMatch'], 'data_status'] = 'Missing conversation'
+    
+    # Mark duplicate rows
+    final_data.loc[final_data['is_duplicate'], 'data_status'] = 'Duplicate'
+    
+    # Create a finalized ID field for easier reference
+    final_data['final_id'] = range(1, len(final_data) + 1)
+    
+    return final_data
 
 
 def main():
@@ -761,7 +899,7 @@ def main():
                     content = msg['message_content']
                     
                     # Clean up content format
-                    if content.startswith("['") and content.endswith("']"):
+                    if isinstance(content, str) and content.startswith("['") and content.endswith("']"):
                         content = content[2:-2]
                         
                     formatted_msgs.append(f"{role.upper()}: {content}")
@@ -773,24 +911,32 @@ def main():
         # Clean and finalize the dataset
         cleaned_data = clean_dataset(aligned_data)
         
+        # Generate final version of dataset with all IDs and statuses
+        final_data = generate_final_dataset(cleaned_data)
+        
         # Save to CSV
-        cleaned_data.to_csv(OUTPUT_PATH, index=False)
+        final_data.to_csv(OUTPUT_PATH, index=False)
         logger.info(f"Aligned data saved to {OUTPUT_PATH}")
         
+        # Create a finalized version with a clearer name
+        final_output_path = 'nhh_esperanto_finalized_dataset.csv'
+        final_data.to_csv(final_output_path, index=False)
+        logger.info(f"Finalized dataset saved to {final_output_path}")
+        
         # Print summary
-        id_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'ExplicitID'])
-        time_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'Timestamp'])
-        unmatched = len(cleaned_data[cleaned_data['MatchMethod'].isna()])
+        id_matches = len(final_data[final_data['MatchMethod'] == 'ExplicitID'])
+        time_matches = len(final_data[final_data['MatchMethod'] == 'Timestamp'])
+        unmatched = len(final_data[final_data['MatchMethod'].isna()])
         total_matched = id_matches + time_matches
         
         logger.info(f"Match summary:")
         logger.info(f"  - Explicit ID matches: {id_matches}")
         logger.info(f"  - Timestamp matches: {time_matches}")
         logger.info(f"  - Unmatched: {unmatched}")
-        logger.info(f"  - Match rate: {(total_matched / len(cleaned_data)) * 100:.2f}%")
+        logger.info(f"  - Match rate: {(total_matched / len(final_data)) * 100:.2f}%")
         
         # Create a CSV with just the matched records for easier analysis
-        matched_data = cleaned_data[cleaned_data['HasMatch'] == True].copy()
+        matched_data = final_data[final_data['HasMatch'] == True].copy()
         matched_data.to_csv(OUTPUT_PATH.replace('.csv', '_matched_only.csv'), index=False)
         logger.info(f"Saved {len(matched_data)} matched records to {OUTPUT_PATH.replace('.csv', '_matched_only.csv')}")
         
@@ -810,6 +956,13 @@ def main():
             logger.info(f"  - High confidence (80%+): {high_conf} ({high_conf/total_matched*100:.1f}%)")
             logger.info(f"  - Medium confidence (50-80%): {med_conf} ({med_conf/total_matched*100:.1f}%)")
             logger.info(f"  - Low confidence (<50%): {low_conf} ({low_conf/total_matched*100:.1f}%)")
+        
+        # Show UserID source statistics
+        if 'UserID_Source' in final_data.columns:
+            id_sources = final_data['UserID_Source'].value_counts()
+            logger.info(f"UserID source statistics:")
+            for source, count in id_sources.items():
+                logger.info(f"  - {source}: {count} ({count/len(final_data)*100:.1f}%)")
         
     except Exception as e:
         logger.error(f"Error in alignment process: {str(e)}")

@@ -29,9 +29,10 @@ The unified dataset is compiled from the following sources:
 
 The merged and enriched data is available as:
 
-1.  **`aligned_unified_conversation_data.csv`**: The complete merged dataset with all survey responses.
-2.  **`aligned_unified_conversation_data_matched_only.csv`**: A filtered version containing only the 369 matched records.
-3.  **`aligned_unified_conversation_data_unmatched_conversations.csv`**: A reference file with the 7 conversations that could not be matched to any survey response.
+1.  **`nhh_esperanto_finalized_dataset.csv`**: The complete finalized dataset with all survey responses. Every record has a UserID, even if auto-generated.
+2.  **`aligned_unified_conversation_data.csv`**: The complete merged dataset with all survey responses (intermediate file).
+3.  **`aligned_unified_conversation_data_matched_only.csv`**: A filtered version containing only the 369 matched records.
+4.  **`aligned_unified_conversation_data_unmatched_conversations.csv`**: A reference file with the 7 conversations that could not be matched to any survey response.
 
 ## Data Structure (Merged Output Example)
 
@@ -88,32 +89,42 @@ The unified dataset was created by merging the data sources based on participant
 
 **Matching Results:**
 - Total survey responses: 604
-- Matches via explicit ID: 8
-- Matches via timestamp: 361 
+- Matches via explicit ID: 8 (1.3% of all records)
+- Matches via timestamp: 361 (59.8% of all records)
+- Auto-generated IDs: 235 (38.9% of all records)
 - Total matched: 369 (61.09% match rate)
-- Unmatched: 235
 - Match confidence: 95.54% average (98.6% of matches have high confidence)
 
-The matching algorithm achieved a good match rate by using both ID extraction and timestamp-based matching with a 24-hour tolerance window, prioritizing matches within the same session day.
+The matching algorithm achieved a high match rate by using both ID extraction and timestamp-based matching with a 24-hour tolerance window, prioritizing matches within the same session day. For unmatched survey responses, auto-generated IDs were created to ensure every participant has an identifier.
 
 ## Usage Notes
 
 *   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established. We used a 24-hour tolerance window for matching, with a confidence score to measure match quality. The `match_confidence` field provides a 0-100 score based on how close the timestamps are.
 *   **Missing Data:** Some survey responses may not have a corresponding conversation log, or vice-versa, due to technical issues or participants not completing all parts. For easier analysis, we provide a filtered version containing only the matched records (`aligned_unified_conversation_data_matched_only.csv`).
-*   **Data Enrichment:** The aligned dataset includes additional columns with conversation metrics:
-    * `MessageCount`: Total number of messages in the conversation
-    * `UserMessageCount`: Number of messages sent by the participant
-    * `AIMessageCount`: Number of messages sent by ChatGPT
-    * `MessageRatio`: Ratio of user messages to AI messages
-    * `AverageUserMessageLength`: Average length of user messages in characters
-    * `AverageAIMessageLength`: Average length of AI messages in characters
-    * `ConversationDuration`: Duration of the conversation in seconds
-    * `ConversationDurationMinutes`: Duration of the conversation in minutes
-    * `HasMatch`: Flag indicating whether this survey response was matched to a conversation
-    * `timestamp_diff`: The difference between survey start time and conversation start time (seconds)
-    * `timestamp_diff_minutes`: The difference between survey start time and conversation start time (minutes)
-    * `match_confidence`: Confidence score (0-100%) for the match, based on timestamp proximity
-    * `treatment_clean`: Standardized treatment group designation (Control, AI-assisted, AI-guided)
+*   **Data Enrichment:** The finalized dataset includes additional columns with conversation metrics and important metadata:
+    * **Conversation Metrics:**
+        * `MessageCount`: Total number of messages in the conversation
+        * `UserMessageCount`: Number of messages sent by the participant
+        * `AIMessageCount`: Number of messages sent by ChatGPT
+        * `MessageRatio`: Ratio of user messages to AI messages
+        * `AverageUserMessageLength`: Average length of user messages in characters
+        * `AverageAIMessageLength`: Average length of AI messages in characters
+        * `ConversationDuration`: Duration of the conversation in seconds
+        * `ConversationDurationMinutes`: Duration of the conversation in minutes
+    * **Matching Information:**
+        * `HasMatch`: Flag indicating whether this survey response was matched to a conversation
+        * `timestamp_diff`: The difference between survey start time and conversation start time (seconds)
+        * `timestamp_diff_minutes`: The difference between survey start time and conversation start time (minutes)
+        * `match_confidence`: Confidence score (0-100%) for the match, based on timestamp proximity
+    * **User Identification and Status:**
+        * `UserID`: Participant identifier (extracted, derived, or auto-generated)
+        * `UserID_Source`: Source of the UserID (Explicit, Timestamp, or Auto-generated)
+        * `participant_id`: Simplified UserID for easier analysis
+        * `final_id`: Sequential ID for all records
+        * `is_duplicate`: Flag indicating potential duplicate records
+        * `data_status`: Status of the record (Complete, Missing conversation, or Duplicate)
+    * **Treatment Information:**
+        * `treatment_clean`: Standardized treatment group designation (Control, AI-assisted, AI-guided)
 *   **Anonymization:** While participant emails might be present in the raw survey data (`iverdata.csv`), ensure compliance with privacy regulations and ethical guidelines when using this data. User IDs provided are intended for linking purposes within the dataset context.
 
 ## License
