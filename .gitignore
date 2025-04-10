@@ -2,10 +2,13 @@
 
 # dependencies
 /node_modules
+/explorer/node_modules
 
 # next.js
 /.next/
+/explorer/.next/
 /out/
+/explorer/out/
 
 # production
 /build
