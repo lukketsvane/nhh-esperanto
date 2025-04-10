@@ -1,19 +1,19 @@
 import Papa from "papaparse"
+import fs from 'fs/promises';
+import path from 'path';
 
 type DataRow = Record<string, any>
 
-const CSV_URL =
-  "https://raw.githubusercontent.com/lukketsvane/nhh-esperanto/refs/heads/main/aligned_unified_conversation_data.csv"
+// Use the local file paths
+const CSV_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_enhanced_dataset.csv');
+const CONVERSATIONS_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_conversations.csv');
+const PARTICIPANTS_PATH = path.join(process.cwd(), '..', 'data', 'processed', 'nhh_esperanto_participants.csv');
 
 export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }> {
-  console.log(`Attempting to load data from: ${CSV_URL}`)
+  console.log(`Attempting to load data from: ${CSV_PATH}`)
   try {
-    const response = await fetch(CSV_URL, { cache: "no-store" })
-
-    if (!response.ok) {
-      throw new Error(`Failed to fetch CSV: ${response.status} ${response.statusText}`)
-    }
-    const csvText = await response.text()
+    // Read the file from the local filesystem
+    const csvText = await fs.readFile(CSV_PATH, 'utf8');
 
     return new Promise((resolve, reject) => {
       Papa.parse<DataRow>(csvText, {

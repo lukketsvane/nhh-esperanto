@@ -67,7 +67,7 @@ interface DataTableProps {
   setFilters: React.Dispatch<React.SetStateAction<Record<string, string>>>;
   selectedColumns: string[];
   onColumnToggle: (column: string) => void;
-  onRowClick: (row: DataRow) => void; // Added for modal trigger
+  onRowClick: (row: DataRow) => void;
 }
 
 function DataTableComponent({
@@ -197,17 +197,18 @@ function DataTableComponent({
   );
 }
 
+
 interface DataVisualizerProps {
   data: any[];
   columns: string[];
 }
 
 function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
-  const [chartType, setChartType] = useState("boxplot"); // Default to boxplot
-  const [yAxis, setYAxis] = useState(""); // Outcome / Numerical
-  const [xAxis, setXAxis] = useState(""); // Primary Grouping / Categorical or Numerical for Scatter
-  const [groupBy, setGroupBy] = useState("none"); // Secondary Grouping / Color
-  const [numBins, setNumBins] = useState(10); // For histograms
+  const [chartType, setChartType] = useState("boxplot");
+  const [yAxis, setYAxis] = useState("");
+  const [xAxis, setXAxis] = useState("");
+  const [groupBy, setGroupBy] = useState("none");
+  const [numBins, setNumBins] = useState(10);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const chartInstanceRef = useRef<Chart | null>(null);
 
@@ -224,14 +225,12 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
             return count + (isPotentiallyNumeric && String(val).trim() !== '' && !isNaN(Number(val)) ? 1 : 0);
         }, 0);
         const uniqueValues = new Set(values);
-        // More strict definition for numerical Y-axis
         if (numericCount / values.length > 0.9 && uniqueValues.size > 5) {
             numerical.push(column);
-        // Relaxed definition for categorical X-axis / Grouping
         } else if (uniqueValues.size <= 50 && uniqueValues.size >= 1) {
              categorical.push(column);
-        } else if (numericCount / values.length > 0.1) { // Also consider numeric-like as potential categorical bins or scatter X
-             categorical.push(column); // Allow numeric for X in scatter, or binning in histogram
+        } else if (numericCount / values.length > 0.1) {
+             categorical.push(column);
         }
     });
     return { numericalColumns: numerical.sort(), categoricalColumns: categorical.sort() };
@@ -242,14 +241,14 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
          const defaultY = ["testscore", "index_confidence", "index_motivation", "index_complement", "index_cheating", "ConversationDurationMinutes", "MessageCount", "age", "gpa"].find(c => numericalColumns.includes(c)) || numericalColumns[0];
          setYAxis(defaultY);
       } else if (!yAxis && columns.length > 0) {
-         setYAxis(columns[0]); // Fallback
+         setYAxis(columns[0]);
       }
 
       if (!xAxis && categoricalColumns.length > 0) {
         const defaultX = ["treatment_clean", "gender", "highgpa"].find(c => categoricalColumns.includes(c)) || categoricalColumns.find(c => c !== yAxis) || categoricalColumns[0];
         setXAxis(defaultX);
       } else if (!xAxis && columns.length > 1) {
-          setXAxis(columns.find(c => c !== yAxis) || columns[1]); // Fallback
+          setXAxis(columns.find(c => c !== yAxis) || columns[1]);
       }
   }, [columns, numericalColumns, categoricalColumns, xAxis, yAxis]);
 
@@ -266,11 +265,11 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
         plugins: {
             legend: { display: false, position: 'top' },
             title: { display: true, text: `${yAxis} by ${xAxis}${groupBy && groupBy !== 'none' ? ` (Grouped by ${groupBy})` : ''}` },
-            tooltip: { /* Default tooltips */ }
+            tooltip: {}
         },
         scales: { x: { title: { display: true, text: xAxis } }, y: { beginAtZero: true, title: { display: true, text: yAxis } } }
     };
-    let type: Chart.ChartType = 'bar'; // Default type
+    let type: Chart.ChartType = 'bar';
 
     const colors = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316'];
     const getGroupedData = () => {
@@ -305,13 +304,13 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
         chartData.datasets = sortedGroupValues.map((groupVal, index) => ({
             label: groupVal === '_main_' ? yAxis : groupVal,
             data: sortedXValues.map(xVal => calculateBoxPlotStats(groups[groupVal]?.[xVal] || [])),
-            backgroundColor: colors[index % colors.length] + '80', // Semi-transparent fill
+            backgroundColor: colors[index % colors.length] + '80',
             borderColor: colors[index % colors.length],
             borderWidth: 1,
-            itemRadius: 3, // Optionally show mean point
+            itemRadius: 3,
         }));
          options.plugins.legend.display = groupBy && groupBy !== 'none' && sortedGroupValues.length > 1;
-         options.plugins.tooltip = { // Customize tooltips for boxplot
+         options.plugins.tooltip = {
              callbacks: {
                  label: (context: any) => {
                      const stats = context.raw;
@@ -339,8 +338,8 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
 
              yValues.forEach(val => {
                 let binIndex = Math.floor((val - minVal) / binWidth);
-                if (binIndex >= numBins) binIndex = numBins - 1; // Put max value in last bin
-                if (binIndex < 0) binIndex = 0; // Handle potential floating point issues
+                if (binIndex >= numBins) binIndex = numBins - 1;
+                if (binIndex < 0) binIndex = 0;
                 bins[binIndex]++;
              });
 
@@ -357,7 +356,7 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
                  borderColor: colors[0],
                  borderWidth: 1,
              }];
-             options.scales.x.title.text = yAxis; // X-axis shows bins of Y
+             options.scales.x.title.text = yAxis;
              options.scales.y.title.text = 'Frequency';
              options.plugins.title.text = `${yAxis} Distribution (Histogram)`;
              options.plugins.legend.display = false;
@@ -365,20 +364,20 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
 
     } else if (chartType === 'scatter') {
         type = 'scatter';
-        options.scales.y.beginAtZero = undefined; // Don't force zero for scatter
+        options.scales.y.beginAtZero = undefined;
         chartData.datasets = sortedGroupValues.map((groupVal, index) => ({
             label: groupVal === '_main_' ? yAxis : groupVal,
             data: data
                 .filter(row => (groupBy && groupBy !== 'none' ? String(row[groupBy] ?? 'N/A') : '_main_') === groupVal)
                 .map(row => ({ x: Number(row[xAxis]), y: Number(row[yAxis]) }))
-                .filter(p => !isNaN(p.x) && !isNaN(p.y)), // Ensure both are numbers
-            backgroundColor: colors[index % colors.length], // Points solid
+                .filter(p => !isNaN(p.x) && !isNaN(p.y)),
+            backgroundColor: colors[index % colors.length],
             borderColor: colors[index % colors.length],
         }));
         options.plugins.legend.display = groupBy && groupBy !== 'none' && sortedGroupValues.length > 1;
         options.plugins.title.text = `${yAxis} vs ${xAxis}${groupBy && groupBy !== 'none' ? ` (Colored by ${groupBy})` : ''}`;
 
-    } else { // Default to Bar chart showing averages
+    } else {
         type = 'bar';
         chartData.datasets = sortedGroupValues.map((groupVal, index) => ({
             label: groupVal === '_main_' ? `Avg ${yAxis}` : groupVal,
@@ -409,7 +408,6 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
     link.click();
   };
 
-  // Helper to format numbers, used in tooltips and potentially axes
   const formatNumber = (num: number | string) => {
         if (typeof num === 'number' && !isNaN(num)) {
             if (Math.abs(num) < 1e9 && Math.floor(num) === num) return num.toLocaleString();
@@ -496,6 +494,7 @@ function DataVisualizerComponent({ data, columns }: DataVisualizerProps) {
 }
 
 
+
 interface DataSummaryProps {
   data: any[];
   columns: string[];
@@ -504,26 +503,24 @@ interface DataSummaryProps {
 function DataSummaryComponent({ data, columns }: DataSummaryProps) {
     const [selectedDistColumn, setSelectedDistColumn] = useState("");
     const [showAllMissing, setShowAllMissing] = useState(false);
-    const [groupSummaryBy, setGroupSummaryBy] = useState<string[]>(['treatment_clean']); // Default grouping
-    const [groupSummaryVar, setGroupSummaryVar] = useState('testscore'); // Default variable
+    const [groupSummaryBy, setGroupSummaryBy] = useState<string[]>(['treatment_clean']);
+    const [groupSummaryVar, setGroupSummaryVar] = useState('testscore');
 
-    // Find categorical columns suitable for grouping
     const potentialGroupingColumns = useMemo(() => {
          return columns.filter(col => {
              if(!col) return false;
              const uniqueValues = new Set(data.map(row => row[col]));
-             return uniqueValues.size > 1 && uniqueValues.size < 15; // Keep it manageable
+             return uniqueValues.size > 1 && uniqueValues.size < 15;
          }).sort();
     }, [data, columns]);
 
-     // Find numerical columns suitable for summary
-    const potentialSummaryVariables = useMemo(() => {
+     const potentialSummaryVariables = useMemo(() => {
          return columns.filter(col => {
              if (!col) return false;
              const values = data.map(row => row[col]).filter(v => v !== undefined && v !== null && v !== '');
              if (values.length === 0) return false;
              const numericCount = values.reduce((count, val) => count + (val === '' || !isNaN(Number(val)) ? 1 : 0), 0);
-             return numericCount / values.length > 0.8; // Mostly numeric
+             return numericCount / values.length > 0.8;
          }).sort();
     }, [data, columns]);
 
@@ -544,7 +541,6 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
     }, [columns, selectedDistColumn, potentialGroupingColumns, groupSummaryVar, potentialSummaryVariables, groupSummaryBy]);
 
     const { summaryStats, missingStats } = useMemo(() => {
-        // ... (calculation logic remains the same) ...
         const summary: any[] = [];
         const missing: any[] = [];
         columns.forEach(column => {
@@ -572,7 +568,6 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
     }, [data, columns]);
 
     const frequencyDistribution = useMemo(() => {
-        // ... (calculation logic remains the same) ...
         if (!selectedDistColumn || data.length === 0) return [];
         const values = data.map(row => row[selectedDistColumn]).filter(val => val !== undefined && val !== null && val !== '');
         if (values.length === 0) return [];
@@ -583,7 +578,6 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
             .map(([value, count]) => ({ value, count, percentage: ((count / values.length) * 100) }));
     }, [data, selectedDistColumn]);
 
-    // NEW: Grouped Summary Statistics Logic
     const groupedSummaryData = useMemo(() => {
         if (!groupSummaryVar || groupSummaryBy.length === 0 || data.length === 0) return [];
 
@@ -593,7 +587,7 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
             const yVal = Number(row[groupSummaryVar]);
             if (isNaN(yVal)) return;
 
-            const groupKey = groupSummaryBy.map(key => String(row[key] ?? 'N/A')).join(' | '); // Combine group values
+            const groupKey = groupSummaryBy.map(key => String(row[key] ?? 'N/A')).join(' | ');
 
             if (!groupMap.has(groupKey)) {
                 groupMap.set(groupKey, []);
@@ -604,7 +598,7 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
         const results: any[] = [];
         groupMap.forEach((values, key) => {
             const keys = key.split(' | ');
-            const stats = calculateBoxPlotStats(values); // Reuse boxplot calc for mean, stdDev, N
+            const stats = calculateBoxPlotStats(values);
              if(stats){
                  const rowData: Record<string, any> = {};
                  groupSummaryBy.forEach((colName, index) => {
@@ -618,7 +612,6 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
              }
         });
 
-        // Sort results for consistency
         results.sort((a, b) => {
             for (let i = 0; i < groupSummaryBy.length; i++) {
                 const key = groupSummaryBy[i];
@@ -681,8 +674,7 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
                 </CardContent>
             </Card>
 
-             {/* NEW: Grouped Summary Card */}
-            <Card>
+             <Card>
                  <CardHeader>
                     <CardTitle className="text-lg">Grouped Summaries</CardTitle>
                  </CardHeader>
@@ -699,7 +691,6 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
                          </div>
                          <div className="sm:col-span-2">
                              <label className="block text-xs font-medium mb-1 text-muted-foreground">Group By (Ctrl+Click for multiple)</label>
-                              {/* Using a simple multi-select display for now */}
                              <DropdownMenu>
                                 <DropdownMenuTrigger asChild>
                                     <Button variant="outline" className="h-9 w-full justify-start text-left font-normal">
@@ -824,15 +815,10 @@ function DataSummaryComponent({ data, columns }: DataSummaryProps) {
     );
 }
 
-
 type DataRow = Record<string, any>;
 
-interface DataExplorerProps {
-  initialData: DataRow[];
-  initialColumns: string[];
-}
-
-function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
+// Client-side component for data explorer interaction
+function DataExplorer({ initialData, initialColumns }: { initialData: DataRow[], initialColumns: string[] }) {
   const rawData = useMemo(() => initialData, [initialData]);
   const allColumns = useMemo(() => initialColumns, [initialColumns]);
 
@@ -846,7 +832,7 @@ function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
   });
   const [pagination, setPagination] = useState({ currentPage: 1, itemsPerPage: 25 });
   const [activeTab, setActiveTab] = useState("table");
-  const [selectedRowData, setSelectedRowData] = useState<DataRow | null>(null); // For modal
+  const [selectedRowData, setSelectedRowData] = useState<DataRow | null>(null);
 
   useEffect(() => {
     if (initialData && initialData.length > 0) {
@@ -862,7 +848,6 @@ function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
         })
     }
   }, [initialData, initialColumns]);
-
 
   const filteredData = useMemo(() => {
     let filtered = rawData;
@@ -889,26 +874,26 @@ function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
   const handleColumnToggle = (column: string) => { setSelectedColumns(prev => prev.includes(column) ? prev.filter(col => col !== column) : [...prev, column]); };
   const handlePageChange = (page: number) => { if (page >= 1 && page <= totalPages) { setPagination(p => ({ ...p, currentPage: page })); } };
   const handleItemsPerPageChange = (value: string) => { setPagination({ currentPage: 1, itemsPerPage: Number.parseInt(value) }); };
-  const handleRowClick = (row: DataRow) => { setSelectedRowData(row); }; // Set data for modal
+  const handleRowClick = (row: DataRow) => { setSelectedRowData(row); };
 
   const exportCSV = () => {
     const dataToExport = filteredData.map(row => { const newRow: Record<string, any> = {}; selectedColumns.forEach(col => { newRow[col] = row[col] ?? ""; }); return newRow; });
     if (dataToExport.length === 0) { alert("No data to export."); return; }
     const csvString = Papa.unparse(dataToExport, { columns: selectedColumns, header: true, quotes: true, quoteChar: '"', escapeChar: '"', delimiter: ",", newline: "\r\n" });
-    const blob = new Blob([`\uFEFF${csvString}`], { type: "text/csv;charset=utf-8;" }); // Add BOM for Excel
+    const blob = new Blob([`\uFEFF${csvString}`], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.setAttribute("href", url);
-    link.setAttribute("download", "conversation_data_export.csv");
+    link.setAttribute("download", "esperanto_data_export.csv");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
   };
 
-   const renderPaginationItems = () => {
-            const items = []; const maxPagesToShow = 5; const halfMaxPages = Math.floor(maxPagesToShow / 2); let startPageNum = 1; let endPageNum = totalPages; if (totalPages > maxPagesToShow + 2) { if (pagination.currentPage <= halfMaxPages + 1) { endPageNum = maxPagesToShow + 1; } else if (pagination.currentPage >= totalPages - halfMaxPages) { startPageNum = totalPages - maxPagesToShow; } else { startPageNum = pagination.currentPage - halfMaxPages; endPageNum = pagination.currentPage + halfMaxPages; } } if (startPageNum > 1) { items.push( <PaginationItem key={1}> <PaginationLink onClick={() => handlePageChange(1)} className="cursor-pointer">1</PaginationLink> </PaginationItem> ); if (startPageNum > 2) { items.push(<PaginationItem key="start-ellipsis"><PaginationEllipsis /></PaginationItem>); } } for (let i = startPageNum; i <= endPageNum; i++) { items.push( <PaginationItem key={i}> <PaginationLink isActive={pagination.currentPage === i} onClick={() => handlePageChange(i)} className="cursor-pointer"> {i} </PaginationLink> </PaginationItem> ); } if (endPageNum < totalPages) { if (endPageNum < totalPages - 1) { items.push(<PaginationItem key="end-ellipsis"><PaginationEllipsis /></PaginationItem>); } items.push( <PaginationItem key={totalPages}> <PaginationLink onClick={() => handlePageChange(totalPages)} className="cursor-pointer">{totalPages}</PaginationLink> </PaginationItem> ); } return items;
-    };
+  const renderPaginationItems = () => {
+    const items = []; const maxPagesToShow = 5; const halfMaxPages = Math.floor(maxPagesToShow / 2); let startPageNum = 1; let endPageNum = totalPages; if (totalPages > maxPagesToShow + 2) { if (pagination.currentPage <= halfMaxPages + 1) { endPageNum = maxPagesToShow + 1; } else if (pagination.currentPage >= totalPages - halfMaxPages) { startPageNum = totalPages - maxPagesToShow; } else { startPageNum = pagination.currentPage - halfMaxPages; endPageNum = pagination.currentPage + halfMaxPages; } } if (startPageNum > 1) { items.push( <PaginationItem key={1}> <PaginationLink onClick={() => handlePageChange(1)} className="cursor-pointer">1</PaginationLink> </PaginationItem> ); if (startPageNum > 2) { items.push(<PaginationItem key="start-ellipsis"><PaginationEllipsis /></PaginationItem>); } } for (let i = startPageNum; i <= endPageNum; i++) { items.push( <PaginationItem key={i}> <PaginationLink isActive={pagination.currentPage === i} onClick={() => handlePageChange(i)} className="cursor-pointer"> {i} </PaginationLink> </PaginationItem> ); } if (endPageNum < totalPages) { if (endPageNum < totalPages - 1) { items.push(<PaginationItem key="end-ellipsis"><PaginationEllipsis /></PaginationItem>); } items.push( <PaginationItem key={totalPages}> <PaginationLink onClick={() => handlePageChange(totalPages)} className="cursor-pointer">{totalPages}</PaginationLink> </PaginationItem> ); } return items;
+  };
 
   if (loading) { return ( <div className="flex items-center justify-center h-screen"> <Loader2 className="h-8 w-8 animate-spin text-primary mr-2" /> <span>Loading data...</span> </div> ); }
   if (!initialData || initialData.length === 0) { return ( <div className="p-8 text-center text-destructive"> Failed to load or parse data. Please check the data source and format. </div> ); }
@@ -948,7 +933,7 @@ function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
                 setFilters={setFilters}
                 selectedColumns={selectedColumns}
                 onColumnToggle={handleColumnToggle}
-                onRowClick={handleRowClick} // Pass handler
+                onRowClick={handleRowClick}
               />
             </CardContent>
             {totalPages > 0 && (
@@ -969,136 +954,49 @@ function DataExplorer({ initialData, initialColumns }: DataExplorerProps) {
         </TabsContent>
       </Tabs>
 
-       {/* Conversation Detail Modal */}
-       <Dialog open={selectedRowData !== null} onOpenChange={(isOpen) => !isOpen && setSelectedRowData(null)}>
-            <DialogContent className="max-w-3xl">
-                 <DialogHeader>
-                    <DialogTitle>Conversation Details</DialogTitle>
-                    <DialogDescription>
-                         Viewing conversation for ID: {selectedRowData?.final_id || selectedRowData?.ResponseId || 'N/A'}
-                    </DialogDescription>
-                 </DialogHeader>
-                 <ScrollArea className="max-h-[60vh] p-1 pr-3">
-                     <pre className="text-sm whitespace-pre-wrap break-words bg-muted p-3 rounded-md font-mono">
-                         {selectedRowData?.conversation_messages || "No conversation data available for this row."}
-                     </pre>
-                 </ScrollArea>
-                  <DialogClose asChild>
-                    <Button type="button" variant="secondary"> Close </Button>
-                 </DialogClose>
-            </DialogContent>
-       </Dialog>
-
+      <Dialog open={selectedRowData !== null} onOpenChange={(isOpen) => !isOpen && setSelectedRowData(null)}>
+        <DialogContent className="max-w-3xl">
+             <DialogHeader>
+                <DialogTitle>Conversation Details</DialogTitle>
+                <DialogDescription>
+                     Viewing conversation for ID: {selectedRowData?.final_id || selectedRowData?.ResponseId || 'N/A'}
+                </DialogDescription>
+             </DialogHeader>
+             <ScrollArea className="max-h-[60vh] p-1 pr-3">
+                 <pre className="text-sm whitespace-pre-wrap break-words bg-muted p-3 rounded-md font-mono">
+                     {selectedRowData?.conversation_messages || "No conversation data available for this row."}
+                 </pre>
+             </ScrollArea>
+              <DialogClose asChild>
+                <Button type="button" variant="secondary"> Close </Button>
+             </DialogClose>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
 
+import { loadData } from '../lib/data-loader';
 
-const CSV_URL = '../aligned_unified_conversation_data.csv';
-
-export default function Page() {
-  return <ClientDataExplorer csvUrl={CSV_URL} />;
-}
-
-// Create a separate client component for data loading and display
-function ClientDataExplorer({ csvUrl }: { csvUrl: string }) {
-  const [data, setData] = useState<DataRow[]>([]);
-  const [columns, setColumns] = useState<string[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-  
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        console.log(`Attempting to load data from: ${csvUrl}`);
-        const response = await fetch(csvUrl, { cache: 'no-store' });
-        if (!response.ok) throw new Error(`Failed to fetch CSV: ${response.status} ${response.statusText}`);
-        const csvText = await response.text();
-        
-        Papa.parse<DataRow>(csvText, {
-          header: true, 
-          skipEmptyLines: 'greedy', 
-          dynamicTyping: true, 
-          transformHeader: header => header.trim(),
-          complete: (results) => {
-            if (results.errors.length > 0) { 
-              console.error("CSV Parsing Errors:", results.errors);
-              console.warn("CSV parsing encountered errors."); 
-            }
-            
-            if (!results.meta.fields || results.meta.fields.length === 0) { 
-              console.error("CSV Parsing Error: No headers."); 
-              setError(true);
-              setLoading(false);
-              return;
-            }
-            
-            console.log(`Successfully parsed ${results.data.length} rows.`);
-            // Basic data cleaning/typing fix attempts
-            const cleanedData = results.data.map(row => {
-                const cleanedRow = { ...row };
-                // Example: Ensure boolean-like columns are boolean
-                for (const key in cleanedRow) {
-                     if (typeof cleanedRow[key] === 'string') {
-                         const lowerVal = cleanedRow[key].toLowerCase();
-                         if (lowerVal === 'true') cleanedRow[key] = true;
-                         else if (lowerVal === 'false') cleanedRow[key] = false;
-                     }
-                     // Ensure specific numerical columns that might be strings are numbers
-                     const numericCols = ['testscore', 'MessageCount', 'UserMessageCount', 'AIMessageCount', 'AverageUserMessageLength', 'AverageAIMessageLength', 'ConversationDuration', 'MessageRatio', 'ConversationDurationMinutes'];
-                     if(numericCols.includes(key) && typeof cleanedRow[key] === 'string' && !isNaN(Number(cleanedRow[key]))) {
-                         cleanedRow[key] = Number(cleanedRow[key]);
-                     }
-                }
-                // Clean treatment variable
-                if (cleanedRow.treatment === 'Control') cleanedRow.treatment_clean = 'Control';
-                else if (cleanedRow.treatment === 'AI-assisted') cleanedRow.treatment_clean = 'AI-assisted';
-                else if (cleanedRow.treatment === 'AI-guided') cleanedRow.treatment_clean = 'AI-guided';
-                else if (cleanedRow.control === 1) cleanedRow.treatment_clean = 'Control';
-                else if (cleanedRow.ai_assist === 1) cleanedRow.treatment_clean = 'AI-assisted';
-                else if (cleanedRow.ai_guided === 1) cleanedRow.treatment_clean = 'AI-guided';
-                else cleanedRow.treatment_clean = 'Unknown'; // Fallback
-
-                 // Ensure highgpa is 0 or 1
-                cleanedRow.highgpa = cleanedRow.highgpa === 1 ? 1 : 0;
-
-                return cleanedRow;
-            });
-            
-            const finalColumns = results.meta.fields.includes('treatment_clean') ? results.meta.fields : [...results.meta.fields, 'treatment_clean'];
-            
-            setData(cleanedData);
-            setColumns(finalColumns);
-            setLoading(false);
-          },
-          error: (error) => { 
-            console.error("CSV Parsing Fatal Error:", error); 
-            setError(true);
-            setLoading(false);
-          }
-        });
-      } catch (err) {
-        console.error("Error loading data:", err);
-        setError(true);
-        setLoading(false);
-      }
+export default async function Page() {
+  try {
+    const { data, columns } = await loadData();
+    
+    if (columns.length === 0) {
+      return (
+        <div className="flex items-center justify-center h-screen text-destructive">
+          Error: Could not load data headers. Check server logs.
+        </div>
+      );
     }
     
-    fetchData();
-  }, [csvUrl]);
-  
-  if (loading) {
-    return <div className="flex items-center justify-center h-screen">
-      <div className="animate-spin mr-2 h-8 w-8 border-t-2 border-b-2 border-primary rounded-full"></div>
-      Loading data...
-    </div>;
+    return <DataExplorer initialData={data} initialColumns={columns} />;
+  } catch (error) {
+    console.error("Error loading data:", error);
+    return (
+      <div className="flex items-center justify-center h-screen text-destructive">
+        Error: Failed to load data. {error instanceof Error ? error.message : 'Unknown error'}
+      </div>
+    );
   }
-  
-  if (error || columns.length === 0) {
-    return <div className="flex items-center justify-center h-screen text-destructive">
-      Error: Could not load data headers.
-    </div>;
-  }
-  
-  return <DataExplorer initialData={data} initialColumns={columns} />;
 }
