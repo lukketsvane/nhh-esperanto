@@ -1,6 +1,38 @@
-# NHH Esperanto Learning Dataset
+# NHH Esperanto - Data Explorer
 
-This repository contains data from an experiment on Esperanto language learning with AI assistance. The dataset includes survey responses, test scores, and conversation logs between participants and AI assistants.
+A Next.js application for exploring, visualizing, and analyzing conversation data from the NHH Esperanto experiment.
+
+## Overview
+
+This application provides a comprehensive interface for researchers to:
+
+- View and filter tabular data
+- Create visualizations including bar charts, box plots, histograms, and scatter plots
+- Generate statistical summaries and frequency distributions
+- Export data for further analysis
+
+## Features
+
+### Data Table View
+- View records with pagination
+- Filter by any column
+- Toggle visibility of columns
+- Export filtered data as CSV
+
+### Data Visualization
+- Multiple chart types:
+  - Box plots: Show distributions with quartiles
+  - Bar charts: Compare means across categories
+  - Histograms: Visualize value distributions
+  - Scatter plots: Explore relationships between variables
+- Group data by categories
+- Download chart images
+
+### Data Summary
+- Column statistics (count, unique values, min/max, mean, median, std dev)
+- Grouped summary statistics by any categorical variable
+- Frequency distributions
+- Missing value analysis
 
 ## Dataset Overview
 
@@ -12,113 +44,81 @@ The dataset comprises information from language learning experiments where parti
 
 For each participant, the dataset includes demographic information, language learning performance metrics, and conversation data with AI assistants.
 
-## Available Files
+## Technical Details
 
-### Original Data Files
-- `iverdata.csv`: Original survey data
-- `unified_conversation_data.csv`: Raw conversation data
-- `unified_conversation_data.json`: JSON version of conversation data
-- `nhh_esperanto_finalized_dataset.csv`: Merged and cleaned dataset
+### Tech Stack
+- **Framework**: Next.js 15
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Charts**: Chart.js with BoxPlot extension
+- **Data Parsing**: Papa Parse
 
-### Enhanced Dataset Files
-- `nhh_esperanto_enhanced_dataset.csv`: Enhanced version with improved data quality
-- `nhh_esperanto_participants.csv`: Normalized participant demographic data
-- `nhh_esperanto_conversations.csv`: Structured conversation metadata
-- `nhh_esperanto_messages.csv`: Individual conversation messages
-- `nhh_esperanto_data_dictionary.csv`: Data dictionary explaining all variables
+### Data Processing
+The application loads CSV data from a GitHub repository URL and processes it client-side:
+- CSV parsing with Papa Parse
+- Data cleaning and type normalization
+- Treatment group categorization
+- Statistical calculations
 
-### Processing Scripts
-- `merge_datasets.py`: Script to merge survey and conversation data
-- `enhance_dataset.py`: Script to enhance the dataset quality
+## Getting Started
 
-## Data Structure
+1. **Clone the repository**
+   ```
+   git clone https://github.com/lukketsvane/nhh-esperanto.git
+   cd nhh-esperanto
+   ```
 
-### Participant Data
-Key demographic variables for each participant:
-- `participant_id`: Unique identifier for each participant
-- `gender`: Participant gender
-- `age`: Age range of participant
-- `yearincollege`: Year in college
-- `faculty`: Academic faculty/department
-- `languages`: Number of languages known
-- `AIfamiliar`: Familiarity with AI
-- `AIsubscription`: Whether participant has an AI subscription
+2. **Install dependencies**
+   ```
+   npm install --legacy-peer-deps
+   ```
+   or
+   ```
+   pnpm install --no-strict-peer-dependencies
+   ```
 
-### Experimental Data
-Key experimental variables:
+3. **Run the development server**
+   ```
+   npm run dev
+   ```
+   or
+   ```
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Data Files
+
+The primary dataset is loaded from:
+`aligned_unified_conversation_data.csv`
+
+Key variables include:
+- `final_id`: Participant ID
 - `treatment_clean`: Treatment group (Control, AI-assisted, AI-guided)
-- `Session`: Experimental session identifier
+- `gender`: Participant gender
+- `highgpa`: Binary indicator for high GPA
 - `testscore`: Score on Esperanto language test
-- `esperanto_accuracy`: Accuracy on practice questions
-- `esperanto_practice_count`: Number of practice questions attempted
+- `index_confidence`, `index_motivation`, `index_complement`, `index_cheating`: Psychological indices
+- `MessageCount`: Total messages in conversation
+- `ConversationDurationMinutes`: Duration of conversation
 
-### Conversation Data
-Conversation metrics and content:
-- `conversation_id`: Unique identifier for each conversation
-- `MessageCount`: Total number of messages exchanged
-- `UserMessageCount`: Number of messages from the user
-- `AIMessageCount`: Number of messages from the AI
-- `ConversationDuration`: Duration of conversation in seconds
-- `conversation_turn_count`: Number of user-AI exchanges
-- `esperanto_usage_score`: Score for Esperanto usage (0-100)
-- `ai_helpfulness_score`: Measure of AI helpfulness (0-100)
-- `conversation_focus`: Primary focus of the conversation
+## Deployment
 
-## Data Quality Enhancements
-
-The enhanced dataset improves upon the original in several ways:
-
-1. **Improved User Identification**: Better matching between survey responses and conversations with confidence scores
-
-2. **Esperanto Language Cleanup**: Standardized spelling and formatting of Esperanto text
-
-3. **Enhanced Metrics**: New computed variables for deeper analysis:
-   - Esperanto usage scores
-   - Conversation complexity measures
-   - AI helpfulness metrics
-   - Conversation turn analysis
-
-4. **Structured Format**: Normalized relational structure with participant, conversation, and message tables
-
-5. **Data Dictionary**: Comprehensive documentation of all variables
-
-## Using the Dataset
-
-For most analyses, the enhanced dataset files provide the most usable data:
-
-```python
-import pandas as pd
-
-# Load enhanced dataset
-enhanced_data = pd.read_csv('nhh_esperanto_enhanced_dataset.csv')
-
-# Load participant data
-participants = pd.read_csv('nhh_esperanto_participants.csv')
-
-# Load conversation data
-conversations = pd.read_csv('nhh_esperanto_conversations.csv')
-messages = pd.read_csv('nhh_esperanto_messages.csv')
-
-# Example: Compare test scores across treatment groups
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-plt.figure(figsize=(10, 6))
-sns.boxplot(x='treatment_clean', y='testscore', data=enhanced_data)
-plt.title('Test Scores by Treatment Group')
-plt.xlabel('Treatment')
-plt.ylabel('Test Score')
-plt.show()
+The application can be built for production using:
 ```
-
-## Citation
-
-Please cite this dataset as:
-
+npm run build
+npm start
 ```
-[Citation information to be added by repository owner]
+or
+```
+pnpm build
+pnpm start
 ```
 
 ## License
 
-[License information to be added by repository owner]
+[MIT License](LICENSE)
