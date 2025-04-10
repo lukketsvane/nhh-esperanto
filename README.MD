@@ -1,141 +1,124 @@
-# NHH Esperanto Learning and Interaction Dataset
+# NHH Esperanto Learning Dataset
 
-## Introduction
-
-This repository contains the **NHH Esperanto Dataset**, a comprehensive collection of data from linguistic experiments focused on learning Esperanto. It integrates survey responses with corresponding ChatGPT conversation logs, providing a rich resource for researchers studying language acquisition, human-computer interaction, and AI-assisted learning. The dataset includes:
-
-*   **Survey Data:** Participant demographics, experimental conditions (control, AI-assisted, AI-guided), test scores, and self-reported metrics.
-*   **Conversation Logs:** Full interaction history between participants and ChatGPT during the learning/testing phases.
-*   **Session Information:** Mapping of participation times to specific experimental sessions.
-
-The data is available in both CSV and JSON formats.
+This repository contains data from an experiment on Esperanto language learning with AI assistance. The dataset includes survey responses, test scores, and conversation logs between participants and AI assistants.
 
 ## Dataset Overview
 
-*   **Total Survey Responses:** 604
-*   **Total Conversations:** 376
-*   **Total Messages:** 10,158
-*   **Unique Participants:** ~21-30
-*   **Data Collection Period:** 28 Nov 2024 to 05 Dec 2024
-*   **Time Range (UNIX):** `1732762620.0` to `1733512640.880426`
+The dataset comprises information from language learning experiments where participants were assigned to different treatment groups:
 
-## Data Sources
+- **Control**: No AI assistance
+- **AI-assisted**: Basic AI assistance 
+- **AI-guided**: Enhanced AI assistance with structured guidance
 
-The unified dataset is compiled from the following sources:
+For each participant, the dataset includes demographic information, language learning performance metrics, and conversation data with AI assistants.
 
-1.  **`iverdata.csv`**: Contains survey responses collected via Qualtrics, including participant details, test performance, and experimental group assignments.
-2.  **`schedule_sessions.csv`**: Provides the schedule mapping session times to dates.
-3.  **`unified_conversation_data.csv`**: Contains the full ChatGPT conversation logs for all participants. Sample files (`unified_sample_*.csv`/`.json`) are also provided.
+## Available Files
 
-The merged and enriched data is available as:
+### Original Data Files
+- `iverdata.csv`: Original survey data
+- `unified_conversation_data.csv`: Raw conversation data
+- `unified_conversation_data.json`: JSON version of conversation data
+- `nhh_esperanto_finalized_dataset.csv`: Merged and cleaned dataset
 
-1.  **`nhh_esperanto_finalized_dataset.csv`**: The complete finalized dataset with all survey responses. Every record has a UserID, even if auto-generated.
-2.  **`aligned_unified_conversation_data.csv`**: The complete merged dataset with all survey responses (intermediate file).
-3.  **`aligned_unified_conversation_data_matched_only.csv`**: A filtered version containing only the 369 matched records.
-4.  **`aligned_unified_conversation_data_unmatched_conversations.csv`**: A reference file with the 7 conversations that could not be matched to any survey response.
+### Enhanced Dataset Files
+- `nhh_esperanto_enhanced_dataset.csv`: Enhanced version with improved data quality
+- `nhh_esperanto_participants.csv`: Normalized participant demographic data
+- `nhh_esperanto_conversations.csv`: Structured conversation metadata
+- `nhh_esperanto_messages.csv`: Individual conversation messages
+- `nhh_esperanto_data_dictionary.csv`: Data dictionary explaining all variables
 
-## Data Structure (Merged Output Example)
+### Processing Scripts
+- `merge_datasets.py`: Script to merge survey and conversation data
+- `enhance_dataset.py`: Script to enhance the dataset quality
 
-The primary output is an enriched version of `iverdata.csv`, linking survey responses to conversation and session data. Key fields include:
+## Data Structure
 
-| Field Name        | Type    | Description                                                                 | Origin                     |
-| :---------------- | :------ | :-------------------------------------------------------------------------- | :------------------------- |
-| `ResponseId`      | str     | Unique identifier for each survey response.                                 | `iverdata.csv`             |
-| `StartDate`       | str     | Timestamp when the participant started the survey/experiment.             | `iverdata.csv`             |
-| `EndDate`         | str     | Timestamp when the participant finished the survey/experiment.            | `iverdata.csv`             |
-| `UserID`          | str     | Participant identifier, often in `DDMMYYYY_HHMM_Participant#` format.       | Extracted/Inferred         |
-| `Session`         | str     | Experimental session identifier (e.g., "Session 1").                       | `schedule_sessions.csv`    |
-| `conversation_id` | str     | Unique identifier for the associated ChatGPT conversation.                  | `unified_..._data.csv`     |
-| `create_time`     | float   | UNIX timestamp when the associated ChatGPT conversation was created.        | `unified_..._data.csv`     |
-| `treatment`       | str     | Experimental group (e.g., 'Control', 'AI-assisted', 'AI-guided').           | `iverdata.csv`             |
-| `testscore`       | float   | Participant's score on the Esperanto test.                                  | `iverdata.csv`             |
-| ...               | ...     | Other fields from `iverdata.csv` (demographics, questions, etc.)            | `iverdata.csv`             |
-| `StatedChatID`    | str/None| The ID explicitly stated by the user in the chat, if found.                 | `unified_..._data.csv`     |
-| `MatchMethod`     | str     | How the conversation was matched ('ExplicitID' or 'Timestamp').             | Processing Script          |
+### Participant Data
+Key demographic variables for each participant:
+- `participant_id`: Unique identifier for each participant
+- `gender`: Participant gender
+- `age`: Age range of participant
+- `yearincollege`: Year in college
+- `faculty`: Academic faculty/department
+- `languages`: Number of languages known
+- `AIfamiliar`: Familiarity with AI
+- `AIsubscription`: Whether participant has an AI subscription
 
-*(Note: This is an illustrative schema. The final merged file will contain all original columns from `iverdata.csv` plus the added/matched columns.)*
+### Experimental Data
+Key experimental variables:
+- `treatment_clean`: Treatment group (Control, AI-assisted, AI-guided)
+- `Session`: Experimental session identifier
+- `testscore`: Score on Esperanto language test
+- `esperanto_accuracy`: Accuracy on practice questions
+- `esperanto_practice_count`: Number of practice questions attempted
 
-## Download Links
+### Conversation Data
+Conversation metrics and content:
+- `conversation_id`: Unique identifier for each conversation
+- `MessageCount`: Total number of messages exchanged
+- `UserMessageCount`: Number of messages from the user
+- `AIMessageCount`: Number of messages from the AI
+- `ConversationDuration`: Duration of conversation in seconds
+- `conversation_turn_count`: Number of user-AI exchanges
+- `esperanto_usage_score`: Score for Esperanto usage (0-100)
+- `ai_helpfulness_score`: Measure of AI helpfulness (0-100)
+- `conversation_focus`: Primary focus of the conversation
 
-### Full Dataset
-*The full conversation dataset is large.*
-*   [Download Full Conversation Data (CSV)](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_conversation_data.csv)
-*   [Download Full Conversation Data (JSON)](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_conversation_data.json)
-*   [Download Survey Data (`iverdata.csv`)](https://github.com/lukketsvane/nhh-esperanto/raw/main/iverdata.csv)
-*   [Download Session Schedule (`schedule_sessions.csv`)](https://github.com/lukketsvane/nhh-esperanto/raw/main/schedule_sessions.csv)
-*   **[Recommended] Download Merged & Enriched Survey Data (CSV):** [Download Aligned Data](https://github.com/lukketsvane/nhh-esperanto/raw/main/aligned_unified_conversation_data.csv)
+## Data Quality Enhancements
 
-### Samples (Conversation Data Only)
-*   **Sample of 5 Conversations**:
-    *   [CSV](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_5.csv)
-    *   [JSON](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_5.json)
-*   **Sample of 10 Conversations**:
-    *   [CSV](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_10.csv)
-    *   [JSON](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_10.json)
-*   **Sample of 100 Conversations**:
-    *   [CSV](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_100.csv)
-    *   [JSON](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_100.json)
+The enhanced dataset improves upon the original in several ways:
 
+1. **Improved User Identification**: Better matching between survey responses and conversations with confidence scores
 
-## Data Processing and Matching
+2. **Esperanto Language Cleanup**: Standardized spelling and formatting of Esperanto text
 
-The unified dataset was created by merging the data sources based on participant identifiers and timestamps. A Python script (`merge_datasets.py`) was used to implement the matching algorithm.
+3. **Enhanced Metrics**: New computed variables for deeper analysis:
+   - Esperanto usage scores
+   - Conversation complexity measures
+   - AI helpfulness metrics
+   - Conversation turn analysis
 
-1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script also looked for other ID formats like "Participant X", date/time references, or simple numerical IDs.
-2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 24 hours was used, with matching prioritized by session date to ensure participants were matched within their actual experimental session.
-3.  **Session Mapping:** The `schedule_sessions.csv` file was generated to map each participant's start time to a specific experimental session number.
-4.  **Conversation Metrics:** For each matched conversation, metrics were calculated including message counts, average message lengths, and conversation duration.
-5.  **Consolidation:** The final dataset (`aligned_unified_conversation_data.csv`) links each survey response to its corresponding session, conversation ID, extracted/inferred UserID, and includes the full text of the conversation.
+4. **Structured Format**: Normalized relational structure with participant, conversation, and message tables
 
-**Matching Results:**
-- Total survey responses: 604
-- Matches via explicit ID: 8 (1.3% of all records)
-- Matches via timestamp: 361 (59.8% of all records)
-- Auto-generated IDs: 235 (38.9% of all records)
-- Total matched: 369 (61.09% match rate)
-- Match confidence: 95.54% average (98.6% of matches have high confidence)
+5. **Data Dictionary**: Comprehensive documentation of all variables
 
-The matching algorithm achieved a high match rate by using both ID extraction and timestamp-based matching with a 24-hour tolerance window, prioritizing matches within the same session day. For unmatched survey responses, auto-generated IDs were created to ensure every participant has an identifier.
+## Using the Dataset
 
-## Usage Notes
+For most analyses, the enhanced dataset files provide the most usable data:
 
-*   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established. We used a 24-hour tolerance window for matching, with a confidence score to measure match quality. The `match_confidence` field provides a 0-100 score based on how close the timestamps are.
-*   **Missing Data:** Some survey responses may not have a corresponding conversation log, or vice-versa, due to technical issues or participants not completing all parts. For easier analysis, we provide a filtered version containing only the matched records (`aligned_unified_conversation_data_matched_only.csv`).
-*   **Data Enrichment:** The finalized dataset includes additional columns with conversation metrics and important metadata:
-    * **Conversation Metrics:**
-        * `MessageCount`: Total number of messages in the conversation
-        * `UserMessageCount`: Number of messages sent by the participant
-        * `AIMessageCount`: Number of messages sent by ChatGPT
-        * `MessageRatio`: Ratio of user messages to AI messages
-        * `AverageUserMessageLength`: Average length of user messages in characters
-        * `AverageAIMessageLength`: Average length of AI messages in characters
-        * `ConversationDuration`: Duration of the conversation in seconds
-        * `ConversationDurationMinutes`: Duration of the conversation in minutes
-    * **Matching Information:**
-        * `HasMatch`: Flag indicating whether this survey response was matched to a conversation
-        * `timestamp_diff`: The difference between survey start time and conversation start time (seconds)
-        * `timestamp_diff_minutes`: The difference between survey start time and conversation start time (minutes)
-        * `match_confidence`: Confidence score (0-100%) for the match, based on timestamp proximity
-    * **User Identification and Status:**
-        * `UserID`: Participant identifier (extracted, derived, or auto-generated)
-        * `UserID_Source`: Source of the UserID (Explicit, Timestamp, or Auto-generated)
-        * `participant_id`: Simplified UserID for easier analysis
-        * `final_id`: Sequential ID for all records
-        * `is_duplicate`: Flag indicating potential duplicate records
-        * `data_status`: Status of the record (Complete, Missing conversation, or Duplicate)
-    * **Treatment Information:**
-        * `treatment_clean`: Standardized treatment group designation (Control, AI-assisted, AI-guided)
-*   **Anonymization:** While participant emails might be present in the raw survey data (`iverdata.csv`), ensure compliance with privacy regulations and ethical guidelines when using this data. User IDs provided are intended for linking purposes within the dataset context.
+```python
+import pandas as pd
+
+# Load enhanced dataset
+enhanced_data = pd.read_csv('nhh_esperanto_enhanced_dataset.csv')
+
+# Load participant data
+participants = pd.read_csv('nhh_esperanto_participants.csv')
+
+# Load conversation data
+conversations = pd.read_csv('nhh_esperanto_conversations.csv')
+messages = pd.read_csv('nhh_esperanto_messages.csv')
+
+# Example: Compare test scores across treatment groups
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='treatment_clean', y='testscore', data=enhanced_data)
+plt.title('Test Scores by Treatment Group')
+plt.xlabel('Treatment')
+plt.ylabel('Test Score')
+plt.show()
+```
+
+## Citation
+
+Please cite this dataset as:
+
+```
+[Citation information to be added by repository owner]
+```
 
 ## License
 
-This dataset is made available under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
-
-[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
-
-You are free to:
-*   Share — copy and redistribute the material in any medium or format
-*   Adapt — remix, transform, and build upon the material
-
-Under the following terms:
-*   **Attribution** — You must give appropriate credit to NHH Norwegian School of Economics and the contributors, provide a link to the license, and indicate if changes were made.
+[License information to be added by repository owner]
