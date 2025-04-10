@@ -2,6 +2,12 @@
 
 This repository contains a dataset from an Esperanto language learning experiment with AI assistance, along with tools for processing and exploring the data.
 
+## Repository Structure
+
+- **Root Directory**: Contains Python scripts, datasets, and documentation
+- **`/explorer`**: Next.js application for interactive data exploration and visualization
+- **`/old`**: Archive of original data files
+
 ## Dataset Overview
 
 The dataset comprises information from language learning experiments where participants were assigned to different treatment groups:
@@ -88,7 +94,7 @@ The processing pipeline produces several output files:
 
 ## Data Explorer Application
 
-The repository includes a Next.js application for exploring and visualizing the dataset:
+The repository includes a Next.js application in the `/explorer` directory for exploring and visualizing the dataset:
 
 ### Features
 - **Data Table View**: Browse and filter records
@@ -96,20 +102,11 @@ The repository includes a Next.js application for exploring and visualizing the 
 - **Summary Statistics**: View distributions and relationships between variables
 - **Export Functionality**: Download filtered data or charts
 
-### Technical Details
-- **Framework**: Next.js 15
-- **UI Library**: React 19
-- **Styling**: Tailwind CSS
-- **Components**: shadcn/ui
-- **Charts**: Chart.js with BoxPlot extension
-- **Data Parsing**: Papa Parse
+### Running the Explorer
 
-## Getting Started
-
-1. **Clone the repository**
+1. **Navigate to the explorer directory**
    ```
-   git clone https://github.com/lukketsvane/nhh-esperanto.git
-   cd nhh-esperanto
+   cd explorer
    ```
 
 2. **Install dependencies**
@@ -122,8 +119,7 @@ The repository includes a Next.js application for exploring and visualizing the 
    npm run dev
    ```
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+See the `/explorer/README.md` file for more details on the application.
 
 ## Data Processing Scripts
 
