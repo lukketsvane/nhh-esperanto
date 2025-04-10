@@ -27,6 +27,12 @@ The unified dataset is compiled from the following sources:
 2.  **`schedule_sessions.csv`**: Provides the schedule mapping session times to dates.
 3.  **`unified_conversation_data.csv`**: Contains the full ChatGPT conversation logs for all participants. Sample files (`unified_sample_*.csv`/`.json`) are also provided.
 
+The merged and enriched data is available as:
+
+1.  **`aligned_unified_conversation_data.csv`**: The complete merged dataset with all survey responses.
+2.  **`aligned_unified_conversation_data_matched_only.csv`**: A filtered version containing only the 369 matched records.
+3.  **`aligned_unified_conversation_data_unmatched_conversations.csv`**: A reference file with the 7 conversations that could not be matched to any survey response.
+
 ## Data Structure (Merged Output Example)
 
 The primary output is an enriched version of `iverdata.csv`, linking survey responses to conversation and session data. Key fields include:
@@ -74,8 +80,8 @@ The primary output is an enriched version of `iverdata.csv`, linking survey resp
 
 The unified dataset was created by merging the data sources based on participant identifiers and timestamps. A Python script (`merge_datasets.py`) was used to implement the matching algorithm.
 
-1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script also looked for other ID formats like "Participant X" or simple numerical IDs.
-2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 30 minutes was used to account for timing discrepancies. *Note: This matching assumes participants started their survey and conversation around the same time.*
+1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script also looked for other ID formats like "Participant X", date/time references, or simple numerical IDs.
+2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 24 hours was used, with matching prioritized by session date to ensure participants were matched within their actual experimental session.
 3.  **Session Mapping:** The `schedule_sessions.csv` file was generated to map each participant's start time to a specific experimental session number.
 4.  **Conversation Metrics:** For each matched conversation, metrics were calculated including message counts, average message lengths, and conversation duration.
 5.  **Consolidation:** The final dataset (`aligned_unified_conversation_data.csv`) links each survey response to its corresponding session, conversation ID, extracted/inferred UserID, and includes the full text of the conversation.
@@ -83,26 +89,31 @@ The unified dataset was created by merging the data sources based on participant
 **Matching Results:**
 - Total survey responses: 604
 - Matches via explicit ID: 8
-- Matches via timestamp: 43
-- Total matched: 51 (8.44% match rate)
-- Unmatched: 553
+- Matches via timestamp: 361 
+- Total matched: 369 (61.09% match rate)
+- Unmatched: 235
+- Match confidence: 95.54% average (98.6% of matches have high confidence)
 
-The relatively low match rate may be due to incomplete data, participants not following ID protocols, or technical issues during data collection.
+The matching algorithm achieved a good match rate by using both ID extraction and timestamp-based matching with a 24-hour tolerance window, prioritizing matches within the same session day.
 
 ## Usage Notes
 
-*   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established. We used a 30-minute tolerance window for matching.
+*   **Timestamp Accuracy:** Matching based on timestamps might introduce minor inaccuracies if multiple participants started their sessions very close together. The `MatchMethod` column indicates how each link was established. We used a 24-hour tolerance window for matching, with a confidence score to measure match quality. The `match_confidence` field provides a 0-100 score based on how close the timestamps are.
 *   **Missing Data:** Some survey responses may not have a corresponding conversation log, or vice-versa, due to technical issues or participants not completing all parts. For easier analysis, we provide a filtered version containing only the matched records (`aligned_unified_conversation_data_matched_only.csv`).
 *   **Data Enrichment:** The aligned dataset includes additional columns with conversation metrics:
     * `MessageCount`: Total number of messages in the conversation
     * `UserMessageCount`: Number of messages sent by the participant
     * `AIMessageCount`: Number of messages sent by ChatGPT
     * `MessageRatio`: Ratio of user messages to AI messages
-    * `AverageUserMessageLength`: Average length of user messages
-    * `AverageAIMessageLength`: Average length of AI messages
+    * `AverageUserMessageLength`: Average length of user messages in characters
+    * `AverageAIMessageLength`: Average length of AI messages in characters
     * `ConversationDuration`: Duration of the conversation in seconds
     * `ConversationDurationMinutes`: Duration of the conversation in minutes
     * `HasMatch`: Flag indicating whether this survey response was matched to a conversation
+    * `timestamp_diff`: The difference between survey start time and conversation start time (seconds)
+    * `timestamp_diff_minutes`: The difference between survey start time and conversation start time (minutes)
+    * `match_confidence`: Confidence score (0-100%) for the match, based on timestamp proximity
+    * `treatment_clean`: Standardized treatment group designation (Control, AI-assisted, AI-guided)
 *   **Anonymization:** While participant emails might be present in the raw survey data (`iverdata.csv`), ensure compliance with privacy regulations and ethical guidelines when using this data. User IDs provided are intended for linking purposes within the dataset context.
 
 ## License

@@ -41,7 +41,7 @@ SCHEDULE_SESSIONS_PATH = 'schedule_sessions.csv'
 # Define constants
 USER_ID_PATTERN = r'(\d{2})(\d{2})(\d{4})_(\d{4})_Participant(\d+)'
 ALTERNATIVE_ID_PATTERN = r'ID(?:\s+is)?\s*(?::|-)?\s*(\d+)'
-TIMESTAMP_TOLERANCE = 1800  # 30 minutes in seconds
+TIMESTAMP_TOLERANCE = 86400  # 24 hours in seconds
 
 
 def convert_qualtrics_time_to_unix(time_str: str) -> float:
@@ -168,6 +168,14 @@ def extract_user_id_from_message(message: str) -> Optional[str]:
     participant_match = re.search(r'[Pp]articipant\s*(\d+)', message)
     if participant_match:
         return f"Participant{participant_match.group(1)}"
+    
+    # Look for common date formats that might indicate a session time
+    date_match = re.search(r'(\d{1,2})[-/](\d{1,2})[-/](\d{2,4}).*?(\d{1,2})[:.h](\d{1,2})', message, re.IGNORECASE)
+    if date_match:
+        day, month, year, hour, minute = date_match.groups()
+        if len(year) == 2:
+            year = f"20{year}"  # Assume 21st century
+        return f"{day}{month}{year}_{hour}{minute}"
     
     # Try to find any decimal number that could be an ID
     id_match = re.search(r'\b(\d{1,4})\b', message)
@@ -322,30 +330,68 @@ def match_by_timestamp(unmatched_data: pd.DataFrame, conv_data: pd.DataFrame,
     unmatched_conv_ids = [conv_id for conv_id in unique_conversation_ids 
                          if conv_id not in matched_conv_ids]
     
-    # Create a dictionary of conversation creation times for faster lookup
-    conv_times = {}
-    for conv_id in unmatched_conv_ids:
-        conv_subset = conv_data[conv_data['conversation_id'] == conv_id]
-        if not conv_subset.empty:
-            conv_times[conv_id] = float(conv_subset['create_time'].iloc[0])
+    # Group conversations by session date
+    # This allows us to prioritize matching within the same session
+    conv_data_with_times = conv_data.drop_duplicates(subset=['conversation_id']).copy()
+    conv_data_with_times['create_time'] = conv_data_with_times['create_time'].astype(float)
+    conv_data_with_times['create_date'] = conv_data_with_times['create_time'].apply(
+        lambda x: datetime.fromtimestamp(x).strftime('%Y-%m-%d')
+    )
     
-    # Sort conversation IDs by creation time
-    sorted_conv_ids = sorted(conv_times.keys(), key=lambda x: conv_times[x])
+    # Get the sessions directly from the survey data
+    survey_sessions = {}
+    for idx, row in unmatched_surveys.iterrows():
+        if not pd.isna(row['start_time_unix']):
+            date_str = datetime.fromtimestamp(row['start_time_unix']).strftime('%Y-%m-%d')
+            if date_str not in survey_sessions:
+                survey_sessions[date_str] = []
+            survey_sessions[date_str].append(idx)
     
-    for idx, survey_row in unmatched_surveys.iterrows():
-        survey_start = survey_row['start_time_unix']
+    # For each session date, match conversations to surveys
+    for date_str, survey_indices in survey_sessions.items():
+        # Get conversations from this date
+        date_conversations = conv_data_with_times[
+            conv_data_with_times['create_date'] == date_str
+        ]
         
-        # Find closest conversation by start time
-        for conv_id in sorted_conv_ids:
-            conv_time = conv_times[conv_id]
+        # Get unmatched conversation IDs for this date
+        date_conv_ids = [
+            conv_id for conv_id in date_conversations['conversation_id'].tolist()
+            if conv_id in unmatched_conv_ids
+        ]
+        
+        # Create a dictionary of conversation times for this date
+        conv_times = {}
+        for conv_id in date_conv_ids:
+            conv_subset = date_conversations[date_conversations['conversation_id'] == conv_id]
+            if not conv_subset.empty:
+                conv_times[conv_id] = float(conv_subset['create_time'].iloc[0])
+        
+        # For each survey in this session, find the best matching conversation
+        for idx in survey_indices:
+            if idx not in unmatched_surveys.index:
+                continue
+                
+            survey_row = unmatched_surveys.loc[idx]
+            survey_start = survey_row['start_time_unix']
             
-            # Check if times are close enough
-            if abs(survey_start - conv_time) <= TIMESTAMP_TOLERANCE:
-                result_data.at[idx, 'conversation_id'] = conv_id
-                result_data.at[idx, 'create_time'] = conv_time
+            # Find the closest conversation by time
+            best_match_id = None
+            best_match_diff = float('inf')
+            
+            for conv_id, conv_time in conv_times.items():
+                time_diff = abs(survey_start - conv_time)
+                if time_diff <= TIMESTAMP_TOLERANCE and time_diff < best_match_diff:
+                    best_match_id = conv_id
+                    best_match_diff = time_diff
+            
+            # If we found a match, update the result
+            if best_match_id:
+                result_data.at[idx, 'conversation_id'] = best_match_id
+                result_data.at[idx, 'create_time'] = conv_times[best_match_id]
                 
                 # Get first user message to try deriving an ID
-                first_message = extract_first_user_message(conv_id, conv_data)
+                first_message = extract_first_user_message(best_match_id, conv_data)
                 stated_id = extract_user_id_from_message(first_message)
                 
                 # Generate a UserID if not available from message
@@ -359,10 +405,66 @@ def match_by_timestamp(unmatched_data: pd.DataFrame, conv_data: pd.DataFrame,
                 result_data.at[idx, 'UserID'] = user_id
                 result_data.at[idx, 'MatchMethod'] = 'Timestamp'
                 
-                # Remove matched conversation to prevent duplicates
-                sorted_conv_ids.remove(conv_id)
+                # Remove the matched conversation ID
+                if best_match_id in unmatched_conv_ids:
+                    unmatched_conv_ids.remove(best_match_id)
+                if best_match_id in conv_times:
+                    del conv_times[best_match_id]
+                    
                 time_matches += 1
-                break
+                
+    # If we still have unmatched surveys, try to match them with any remaining conversations
+    still_unmatched = result_data[result_data['conversation_id'].isna()]
+    if not still_unmatched.empty and unmatched_conv_ids:
+        logger.info(f"Attempting to match {len(still_unmatched)} remaining surveys")
+        
+        # Create a dictionary of all remaining conversation times
+        all_conv_times = {}
+        for conv_id in unmatched_conv_ids:
+            conv_subset = conv_data_with_times[conv_data_with_times['conversation_id'] == conv_id]
+            if not conv_subset.empty:
+                all_conv_times[conv_id] = float(conv_subset['create_time'].iloc[0])
+                
+        # For each remaining survey, find the best match
+        for idx, survey_row in still_unmatched.iterrows():
+            survey_start = survey_row['start_time_unix']
+            
+            # Find the closest conversation by time
+            best_match_id = None
+            best_match_diff = float('inf')
+            
+            for conv_id, conv_time in all_conv_times.items():
+                time_diff = abs(survey_start - conv_time)
+                if time_diff <= TIMESTAMP_TOLERANCE and time_diff < best_match_diff:
+                    best_match_id = conv_id
+                    best_match_diff = time_diff
+            
+            # If we found a match, update the result
+            if best_match_id:
+                result_data.at[idx, 'conversation_id'] = best_match_id
+                result_data.at[idx, 'create_time'] = all_conv_times[best_match_id]
+                
+                # Get first user message to try deriving an ID
+                first_message = extract_first_user_message(best_match_id, conv_data)
+                stated_id = extract_user_id_from_message(first_message)
+                
+                # Generate a UserID if not available from message
+                if stated_id:
+                    user_id = stated_id
+                else:
+                    # Create ID from survey timestamp
+                    dt = datetime.fromtimestamp(survey_start)
+                    user_id = f"{dt.day:02d}{dt.month:02d}{dt.year}_{dt.hour:02d}{dt.minute:02d}_Derived"
+                
+                result_data.at[idx, 'UserID'] = user_id
+                result_data.at[idx, 'MatchMethod'] = 'Timestamp'
+                
+                # Remove the matched conversation ID
+                del all_conv_times[best_match_id]
+                if best_match_id in unmatched_conv_ids:
+                    unmatched_conv_ids.remove(best_match_id)
+                    
+                time_matches += 1
     
     logger.info(f"Matched {time_matches} responses by timestamp")
     return result_data
@@ -510,7 +612,12 @@ def clean_dataset(data: pd.DataFrame) -> pd.DataFrame:
     
     # Calculate additional metrics
     if 'UserMessageCount' in cleaned_data.columns and 'AIMessageCount' in cleaned_data.columns:
-        cleaned_data['MessageRatio'] = cleaned_data['UserMessageCount'] / cleaned_data['AIMessageCount']
+        # Avoid division by zero
+        cleaned_data['MessageRatio'] = cleaned_data.apply(
+            lambda row: row['UserMessageCount'] / row['AIMessageCount'] 
+            if row['AIMessageCount'] > 0 else 0, 
+            axis=1
+        )
     
     if 'ConversationDuration' in cleaned_data.columns:
         # Convert duration to minutes for better readability
@@ -533,7 +640,91 @@ def clean_dataset(data: pd.DataFrame) -> pd.DataFrame:
         
         cleaned_data['treatment_clean'] = cleaned_data['treatment'].map(treatment_map)
     
+    # Clean up nullable fields
+    for col in cleaned_data.columns:
+        # Remove null indicator strings like 'nan' or 'None' that might be in string columns
+        if cleaned_data[col].dtype == 'object':
+            cleaned_data[col] = cleaned_data[col].apply(
+                lambda x: None if pd.isna(x) or str(x).lower() in ['nan', 'none', ''] else x
+            )
+    
+    # Add a match quality score based on timestamp difference
+    if 'start_time_unix' in cleaned_data.columns and 'create_time' in cleaned_data.columns:
+        cleaned_data['timestamp_diff'] = cleaned_data.apply(
+            lambda row: abs(row['start_time_unix'] - float(row['create_time'])) 
+            if not pd.isna(row['create_time']) else None,
+            axis=1
+        )
+        
+        # Convert to minutes for better readability
+        cleaned_data['timestamp_diff_minutes'] = cleaned_data['timestamp_diff'] / 60
+        
+        # Calculate a match confidence score (0-100)
+        cleaned_data['match_confidence'] = cleaned_data.apply(
+            lambda row: 100 - min(99, (row['timestamp_diff'] / (TIMESTAMP_TOLERANCE / 10)))
+            if not pd.isna(row['timestamp_diff']) else 0,
+            axis=1
+        )
+        
+        # Round to 2 decimal places
+        cleaned_data['match_confidence'] = cleaned_data['match_confidence'].apply(
+            lambda x: round(max(0, x), 2) if not pd.isna(x) else 0
+        )
+    
     return cleaned_data
+
+
+def create_unmatched_conversations_file(conv_data: pd.DataFrame, matched_conv_ids: list) -> None:
+    """
+    Create a CSV file with unmatched conversations for reference.
+    
+    Args:
+        conv_data: DataFrame with all conversation data
+        matched_conv_ids: List of conversation IDs that were matched
+    """
+    # Get unique conversation IDs
+    unique_conv_ids = conv_data['conversation_id'].unique().tolist()
+    
+    # Find unmatched conversation IDs
+    unmatched_conv_ids = [conv_id for conv_id in unique_conv_ids if conv_id not in matched_conv_ids]
+    
+    if not unmatched_conv_ids:
+        logger.info("All conversations have been matched")
+        return
+        
+    # Create a dataframe with unmatched conversations
+    unmatched_conv_data = []
+    for conv_id in unmatched_conv_ids:
+        conv_msgs = conv_data[conv_data['conversation_id'] == conv_id]
+        if not conv_msgs.empty:
+            first_msg = conv_msgs.iloc[0]
+            create_time = first_msg['create_time']
+            
+            # Try to extract useful information
+            user_msgs = conv_msgs[conv_msgs['author_role'] == 'user']
+            first_user_msg = ""
+            if not user_msgs.empty:
+                content = user_msgs.iloc[0]['message_content']
+                if content.startswith("['") and content.endswith("']"):
+                    first_user_msg = content[2:-2]
+                else:
+                    first_user_msg = content
+            
+            # Add to the list
+            unmatched_conv_data.append({
+                'conversation_id': conv_id,
+                'create_time': create_time,
+                'create_date': datetime.fromtimestamp(float(create_time)).strftime('%Y-%m-%d %H:%M'),
+                'first_user_message': first_user_msg
+            })
+    
+    # Create dataframe and save
+    if unmatched_conv_data:
+        unmatched_df = pd.DataFrame(unmatched_conv_data)
+        unmatched_df = unmatched_df.sort_values('create_time')
+        output_path = OUTPUT_PATH.replace('.csv', '_unmatched_conversations.csv')
+        unmatched_df.to_csv(output_path, index=False)
+        logger.info(f"Saved {len(unmatched_df)} unmatched conversations to {output_path}")
 
 
 def main():
@@ -590,17 +781,35 @@ def main():
         id_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'ExplicitID'])
         time_matches = len(cleaned_data[cleaned_data['MatchMethod'] == 'Timestamp'])
         unmatched = len(cleaned_data[cleaned_data['MatchMethod'].isna()])
+        total_matched = id_matches + time_matches
         
         logger.info(f"Match summary:")
         logger.info(f"  - Explicit ID matches: {id_matches}")
         logger.info(f"  - Timestamp matches: {time_matches}")
         logger.info(f"  - Unmatched: {unmatched}")
-        logger.info(f"  - Match rate: {((id_matches + time_matches) / len(cleaned_data)) * 100:.2f}%")
+        logger.info(f"  - Match rate: {(total_matched / len(cleaned_data)) * 100:.2f}%")
         
         # Create a CSV with just the matched records for easier analysis
         matched_data = cleaned_data[cleaned_data['HasMatch'] == True].copy()
         matched_data.to_csv(OUTPUT_PATH.replace('.csv', '_matched_only.csv'), index=False)
         logger.info(f"Saved {len(matched_data)} matched records to {OUTPUT_PATH.replace('.csv', '_matched_only.csv')}")
+        
+        # Create a file with unmatched conversations
+        matched_conv_ids = matched_data['conversation_id'].tolist()
+        create_unmatched_conversations_file(conv_data, matched_conv_ids)
+        
+        # Show match confidence statistics if available
+        if 'match_confidence' in matched_data.columns:
+            avg_confidence = matched_data['match_confidence'].mean()
+            high_conf = len(matched_data[matched_data['match_confidence'] >= 80])
+            med_conf = len(matched_data[(matched_data['match_confidence'] >= 50) & (matched_data['match_confidence'] < 80)])
+            low_conf = len(matched_data[matched_data['match_confidence'] < 50])
+            
+            logger.info(f"Match confidence statistics:")
+            logger.info(f"  - Average confidence: {avg_confidence:.2f}%")
+            logger.info(f"  - High confidence (80%+): {high_conf} ({high_conf/total_matched*100:.1f}%)")
+            logger.info(f"  - Medium confidence (50-80%): {med_conf} ({med_conf/total_matched*100:.1f}%)")
+            logger.info(f"  - Low confidence (<50%): {low_conf} ({low_conf/total_matched*100:.1f}%)")
         
     except Exception as e:
         logger.error(f"Error in alignment process: {str(e)}")
