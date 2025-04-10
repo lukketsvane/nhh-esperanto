@@ -1,38 +1,6 @@
-# NHH Esperanto - Data Explorer
+# NHH Esperanto Dataset - Data Processing & Explorer
 
-A Next.js application for exploring, visualizing, and analyzing conversation data from the NHH Esperanto experiment.
-
-## Overview
-
-This application provides a comprehensive interface for researchers to:
-
-- View and filter tabular data
-- Create visualizations including bar charts, box plots, histograms, and scatter plots
-- Generate statistical summaries and frequency distributions
-- Export data for further analysis
-
-## Features
-
-### Data Table View
-- View records with pagination
-- Filter by any column
-- Toggle visibility of columns
-- Export filtered data as CSV
-
-### Data Visualization
-- Multiple chart types:
-  - Box plots: Show distributions with quartiles
-  - Bar charts: Compare means across categories
-  - Histograms: Visualize value distributions
-  - Scatter plots: Explore relationships between variables
-- Group data by categories
-- Download chart images
-
-### Data Summary
-- Column statistics (count, unique values, min/max, mean, median, std dev)
-- Grouped summary statistics by any categorical variable
-- Frequency distributions
-- Missing value analysis
+This repository contains a dataset from an Esperanto language learning experiment with AI assistance, along with tools for processing and exploring the data.
 
 ## Dataset Overview
 
@@ -44,22 +12,97 @@ The dataset comprises information from language learning experiments where parti
 
 For each participant, the dataset includes demographic information, language learning performance metrics, and conversation data with AI assistants.
 
-## Technical Details
+## Data Processing Pipeline
 
-### Tech Stack
+### 1. Data Collection
+
+The raw data consists of two primary sources:
+- **Survey data**: Participant demographics and test scores collected via Qualtrics
+- **Conversation data**: Logs of participant interactions with AI assistants
+
+### 2. Data Merging
+
+The `merge_datasets.py` script performs the following steps:
+- Loads survey data from `iverdata.csv`
+- Loads conversation data from `unified_conversation_data.csv`
+- Matches participants between datasets using:
+  - Participant IDs where available
+  - Session IDs and timestamps where direct ID matching isn't possible
+- Creates a unified dataset with both survey responses and conversation metrics
+
+### 3. Data Enhancement
+
+The `enhance_dataset.py` script improves the dataset quality through:
+1. **Data Cleaning**
+   - Normalization of categorical variables
+   - Treatment of missing values
+   - Conversion of data types
+   - Standardization of Esperanto text
+
+2. **Feature Engineering**
+   - Creating derived metrics:
+     - `ConversationDurationMinutes`: Duration in minutes
+     - `MessageRatio`: Ratio of user to AI messages
+     - `AverageMessageLength`: Characters per message
+
+3. **Confidence Scoring**
+   - Added `match_confidence` to indicate certainty of user identification
+   - Flagged potentially problematic matches
+
+4. **Data Stratification**
+   - Aligned data by treatment group
+   - Computed treatment effects
+
+### 4. Output Datasets
+
+The processing pipeline produces several output files:
+
+1. **Unified Datasets**:
+   - `aligned_unified_conversation_data.csv`: Complete dataset with all matched records
+   - `aligned_unified_conversation_data_matched_only.csv`: Only high-confidence matches
+   - `aligned_unified_conversation_data_unmatched_conversations.csv`: Conversations without participant matches
+
+2. **Normalized Relational Data**:
+   - `nhh_esperanto_participants.csv`: Participant demographic data
+   - `nhh_esperanto_conversations.csv`: Conversation metadata
+   - `nhh_esperanto_messages.csv`: Individual messages
+   - `nhh_esperanto_data_dictionary.csv`: Data dictionary explaining all variables
+
+## Key Variables
+
+### Participant Variables
+- `final_id`: Participant ID
+- `treatment_clean`: Treatment group (Control, AI-assisted, AI-guided)
+- `gender`: Participant gender
+- `highgpa`: Binary indicator for high GPA
+- `testscore`: Score on Esperanto language test
+- `index_confidence`, `index_motivation`, `index_complement`, `index_cheating`: Psychological indices
+
+### Conversation Metrics
+- `MessageCount`: Total number of messages exchanged
+- `UserMessageCount`: Number of messages from the user
+- `AIMessageCount`: Number of messages from the AI
+- `ConversationDurationMinutes`: Duration of conversation
+- `AverageUserMessageLength`: Average characters per user message
+- `AverageAIMessageLength`: Average characters per AI message
+
+## Data Explorer Application
+
+The repository includes a Next.js application for exploring and visualizing the dataset:
+
+### Features
+- **Data Table View**: Browse and filter records
+- **Visualization Tools**: Create bar charts, box plots, histograms, and scatter plots
+- **Summary Statistics**: View distributions and relationships between variables
+- **Export Functionality**: Download filtered data or charts
+
+### Technical Details
 - **Framework**: Next.js 15
 - **UI Library**: React 19
 - **Styling**: Tailwind CSS
 - **Components**: shadcn/ui
 - **Charts**: Chart.js with BoxPlot extension
 - **Data Parsing**: Papa Parse
-
-### Data Processing
-The application loads CSV data from a GitHub repository URL and processes it client-side:
-- CSV parsing with Papa Parse
-- Data cleaning and type normalization
-- Treatment group categorization
-- Statistical calculations
 
 ## Getting Started
 
@@ -73,50 +116,25 @@ The application loads CSV data from a GitHub repository URL and processes it cli
    ```
    npm install --legacy-peer-deps
    ```
-   or
-   ```
-   pnpm install --no-strict-peer-dependencies
-   ```
 
 3. **Run the development server**
    ```
    npm run dev
    ```
-   or
-   ```
-   pnpm dev
-   ```
 
 4. **Open your browser**
-   
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Data Files
+## Data Processing Scripts
 
-The primary dataset is loaded from:
-`aligned_unified_conversation_data.csv`
+If you want to re-run the data processing steps:
 
-Key variables include:
-- `final_id`: Participant ID
-- `treatment_clean`: Treatment group (Control, AI-assisted, AI-guided)
-- `gender`: Participant gender
-- `highgpa`: Binary indicator for high GPA
-- `testscore`: Score on Esperanto language test
-- `index_confidence`, `index_motivation`, `index_complement`, `index_cheating`: Psychological indices
-- `MessageCount`: Total messages in conversation
-- `ConversationDurationMinutes`: Duration of conversation
+```python
+# Merge datasets
+python merge_datasets.py
 
-## Deployment
-
-The application can be built for production using:
-```
-npm run build
-npm start
-```
-or
-```
-pnpm build
-pnpm start
+# Enhance and clean data
+python enhance_dataset.py
 ```
 
 ## License
