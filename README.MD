@@ -5,7 +5,7 @@ This repository contains a dataset from an Esperanto language learning experimen
 ## Repository Structure
 
 - **Root Directory**: Contains Python scripts, datasets, and documentation
-- **`/explorer`**: Next.js application for interactive data exploration and visualization
+- **`/explorer-clean.tar.gz`**: Archive containing the Next.js application code for interactive data exploration
 - **`/old`**: Archive of original data files
 
 ## Dataset Overview
@@ -94,7 +94,7 @@ The processing pipeline produces several output files:
 
 ## Data Explorer Application
 
-The repository includes a Next.js application in the `/explorer` directory for exploring and visualizing the dataset:
+The repository includes a Next.js application archive (`explorer-clean.tar.gz`) for exploring and visualizing the dataset:
 
 ### Features
 - **Data Table View**: Browse and filter records
@@ -102,15 +102,16 @@ The repository includes a Next.js application in the `/explorer` directory for e
 - **Summary Statistics**: View distributions and relationships between variables
 - **Export Functionality**: Download filtered data or charts
 
-### Running the Explorer
+### Setting Up the Explorer
 
-1. **Navigate to the explorer directory**
+1. **Extract the archive**
    ```
-   cd explorer
+   tar -xzvf explorer-clean.tar.gz -C explorer
    ```
 
 2. **Install dependencies**
    ```
+   cd explorer
    npm install --legacy-peer-deps
    ```
 
@@ -118,8 +119,6 @@ The repository includes a Next.js application in the `/explorer` directory for e
    ```
    npm run dev
    ```
-
-See the `/explorer/README.md` file for more details on the application.
 
 ## Data Processing Scripts
 
