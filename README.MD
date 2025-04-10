@@ -12,12 +12,12 @@ The data is available in both CSV and JSON formats.
 
 ## Dataset Overview
 
-*   **Total Survey Responses:** [Number, e.g., 425 based on your description]
-*   **Total Conversations:** 425
+*   **Total Survey Responses:** 604
+*   **Total Conversations:** 376
 *   **Total Messages:** 10,158
-*   **Unique Participants:** [Number, e.g., ~21-30 based on context]
-*   **Data Collection Period:** [Start Date, e.g., 28 Nov 2024] to [End Date, e.g., 05 Dec 2024]
-*   **Time Range (UNIX):** `1732796573.54373` to `1733512640.880426`
+*   **Unique Participants:** ~21-30
+*   **Data Collection Period:** 28 Nov 2024 to 05 Dec 2024
+*   **Time Range (UNIX):** `1732762620.0` to `1733512640.880426`
 
 ## Data Sources
 
@@ -56,7 +56,7 @@ The primary output is an enriched version of `iverdata.csv`, linking survey resp
 *   [Download Full Conversation Data (JSON)](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_conversation_data.json)
 *   [Download Survey Data (`iverdata.csv`)](https://github.com/lukketsvane/nhh-esperanto/raw/main/iverdata.csv)
 *   [Download Session Schedule (`schedule_sessions.csv`)](https://github.com/lukketsvane/nhh-esperanto/raw/main/schedule_sessions.csv)
-*   **[Recommended] Download Merged & Enriched Survey Data (CSV):** [Link to the final merged CSV file once created]
+*   **[Recommended] Download Merged & Enriched Survey Data (CSV):** [Download Aligned Data](https://github.com/lukketsvane/nhh-esperanto/raw/main/aligned_unified_conversation_data.csv)
 
 ### Samples (Conversation Data Only)
 *   **Sample of 5 Conversations**:
@@ -69,14 +69,25 @@ The primary output is an enriched version of `iverdata.csv`, linking survey resp
     *   [CSV](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_100.csv)
     *   [JSON](https://github.com/lukketsvane/nhh-esperanto/raw/main/unified_sample_100.json)
 
+
 ## Data Processing and Matching
 
-The unified dataset was created by merging the data sources based on participant identifiers and timestamps.
+The unified dataset was created by merging the data sources based on participant identifiers and timestamps. A Python script (`merge_datasets.py`) was used to implement the matching algorithm.
 
-1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available.
-2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window was used to account for minor timing discrepancies. *Note: This matching assumes participants started their survey and conversation around the same time.*
-3.  **Session Mapping:** The `schedule_sessions.csv` file was used to map each participant's start time to a specific experimental session number.
-4.  **Consolidation:** The final dataset links each survey response to its corresponding session, conversation ID, and extracted/inferred UserID.
+1.  **UserID Extraction:** Participant IDs (typically in the format `DDMMYYYY_HHMM_Participant#`) were extracted from the initial user messages within the conversation logs where available. The script found user IDs mentioned in 22 of the conversations.
+2.  **Timestamp Matching:** For participants who did not explicitly state their ID in the chat, survey responses (`iverdata.csv`) were matched to conversations (`unified_conversation_data.csv`) based on the proximity of the survey `StartDate` and the conversation `create_time`. A tolerance window of 5 minutes was used to account for minor timing discrepancies. *Note: This matching assumes participants started their survey and conversation around the same time.*
+3.  **Session Mapping:** The `schedule_sessions.csv` file was generated to map each participant's start time to a specific experimental session number.
+4.  **Conversation Metrics:** For each matched conversation, metrics were calculated including message counts, average message lengths, and conversation duration.
+5.  **Consolidation:** The final dataset (`aligned_unified_conversation_data.csv`) links each survey response to its corresponding session, conversation ID, extracted/inferred UserID, and includes the full text of the conversation.
+
+**Matching Results:**
+- Total survey responses: 604
+- Matches via explicit ID: 6
+- Matches via timestamp: 18
+- Total matched: 24 (4% match rate)
+- Unmatched: 580
+
+The relatively low match rate may be due to incomplete data, participants not following ID protocols, or technical issues during data collection.
 
 ## Usage Notes
 
