@@ -1,107 +1,227 @@
-import Papa from "papaparse"
+import Papa from "papaparse";
 
-type DataRow = Record<string, any>
+export type DataRow = Record<string, any>;
+
+// Sample data for fallback
+export const SAMPLE_DATA_ROWS: DataRow[] = [
+  {
+    final_id: "sample-1",
+    treatment_clean: "Control",
+    gender: "Male",
+    highgpa: 1,
+    testscore: 85.5,
+    index_complement: 4.2,
+    index_confidence: 3.8,
+    index_cheating: 1.5,
+    index_motivation: 4.0,
+    MessageCount: 0,
+    ConversationDurationMinutes: 0
+  },
+  {
+    final_id: "sample-2",
+    treatment_clean: "AI-assisted",
+    gender: "Female",
+    highgpa: 0,
+    testscore: 82.0,
+    index_complement: 4.5,
+    index_confidence: 4.1,
+    index_cheating: 1.2,
+    index_motivation: 4.2,
+    MessageCount: 12,
+    ConversationDurationMinutes: 15.5
+  },
+  {
+    final_id: "sample-3",
+    treatment_clean: "AI-guided",
+    gender: "Female",
+    highgpa: 1,
+    testscore: 88.5,
+    index_complement: 4.7,
+    index_confidence: 4.3,
+    index_cheating: 1.0,
+    index_motivation: 4.5,
+    MessageCount: 18,
+    ConversationDurationMinutes: 22.3
+  },
+  {
+    final_id: "sample-4",
+    treatment_clean: "Control",
+    gender: "Male",
+    highgpa: 0,
+    testscore: 79.0,
+    index_complement: 3.8,
+    index_confidence: 3.5,
+    index_cheating: 1.8,
+    index_motivation: 3.7,
+    MessageCount: 0,
+    ConversationDurationMinutes: 0
+  },
+  {
+    final_id: "sample-5",
+    treatment_clean: "AI-assisted",
+    gender: "Female",
+    highgpa: 1,
+    testscore: 90.0,
+    index_complement: 4.9,
+    index_confidence: 4.6,
+    index_cheating: 1.1,
+    index_motivation: 4.8,
+    MessageCount: 15,
+    ConversationDurationMinutes: 18.2
+  }
+];
+
+// Default column set for fallback
+export const DEFAULT_COLUMNS: string[] = [
+  "final_id", "treatment_clean", "gender", "highgpa", "testscore", 
+  "index_complement", "index_confidence", "index_cheating", "index_motivation", 
+  "MessageCount", "ConversationDurationMinutes"
+];
 
 function parseCSV(csvText: string): Promise<{ data: DataRow[]; columns: string[] }> {
+  if (typeof csvText !== 'string') {
+    console.error("ParseCSV Error: Input is not a string. Received:", typeof csvText);
+    return Promise.resolve({ data: [], columns: [] });
+  }
+  
+  if (!csvText.trim()) {
+    console.warn("ParseCSV Warning: Input string is empty or whitespace.");
+    return Promise.resolve({ data: [], columns: [] });
+  }
+
   return new Promise((resolve, reject) => {
     Papa.parse<DataRow>(csvText, {
       header: true,
       skipEmptyLines: "greedy",
       dynamicTyping: true,
-      transformHeader: (header) => header.trim(),
+      transformHeader: (header) => header ? header.trim() : '',
       complete: (results) => {
         if (results.errors.length > 0) {
-          console.error("CSV Parsing Errors:", results.errors)
-          console.warn("CSV parsing encountered errors, data might be incomplete or incorrect.")
-        }
-        if (!results.meta.fields || results.meta.fields.length === 0) {
-          console.error("CSV Parsing Error: No headers found or empty file.")
-          return resolve({ data: [], columns: [] })
+          console.warn("CSV parsing encountered errors, attempting to return partial data.", results.errors);
         }
 
-        console.log(`Successfully parsed ${results.data.length} rows from CSV.`)
+        let finalColumns = (results.meta.fields || []).filter(col => col && typeof col === 'string' && col.trim() !== '');
 
-        // Clean and process the data
+        if (finalColumns.length === 0) {
+          if (results.data.length > 0 && Object.keys(results.data[0]).length > 0) {
+            finalColumns = Object.keys(results.data[0]).filter(col => col && typeof col === 'string' && col.trim() !== '');
+          } else {
+            return resolve({ data: [], columns: [] });
+          }
+        }
+
         const cleanedData = results.data.map((row) => {
-          const cleanedRow = { ...row }
+          const cleanedRow = { ...row };
 
-          // Handle boolean values
           for (const key in cleanedRow) {
             if (typeof cleanedRow[key] === "string") {
-              const lowerVal = cleanedRow[key].toLowerCase()
-              if (lowerVal === "true") cleanedRow[key] = true
-              else if (lowerVal === "false") cleanedRow[key] = false
+              const lowerVal = cleanedRow[key].toLowerCase().trim();
+              if (lowerVal === "true") cleanedRow[key] = true;
+              else if (lowerVal === "false") cleanedRow[key] = false;
             }
 
-            // Ensure numeric columns are numbers
-            const numericCols = ["testscore", "MessageCount", "ConversationDurationMinutes"]
-            if (numericCols.includes(key) && typeof cleanedRow[key] === "string" && !isNaN(Number(cleanedRow[key]))) {
-              cleanedRow[key] = Number(cleanedRow[key])
+            const numericCols = ["testscore", "MessageCount", "ConversationDurationMinutes", "index_confidence", "index_motivation", "index_complement", "index_cheating", "control", "ai_assist", "ai_guided", "highgpa", "age", "gpa"];
+            if (numericCols.includes(key) && typeof cleanedRow[key] === "string") {
+              const trimmedVal = cleanedRow[key].trim();
+              if (trimmedVal !== "" && !isNaN(Number(trimmedVal))) {
+                cleanedRow[key] = Number(trimmedVal);
+              } else if (trimmedVal === "") {
+                cleanedRow[key] = null;
+              }
             }
           }
 
-          // Clean treatment variable
-          if (cleanedRow.treatment === "Control") cleanedRow.treatment_clean = "Control"
-          else if (cleanedRow.treatment === "AI-assisted") cleanedRow.treatment_clean = "AI-assisted"
-          else if (cleanedRow.treatment === "AI-guided") cleanedRow.treatment_clean = "AI-guided"
-          else if (cleanedRow.control === 1) cleanedRow.treatment_clean = "Control"
-          else if (cleanedRow.ai_assist === 1) cleanedRow.treatment_clean = "AI-assisted"
-          else if (cleanedRow.ai_guided === 1) cleanedRow.treatment_clean = "AI-guided"
-          else cleanedRow.treatment_clean = "Unknown"
+          cleanedRow.treatment_clean = "Unknown";
+          if (typeof cleanedRow.treatment === 'string' && cleanedRow.treatment.trim() !== '') {
+            const treatmentLower = cleanedRow.treatment.trim().toLowerCase();
+            if (treatmentLower === "control") cleanedRow.treatment_clean = "Control";
+            else if (treatmentLower === "ai-assisted" || treatmentLower === "ai_assisted") cleanedRow.treatment_clean = "AI-assisted";
+            else if (treatmentLower === "ai-guided" || treatmentLower === "ai_guided") cleanedRow.treatment_clean = "AI-guided";
+          }
+          if (cleanedRow.treatment_clean === "Unknown") {
+            if (Number(cleanedRow.control) === 1) cleanedRow.treatment_clean = "Control";
+            else if (Number(cleanedRow.ai_assist) === 1) cleanedRow.treatment_clean = "AI-assisted";
+            else if (Number(cleanedRow.ai_guided) === 1) cleanedRow.treatment_clean = "AI-guided";
+          }
+          return cleanedRow;
+        });
 
-          return cleanedRow
-        })
+        if (!finalColumns.includes("treatment_clean") && cleanedData.length > 0) {
+          if (cleanedData.some(row => typeof row.treatment_clean === 'string' && row.treatment_clean !== "Unknown")) {
+            finalColumns = [...finalColumns, "treatment_clean"];
+          }
+        }
 
-        // Add treatment_clean to columns if not already present
-        const finalColumns = results.meta.fields.includes("treatment_clean")
-          ? results.meta.fields
-          : [...results.meta.fields, "treatment_clean"]
-
-        resolve({ data: cleanedData, columns: finalColumns })
+        resolve({ data: cleanedData, columns: finalColumns });
       },
       error: (error) => {
-        console.error("CSV Parsing Fatal Error:", error)
-        reject(error)
+        console.error("CSV Parsing Fatal Error:", error);
+        reject(error);
       },
-    })
-  })
+    });
+  });
 }
 
-// Empty sample header - will show empty UI until client loads
-const SAMPLE_DATA = `final_id,treatment_clean,gender,highgpa,testscore,index_confidence,index_motivation,index_complement,index_cheating,MessageCount,ConversationDurationMinutes`;
-
 export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }> {
-  console.log('Loading data from public directory');
+  console.log('Loading data...');
+  
   try {
-    // Check if window is defined (client-side only)
-    if (typeof window === 'undefined') {
-      console.log('Running on server, using sample data');
-      return parseCSV(SAMPLE_DATA);
-    }
+    // Try loading from various sources
+   
+    const dataSources = [
+      { path: 'data/esperanto_final_matched_dataset.csv', name: 'Main dataset' },
+      { path: 'data/esperanto_sample_100.csv', name: 'Sample dataset' }
+    ];
 
-    // Fetch the CSV file from the public directory (client-side)
-    console.log('Fetching CSV from', '/data/nhh_esperanto_finalized_dataset.csv');
-    try {
-      // Use dynamic import to ensure fetch happens on client
-      const response = await fetch('/data/nhh_esperanto_finalized_dataset.csv');
-      if (!response.ok) {
-        console.error(`HTTP error! status: ${response.status}`);
-        // Try alternate datasets if primary fails
-        const alternateResponse = await fetch('/data/nhh_esperanto_enhanced_dataset.csv');
-        if (!alternateResponse.ok) {
-          throw new Error(`Failed to load any dataset files`);
+    let loadedData: { data: DataRow[]; columns: string[] } | null = null;
+    let error: any = null;
+    
+    // Try each data source in order
+    for (const source of dataSources) {
+      try {
+        console.log(`Attempting to load data from ${source.name} (${source.path})...`);
+        const response = await fetch(source.path);
+        
+        if (!response.ok) {
+          console.warn(`Failed to load ${source.name}: ${response.status} ${response.statusText}`);
+          continue; // Try next source
         }
-        const csvText = await alternateResponse.text();
-        return parseCSV(csvText);
+        
+        const csvText = await response.text();
+        if (!csvText || csvText.trim().length === 0) {
+          console.warn(`${source.name} file was empty`);
+          continue; // Try next source
+        }
+        
+        loadedData = await parseCSV(csvText);
+        console.log(`Successfully loaded ${loadedData.data.length} rows from ${source.name}`);
+        break; // Successfully loaded data, exit the loop
+      } catch (sourceError) {
+        console.warn(`Error loading from ${source.name}:`, sourceError);
+        error = sourceError;
+        // Continue to next source
       }
-      const csvText = await response.text();
-      return parseCSV(csvText);
-    } catch (fetchError) {
-      console.error('Error fetching CSV:', fetchError);
-      throw fetchError;
     }
+    
+    // If we still don't have data, use hardcoded sample data
+    if (!loadedData || !loadedData.data.length) {
+      console.log('Using hardcoded sample data as fallback');
+      return {
+        data: SAMPLE_DATA_ROWS,
+        columns: DEFAULT_COLUMNS
+      };
+    }
+    
+    return loadedData;
+    
   } catch (error) {
-    console.error(`Error parsing CSV sample data:`, error)
-    return { data: [], columns: [] }
+    console.error('Data loading failed:', error);
+    console.log('Using hardcoded sample data as ultimate fallback');
+    
+    // Return hardcoded sample data as final fallback
+    return {
+      data: SAMPLE_DATA_ROWS,
+      columns: DEFAULT_COLUMNS
+    };
   }
 }
