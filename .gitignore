@@ -1,7 +1,13 @@
 # Dependencies
 node_modules/
+**/node_modules/
+**/node_modules/**/*
+*.node
 npm-debug.log
 yarn-error.log
 yarn-debug.log
 .pnp
 .pnp.js
+
+# Large binary files
+**/*.node
