@@ -166,53 +166,63 @@ export async function loadData(): Promise<{ data: DataRow[]; columns: string[] }
   console.log('Loading data...');
   
   try {
-    // Try loading from various sources
-   
-    const dataSources = [
-      { path: 'data/esperanto_final_matched_dataset.csv', name: 'Main dataset' },
-      { path: 'data/esperanto_sample_100.csv', name: 'Sample dataset' }
-    ];
-
-    let loadedData: { data: DataRow[]; columns: string[] } | null = null;
-    let error: any = null;
+    // On the client side, we need to use a different approach
+    // First check if we're in the browser
+    const isBrowser = typeof window !== 'undefined';
     
-    // Try each data source in order
-    for (const source of dataSources) {
-      try {
-        console.log(`Attempting to load data from ${source.name} (${source.path})...`);
-        const response = await fetch(source.path);
-        
-        if (!response.ok) {
-          console.warn(`Failed to load ${source.name}: ${response.status} ${response.statusText}`);
-          continue; // Try next source
+    if (isBrowser) {
+      // Browser-specific code using relative URLs
+      const dataSources = [
+        { path: './data/esperanto_final_matched_dataset.csv', name: 'Main dataset' },
+        { path: './data/esperanto_sample_100.csv', name: 'Sample dataset' }
+      ];
+      
+      let loadedData: { data: DataRow[]; columns: string[] } | null = null;
+      
+      // Try each data source in order
+      for (const source of dataSources) {
+        try {
+          console.log(`Attempting to load data from ${source.name} (${source.path})...`);
+          const response = await fetch(source.path);
+          
+          if (!response.ok) {
+            console.warn(`Failed to load ${source.name}: ${response.status} ${response.statusText}`);
+            continue; // Try next source
+          }
+          
+          const csvText = await response.text();
+          if (!csvText || csvText.trim().length === 0) {
+            console.warn(`${source.name} file was empty`);
+            continue; // Try next source
+          }
+          
+          loadedData = await parseCSV(csvText);
+          console.log(`Successfully loaded ${loadedData.data.length} rows from ${source.name}`);
+          break; // Successfully loaded data, exit the loop
+        } catch (sourceError) {
+          console.warn(`Error loading from ${source.name}:`, sourceError);
+          // Continue to next source
         }
-        
-        const csvText = await response.text();
-        if (!csvText || csvText.trim().length === 0) {
-          console.warn(`${source.name} file was empty`);
-          continue; // Try next source
-        }
-        
-        loadedData = await parseCSV(csvText);
-        console.log(`Successfully loaded ${loadedData.data.length} rows from ${source.name}`);
-        break; // Successfully loaded data, exit the loop
-      } catch (sourceError) {
-        console.warn(`Error loading from ${source.name}:`, sourceError);
-        error = sourceError;
-        // Continue to next source
       }
-    }
-    
-    // If we still don't have data, use hardcoded sample data
-    if (!loadedData || !loadedData.data.length) {
-      console.log('Using hardcoded sample data as fallback');
+      
+      // If we still don't have data, use hardcoded sample data
+      if (!loadedData || !loadedData.data.length) {
+        console.log('Using hardcoded sample data as client-side fallback');
+        return {
+          data: SAMPLE_DATA_ROWS,
+          columns: DEFAULT_COLUMNS
+        };
+      }
+      
+      return loadedData;
+    } else {
+      // We're in a server component - use hardcoded sample data
+      console.log('Server-side rendering, using sample data');
       return {
         data: SAMPLE_DATA_ROWS,
         columns: DEFAULT_COLUMNS
       };
     }
-    
-    return loadedData;
     
   } catch (error) {
     console.error('Data loading failed:', error);

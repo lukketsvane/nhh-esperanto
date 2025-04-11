@@ -1,7 +1,7 @@
-"use client";
 import { loadData } from '@/lib/data-loader';
-import { Info } from 'lucide-react';
 import DataExplorer from '@/components/data-explorer';
+import { Info } from 'lucide-react';
+
 export default async function Page() {
   try {
     const { data, columns } = await loadData();
