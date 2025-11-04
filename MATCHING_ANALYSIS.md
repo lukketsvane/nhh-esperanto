@@ -174,3 +174,51 @@ Of the matched conversations, approximately **18% of participants forgot to incl
 - **Explicit ID matches:** 8 (2.2%)
 - **Timestamp matches:** 361 (97.8%)
 - **Average match quality:** Good (with noted time differences expected in study design)
+
+## ID Regeneration and Correction (2025-11-04)
+
+### Updated UserID Distribution
+
+After regenerating all UserIDs with proper extraction from messages:
+
+| ID Source | Count | Percentage | Description |
+|-----------|-------|------------|-------------|
+| extracted_from_message | 291 | 78.9% | ID stated in conversation intro message |
+| generated_from_conv_time | 78 | 21.1% | Generated from conversation timestamp (forgot ID) |
+| Auto-generated | 235 | - | Unmatched surveys (no conversation) |
+
+### ID Extraction Improvements
+
+**365 UserIDs updated** with proper format:
+- **291 participants** had their ID properly extracted from conversation messages
+  - Format: `DDMMYYYY_HHMM_ParticipantN` (e.g., `03122024_1000_6`)
+  - Handles various formats: `DD/MM/YYYY HH:MM N`, `DDMMYYYY_HHMM_N`, etc.
+- **78 participants** who forgot their ID received generated IDs from conversation timestamp
+  - Format: `DDMMYYYY_HHMM` (e.g., `03122024_1247`)
+- **4 UserIDs unchanged** (already in correct format)
+
+### Quality Checks
+
+**Potential Mismatches Identified:**
+- **5 matches with >48 hour time difference** between survey and conversation
+  - These may represent participants who started survey on one day and did conversation much later
+  - All have explicit IDs in messages matching conversation time, suggesting legitimate late completions
+- **1 potential wrong match** (R_28hngkufX8Dcjgl):
+  - Conversation states "28/11_12:37_2" (Nov 28 at 12:37)
+  - Survey from Dec 3 (117.8 hours difference)
+  - ID timestamp perfectly matches conversation time (0.0h diff)
+  - Likely a participant who took the survey late or data entry issue
+
+### Files Updated
+
+1. `data/processed/nhh_esperanto_finalized_dataset.csv` - Main dataset with corrected UserIDs
+2. `data/processed/regenerated_ids_analysis.csv` - Detailed analysis of ID regeneration
+3. `data/processed/optimal_matches.csv` - Alternative optimal timestamp-based matching
+4. Backup created: `nhh_esperanto_finalized_dataset_backup_*.csv`
+
+### Scripts Created
+
+1. `scripts/match_missing_ids.py` - Enhanced matching for difficult cases
+2. `scripts/rematch_with_unix_time.py` - Comprehensive rematching with unix timestamps
+3. `scripts/regenerate_ids_and_verify.py` - ID extraction and verification
+4. `scripts/apply_corrected_ids.py` - Apply corrected IDs to dataset
