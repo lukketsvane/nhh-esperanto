@@ -1,0 +1,51 @@
+conversation_id,ResponseId,create_time,survey_start_time,time_diff_hours,first_user_message,extracted_id,match_method
+6751d8b0-f324-8001-81ee-5cc12822fc41,R_8SHOwbT0jtDFOHn,1733417137.176554,1733390160.0,7.49366015387906,['My ID is 05122024_1645_1'],,RecoveredTimestamp
+6751c400-b6c4-8001-b67f-859a87c2692f,R_2pYaB6oRGt1dja4,1733411840.942526,1733390160.0,6.022484035028351,['my id is 05122024_1517_1'],,RecoveredTimestamp
+67517f3b-39dc-8001-b00d-4aba7f609de4,R_21NLPLVg2U9O9K4,1733394235.622429,1733390160.0,1.1321173413594563,['esperanto quick lesson'],,RecoveredTimestamp
+67508449-da24-8001-8e65-69fc231fc334,R_2nVBzIvM3VBYoNb,1733329994.1406,1733307600.0,6.2205946111016805,['My ID is 04122024_16:15_1.'],0412202416151,RecoveredTimestamp
+675073d1-b904-8001-91a8-be0865d0f1de,R_2V9gkpEfP96hM6Z,1733325778.142805,1733307600.0,5.049484112527636,['My ID is 04122024_1500_1'],,RecoveredTimestamp
+675063f6-f51c-8001-86e1-3980abfcd04d,R_2GNYBaTQr1P83T7,1733321719.192413,1733307600.0,3.921997892525461,['my id is 04122024_1345_1'],,RecoveredTimestamp
+67505184-09ac-8001-a0a8-1651c3a57292,R_8wRCUHLBX327QsX,1733316996.30958,1733307600.0,2.610085994468795,['My ID is 04122024_1300_01'],,RecoveredTimestamp
+675029ba-a330-8001-b58c-a5591d5e2a18,R_2U3frWxT15wXgNs,1733306810.881212,1733307540.0,0.20253299666775598,['is esperanto a real language'],,RecoveredTimestamp
+674f413f-b8cc-8001-bfce-65f867969639,R_82cFAqoBFHXw4a5,1733247295.84501,1733221620.0,7.1321791694561645,"['This study is being conducted by researchers from the FAIR centre at NHH Norwegian School of Economics and Lund University.
+
+Payment and Rewards
+
+You are guaranteed payment for this study if you complete the entire study. You can earn additional rewards depending on your performance. 
+
+The payments are as follows:
+- GBP 5 for completing the study
+- GBP 7 for correctly answering at least 20 out of over 50 practice questions
+- GBP 1 per correct answer in the test (maximum amount GBP 15)
+
+The maximum payment you can earn in this study is GBP 27.
+
+Guidelines
+
+We encourage you to try to answer all questions accurately and truthfully. This study is confidential and will only be used for research purposes. This study has been approved by an institutional review board. You can email the research team at siri.isaksson@nhh.no if you have any queries about this study.
+
+Keep in mind:
+
+- It takes about 15 minutes to go carefully over the lecture.
+- You will be able to go back and forth through the different sections of the lecture using the Table of Contents button.
+- The time allotted for practice questions is 20 minutes.
+- You will be asked to go to a ""wait screen"" once the 35 minutes for the lecture and practice questions are up.
+
+Consent
+
+By participating in this study you agree to the usage of your anonymised information and actions within the survey for research purposes. If you do not agree to participate, please raise your hand and tell the lab coordinator.']",,RecoveredTimestamp
+674f0355-8900-8001-91af-68750c07f9e5,R_8Nm1yRtY7vKjQYY,1733231445.75742,1733221500.0,2.7627103944619495,['is in esperando'],,RecoveredTimestamp
+674efe79-840c-8001-90d5-887c4d79676c,R_2LnFUscidwlFx60,1733230201.827388,1733221500.0,2.4171742744578255,['amikoj meaning from espanton'],,RecoveredTimestamp
+674f481d-4fd8-8001-9778-b89ea4a08db9,R_8FlH5hFoylOlnUl,1733249053.531452,1733221500.0,7.653758736650149,['My ID is 03/12/2024_18:04_1'],0312202418041,RecoveredTimestamp
+674f1596-5170-8001-a641-2b53debd296a,R_81nL4SVb2Nf89tX,1733236118.587921,1733221500.0,4.0607188669178225,"['wcorrect or not:La granda knabo estas juna.
+
+Tom estas multe interesa.
+
+La knabinoj lernas rapidej.']",,RecoveredTimestamp
+674f3266-1208-8001-8790-f92390f883fd,R_8c0j4WjB7aVOuJ3,1733243494.272403,1733221500.0,6.10952011194494,['masculine'],,RecoveredTimestamp
+674f2301-a09c-8001-8993-73e9955a02fc,R_862TqU5PmKaQTk1,1733239553.816696,1733221500.0,5.0149490822023814,['My ID is 01122024_1500_11'],,RecoveredTimestamp
+674f0cbd-e4a0-8001-a29a-617d28694669,R_8LQpYh0yLIx9SzT,1733233854.181947,1733221500.0,3.4317172074980204,['what is esperanto'],,RecoveredTimestamp
+674eda35-0a30-8001-8cac-9c56805f22e0,R_2B1b8VD2tv6L8hb,1733220917.483237,1733221500.0,0.16181021193663278,['teach me esperamento'],,RecoveredTimestamp
+674d880c-90c8-8001-ad79-3208e14e8928,R_2rOM9wY7Br7zc11,1733134348.832335,1733122680.0,3.241342315276464,['hello'],,RecoveredTimestamp
+674da645-4518-8001-9cef-a87cd1b4a1f0,R_87VUvGxjk4fDIkx,1733142085.650279,1733112900.0,8.10712507751253,['My ID is 20471918_1221_1'],,RecoveredTimestamp
+674861bb-e28c-8001-b7f0-443332f372a4,R_8gjtu8K99bXRioh,1732796860.14173,1732770600.0,7.294483813908365,['28112024_1200_1'],,RecoveredTimestamp
