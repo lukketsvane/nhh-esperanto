@@ -2,27 +2,54 @@
 
 This repository contains a dataset and analysis tools from an experiment on Esperanto language learning with AI assistance.
 
+## 🎉 Data Recovery Success
+
+**Major Achievement**: Successfully recovered 361 participants who forgot to state their ID in the ChatGPT conversation!
+
+- **Total surveys**: 604
+- **Successfully matched**: 389 (64.4%)
+- **Participants who forgot their ID**: 361 (recovered via timestamp matching!)
+- **Additional recovered conversations**: 20 from old data exports
+- **Match success rate**: 98.0% of all available conversations
+
+See [FINAL_MATCHING_REPORT.md](FINAL_MATCHING_REPORT.md) for complete details.
+
 ## Repository Structure
 
 ```
 nhh-esperanto/
 ├── data/
-│   ├── raw/              # Raw input data files
-│   │   ├── iverdata.csv  # Survey responses
-│   │   └── unified_conversation_data.csv  # Conversation logs
+│   ├── raw/                      # Raw input data files
+│   │   ├── iverdata.csv         # Survey responses (604)
+│   │   └── unified_conversation_data_complete.csv  # All conversations (397)
 │   │
-│   └── processed/        # Processed and enhanced datasets
-│       ├── aligned_unified_conversation_data*.csv  # Matched datasets
-│       └── nhh_esperanto_*.csv  # Enhanced analysis datasets
+│   ├── processed/                # Processed and matched datasets
+│   │   ├── nhh_esperanto_finalized_dataset.csv  # 🔑 MAIN DATASET (use this!)
+│   │   ├── nhh_esperanto_participants.csv       # Participant demographics
+│   │   ├── nhh_esperanto_conversations.csv      # Conversation metadata
+│   │   ├── nhh_esperanto_messages.csv           # Individual messages
+│   │   ├── recovered_conversation_messages.csv  # Recovered data
+│   │   ├── recovered_matches.csv                # Recovery match details
+│   │   ├── backups/             # Dataset backups
+│   │   └── intermediate/        # Intermediate processing outputs
+│   │
+│   └── old/                      # Archive of historical data exports
+│       └── Unified_CSN_Data_-_16-12-2024.csv  # Source of recovered data
 │
-├── scripts/              # Data processing scripts
-│   ├── merge_datasets.py  # Merges survey and conversation data
-│   └── enhance_dataset.py # Enhances the dataset for analysis
+├── scripts/                      # Data processing and recovery scripts
+│   ├── merge_datasets.py        # Merges survey and conversation data
+│   ├── enhance_dataset.py       # Enhances dataset for analysis
+│   ├── regenerate_ids_and_verify.py  # ⭐ Extracts/generates IDs
+│   ├── extract_using_ast.py     # ⭐ Recovers data from CSN file
+│   ├── match_recovered_conversations.py  # Matches recovered data
+│   └── README.md                # Complete scripts documentation
 │
-├── explorer/             # Data exploration application (Next.js)
-│   └── explorer-clean.tar.gz  # Archived code for the explorer app
+├── explorer/                     # Data exploration application (Next.js)
+│   └── explorer-clean.tar.gz    # Archived code for the explorer app
 │
-└── old/                  # Archive of original data files
+├── FINAL_MATCHING_REPORT.md     # 📊 Comprehensive recovery report
+├── DATA_RECOVERY_SUMMARY.md     # Recovery process summary
+└── MATCHING_ANALYSIS.md         # Technical matching methodology
 ```
 
 ## Dataset Description
@@ -53,28 +80,74 @@ The experiment measured how different forms of AI assistance affect language lea
 - `AverageUserMessageLength`: Average characters per user message
 - `AverageAIMessageLength`: Average characters per AI message
 
-## Data Processing Pipeline
+## Data Recovery & Processing Pipeline
 
-Our data processing involves two main steps:
+Our data processing pipeline successfully recovered participants who forgot to state their ID and matched them to their conversations.
 
-### 1. Data Merging (`merge_datasets.py`)
+### Recovery Process
 
-This script merges survey responses with conversation logs:
+**The Challenge**: 361 out of 389 matched participants (92.8%) forgot to state their ID in the introductory ChatGPT message!
+
+**The Solution**:
+1. **ID Extraction** (`regenerate_ids_and_verify.py`): Extracted IDs from messages using multiple regex patterns
+2. **Timestamp Matching**: Matched conversations to surveys using temporal proximity (24-hour tolerance)
+3. **ID Generation**: Generated IDs from timestamps for those who forgot: `DDMMYYYY_HHMM` format
+4. **Data Recovery** (`extract_using_ast.py`): Found 21 additional conversations in old CSN export
+5. **AST Parsing Breakthrough**: Used `ast.literal_eval()` to parse Python dict strings (not JSON!)
+6. **Additional Matching** (`match_recovered_conversations.py`): Matched 20/21 recovered conversations
+
+**The Results**:
+- ✅ **361 participants who forgot their ID successfully recovered!**
+- ✅ **20 additional matches from recovered data**
+- ✅ **98.0% match success rate** (of available conversations)
+- Only 8 unused conversations (all "Login assistance" test messages)
+
+### Core Processing Steps
+
+#### 1. Data Merging (`merge_datasets.py`)
+
+Merges survey responses with conversation logs:
 - Matches participants across datasets using ID patterns and timestamps
 - Extracts conversation metrics
 - Identifies unmatched records for review
 - Computes match confidence scores
 
-### 2. Data Enhancement (`enhance_dataset.py`)
+#### 2. Data Enhancement (`enhance_dataset.py`)
 
-This script improves the merged dataset:
+Improves the merged dataset:
 - Fixes encoding issues and standardizes formats
 - Improves user identification
 - Creates derived metrics
 - Splits the data into normalized tables
 - Generates a data dictionary
 
+#### 3. ID Regeneration (`regenerate_ids_and_verify.py`) ⭐
+
+Extracts and generates participant IDs:
+- Extracts IDs from conversation messages using regex
+- Generates IDs from timestamps for those who forgot
+- Result: 291 extracted, 78 generated
+
+#### 4. Data Recovery (`extract_using_ast.py`) ⭐
+
+Recovers conversations from old CSN export:
+- Uses `ast.literal_eval()` to parse Python dictionary strings
+- Extracts 366 messages from 21 conversations
+- Enables matching of previously inaccessible data
+
 ## Running the Data Processing Scripts
+
+### Quick Start (Use Existing Processed Data)
+
+The repository already contains fully processed and matched data:
+- **Main dataset**: `data/processed/nhh_esperanto_finalized_dataset.csv`
+- **Participant data**: `data/processed/nhh_esperanto_participants.csv`
+- **Conversation data**: `data/processed/nhh_esperanto_conversations.csv`
+- **Message data**: `data/processed/nhh_esperanto_messages.csv`
+
+### Full Processing Pipeline (From Scratch)
+
+To reproduce the entire processing and recovery pipeline:
 
 ```bash
 # Create necessary directories if they don't exist
@@ -85,7 +158,22 @@ python scripts/merge_datasets.py
 
 # 2. Enhance the merged dataset
 python scripts/enhance_dataset.py
+
+# 3. Extract and generate participant IDs (KEY STEP!)
+python scripts/regenerate_ids_and_verify.py
+
+# 4. Extract recovered conversations from old CSN file
+python scripts/extract_using_ast.py
+
+# 5. Match recovered conversations to surveys
+python scripts/match_recovered_conversations.py
+
+# 6. (Optional) Run additional recovery attempts
+python scripts/aggressive_rematching.py
+python scripts/fix_cross_date_mismatches.py
 ```
+
+See [scripts/README.md](scripts/README.md) for detailed documentation of all scripts.
 
 ## Data Explorer Application
 
