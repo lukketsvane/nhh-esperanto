@@ -3,11 +3,13 @@
 Match the 21 recovered conversations to unmatched surveys.
 """
 
-import pandas as pd
 import re
 import logging
 from pathlib import Path
 from datetime import datetime
+from typing import Optional
+
+import pandas as pd
 
 # Setup logging
 logging.basicConfig(
@@ -22,26 +24,70 @@ RAW_DIR = DATA_DIR / 'raw'
 PROCESSED_DIR = DATA_DIR / 'processed'
 
 
-def extract_user_id_from_message(message):
-    """Extract user ID from message text."""
-    if not message or pd.isna(message):
+STRICT_ID_PATTERNS = [
+    re.compile(
+        r"\b(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})(?P<minute>\d{2})[_\s-]*Participant\s*(?P<participant>\d{1,3})(?![\w])",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})[:h](?P<minute>\d{2})[_\s-]*Participant\s*(?P<participant>\d{1,3})(?![\w])",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bParticipant\s*(?P<participant>\d{1,3})(?![\w])[_\s-]*(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})(?P<minute>\d{2})\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?P<day>\d{1,2})[/-](?P<month>\d{1,2})[/-](?P<year>\d{2,4}).{0,40}?(?P<hour>\d{1,2})[:.h](?P<minute>\d{2}).{0,40}?Participant\s*(?P<participant>\d{1,3})(?![\w])",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bParticipant\s*(?P<participant>\d{1,3})(?![\w]).{0,40}?(?P<day>\d{1,2})[/-](?P<month>\d{1,2})[/-](?P<year>\d{2,4}).{0,40}?(?P<hour>\d{1,2})[:.h](?P<minute>\d{2})",
+        re.IGNORECASE,
+    ),
+]
+
+
+def _normalize_components(match: re.Match) -> Optional[str]:
+    groups = match.groupdict()
+
+    try:
+        day = int(groups['day'])
+        month = int(groups['month'])
+        year = int(groups['year']) if len(groups['year']) == 4 else int(f"20{groups['year']}")
+        hour = int(groups['hour'])
+        minute = int(groups['minute'])
+        participant = int(groups['participant'])
+    except (KeyError, ValueError):
         return None
 
-    message = str(message).strip("[]'\"")
+    if not (1 <= day <= 31 and 1 <= month <= 12):
+        return None
+    if not (0 <= hour <= 23 and 0 <= minute <= 59):
+        return None
+    if participant <= 0:
+        return None
 
-    # Try multiple patterns
-    patterns = [
-        r'(\d{2})(\d{2})(\d{4})_(\d{4})_(\d+)',  # DDMMYYYY_HHMM_N
-        r'(\d{2})(\d{2})(\d{4})_(\d{2}):(\d{2})_(\d+)',  # DDMMYYYY_HH:MM_N
-        r'(\d{1,2})/(\d{1,2})/(\d{2,4})[_\s]+(\d{1,2}):(\d{2})[_\s]+(\d+)',  # DD/MM/YYYY HH:MM N
-    ]
+    return (
+        f"{day:02d}{month:02d}{year:04d}_{hour:02d}{minute:02d}_Participant{participant}"
+    )
 
-    for pattern in patterns:
-        match = re.search(pattern, message, re.IGNORECASE)
-        if match:
-            groups = match.groups()
-            if len(groups) == 6:
-                return ''.join(groups)
+
+def extract_user_id_from_message(message):
+    """Extract user ID from message text, enforcing a timestamp + participant pattern."""
+    if not message or (isinstance(message, float) and pd.isna(message)):
+        return None
+
+    text = str(message).strip("[]'\"")
+
+    for pattern in STRICT_ID_PATTERNS:
+        match = pattern.search(text)
+        if not match:
+            continue
+
+        normalized = _normalize_components(match)
+        if normalized:
+            return normalized
 
     return None
 

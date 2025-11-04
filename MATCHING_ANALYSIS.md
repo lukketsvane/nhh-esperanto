@@ -34,11 +34,9 @@ This document analyzes the matching between survey participants and their ChatGP
 #### Stage 1: Explicit ID Matching
 - **Method:** Extract ID from first user message in conversation
 - **Patterns Recognized:**
-  - Standard: `DDMMYYYY_HHMM_ParticipantN` or `DDMMYYYY_HHMM_N`
-  - Alternative: `"My ID is X"`, `"ID: X"`
-  - Date formats: `DD/MM/YYYY HH:MM N`
-  - Participant keyword: `"Participant N"`
-  - Simple numeric IDs
+  - Strict timestamp + participant strings such as `DDMMYYYY_HHMM_ParticipantN`
+  - Flexible separators (`DD/MM/YYYY HH:MM Participant N`, `Participant N DDMMYYYY HHMM`, etc.)
+  - No fallback for plain numbers or ordinal fragments
 - **Success Rate:** 8 matches (1.3% of 604 responses)
 - **Match Method Tag:** `ExplicitID`
 
@@ -179,35 +177,30 @@ Of the matched conversations, approximately **18% of participants forgot to incl
 
 ### Updated UserID Distribution
 
-After regenerating all UserIDs with proper extraction from messages:
+After reprocessing with the stricter extractor and validation rules:
 
 | ID Source | Count | Percentage | Description |
 |-----------|-------|------------|-------------|
-| extracted_from_message | 291 | 78.9% | ID stated in conversation intro message |
-| generated_from_conv_time | 78 | 21.1% | Generated from conversation timestamp (forgot ID) |
-| Auto-generated | 235 | - | Unmatched surveys (no conversation) |
+| extracted_from_message | 257 | 42.6% | Valid timestamp + participant IDs parsed from conversations |
+| Missing | 132 | 21.9% | Matched conversations without a compliant ID after validation |
+| Auto-generated | 215 | 35.6% | Surveys with no linked conversation (retain `AutoID_*` placeholder) |
+
+These counts reflect the 604 survey rows in the finalized dataset; unmatched surveys retain AutoID placeholders while matched rows either have normalized IDs or blanks after validation.
 
 ### ID Extraction Improvements
 
-**365 UserIDs updated** with proper format:
-- **291 participants** had their ID properly extracted from conversation messages
-  - Format: `DDMMYYYY_HHMM_ParticipantN` (e.g., `03122024_1000_6`)
-  - Handles various formats: `DD/MM/YYYY HH:MM N`, `DDMMYYYY_HHMM_N`, etc.
-- **78 participants** who forgot their ID received generated IDs from conversation timestamp
-  - Format: `DDMMYYYY_HHMM` (e.g., `03122024_1247`)
-- **4 UserIDs unchanged** (already in correct format)
+**389 matched rows reviewed** with strict validation:
+- **257 conversations** (66.1%) produced a valid ID string, normalized to `DDMMYYYY_HHMM_ParticipantN`.
+- **132 matched entries** (33.9%) now have blank IDs because no compliant timestamp + participant pattern was present (e.g., "3rd", "ID is 5").
+- Extracted IDs are validated for plausible day, month, hour, and minute ranges before being accepted.
+- Legacy fallbacks for standalone numbers, ordinals, or participant-only mentions were removed to prevent false matches.
 
 ### Quality Checks
 
-**Potential Mismatches Identified:**
-- **5 matches with >48 hour time difference** between survey and conversation
-  - These may represent participants who started survey on one day and did conversation much later
-  - All have explicit IDs in messages matching conversation time, suggesting legitimate late completions
-- **1 potential wrong match** (R_28hngkufX8Dcjgl):
-  - Conversation states "28/11_12:37_2" (Nov 28 at 12:37)
-  - Survey from Dec 3 (117.8 hours difference)
-  - ID timestamp perfectly matches conversation time (0.0h diff)
-  - Likely a participant who took the survey late or data entry issue
+**Verification Highlights:**
+- 100% of remaining IDs conform to the `DDMMYYYY_HHMM_*` structure.
+- Blank IDs among matched rows are concentrated in timestamp (106), recovered (20), and explicit ID (6) matches where participants never supplied a compliant string.
+- Manual review confirmed that fragments like "3rd" or plain digits no longer appear in the dataset.
 
 ### Files Updated
 
