@@ -1,0 +1,3092 @@
+conversation_id,conversation_title,create_time,update_time,message_id,author_role,author_name,message_content,message_status,recipient,channel
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa200cf-a208-4b03-bef7-87c1d075ef7f,user,,['My ID is 05122024_1645_1'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,ab1db143-63d7-4178-af34-130d7e6d9ae7,assistant,,['Got it! How can I assist you with that ID?'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa24ef4-8878-49d8-9978-4fdb45e5c775,user,,['“How do verbs change in Esperanto?”'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,4b2657e8-2825-4227-bb62-f1a011b60d11,assistant,,"['In Esperanto, verbs are very regular and follow a consistent pattern across all tenses and moods. Here's a breakdown of how they change:
+
+### 1. **Present Tense**  
+Verbs in the present tense always end with **-as**.  
+Example:  
+- **esti** (to be) → **estas** (is)  
+- **iri** (to go) → **iras** (goes/is going)
+
+---
+
+### 2. **Past Tense**  
+Verbs in the past tense always end with **-is**.  
+Example:  
+- **esti** → **estis** (was)  
+- **iri** → **iris** (went)
+
+---
+
+### 3. **Future Tense**  
+Verbs in the future tense always end with **-os**.  
+Example:  
+- **esti** → **estos** (will be)  
+- **iri** → **iros** (will go)
+
+---
+
+### 4. **Conditional Mood**  
+For hypothetical or ""would"" situations, verbs end with **-us**.  
+Example:  
+- **esti** → **estus** (would be)  
+- **iri** → **irus** (would go)
+
+---
+
+### 5. **Imperative/Volitive Mood**  
+For commands or wishes, verbs end with **-u**.  
+Example:  
+- **esti** → **estu** (be!)  
+- **iri** → **iru** (go!)
+
+---
+
+### 6. **Infinitive**  
+The infinitive form of all verbs ends with **-i**.  
+Example:  
+- **esti** (to be)  
+- **iri** (to go)
+
+---
+
+### 7. **Participles**  
+Participles are used to describe ongoing or completed actions and can also form compound tenses:  
+- **-anta** (active present participle) → doing something now  
+- **-inta** (active past participle) → having done something  
+- **-onta** (active future participle) → about to do something  
+- **-ata** (passive present participle) → being done now  
+- **-ita** (passive past participle) → having been done  
+- **-ota** (passive future participle) → about to be done  
+
+Example with **iri** (to go):  
+- **iranta** (going), **irinta** (having gone), **ironta** (about to go)
+
+---
+
+### Summary Table  
+| Tense/Mood | Ending  | Example (from **iri**) |
+|------------|---------|-----------------------|
+| Present    | **-as** | **iras**             |
+| Past       | **-is** | **iris**             |
+| Future     | **-os** | **iros**             |
+| Conditional| **-us** | **irus**             |
+| Imperative | **-u**  | **iru**              |
+| Infinitive | **-i**  | **iri**              |
+
+Esperanto verbs don't change based on the subject, which makes them even simpler!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2bdc3-e5a1-48f7-9d31-3dab1bb47e4e,user,,['fly in Esperanto?”'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,777f012e-2e6a-4c2c-926f-92b6b07e5794,assistant,,"['In Esperanto, ""fly"" as a verb is **flugi**. For example:
+
+- Mi ŝatas flugi. (I like to fly.)
+
+If you're referring to the noun ""fly"" (the insect), it is **muŝo**.
+
+Let me know if you'd like to explore more about these words!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2ffc0-f9f1-45da-a3a0-2939e97da5e5,user,,['amikoj in english'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,c521ee17-3ae3-4f2e-9a46-b5882e0975d5,assistant,,"['In English, **amikoj** means **friends**. It's the plural form of **amiko** (friend) in Esperanto.']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2f1cb-ff4f-4ea2-84e6-284348b1002f,user,,['are in Esperanto?”'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,09d5111a-49b3-4155-8429-7be34092c242,assistant,,"['If you're asking how to say ""My ID is 05122024_1645_1"" in Esperanto, it would be:
+
+**""Mia identigilo estas 05122024_1645_1.""**
+
+Let me know if you'd like further clarification!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2141b-f08f-4791-aa98-14ab9d705d3a,user,,['are in Esperanto?'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,182d9cd8-4905-49e5-90f6-48eb9be11853,assistant,,"['To express ""My ID is 05122024_1645_1"" in Esperanto, you can say:
+
+**Mia ID estas 05122024_1645_1.** 
+
+If you need further clarification or adjustments, feel free to ask!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa25049-392c-4588-9a06-1e98488d2415,user,,['the word are in Esperanto?'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,a946e21a-92b3-40ed-95b2-569b551c0746,assistant,,"['The word **ID** in Esperanto is **identigilo**, which literally means ""identification device"" or ""identifier."" If you're referring to ""ID"" as a concept (like an identification number or document), **identigo** (identification) might also work depending on the context. 
+
+If you're asking about something else related to your ID, please clarify!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2234a-26fe-439b-a9f6-a1613d700c2b,user,,"['the word"" are"" in Esperanto?']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,31b6d7fc-6dd8-45f2-bcd1-522ff3c2a3f6,assistant,,"['In Esperanto, the word **""are""** (as in the present tense of ""to be"") is translated as **estas**. 
+
+For example:
+- ""You are happy"" = **Vi estas feliĉa.**
+
+Let me know if you'd like more examples or clarifications!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa2c9f4-70c9-4e29-a425-39a8008fc762,user,,['hundo'],finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,82045af3-c6ec-43ed-a546-43663ab43e23,assistant,,"['The Esperanto word **hundo** means **dog** in English.
+
+For example:
+- **La hundo estas granda.** = ""The dog is big.""
+- **Mi havas hundon.** = ""I have a dog.""
+
+Let me know if you'd like more examples or related vocabulary!']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa23219-c114-4052-bd61-3a9e9eedda24,user,,"['the word"" sleep"" in Esperanto?']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,faa0c760-800a-45b2-930c-704db4992451,assistant,,"['The word ""sleep"" in Esperanto is **dormi**.']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa27a0c-b13f-4ce6-a6c6-b0cbd4a722e4,user,,"['the word"" to sleep"" in Esperanto?']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,86cdbcc0-eb46-4b46-b4d6-a0a6f0c47ca1,assistant,,"['The word ""to sleep"" in Esperanto is **dormi**.']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,aaa28d52-b644-4bf9-b67c-db6393da6230,user,,"['the word"" to not fly"" in Esperanto?']",finished_successfully,all,
+6751d8b0-f324-8001-81ee-5cc12822fc41,ID Assistance,2024-12-05 16:45:37.176553984,2024-12-05 17:01:14.704763904,c2856a44-c371-4666-be27-dc1305ad1555,assistant,,"['In Esperanto, ""to not fly"" can be expressed as **""ne flugi""**. 
+
+- **""flugi""** means ""to fly.""
+- **""ne""** negates the action, meaning ""not."" 
+
+So, **""ne flugi""** translates directly to ""to not fly.""']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa28ea4-b4af-4c1a-87b4-d94da642156e,user,,['my id is 05122024_1517_1'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,e7035534-7694-40d0-a0c0-0925361b9073,assistant,,['Got it! How can I assist you with your ID or anything else?'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa29d30-1b19-4329-a639-1431fbaa53fd,user,,['can you summarise everything important to know in the language Esperanto please'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,9bbaca69-0579-4b3d-91eb-f308854fabfc,assistant,,"['Here's a concise summary of the most important aspects to know about Esperanto:
+
+---
+
+### **1. Background**
+- **Inventor**: L. L. Zamenhof, 1887.
+- **Purpose**: A neutral, easy-to-learn international auxiliary language promoting global communication.
+- **Community**: Around 2 million speakers worldwide, with active use in culture, travel, and media.
+
+---
+
+### **2. Key Features**
+- **Regularity**: No exceptions to grammar rules.
+- **Phonetic Spelling**: Each letter corresponds to one sound.
+- **Vocabulary**: Drawn from European languages (primarily Latin, Germanic, and Slavic roots).
+
+---
+
+### **3. Grammar Overview**
+#### **Alphabet**
+- **28 Letters**: a, b, c, ĉ, d, e, f, g, ĝ, h, ĥ, i, j, ĵ, k, l, m, n, o, p, r, s, ŝ, t, u, ŭ, v, z.
+- Unique letters: ĉ, ĝ, ĥ, ĵ, ŝ, ŭ.
+
+#### **Articles**
+- Only one: **la** (e.g.,']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa2ff69-67a1-4948-81a2-2c678075653a,user,,['Can you give me a summary of all the important things I would need to know if I needed to take a test on it in 15 mins'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,bb8d3b99-8463-4927-ab76-56779608cef4,assistant,,"['Here’s a **15-minute crash course** covering all the essentials for a test on Esperanto:
+
+---
+
+### **1. Basics**
+- **Alphabet**: 28 letters, always phonetic. Unique letters: ĉ, ĝ, ĥ, ĵ, ŝ, ŭ.
+- **Stress**: Always on the **second-to-last syllable**.
+
+---
+
+### **2. Grammar Essentials**
+#### **Articles**
+- Only one: **la** (the). No indefinite article (e.g., ""a dog"" = **hundo**).
+
+#### **Nouns**
+- End in **-o**. 
+- Plural: Add **-j** (e.g., **hundoj** = dogs).
+- Accusative (direct object): Add **-n** (e.g., **Mi vidas hundon** = I see a dog).
+
+#### **Adjectives**
+- End in **-a**.
+- Agree with nouns in number and case:
+  - **granda hundo** = big dog
+  - **grandaj hundoj** = big dogs
+  - **Mi vidas grandajn hundojn** = I see big dogs.
+
+#### **Verbs**
+- No conjugation by person or number:
+  - **-i**: Infinitive (e.g., **esti** = to be).
+  - **-as**: Present tense (e.g., **estas** = is/are).
+  - **-is**: Past tense (e.g., **estis** = was/were).
+  - **-os**: Future tense (e.g., **estos** = will be).
+  - **-us**: Conditional (e.g., **estus** = would be).
+  - **-u**: Imperative (e.g., **estu!** = be!).
+
+#### **Adverbs**
+- End in **-e** (e.g., **rapide** = quickly).
+
+---
+
+### **3. Vocabulary Basics**
+#### Common Pronouns
+- **Mi** (I), **vi** (you), **li/ŝi/ĝi** (he/she/it), **ni** (we), **ili** (they), **oni** (one/people in general).
+- Possessive: Add **-a** (e.g., **mia** = my, **via** = your).
+
+#### Numbers
+- 1 = unu, 2 = du, 3 = tri, 4 = kvar, 5 = kvin, 6 = ses, 7 = sep, 8 = ok, 9 = naŭ, 10 = dek.
+- Combine for higher numbers (e.g., 11 = dek unu, 20 = dudek).
+
+---
+
+### **4. Key Phrases**
+- **Saluton!** = Hello!
+- **Kiel vi fartas?** = How are you?
+- **Mi fartas bone.** = I’m fine.
+- **Dankon.** = Thank you.
+- **Ĝis!** = Goodbye!
+
+---
+
+### **5. Sentence Structure**
+- Standard word order: **Subject-Verb-Object** (SVO).
+- Flexible due to accusative case:
+  - **Mi amas vin** = I love you.
+  - **Vin amas mi** = (Still) I love you.
+
+---
+
+### **6. Special Features**
+- Compound words: Combine roots (e.g., **lerni** = learn + **ĉambro** = room → **lernĉambro** = classroom).
+- Prefixes:
+  - **mal-**: Opposite (e.g., **bona** = good → **malbona** = bad).
+- Suffixes:
+  - **-in-**: Feminine (e.g., **viro** = man → **virino** = woman).
+
+---
+
+### **7. Practice Sentence**
+**La granda kato manĝas malrapide.**
+- The big cat eats slowly.
+- Breakdown:
+  - **La** (the), **granda** (big), **kato** (cat), **manĝas** (eats), **malrapide** (slowly).
+
+---
+
+You’re ready! This should cover the essentials for most tests on Esperanto. Bonŝancon! (Good luck!)']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa269fd-08bf-406d-afd6-82acb93af154,user,,['what does amikoj mean in english from esperanto?'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,9f093d9a-1ccf-45d7-ae1a-d1f5049acc42,assistant,,"['In Esperanto, **amikoj** means **friends** in English. 
+
+- **amiko** = friend  
+- **-j** = plural suffix  
+
+So, **amikoj** = friends.']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa2767c-3e22-443f-9e3f-c915233d8228,user,,['translate fartas from esperant to english'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,2eb7869b-ac67-4265-b189-cfaa4c6755a4,assistant,,"['In Esperanto, **fartas** means **""to fare""** or **""to be doing""** in English, typically referring to someone's well-being or state.
+
+For example:  
+- **Kiel vi fartas?** = ""How are you (doing)?""  
+- **Mi fartas bone.** = ""I am doing well.""  
+
+(Note: Despite how it sounds in English, it has no connection to the informal English term!)']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa2a177-34ac-42e9-a890-17d6f2732ec3,user,,['translate Ĉu from esperanto to english'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,de14654d-dabe-4794-b4fe-1b1bc64f4c83,assistant,,"['In Esperanto, **Ĉu** is used to introduce **yes/no questions**. It doesn't have a direct English equivalent but functions like asking ""Is it that...?"" or ""Do/Does...?"".
+
+Examples:
+- **Ĉu vi parolas Esperanton?** = ""Do you speak Esperanto?""
+- **Ĉu li estas hejme?** = ""Is he at home?""
+
+It signals that the sentence is a question expecting a ""yes"" or ""no"" answer.']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa2cfd0-126a-4f27-974d-17f8c4222c3d,user,,['translate ĉar from esperanto to english'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,5670983f-64b2-4506-a038-a60c9c153b7c,assistant,,"['In Esperanto, **ĉar** means **""because""** in English. 
+
+For example:  
+- **Mi lernas Esperanton, ĉar ĝi estas facila.**  
+  = ""I am learning Esperanto because it is easy.""']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa20a70-fdaa-4b62-96be-b5b9bf79aaef,user,,['translate feliĉajn from esperanto to english'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,3379274a-2d59-472c-90fd-819531957cb4,assistant,,"['In Esperanto, **feliĉajn** means **""happy""** in English, but it is specifically in the **plural accusative form**. Here's the breakdown:
+
+- **feliĉa** = happy (adjective)  
+- **-j** = plural suffix (e.g., happy ones, happy things)  
+- **-n** = accusative suffix (used for direct objects or to indicate motion).
+
+For example:
+- **Mi deziras feliĉajn festojn.** = ""I wish (you) happy holidays.""  
+Here, **feliĉajn** is plural and in the accusative case because it describes the direct object (**festojn** = holidays).']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa26975-d6c1-4126-89bf-c29676368a83,user,,['what is youthfully in esperanto'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,e92d4fed-bfc5-4f40-aa83-3e1258261e28,assistant,,"['In Esperanto, **youthfully** can be translated as **junule**.
+
+### Breakdown:
+- **jun-** = youth/young
+- **-ul-** = person or characteristic
+- **-e** = adverb suffix (indicating ""in a youthful manner"").
+
+So, **junule** means ""in a youthful way"" or ""youthfully.""']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa25c55-09eb-4009-951b-4b55f45f909f,user,,['what is lioves in esperanto'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,92da5df0-a1c4-4b0b-a798-a528b50fbaec,assistant,,"['It seems like ""lioves"" might not be an actual Esperanto word, as it doesn't follow the standard structure or recognizable roots in the language. Could it be a typo or derived from another language?
+
+If you're referring to something specific, feel free to clarify, and I’ll help translate or explain!']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa25865-a300-4450-aea5-b72586a6579d,user,,['what is lives in esperanto'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,7148f56c-998f-431f-99a8-b5f5473acbf2,assistant,,"['In Esperanto, **""lives""** (as in the verb ""to live"") is translated as **loĝas**.
+
+### Examples:
+- **He lives in a city.** = **Li loĝas en urbo.**
+- **She lives happily.** = **Ŝi loĝas feliĉe.**
+
+### Explanation:
+- **loĝi** = to live, reside, or dwell (refers to physical living, like residing in a place).  
+If you mean ""lives"" in the sense of existence (as in ""life""), the word would be **vivoj** (plural of **vivo**, ""life"").']",finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,aaa239db-6d2a-4bc9-8d14-5377c697372f,user,,['translate The man is happy because he lives in a beautiful apartment into esperanto'],finished_successfully,all,
+6751c400-b6c4-8001-b67f-859a87c2692f,ID Assistance,2024-12-05 15:17:20.942526208,2024-12-05 15:38:11.500612864,7171b6b9-8c3c-4f69-b978-2a1f652487cd,assistant,,"['The translation of **""The man is happy because he lives in a beautiful apartment""** into Esperanto is:
+
+**La viro estas feliĉa, ĉar li loĝas en bela apartamento.** 
+
+### Breakdown:
+- **La viro** = The man  
+- **estas** = is  
+- **feliĉa** = happy  
+- **ĉar** = because  
+- **li** = he  
+- **loĝas** = lives  
+- **en** = in  
+- **bela** = beautiful  
+- **apartamento** = apartment']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa22e1f-9c7f-43d5-92ec-dff13aafe8ed,user,,['esperanto quick lesson'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,2fcf87b3-f1f2-4f92-80de-69f68c546af7,assistant,,"['Sure! Let’s do a quick Esperanto lesson.
+
+### Basics of Esperanto:
+1. **Alphabet**:  
+   Esperanto has 28 letters. Each letter has one sound, and there are no silent letters.
+   - Vowels: **a, e, i, o, u**
+   - Consonants: **b, c, ĉ, d, f, g, ĝ, h, ĥ, j, ĵ, k, l, m, n, p, r, s, ŝ, t, v, z**  
+
+2. **Grammar rules**:
+   - **No exceptions**! Every word follows the same rules.
+   - **Nouns** end in **-o** (e.g., _libro_ = book).
+   - **Adjectives** end in **-a** (e.g., _bela_ = beautiful).
+   - **Plural** adds **-j** (e.g., _libroj_ = books).
+   - **Verb tenses**:
+     - Present: **-as** (e.g., _mi lernas_ = I learn).
+     - Past: **-is** (e.g., _mi lernis_ = I learned).
+     - Future: **-os** (e.g., _mi lernos_ = I will learn).
+
+3. **Sentence Structure**:
+   - Flexible, but the default is Subject-Verb-Object (SVO).  
+     Example:  
+     _La knabo vidas hundon._ = The boy sees a dog.  
+     (Word order can change without losing meaning.)
+
+4. **Vocabulary**:  
+   - _Bona_ = good  
+   - _Amiko_ = friend  
+   - _Granda_ = big  
+   - _Mi amas vin_ = I love you  
+
+Would you like to practice a specific area (e.g., vocabulary, verbs, or sentence construction)?']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa2877f-aa8b-4e06-acdc-249beadec9dc,user,,['sentence construction'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,43efc3a9-214c-4479-b2bd-bb7e44ca2b40,assistant,,"['Great! Let’s dive into **sentence construction** in Esperanto. 
+
+### Key Components of an Esperanto Sentence:
+1. **Subject (Who/What)**  
+   The noun or pronoun doing the action.  
+   Examples:  
+   - _Mi_ = I  
+   - _La infano_ = The child  
+
+2. **Verb (Action)**  
+   The action being done.  
+   Examples:  
+   - _manĝas_ = eats  
+   - _vidas_ = sees  
+
+3. **Object (Receiver of the Action)**  
+   If there’s an object, it takes the **-n** ending (accusative case).  
+   Examples:  
+   - _pomon_ = an apple  
+   - _hundo_ (dog) → _hundon_ (a dog, as the object)  
+
+4. **Adjectives (Description)**  
+   Adjectives match the noun in number and case.  
+   Examples:  
+   - _granda_ = big  
+   - _La granda hundo vidas la infanon._ = The big dog sees the child.
+
+### Examples of Simple Sentences:
+1. **Basic Subject + Verb**:  
+   - _Mi dormas._ = I sleep.  
+   - _Vi lernas._ = You learn.
+
+2. **Subject + Verb + Object**:  
+   - _Li manĝas panon._ = He eats bread.  
+   - _La knabino ludas pilkon._ = The girl plays with a ball.
+
+3. **Adding Adjectives**:  
+   - _La bela virino kantas._ = The beautiful woman sings.  
+   - _Mi vidas grandan hundon._ = I see a big dog.
+
+4. **Questions** (Use **Ĉu** for yes/no questions):  
+   - _Ĉu vi parolas Esperanton?_ = Do you speak Esperanto?  
+   - _Ĉu li estas feliĉa?_ = Is he happy?  
+
+5. **Negations**:  
+   Use **ne** (not) before the verb.  
+   - _Mi ne volas dormi._ = I do not want to sleep.  
+   - _Ŝi ne manĝas pomon._ = She does not eat an apple.
+
+### Practice Time:
+Try translating these into Esperanto:
+1. The dog sees the cat.  
+2. I speak Esperanto.  
+3. Do you want tea?  
+4. The happy children sing.  
+
+Share your answers, and I'll check them! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa21a09-28e2-4d51-ade8-2c7a9a3d66f3,user,,['pronouns in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,ef6c6f15-3376-4988-bf50-6e407b7b87f7,assistant,,"['Esperanto pronouns are simple and regular. Here’s a list of them:
+
+### Singular Pronouns:
+1. **Mi** = I  
+2. **Vi** = You (singular, formal or informal)  
+3. **Li** = He  
+4. **Ŝi** = She  
+5. **Ĝi** = It (for objects or animals)  
+6. **Si** = Reflexive pronoun (himself, herself, itself – only for referring back to the subject)  
+7. **Oni** = One/People (general subject, like ""one"" in English)  
+
+### Plural Pronouns:
+1. **Ni** = We  
+2. **Vi** = You (plural)  
+3. **Ili** = They  
+
+### Examples in Sentences:
+1. _Mi amas vin._ = I love you.  
+2. _Ŝi ludas gitaron._ = She plays the guitar.  
+3. _Ni vidas ilin._ = We see them.  
+4. _Li prenas sian libron._ = He takes his own book. (Note: **sia** = reflexive form of ""his own."")  
+5. _Oni devas lerni._ = One must learn.
+
+### Possessive Pronouns:
+Possessive pronouns are formed by adding **-a** to the pronoun (just like adjectives).
+
+1. **Mia** = My  
+2. **Via** = Your  
+3. **Lia** = His  
+4. **Ŝia** = Her  
+5. **Ĝia** = Its  
+6. **Nia** = Our  
+7. **Viaj** = Your (plural)  
+8. **Ilia** = Their  
+
+#### Examples:
+- _Mia hundo estas granda._ = My dog is big.  
+- _Ilia domo estas bela._ = Their house is beautiful.  
+- _Ĉu via libro estas tie?_ = Is your book there?  
+
+Would you like to practice with these pronouns? 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa29082-0d38-4787-ab32-7571b2378492,user,,['common vocab used in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,766ce558-665a-4d8c-a5ed-a3aed02d449e,assistant,,"['Here’s a list of **common Esperanto vocabulary** to get you started:
+
+### **Basic Words:**
+- _Jes_ = Yes  
+- _Ne_ = No  
+- _Saluton_ = Hello  
+- _Ĝis revido_ = Goodbye  
+- _Bonvolu_ = Please  
+- _Dankon_ = Thank you  
+- _Pardonu_ = Sorry / Excuse me  
+- _Kio?_ = What?  
+- _Kie?_ = Where?  
+- _Kiel?_ = How?  
+- _Kiam?_ = When?  
+- _Kial?_ = Why?
+
+---
+
+### **People:**
+- _Viro_ = Man  
+- _Virino_ = Woman  
+- _Infano_ = Child  
+- _Amiko_ = Friend  
+- _Patro_ = Father  
+- _Patrino_ = Mother  
+- _Frato_ = Brother  
+- _Fratino_ = Sister  
+- _Familio_ = Family  
+
+---
+
+### **Days and Time:**
+- _Hodiaŭ_ = Today  
+- _Morgaŭ_ = Tomorrow  
+- _Hieraux_ = Yesterday  
+- _Horo_ = Hour  
+- _Minuto_ = Minute  
+- _Semajno_ = Week  
+- _Monato_ = Month  
+- _Jaro_ = Year  
+
+---
+
+### **Common Verbs:**
+- _Esti_ = To be  
+- _Havi_ = To have  
+- _Lerni_ = To learn  
+- _Paroli_ = To speak  
+- _Skribi_ = To write  
+- _Legi_ = To read  
+- _Kuri_ = To run  
+- _Manĝi_ = To eat  
+- _Dormi_ = To sleep  
+
+---
+
+### **Everyday Items:**
+- _Libro_ = Book  
+- _Tablo_ = Table  
+- _Seĝo_ = Chair  
+- _Pordo_ = Door  
+- _Fenestro_ = Window  
+- _Aŭto_ = Car  
+- _Biciklo_ = Bicycle  
+
+---
+
+### **Nature:**
+- _Arbo_ = Tree  
+- _Floroj_ = Flowers  
+- _Suno_ = Sun  
+- _Luno_ = Moon  
+- _Steloj_ = Stars  
+- _Akvo_ = Water  
+- _Fajro_ = Fire  
+
+---
+
+### **Adjectives:**
+- _Bela_ = Beautiful  
+- _Granda_ = Big  
+- _Malgranda_ = Small  
+- _Rapida_ = Fast  
+- _Malrapida_ = Slow  
+- _Feliĉa_ = Happy  
+- _Trista_ = Sad  
+
+---
+
+Would you like to practice with any specific category or build sentences with some of these words? 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa238fe-dc28-4b2d-a74c-f8cd24166157,user,,['common verbs in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,df4eaa65-38d8-4f13-94d8-27dab82a4bc4,assistant,,"['Here’s a list of **common verbs** in Esperanto to help you build your vocabulary:
+
+---
+
+### **Basic Verbs:**
+1. **Esti** = To be  
+   (_Mi estas lernanto._ = I am a student.)
+2. **Havi** = To have  
+   (_Ŝi havas hundon._ = She has a dog.)
+3. **Fari** = To do / To make  
+   (_Kion vi faras?_ = What are you doing?)
+4. **Iri** = To go  
+   (_Ni iras hejmen._ = We are going home.)
+5. **Povi** = To be able to / Can  
+   (_Ĉu vi povas helpi min?_ = Can you help me?)
+6. **Devi** = To have to / Must  
+   (_Mi devas lerni Esperanton._ = I must learn Esperanto.)
+7. **Scii** = To know (a fact)  
+   (_Li scias la respondon._ = He knows the answer.)
+8. **Kompreni** = To understand  
+   (_Mi komprenas vin._ = I understand you.)
+9. **Vidi** = To see  
+   (_Ĉu vi vidas la lunon?_ = Do you see the moon?)
+10. **Ami** = To love  
+   (_Mi amas la naturon._ = I love nature.)
+
+---
+
+### **Everyday Actions:**
+11. **Paroli** = To speak  
+    (_Mi parolas Esperanton._ = I speak Esperanto.)
+12. **Skribi** = To write  
+    (_Ŝi skribas leteron._ = She writes a letter.)
+13. **Legi** = To read  
+    (_Mi legas libron._ = I am reading a book.)
+14. **Manĝi** = To eat  
+    (_Li manĝas pomon._ = He eats an apple.)
+15. **Trinki** = To drink  
+    (_Ĉu vi trinkas akvon?_ = Are you drinking water?)
+16. **Dormi** = To sleep  
+    (_Infanoj dormas._ = Children are sleeping.)
+17. **Ludi** = To play  
+    (_Ni ludas pilkon._ = We play with a ball.)
+18. **Kuri** = To run  
+    (_Mi kuras rapide._ = I run fast.)
+19. **Labori** = To work  
+    (_Ŝi laboras en oficejo._ = She works in an office.)
+20. **Lerni** = To learn  
+    (_Mi lernas novajn vortojn._ = I learn new words.)
+
+---
+
+### **Thinking and Feeling:**
+21. **Pensi** = To think  
+    (_Kion vi pensas?_ = What do you think?)
+22. **Senti** = To feel  
+    (_Mi sentas ĝojon._ = I feel joy.)
+23. **Kredi** = To believe  
+    (_Li kredas en mirakloj._ = He believes in miracles.)
+24. **Esperi** = To hope  
+    (_Ni esperas pri bona estonteco._ = We hope for a good future.)
+
+---
+
+### **Movement:**
+25. **Veni** = To come  
+    (_Ĉu vi venas ĉi tien?_ = Are you coming here?)
+26. **Resti** = To stay  
+    (_Mi restos ĉi tie._ = I will stay here.)
+27. **Salti** = To jump  
+    (_Li saltas alte._ = He jumps high.)
+28. **Flugi** = To fly  
+    (_Birdoj flugas en la ĉielo._ = Birds fly in the sky.)
+
+---
+
+### **Helping Verbs:**
+29. **Voli** = To want  
+    (_Mi volas kafon._ = I want coffee.)
+30. **Ŝati** = To like  
+    (_Ĉu vi ŝatas muzikon?_ = Do you like music?)
+
+---
+
+### Examples for Practice:
+1. Translate:  
+   - I love to learn.  
+   - They want to drink water.  
+   - Do you work in a school?  
+2. Try creating your own sentences using these verbs! Let me know if you want help. 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa25e48-14a5-4032-ba95-321a45e5dd34,user,,['how do you say to live in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,0eb45a69-55bb-4e1a-bc2e-49d21c9b4160,assistant,,"['The verb **""to live""** in Esperanto is **""vivi""**. 
+
+### Examples:
+1. _Mi vivas en granda urbo._  
+   = I live in a big city.  
+
+2. _Kie vi vivas?_  
+   = Where do you live?  
+
+3. _Ŝi volas vivi feliĉan vivon._  
+   = She wants to live a happy life.  
+
+4. _Ni vivos kune por ĉiam._  
+   = We will live together forever.  
+
+Would you like to try using **vivi** in a sentence? 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa23f39-6326-4953-8ec4-1e898249203f,user,,['how are nouns structured in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aeff4d56-552b-4ea3-a67c-5a8e72164783,assistant,,"['In Esperanto, **nouns** have a simple and consistent structure:
+
+### Key Features of Nouns:
+1. **All nouns end with **-o** in their base form.  
+   Examples:  
+   - _domo_ = house  
+   - _libro_ = book  
+   - _hundo_ = dog  
+
+2. **Plural nouns add **-j** to the singular form.  
+   Examples:  
+   - _domoj_ = houses  
+   - _libroj_ = books  
+   - _hundoj_ = dogs  
+
+3. **Accusative case adds **-n** to show the direct object of a sentence.  
+   - Singular: _domon_ = (a) house (as the object)  
+   - Plural: _domojn_ = (the) houses (as the object)  
+
+4. **Compound nouns** are formed by combining two or more roots.  
+   Examples:  
+   - _sunfloro_ = sunflower (_suno_ = sun, _floro_ = flower)  
+   - _lernejo_ = school (_lerni_ = to learn, _-ejo_ = a place for something)  
+
+---
+
+### Examples of Noun Usage:
+1. Singular noun in subject position:  
+   _La hundo ludas._  
+   = The dog plays.
+
+2. Plural noun in subject position:  
+   _La hundoj ludas._  
+   = The dogs play.
+
+3. Singular noun in object position (accusative):  
+   _Mi vidas la hundon._  
+   = I see the dog.
+
+4. Plural noun in object position (accusative):  
+   _Mi vidas la hundojn._  
+   = I see the dogs.
+
+5. Compound noun:  
+   _Ĉambropordo estas fermita._  
+   = The room door is closed (_ĉambro_ = room, _pordo_ = door).
+
+---
+
+### Quick Practice:
+Translate the following sentences into Esperanto:
+1. The cat eats a fish.  
+2. The students read books.  
+3. I see the beautiful flowers.  
+
+Let me know your translations, and I’ll check them! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa24fa1-cbd6-4342-964d-d3d578b23bd7,user,,['indefinite articles in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,8d23bb2e-5862-49de-bab6-ef483cc9af85,assistant,,"['In Esperanto, **there are no indefinite articles** like ""a"" or ""an"" in English. A noun without an article is automatically understood as indefinite. For example:
+
+- _Kato_ = A cat  
+- _Hundo_ = A dog  
+- _Domoj_ = Houses  
+
+The meaning of indefiniteness is understood from context.
+
+### Examples:
+1. _Mi havas hundon._  
+   = I have a dog.  
+   (No need to say ""a"" because it is implied.)
+
+2. _Ŝi trovis libron._  
+   = She found a book.
+
+3. _Infanoj ludas en la ĝardeno._  
+   = Children are playing in the garden.  
+   (No article needed for ""children."")
+
+### How About Definite Articles?
+Esperanto **does have a definite article**, and it is always **_la_** (the). It is the same for singular and plural nouns.  
+- _La kato_ = The cat  
+- _La hundoj_ = The dogs  
+
+Would you like to practice forming sentences with or without articles? 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa2f608-35dc-45ff-9e14-64286c973846,user,,['Quick practice questions in making simple sentences in esperanto'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,608e5579-fcc5-4817-8604-7aefae7b70bb,assistant,,"['Here are some **quick practice questions** to help you make simple sentences in Esperanto. Translate the sentences or form your own answers in Esperanto. I'll check your work! 😊
+
+---
+
+### **Practice 1: Basic Subject-Verb-Object**
+Translate these into Esperanto:
+1. The dog runs.  
+2. I read a book.  
+3. We see the stars.  
+4. They drink water.  
+
+---
+
+### **Practice 2: Using Adjectives**
+Translate these into Esperanto:
+1. The beautiful flower is red.  
+2. A small child plays.  
+3. The big dogs eat bread.  
+4. The green apples are sweet.  
+
+---
+
+### **Practice 3: Questions**
+Form these questions in Esperanto:
+1. Do you speak Esperanto?  
+2. Where do they live?  
+3. Is the house big?  
+4. What do you want to eat?  
+
+---
+
+### **Practice 4: Using Plural and Accusative**
+Translate these into Esperanto:
+1. I see the big cats.  
+2. We like the red flowers.  
+3. They play with the small children.  
+4. The boys drink milk.  
+
+---
+
+Let me know your answers, and I'll review them! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa28e60-77e7-44ae-915b-ea9caee4fd74,user,,['Practice 1'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,91dcc600-7590-4cfd-9c6a-10cc2319f58e,assistant,,"['Great! Here are the translations for **Practice 1**. Try translating first, then check below to see if your answers match. 😊
+
+---
+
+1. **The dog runs.**  
+   _La hundo kuras._
+
+2. **I read a book.**  
+   _Mi legas libron._
+
+3. **We see the stars.**  
+   _Ni vidas la stelojn._
+
+4. **They drink water.**  
+   _Ili trinkas akvon._
+
+---
+
+Let me know how you did or if you need any clarification! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa229f5-5341-452c-99ca-f07656d9ba8f,user,,['1. La hundo kuro'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,3bd19c31-e56a-4bc0-bc86-e3de31ddb5bd,assistant,,"['Good try! However, the verb needs to match the subject. In Esperanto, the verb **kuri** (to run) conjugates as **kuras** for the present tense. The correct sentence is:
+
+**_La hundo kuras._** = The dog runs.
+
+### Why?  
+- _Hundo_ = Dog (noun, singular).
+- _Kuras_ = Runs (verb, present tense).  
+- In Esperanto, nouns and verbs have fixed endings, so **kuro** would mean ""a run"" (a noun), not the action ""runs.""
+
+Feel free to try again with the next ones! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa294da-9b9a-4f06-8ae9-2071a829dc40,user,,['2. Mi libras libro'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,d7ee8ab3-19f5-4a98-91c1-68212cf0b375,assistant,,"['Nice attempt, but here's the correction:
+
+The verb for ""to read"" in Esperanto is **legi**, and in the present tense, it becomes **legas**. Also, in Esperanto, you don't need to repeat the root of the word unnecessarily.
+
+The correct sentence is:
+
+**_Mi legas libron._** = I read a book.
+
+### Why?
+- _Mi_ = I (subject).  
+- _Legas_ = Read (verb in present tense).  
+- _Libron_ = Book (direct object, accusative form with **-n**).
+
+Keep going! You're on the right track! 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa2a442-c3bd-48ee-86f0-80484e457174,user,,['3. Ni vidas la [stars]'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,e6164eef-b950-4903-9f3c-01cd4bbd0271,assistant,,"['You're very close! In Esperanto, the word for ""stars"" is **steloj** (plural of **stelo**). Since ""stars"" is the object of the sentence, you add the accusative ending **-n**.
+
+The correct sentence is:
+
+**_Ni vidas la stelojn._** = We see the stars.
+
+### Why?
+- _Ni_ = We (subject).  
+- _Vidas_ = See (verb in present tense).  
+- _La stelojn_ = The stars (plural **steloj** + accusative **-n** because it's the object of ""see"").
+
+Try the last one! You're improving. 😊']",finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,aaa2eee7-ddbd-4025-9f10-78e31512b79a,user,,['thanks for the help'],finished_successfully,all,
+67517f3b-39dc-8001-b00d-4aba7f609de4,Esperanto Rapida Lerno,2024-12-05 10:23:55.622428928,2024-12-05 10:41:41.747746048,a5d744dc-579d-495e-99b0-ec8b20ed0a10,assistant,,"['You're very welcome! 😊 You're doing great—keep practicing, and Esperanto will feel even more natural over time. If you have more questions or want more practice, feel free to ask anytime. **Bonŝancon!** (Good luck!) 🌟']",finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,aaa2679a-9730-4eb5-ab09-681c75147630,user,,['My ID is 04122024_16:15_1.'],finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,a48fcf92-e2d9-4ecb-bded-acccb15fd9bd,assistant,,['Got it! Let me know how I can assist you further. 😊'],finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,aaa25144-2499-4184-99c5-078c1628bcae,user,,['in esperantas when ends in e'],finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,4f5775b4-db7f-4699-b731-d635d24d3656,assistant,,"['In Esperanto, words that end in **-e** typically serve one of the following purposes:
+
+1. **Adverbs**: Words ending in **-e** are usually adverbs. They describe how, when, where, or to what degree an action takes place. For example:
+   - **Rapide** (quickly)
+   - **Bone** (well)
+   - **Feliĉe** (happily)
+
+2. **Vocative Case (Rare)**: In poetic or emphatic expressions, **-e** can mark direct address, though this is not common in modern Esperanto. For instance:
+   - **Amike!** (Friend!)
+
+3. **Borrowed Words or Fixed Endings**: Some borrowed or technical terms may naturally end in **-e**, like proper names or specific terms:
+   - **Karate** (karate)
+   - **Adelaide** (Adelaide)
+
+Let me know if you’d like more examples or explanations!']",finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,aaa2df91-4a5a-4d2d-8a80-90ba4e70841d,user,,['what is amikoj in english'],finished_successfully,all,
+67508449-da24-8001-8e65-69fc231fc334,ID Acknowledgment Response,2024-12-04 16:33:14.140600064,2024-12-04 16:43:59.638905088,0dfbf0c1-3bc4-4e87-8ae5-1c44b1f8ef01,assistant,,"['In English, **amikoj** means **friends**. 
+
+- **amiko** = friend (singular)
+- **amikoj** = friends (plural, indicated by the **-j** ending).']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2171e-3e88-4ff2-ae63-a8bc06cdb55d,user,,['My ID is 04122024_1500_1'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,3032324d-d7f7-43e9-8ee3-aa038bf403e7,assistant,,['Noted! How can I assist you with your ID or anything else? 😊'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2facb-550e-4156-b2c0-6cd038ee871c,user,,['how do you make articles plural in esperanto'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,5f054396-3476-4002-819c-d06812abd75c,assistant,,"['In Esperanto, **articles do not change for plural**. There is only one article, **""la""**, which is used for both singular and plural nouns. The plural is marked by the **-j** suffix added to the noun.
+
+### Example:
+- **La libro** = The book  
+- **La libroj** = The books  
+
+So, whether singular or plural, the article stays **la**. The pluralization is done entirely on the noun. 
+
+Would you like more examples?']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2fed4-f684-416d-b641-88f1f676c854,user,,['in esperanto do adjectives go plural'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,22d81a17-32e8-4f14-8c48-892c01ad81b6,assistant,,"['Yes, adjectives in Esperanto must agree with the noun they describe in both **number** (singular or plural) and **case** (nominative or accusative).
+
+To make an adjective plural, you add the suffix **-j**, just as with nouns.
+
+### Examples:
+#### Singular:
+- **La granda domo** = The big house
+#### Plural:
+- **La grandaj domoj** = The big houses
+
+### If the noun is in the **accusative case** (direct object):
+#### Singular:
+- **Mi vidas la grandan domon** = I see the big house
+#### Plural:
+- **Mi vidas la grandajn domojn** = I see the big houses
+
+So, both the noun and its adjective take the **-j** for plural and **-n** for accusative, ensuring agreement. Would you like to practice this?']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2bfca-5d7d-49f2-9b19-59acf48e6488,user,,['beautifully in esperato'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,c0fd6906-2524-4ebc-b922-71540c4d3f2e,assistant,,"['The word for **""beautifully""** in Esperanto is **""bele""**. 
+
+It is the adverb form of **""bela""** (beautiful) and follows the regular rule of adding **-e** to adjectives to form adverbs. 
+
+### Examples:
+- **Ŝi kantas bele.** = She sings beautifully.  
+- **La suno brilas bele.** = The sun shines beautifully.  
+
+Would you like more examples or related words? 😊']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa257d1-bf10-40c3-910d-102d66481860,user,,['beautiful'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,d7096e2f-4833-43a1-b63f-a4362f4f230a,assistant,,"['The word for **""beautiful""** in Esperanto is **""bela""**. 
+
+### Examples:
+- **Ŝi estas bela.** = She is beautiful.  
+- **La bela floro.** = The beautiful flower.  
+
+Would you like to learn synonyms or practice using it in sentences? 😊']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2e441-c150-4939-bd03-d63dd7324b24,user,,['happy'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,ab8fe8bb-24e4-4ab2-84c4-78767226be3f,assistant,,"['The word for **""happy""** in Esperanto is **""feliĉa""**.
+
+### Examples:
+- **Mi estas feliĉa.** = I am happy.  
+- **La feliĉa infano ludas.** = The happy child is playing.  
+
+If you'd like, I can also show you related words like ""happily"" (**feliĉe**) or ""happiness"" (**feliĉo**). 😊']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2d357-8d4f-4ab2-a649-eda6222dcc91,user,,['because'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,afb94216-7364-47cf-8f88-9090fc4471e3,assistant,,"['The word for **""because""** in Esperanto is **""ĉar""**.
+
+### Example Sentences:
+- **Mi ridas, ĉar mi estas feliĉa.** = I laugh because I am happy.  
+- **Ŝi restas hejme, ĉar ĝi pluvas.** = She stays at home because it is raining.
+
+Would you like more examples or related expressions? 😊']",finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,aaa2dbf3-6d97-4940-aba6-c77c8336b1d0,user,,['he lives in a beautiful apartment'],finished_successfully,all,
+675073d1-b904-8001-91a8-be0865d0f1de,ID Request Acknowledgment,2024-12-04 15:22:58.142804992,2024-12-04 15:37:03.847450112,05b754f5-dc28-4129-a4d6-c8e28731dfda,assistant,,"['In Esperanto, you would say:
+
+**Li loĝas en bela apartamento.**
+
+- **Li** = He  
+- **loĝas** = lives (present tense of ""loĝi"")  
+- **en** = in  
+- **bela** = beautiful  
+- **apartamento** = apartment  
+
+Let me know if you'd like more examples or further explanation! 😊']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa26766-834c-4c5c-8f8b-5280a55268f3,user,,['my id is 04122024_1345_1'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,d2173192-dced-4382-8913-73278fb0f301,assistant,,['Got it! Is there anything specific you'd like to do with your ID or related information?'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa2ea16-6804-4b02-b04c-1b3b36af2d0c,user,,['fill in the blank with appropriate verb in esperanto. La knabo ----- esperanton'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,7543aa6d-66ae-4b5a-96be-b59e13b6800a,assistant,,['La knabo **lernas** Esperanton.'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa252ad-e6ef-4326-89c0-8599c2342a4d,user,,['is la birdo flugas rapide correct?'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,5899d985-871d-4d2d-931d-90001271c74c,assistant,,"['Yes, **La birdo flugas rapide** is correct in Esperanto. It means ""The bird flies quickly."" The verb **flugas** (flies) and the adverb **rapide** (quickly) are properly used.']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa25803-3ec3-4468-ab99-6b619305ed69,user,,['fill in the blank with verb. Tom kaj Anna -----amikoj'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,92638379-2a5a-46b1-a45a-b367c7a15304,assistant,,"['Tom kaj Anna **estas** amikoj. 
+
+This means ""Tom and Anna are friends.""']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa2cad3-cf56-4aad-ac29-7bb551c0abeb,user,,['negative of tom dormas?'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,16c73e3d-bf76-4e79-9f83-785c32098ab9,assistant,,"['The negative of **Tom dormas** (Tom sleeps) is:
+
+**Tom ne dormas.**  
+
+This means ""Tom does not sleep."" In Esperanto, the word **ne** is used to negate verbs.']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa22ef5-0377-49b2-a70a-bac5a09e5eb8,user,,['is the negative of anna lernas = anna ne lernas?'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,b3b01565-7ce0-460c-a728-09c7053f967c,assistant,,"['Yes, that's correct! The negative of **Anna lernas** (Anna learns) is:
+
+**Anna ne lernas.**
+
+This means ""Anna does not learn."" Using **ne** before the verb is the standard way to negate in Esperanto.']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa2a8ea-8039-45b6-8282-be7a52f2ee6e,user,,['la hundo fluas =  la hundo ne flugas? negative'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,d199de1e-9889-4aed-bfd6-8fa2ed99d795,assistant,,"['The sentence **La hundo fluas** means ""The dog flows,"" which likely doesn't make sense, as **fluas** refers to flowing (like water). If you intended to say **La hundo flugas** (""The dog flies""), then the negative would be:
+
+**La hundo ne flugas** (""The dog does not fly""). 
+
+If you meant something else, feel free to clarify! 😊']",finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,aaa272dd-5a60-441f-a49f-9fab6e647774,user,,['complete the sentence with correct past tense. tom -----bone hierau'],finished_successfully,all,
+675063f6-f51c-8001-86e1-3980abfcd04d,ID Confirmation Request,2024-12-04 14:15:19.192413184,2024-12-04 14:27:40.824954112,c80ac30b-6a38-4a58-97a1-fa61b4ed555a,assistant,,"['The correct past tense completion is:
+
+**Tom fartis bone hieraŭ.**
+
+This means ""Tom was well yesterday.""']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2593a-fecd-4546-889d-7f88d325531c,user,,['My ID is 04122024_1300_01'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,e340cc41-76e9-4f03-bfe4-72e7456afb91,assistant,,['Understood! How can I assist you with your ID or any related request?'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa29a4f-29b7-4048-8d18-77dfd46551da,user,,['La knabo lernas Esperanton. please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,03bb4434-c100-4f40-a4b2-34818dd67269,assistant,,['The boy is learning Esperanto.'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2a657-764c-4de4-9910-837b14e6b202,user,,['amikoj  please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,b0891d0d-4c98-48d2-a8b8-af31df302d7d,assistant,,"['""Amikoj"" translates to **""friends""** in English.']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa201f5-fea8-404f-a598-04ac8723e188,user,,['Tom and Anna are friends. translate into Esperanto'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,ac2a9b44-3e5a-41f6-a57b-7e59c2fd88d8,assistant,,['**Tom kaj Anna estas amikoj.**'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa257d9-5050-4fa0-9857-91ca4f66a11d,user,,['dormas   please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,491ea596-cae7-4078-ab1c-2e7a01f9f466,assistant,,"['**Dormas** translates to **""sleeps""** or **""is sleeping""** in English, depending on the context.']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa230b2-8ae2-4fa0-a28c-3d471651e9e5,user,,['Tom is not sleeping.  translate into Esperanto'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,d6769a11-8f37-4cd1-8dc7-6730c2b11024,assistant,,['**Tom ne dormas.**'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa28229-adb5-4b99-af0f-01de8b1cfaad,user,,['La hundo ne flugas.please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,9e2b779e-f386-4259-9222-20cedbdb56de,assistant,,['The dog does not fly.'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2d2ff-7f96-43c2-8b85-2d291af99a22,user,,['La birdo ne estas granda. please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,7f72c540-1a3c-4e02-a31a-e547d5b8b351,assistant,,['The bird is not big.'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2ea60-4c29-4cb0-be6b-b06df2004be8,user,,['La birdo estas ne granda. please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,4071bb47-9ecf-4ffd-8600-2a994c4f905a,assistant,,"['The sentence **""La birdo estas ne granda""** is grammatically incorrect in Esperanto. The correct form is **""La birdo ne estas granda""**, which translates to:
+
+**""The bird is not big.""**']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa26eee-388e-4a7f-94e9-00abbb29d2c3,user,,['Tom domas bone hieraŭ.please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,1d21ee83-c19c-4950-a475-1eccdd29282f,assistant,,"['The sentence **""Tom domas bone hieraŭ""** is incorrect in Esperanto because **""domas""** is not a valid word, and the verb tense is inconsistent with the adverb **""hieraŭ""** (yesterday). 
+
+If you meant to say **""Tom thought well yesterday,""** the correct Esperanto translation would be:
+
+**""Tom pensis bone hieraŭ.""** 
+
+Let me know if you'd like further clarification!']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2e9b3-7500-45d7-a608-ad49ca1e5a54,user,,['Tom domas bone.please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,c1b95666-21b1-41ab-b3f6-70e1c7e921ee,assistant,,"['**""Tom domas bone.""** translates to:
+
+**""Tom thinks well.""**']",finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,aaa2ef7b-33e5-40cd-9776-3816bd690685,user,,['La birdo ne flugis rapide.please translate into English'],finished_successfully,all,
+67505184-09ac-8001-a0a8-1651c3a57292,ID Assistance Request,2024-12-04 12:56:36.309580032,2024-12-04 13:15:16.068270080,76bd7320-a426-443e-bd57-b55adc6cc4a4,assistant,,"['**""La birdo ne flugis rapide.""** translates to:
+
+**""The bird did not fly fast.""**']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa2385c-de1c-4116-8c55-35c084615b62,user,,['is esperanto a real language'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,7f50d166-153a-4871-b0c6-61cbb9990eef,assistant,,"['Yes, Esperanto is a real language! It was created in 1887 by L. L. Zamenhof, a Polish-Jewish ophthalmologist, as an international auxiliary language. Its purpose is to foster communication and understanding between people of different native languages. Esperanto is constructed to be easy to learn, with a regular grammar, phonetic spelling, and a vocabulary drawn primarily from European languages.
+
+Today, Esperanto has a global community of speakers, with estimates ranging from tens of thousands to around two million people. It is used in literature, music, and even international events like the **Universala Kongreso** (World Esperanto Congress). While it is not a native language for most, there are some native speakers—children raised in Esperanto-speaking households.']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa246b2-c400-438f-86b6-44efbaeb9957,user,,['My ID is 4122024_10:00_#1'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,c9ed653f-a57e-4f3c-ba30-94baba7a4466,assistant,,"['Got it! If this ID is related to anything specific you'd like to discuss or track, let me know how I can assist you further! 😊']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa2fb6b-ca6a-48c7-a586-ac7b67f27bf4,user,,['how do you say happy because in esperanto'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,8c12a86e-716d-4d4e-8d5a-a001187d3835,assistant,,"['In Esperanto, ""happy because"" is expressed as:
+
+**""Feliĉa ĉar""**
+
+- **Feliĉa** means ""happy.""
+- **Ĉar** means ""because.""']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa2325b-330c-48ba-813c-8f9d77a7a4b7,user,,['what is lives'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,7e188810-dfc0-4b93-8733-5e1fedd4bff4,assistant,,"['The English word **""lives""** can have different meanings based on context. Here are the main interpretations:
+
+1. **Plural of ""life""**:  
+   - Refers to multiple existences or lifetimes.  
+   - Example: ""Cats are said to have nine lives.""
+
+2. **Third-person singular of the verb ""live""**:  
+   - Refers to the act of residing or existing in a place or condition.  
+   - Example: ""She lives in Paris.""
+
+Would you like the Esperanto translation for any specific usage of ""lives""?']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa2f7eb-de50-4553-94da-95e1382095f7,user,,['lives in esperanto'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,25c3372c-2da6-48fd-904a-aa4c230bf968,assistant,,"['In Esperanto, ""lives"" can be translated depending on the context:
+
+1. **As a verb (""to live"") in the third person singular**:  
+   - ""He/She/It lives"" = **Li/Ŝi/Ĝi loĝas** (if referring to residing in a place) or **Li/Ŝi/Ĝi vivas** (if referring to being alive).  
+
+   Examples:  
+   - ""She lives in Paris"" = **Ŝi loĝas en Parizo.**  
+   - ""He lives happily"" = **Li vivas feliĉe.**
+
+2. **As a plural noun (""lives,"" the plural of ""life"")**:  
+   - ""Lives"" = **Vivoj**.  
+   
+   Example:  
+   - ""Many lives were saved"" = **Multaj vivoj estis savitaj.**
+
+Let me know if you'd like clarification or additional examples!']",finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,aaa232de-8ee9-424c-9c88-a39cca7c6614,user,,['apartement in esperanto'],finished_successfully,all,
+675029ba-a330-8001-b58c-a5591d5e2a18,Is Esperanto a language,2024-12-04 10:06:50.881211904,2024-12-04 10:44:37.057039872,3f4486a4-182c-4f43-af0e-e2013c9bb389,assistant,,"['In Esperanto, ""apartment"" is translated as **""apartamento.""**
+
+Example sentence:  
+- ""I live in an apartment."" = **""Mi loĝas en apartemento.""**']",finished_successfully,all,
+674f413f-b8cc-8001-bfce-65f867969639,研究支付与奖励指南,2024-12-03 17:34:55.845009920,2024-12-03 19:31:04.708945152,aaa280b0-ffe3-4510-9c45-158610b6936f,user,,"['This study is being conducted by researchers from the FAIR centre at NHH Norwegian School of Economics and Lund University.
+
+Payment and Rewards
+
+You are guaranteed payment for this study if you complete the entire study. You can earn additional rewards depending on your performance. 
+
+The payments are as follows:
+- GBP 5 for completing the study
+- GBP 7 for correctly answering at least 20 out of over 50 practice questions
+- GBP 1 per correct answer in the test (maximum amount GBP 15)
+
+The maximum payment you can earn in this study is GBP 27.
+
+Guidelines
+
+We encourage you to try to answer all questions accurately and truthfully. This study is confidential and will only be used for research purposes. This study has been approved by an institutional review board. You can email the research team at siri.isaksson@nhh.no if you have any queries about this study.
+
+Keep in mind:
+
+- It takes about 15 minutes to go carefully over the lecture.
+- You will be able to go back and forth through the different sections of the lecture using the Table of Contents button.
+- The time allotted for practice questions is 20 minutes.
+- You will be asked to go to a ""wait screen"" once the 35 minutes for the lecture and practice questions are up.
+
+Consent
+
+By participating in this study you agree to the usage of your anonymised information and actions within the survey for research purposes. If you do not agree to participate, please raise your hand and tell the lab coordinator.']",finished_successfully,all,
+674f413f-b8cc-8001-bfce-65f867969639,研究支付与奖励指南,2024-12-03 17:34:55.845009920,2024-12-03 19:31:04.708945152,3a2f293f-3987-4555-967f-8253af1fe51b,assistant,,"['这份研究由挪威经济学院（NHH）的FAIR中心和隆德大学的研究人员共同开展。
+
+### 支付与奖励
+
+完成整个研究后，您将获得保底支付，并可根据表现获得额外奖励：
+- **完成研究**：支付 **5 英镑**。
+- **练习题奖励**：正确回答超过 50 道练习题中的至少 20 道，可额外获得 **7 英镑**。
+- **测试奖励**：测试中每答对一题获得 **1 英镑**，最多可得 **15 英镑**。
+
+**最高总支付金额：27 英镑**。
+
+---
+
+### 指导说明
+
+- 请尽量准确、诚实地回答所有问题。
+- 研究内容将保密，仅用于科研目的。
+- 研究已获得机构伦理审查委员会的批准。如有疑问，请联系研究团队（邮箱：siri.isaksson@nhh.no）。
+
+---
+
+### 注意事项
+
+1. **讲解部分**：花约 15 分钟认真浏览讲解内容。
+   - 可使用目录按钮在不同章节间切换。
+2. **练习时间**：练习题部分有 20 分钟时间。
+3. **等待界面**：完成讲解与练习的 35 分钟后，将进入“等待界面”。
+
+---
+
+### 同意参与
+
+参加此研究即表明您同意使用匿名化信息和行为数据进行科研。如果您不同意，请举手并告知实验室协调员。']",finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,aaa20534-a759-4760-8e77-49d5b7d41d96,user,,['is in esperando'],finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,d8f6016b-ccb7-4e61-ba50-718f50b5fe78,assistant,,"['It seems you might mean ""Is it in Esperanto?"" If you have a specific text, phrase, or word in mind, feel free to share it, and I can confirm whether it is in Esperanto or translate it into Esperanto for you!']",finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,aaa26793-e22b-40c6-9fd6-86081ab3081d,user,,['yes'],finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,75526981-0541-4cbc-80ab-6294d7b3d758,assistant,,"['Let me know the text, and I'll check if it's in Esperanto or translate it for you! 😊']",finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,aaa2a0e3-79a4-4b54-9c8a-9f34cba93fc2,user,,['the dog is beautiful'],finished_successfully,all,
+674f0355-8900-8001-91af-68750c07f9e5,Esperanto translation inquiry,2024-12-03 13:10:45.757420032,2024-12-03 19:30:29.082057984,e95d586e-de39-4501-a54b-eba540d8770f,assistant,,"['In Esperanto, ""The dog is beautiful"" translates to:
+
+**La hundo estas bela.**']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa22475-a7cf-4d01-a494-68e334d5a13b,user,,['amikoj meaning from espanton'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,14583c31-6caf-472e-9829-aff4aaa59c9d,assistant,,"['In Esperanto, ""amikoj"" means ""friends."" It is the plural form of ""amiko,"" which translates to ""friend."" The suffix ""-j"" is added to ""amiko"" to indicate the plural form, resulting in ""amikoj."" citeturn0search1']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa205cc-c888-4a41-96e1-4dd79ec05cf6,user,,['is estas to be'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,3b479d0b-1300-45ea-8698-030ef5730806,assistant,,"['Yes, in Esperanto, **""estas""** translates to **""is,""** **""am,""** or **""are""** in English, depending on the context. It is the present tense of the verb **""esti""** (to be). For example:
+
+- Mi estas studento. (I am a student.)
+- Ŝi estas amiko. (She is a friend.)
+- Ili estas feliĉaj. (They are happy.)']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa2421a-ba7e-4df8-84fd-9431b748843e,user,,['what does negative form of sentence mean'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,e3c4809c-f5fc-4f21-b3a7-5aa1b2f61262,assistant,,"['The **negative form of a sentence** means the sentence expresses that something is **not true** or denies an action, state, or condition. In English, this often involves words like ""not"" or ""no."" 
+
+For example:
+
+- Affirmative: **She is happy.**
+- Negative: **She is not happy.**
+
+In **Esperanto**, the negative form is created using **""ne""** (which means ""not""). For example:
+
+- Affirmative: **Ŝi estas feliĉa.** (She is happy.)
+- Negative: **Ŝi ne estas feliĉa.** (She is not happy.)
+
+The negative form is used to contradict, deny, or reject a statement or idea.']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa2d00d-314c-41b3-ba7b-2ff2871f12c6,user,,['dormas meaning'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,96512c06-2b24-4673-a836-d192e16867c8,assistant,,"['In Esperanto, **""dormas""** means **""sleeps""** or **""is sleeping.""** 
+
+It is the present tense of the verb **""dormi""** (to sleep). For example:
+
+- Mi dormas. (I sleep / I am sleeping.)
+- La kato dormas. (The cat sleeps / The cat is sleeping.)
+- Ili dormas nokte. (They sleep at night.)']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa2f38d-b747-4fc4-86f6-db45e41ebd1e,user,,['tom does not sleep'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,462215ba-15c4-4348-aa54-5c06670fcd21,assistant,,"['In Esperanto, **""Tom does not sleep""** would be translated as:
+
+**Tom ne dormas.** 
+
+Here:
+- **Tom** = the name stays the same.
+- **ne** = not (to negate the verb).
+- **dormas** = sleeps/is sleeping (present tense of ""dormi"").']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa24e05-b66b-44eb-97a2-79db9135c28b,user,,['the dog does not fly'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,1b2e0472-cd2f-4c05-b12c-f5395d40547e,assistant,,"['In Esperanto, **""The dog does not fly""** is translated as:
+
+**La hundo ne flugas.**
+
+Here:
+- **La** = the.
+- **hundo** = dog.
+- **ne** = not (to negate the verb).
+- **flugas** = flies/is flying (present tense of ""flugi,"" to fly).']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa27942-c672-4328-b75d-b5ffe74746f2,user,,['past tense of verbs'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,04b141a3-781a-4819-854e-34600a9bee50,assistant,,"['In **Esperanto**, the **past tense** of verbs is formed by using the verb ending **-is**. This ending applies to all verbs, making it simple and regular.
+
+### Examples:
+
+1. **Paroli** (to speak)
+   - Present: Mi parolas. (I speak.)
+   - **Past**: Mi parolis. (**I spoke**.)
+
+2. **Kuri** (to run)
+   - Present: Ili kuras. (They run.)
+   - **Past**: Ili kuris. (**They ran**.)
+
+3. **Flugi** (to fly)
+   - Present: La birdo flugas. (The bird flies.)
+   - **Past**: La birdo flugis. (**The bird flew**.)
+
+Esperanto verbs are regular and do not change based on subject, so once you learn the endings, forming tenses is straightforward!']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa28348-0b3a-46a1-8594-33598b06d33f,user,,['la juna instruistoj meaning'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,bdef830e-43ad-44cc-bed3-eecdac4b2113,assistant,,"['In Esperanto, **""la junaj instruistoj""** means **""the young teachers.""**
+
+Here’s the breakdown:
+
+- **la** = the.
+- **junaj** = young (plural form of the adjective ""juna"").
+- **instruistoj** = teachers (plural form of ""instruisto,"" which means ""teacher"").
+
+Note: The adjective **""junaj""** matches the plural form of the noun **""instruistoj""** because adjectives in Esperanto agree in number with the noun they describe.']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa22eb5-bb05-4b3e-b4bc-c463cc62179d,user,,['bela meaning'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,880367a7-4b5f-4e9a-9b7c-35af6fb3e6b2,assistant,,"['In Esperanto, **""bela""** means **""beautiful""** or **""lovely.""**
+
+It is an adjective and can describe people, objects, or anything considered beautiful. For example:
+
+- **Ŝi estas bela.** (She is beautiful.)
+- **La floroj estas belaj.** (The flowers are beautiful.)
+- **Kia bela tago!** (What a beautiful day!) 
+
+If plural, it becomes **""belaj""** to agree with the noun it modifies.']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa23ee0-4d42-407e-81de-0c5fbf0e02f7,user,,['happy'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,e85b6edb-e670-4149-a805-7a3257179d13,assistant,,"['In Esperanto, **""happy""** is **""feliĉa.""**
+
+### Examples:
+- **Mi estas feliĉa.** (I am happy.)
+- **Ŝi estas feliĉa hodiaŭ.** (She is happy today.)
+- **La infanoj estas feliĉaj.** (The children are happy.)
+
+If plural, the adjective changes to **""feliĉaj""** to match the plural noun.']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa20f40-f188-4a38-8a94-5e41b95dede4,user,,['because'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,33e87123-8531-425a-8a35-506375b95547,assistant,,"['In Esperanto, **""because""** is translated as **""ĉar.""**
+
+### Examples:
+- **Mi ridas, ĉar mi estas feliĉa.** (I am laughing because I am happy.)
+- **Li restas hejme, ĉar pluvas.** (He stays at home because it is raining.)
+- **Ĉar ŝi lernas, ŝi sukcesos.** (Because she studies, she will succeed.)']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa23d42-74c9-4b0c-9bb3-45c1abd1126d,user,,['he'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,22d8beb3-9a4c-4ba3-818d-9cdcc83806c1,assistant,,"['In Esperanto, **""he""** is translated as **""li.""**
+
+### Examples:
+- **Li estas mia amiko.** (He is my friend.)
+- **Ĉu li venos morgaŭ?** (Will he come tomorrow?)
+- **Li ludas gitaron.** (He plays the guitar.)']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa200c3-808e-4e8d-9d3d-2c022102efd9,user,,['lives'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,0f414962-c856-4c8f-ab06-3f9c6f4edd8b,assistant,,"['In Esperanto, **""lives""** is translated as **""loĝas.""**
+
+It is the present tense of the verb **""loĝi""** (to live, in the sense of residing somewhere).
+
+### Examples:
+- **Li loĝas en Londono.** (He lives in London.)
+- **Mi loĝas en apartamento.** (I live in an apartment.)
+- **Kie vi loĝas?** (Where do you live?)']",finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,aaa25fa8-ee32-42de-8a16-69273132faac,user,,['The man is happy because he lives in a beautiful apartment.'],finished_successfully,all,
+674efe79-840c-8001-90d5-887c4d79676c,Amikoj en Esperanto,2024-12-03 12:50:01.827388160,2024-12-03 19:29:55.841507072,9fb84648-5bc9-4830-932d-261f6ac1167a,assistant,,"['In Esperanto, this sentence would be:
+
+**La viro estas feliĉa, ĉar li loĝas en bela apartamento.**
+
+### Breakdown:
+- **La viro** = The man.
+- **estas** = is.
+- **feliĉa** = happy.
+- **ĉar** = because.
+- **li** = he.
+- **loĝas** = lives.
+- **en** = in.
+- **bela apartamento** = a beautiful apartment.']",finished_successfully,all,
+674f481d-4fd8-8001-9778-b89ea4a08db9,ID Confirmation Assistance,2024-12-03 18:04:13.531451904,2024-12-03 18:29:22.207875072,aaa299d2-9d80-4696-a4a1-b57e1d98377a,user,,['My ID is 03/12/2024_18:04_1'],finished_successfully,all,
+674f481d-4fd8-8001-9778-b89ea4a08db9,ID Confirmation Assistance,2024-12-03 18:04:13.531451904,2024-12-03 18:29:22.207875072,83a70402-44b0-4fda-bd7a-aac98d3af820,assistant,,['Got it! Let me know how I can assist you.'],finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,aaa2110a-1173-4d52-9f88-73a9c8f31e41,user,,"['wcorrect or not:La granda knabo estas juna.
+
+Tom estas multe interesa.
+
+La knabinoj lernas rapidej.']",finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,ef232819-e4a5-4862-a09d-7c7695bed8bb,assistant,,"['Here is a review of your Esperanto sentences:
+
+1. **""La granda knabo estas juna.""**  
+   ✅ Correct!  
+   It translates to ""The big boy is young."" The sentence is grammatically accurate.
+
+2. **""Tom estas multe interesa.""**  
+   ❌ Incorrect.  
+   The correct version is: **""Tom estas tre interesa.""**  
+   Explanation: ""Multe"" means ""a lot"" or ""many"" and is not used as an intensifier in this context. Use ""tre"" (very) for describing the intensity of ""interesa"" (interesting).
+
+3. **""La knabinoj lernas rapidej.""**  
+   ❌ Incorrect.  
+   The correct version is: **""La knabinoj lernas rapide.""**  
+   Explanation: The word ""rapide"" (quickly) is an adverb and does not take the suffix ""-j,"" which is used for plural nouns.']",finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,aaa2aaa6-1f86-4e54-898c-f2bcfeb5eab3,user,,"['What is the option that best suits the statement in the sentence?
+
+Tom diras: “Mi lernas rapide.” Anna respondas:
+
+Reconstruct the story
+
+Please order the following sentences so that the dialogue between Marko and a teacher makes sense.
+Marko: Saluton, instruisto! Mi fartas bone.
+Teacher: Bone! Prenu la libron, kaj ni komencu la lecionon.
+Teacher: Saluton, Marko! Kiel vi fartas hodiaŭ?
+Teacher: Bone. Kion vi lernas nun?
+ Marko: Jes, instruisto!
+Teacher: Ĉu vi lernas Esperanton rapide?
+Marko: Jes, sur mia tablo estas libro kaj paperoj.
+Teacher: Tre bone, Marko. Ĉu libro estas sur via tablo?
+Marko: Mi lernas Esperanton kaj matematikon.
+Marko: Jes, mi lernas rapide. La lecionoj estas interesaj!
+
+Please write the numbers corresponding to the correct order of the story with spaces in between. For example: 1 2 3 4']",finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,b16d4978-a2a9-41cc-b0c1-b49377fc5077,assistant,,"['Here is the correct order of the story:
+
+**2 3 1 5 7 9 6 8 4**
+
+This reconstructs the dialogue between Marko and the teacher in a logical and conversational flow.']",finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,aaa27fb0-19fe-4e2c-8b81-ecd66daa907a,user,,"['What is the option that best suits the statement in the sentence?
+
+Tom diras: “Mi lernas rapide.” Anna respondas:']",finished_successfully,all,
+674f1596-5170-8001-a641-2b53debd296a,Gramatikaj korektoj en Esperanto,2024-12-03 14:28:38.587920896,2024-12-03 17:28:30.148593920,d63b5016-08f1-40ad-b980-de010e377e3d,assistant,,"['The option that best suits Anna's response could be:
+
+**""Ĉu vere? Ankaŭ mi lernas rapide!""**  
+(Translation: ""Really? I also learn quickly!"")  
+
+This response acknowledges Tom's statement and adds a personal comment, continuing the conversation naturally.']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa22ef2-4841-4ba2-ab1c-64a2e737d552,user,,['masculine'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,669fdb87-3baa-4e41-ba40-eb2730b80ad4,assistant,,"['In Esperanto, nouns do not have grammatical gender, so there is no inherent concept of ""masculine"" or ""feminine"" for words. However, when you need to specify that something is masculine, you can use the prefix **""vir-""**. For example:
+
+- **hundo** = dog  
+- **virhundo** = male dog (literally, ""man-dog"")
+
+This prefix is used when you want to emphasize the male gender of a person or animal. If no prefix is used, the noun is considered gender-neutral.']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2ba8c-0499-4358-96ca-af135e9edfbe,user,,['please explain everything in Chinese to me'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,7be89e26-613f-4c28-9d2b-90d916e14f6c,assistant,,['User prefers explanations in Chinese.'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,e71d3253-cffc-4417-970b-38f7f4f5cb17,tool,,['Model set context updated.'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,50474ac3-4644-4096-9673-903db616ae42,assistant,,"['在世界语中，名词本身没有性别区分，因此没有“阳性”或“阴性”的概念。但如果需要明确表示某事物是阳性的，可以使用前缀 **""vir-""**。例如：
+
+- **hundo** = 狗（性别不明或中性）
+- **virhundo** = 公狗（字面意思是“男狗”）
+
+这个 **""vir-""** 前缀用于强调某人或某动物的阳性特征。如果不使用这个前缀，名词通常被认为是中性的。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2b78e-9ab5-40e6-a1e0-e2488d7bfe3c,user,,['plural'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,73559fcb-8fd3-4036-aad8-72c3de1b16b9,assistant,,"['在世界语中，复数通过在名词的词尾添加 **-j** 来表示。无论名词是单数还是复数，词形变化都很规则。以下是具体说明：
+
+### 单数与复数的变化：
+1. 单数：名词以 **-o** 结尾。
+   - **amiko** = 朋友（一位朋友）
+   - **domo** = 房子（一栋房子）
+
+2. 复数：名词在单数形式的基础上添加 **-j**。
+   - **amikoj** = 朋友们
+   - **domoj** = 房子们（多栋房子）
+
+### 例句：
+- **Mi havas amikon.** = 我有一个朋友。（单数）
+- **Mi havas amikojn.** = 我有一些朋友。（复数）
+
+### 注意：
+- 如果名词带有形容词修饰，形容词也要用 **-j** 表示复数，并与名词保持一致。
+  - **bela domo** = 一栋漂亮的房子
+  - **belaj domoj** = 一些漂亮的房子
+
+世界语的复数规则非常简单，没有复杂的不规则变化。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa28ad8-2bc1-4188-b851-b8b067337e1e,user,,['dormisfarta'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,723b5b01-f8f4-4efa-92ae-5c86828e38a5,assistant,,"['**Dormisfarta** 是一个复合词，由 **dormi**（睡觉）和 **farti**（状况，健康状态）组合而成，表示“睡眠状态下的状况”或“睡得怎么样”。这是一个非正式的、创造性用法，可能更多见于口语或幽默场合。
+
+例如：
+- **Kiel vi dormisfartas?** = 你昨晚睡得怎么样？
+  （类似于 “How did you sleep?”）
+
+### 词义分解：
+- **dormi** = 睡觉  
+- **farti** = 状况、情况（通常指健康或一般状态，如 **Mi fartas bone.** = 我很好。）
+
+这种复合词体现了世界语的创造性，允许语言使用者自由组合词根以表达新的概念。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa23c17-47ce-4a31-94f8-869614f3284e,user,,['fartas'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,fe4ea99b-3d82-4636-a630-2855645326f1,assistant,,"['在世界语中，**fartas** 是动词 **farti** 的现在时形式，意思是“处于某种状态”或“感觉如何”，尤其是指身体或精神状态。它常用来问候或表达状况。
+
+### 基本用法：
+1. **Mi fartas bone.**  
+   我感觉很好。
+
+2. **Kiel vi fartas?**  
+   你感觉如何？（类似于“你好吗？”）
+
+3. **Ili fartas malbone.**  
+   他们感觉不好。
+
+### 动词变位：
+世界语的动词变位非常规则，以下是 **farti** 的基本形式：
+- 不定式：**farti**（处于某种状态）
+- 现在时：**fartas**（现在正在某种状态）
+- 过去时：**fartis**（过去处于某种状态）
+- 将来时：**fartos**（将来会处于某种状态）
+- 命令式：**fartu**（请处于某种状态）
+- 条件式：**fartus**（可能会处于某种状态）
+
+### 常见表达：
+1. **Mi fartas tre bone, dankon.**  
+   我感觉非常好，谢谢。
+
+2. **Ĉu vi fartas bone?**  
+   你感觉还好吗？
+
+3. **Ni ĉiuj fartas bone.**  
+   我们大家都感觉很好。
+
+这个词在日常对话中经常出现，是问候时的基本用语。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa270eb-b74d-409c-a16a-e6ed3c5d1655,user,,['vi'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,f4bbec58-ff3f-457c-8bf9-b52600e95024,assistant,,"['在世界语中，**vi** 是人称代词，表示“你”或“你们”。无论是单数还是复数，**vi** 的形式都是相同的。它可以用于正式或非正式的场合，也不分性别。
+
+### 用法：
+1. **单数：**
+   - **Vi estas bela.**  
+     你很漂亮。
+   - **Kion vi faras?**  
+     你在做什么？
+
+2. **复数：**
+   - **Vi estas miaj amikoj.**  
+     你们是我的朋友。
+   - **Ĉu vi ĉiuj fartas bone?**  
+     你们大家都好吗？
+
+### 注意：
+- **vi** 是第二人称的代词，对应英文的 “you”。
+- 世界语中的代词不会因为数量或性别变化而改变形式，因此 **vi** 始终是“你”或“你们”的统一形式。
+
+### 例句：
+- **Vi parolas Esperanton.**  
+  你说世界语。
+- **Ĉu vi amas muzikon?**  
+  你喜欢音乐吗？
+
+这是一个非常常用的代词，适用于各种情境下的交流。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2f2a7-1eec-4164-87d0-38d75ad4ffbe,user,,['bone'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,878f8a89-ce27-47c2-a13e-7c4a4706ef7a,assistant,,"['在世界语中，**bone** 是一个副词，意思是“好地”、“很好”。它常用来描述动作的方式或状态，相当于英语中的 “well”。
+
+---
+
+### 用法：
+
+1. **表示状态：**
+   - **Mi fartas bone.**  
+     我感觉很好。
+   - **Ĉu vi fartas bone?**  
+     你感觉好吗？
+
+2. **修饰动词：**
+   - **Li kantas bone.**  
+     他唱得很好。
+   - **Ŝi lernas bone.**  
+     她学得很好。
+
+3. **独立使用：**
+   - **Bone!**  
+     好！  
+     （可用作感叹词，表示“好的”、“可以”）
+
+4. **在句子中表示程度：**
+   - **Vi faris bone.**  
+     你做得很好。
+
+---
+
+### 与 **bona** 的区别：
+- **bona** 是形容词，修饰名词，表示“好的”。  
+  例如：**bona libro** = 一本好书。
+- **bone** 是副词，修饰动词或整个句子，表示“很好地”。  
+  例如：**Ŝi parolas bone.** = 她说得很好。
+
+---
+
+### 例句：
+- **Ĉio iros bone.**  
+  一切都会好起来。
+- **Bone komencis la tago.**  
+  这一天开始得很好。
+
+这个词在日常对话中非常常用，是基本词汇之一！']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa209d0-27f7-4c08-a776-17a4710e7ea4,user,,['jes'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,98c080b2-3c81-4057-abec-98012c73e0e6,assistant,,"['在世界语中，**jes** 是一个副词，意思是“是”或“对”，用于表示肯定回答，相当于英语中的 ""yes"" 或中文的“是”。
+
+---
+
+### 用法：
+
+1. **肯定回答问题：**
+   - **Ĉu vi estas laca?**  
+     你累了吗？  
+     **Jes.**  
+     是的。
+
+2. **加强肯定语气：**
+   - **Jes, mi konsentas.**  
+     是的，我同意。
+   - **Jes ja!**  
+     确实是这样！（带有强调语气）
+
+3. **用于对比或纠正：**
+   - **Ne, ĝi ne estas vera! Jes, ĝi estas vera!**  
+     不，这不是真的！是的，这是真的！
+
+4. **独立使用：**
+   - **Jes, dankon.**  
+     是的，谢谢。
+   - **Jes! Mi sukcesis!**  
+     是的！我成功了！
+
+---
+
+### 与其他词的对比：
+- **Ne** = 否，用于否定回答，相当于“不是”或“no”。  
+  例如：  
+  **Ĉu vi ŝatas kafon?**  
+  你喜欢咖啡吗？  
+  **Ne.**  
+  不。
+
+- **Jes** 表示肯定，语气直接而明确。
+
+---
+
+### 例句：
+- **Jes, mi parolas Esperanton.**  
+  是的，我会说世界语。
+- **Ĉu vi pretas? Jes, mi pretas.**  
+  你准备好了吗？是的，我准备好了。
+
+**Jes** 是日常交流中非常重要的词汇之一！']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2778f-8978-48bc-ba23-0c9f871bab49,user,,['how to say man in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,093d1724-5202-40ca-8518-1a26c0213df8,assistant,,"['In Esperanto, ""man"" can be expressed in two common ways, depending on the context:
+
+1. **Viro** - Refers specifically to a male adult (man).  
+   - Example: **La viro estas alta.** = The man is tall.
+
+2. **Homo** - Refers to a person or human being in a general sense (not gender-specific).  
+   - Example: **Ĉiuj homoj estas egalaj.** = All humans are equal.
+
+### Usage:
+- Use **viro** when emphasizing the masculine gender.
+- Use **homo** when speaking generically about humans, regardless of gender.']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa246c7-cc1e-4c19-a373-7ce362984e3f,user,,['Please still give me explain in Chinese'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,2fababb6-4275-4ad0-ac49-a6609d67d94c,assistant,,['User wants explanations in Chinese even when asking in other languages.'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,48a778dc-2699-40f8-aa53-6057fd99811c,tool,,['Model set context updated.'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,ca5c1045-4b77-4e6b-b4f3-6c5319a91fee,assistant,,"['在世界语中，“man” 根据语境可以用两种方式表达：
+
+1. **Viro** - 特指成年男性（男人）。  
+   - 示例：**La viro estas alta.** = 那个男人很高。
+
+2. **Homo** - 泛指人类或人（不分性别）。  
+   - 示例：**Ĉiuj homoj estas egalaj.** = 所有人类都是平等的。
+
+### 使用说明：
+- 如果需要强调性别为男性，使用 **viro**。
+- 如果只是泛指人类，不涉及性别问题，使用 **homo**。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa240fb-4f85-47d1-8b5b-85ed0e092240,user,,['How to say woman in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,7d3dd3df-5529-4267-9142-ff4e0bf23c72,assistant,,"['在世界语中，“woman” 可以用以下词表达：
+
+1. **Virino** - 特指成年女性（女人）。  
+   - 示例：**La virino estas bela.** = 那位女人很漂亮。
+
+2. **Homo** - 泛指人类或人（不分性别）。  
+   - 示例：**Ĉiuj homoj havas rajtojn.** = 所有人类都有权利。  
+     （仅在不强调性别时使用）
+
+---
+
+### 词汇结构：
+- **Virino** 是由 **vir-**（阳性）去性别化加 **-in-**（女性化后缀）构成。
+  - **Viro** = 男人
+  - **Virino** = 女人
+
+这种构词法体现了世界语的性别标记逻辑。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa269c0-0b97-4148-aa44-bfb2d397152d,user,,['How to say dog in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,6c9ee33d-31c7-4a6c-8c09-37b803025959,assistant,,"['在世界语中，“dog” 表达为 **hundo**，指代狗这种动物，不区分性别。
+
+### 具体说明：
+1. **Hundo** - 一般用法，指狗，性别不明或不重要。  
+   - 示例：**La hundo ludas en la ĝardeno.** = 那只狗在花园里玩。
+
+2. 如果需要明确性别：
+   - **Virhundo** - 公狗（加上前缀 **vir-** 表示阳性）。  
+     - 示例：**La virhundo estas granda.** = 那只公狗很大。
+   - **Hundino** - 母狗（加上后缀 **-in-** 表示女性）。  
+     - 示例：**La hundino havas idojn.** = 那只母狗有小狗。
+
+---
+
+### 衍生词：
+- **Hundido** - 小狗、幼犬（加后缀 **-id-** 表示幼崽）。  
+  - 示例：**La hundido dormas.** = 小狗正在睡觉。
+
+世界语的词汇构造非常直观，根据需求可以灵活添加前后缀来表达更多含义。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2f351-7111-4af5-a76f-2be990ecf947,user,,['How to say small in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,d949546d-668b-49d2-bf00-22ca42a6e740,assistant,,"['在世界语中，“small” 表达为 **malgranda**，意思是“小的”或“体积小的”。
+
+---
+
+### 用法：
+1. **Malgranda** - 形容词，用于修饰名词，表示“体积小”或“尺寸小”。
+   - 示例：**La malgranda domo estas bela.**  
+     那栋小房子很漂亮。
+   - **Mi havas malgrandan hundon.**  
+     我有一只小狗。
+
+2. **相关派生：**
+   - **Malgrandeco** - 小小的状态或尺寸（名词）。
+     - 示例：**La malgrandeco de la libro estas oportuna.**  
+       这本书的小尺寸很方便。
+   - **Malgrandigi** - 缩小（动词）。
+     - 示例：**Li volas malgrandigi la bildon.**  
+       他想缩小这张图片。
+
+---
+
+### 构词说明：
+- 世界语中，“大”是 **granda**，而“小”通过添加前缀 **mal-**（表示相反）变成 **malgranda**。
+- 这种构词规则让世界语表达更加简洁、系统化。
+
+### 常见短语：
+- **Tre malgranda** = 非常小
+- **Malgranda infano** = 小孩子
+- **Ĉu ĝi estas malgranda?** = 它小吗？']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa297ab-c2d9-4678-b38b-3eff6aec0eb4,user,,['How to say cat in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,8ed68561-263f-4c71-bd96-140166985882,assistant,,"['在世界语中，“cat” 表达为 **kato**，指代猫这种动物，不区分性别。
+
+---
+
+### 具体说明：
+1. **Kato** - 一般用法，指猫，性别不明或不重要。  
+   - 示例：**La kato dormas sur la lito.**  
+     那只猫睡在床上。
+
+2. 如果需要明确性别：
+   - **Virkato** - 公猫（加上前缀 **vir-** 表示阳性）。  
+     - 示例：**La virkato estas granda.**  
+       那只公猫很大。
+   - **Katino** - 母猫（加上后缀 **-in-** 表示女性）。  
+     - 示例：**La katino zorgas pri siaj katidoj.**  
+       那只母猫照顾她的小猫。
+
+---
+
+### 衍生词：
+- **Katido** - 小猫、幼猫（加后缀 **-id-** 表示幼崽）。  
+  - 示例：**La katidoj estas ludemaj.**  
+    小猫们很爱玩。
+
+---
+
+### 总结：
+- **Kato** = 猫（泛指）。
+- **Virkato** = 公猫。
+- **Katino** = 母猫。
+- **Katido** = 小猫。
+
+世界语的构词系统非常直观，可以通过前缀和后缀灵活表达更多含义。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2917b-9b4b-4917-bcb1-500b8d26c1ce,user,,['How to say big in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,9bb79b05-8a02-4005-8e6e-9148b9e13741,assistant,,"['在世界语中，“big” 表达为 **granda**，意思是“大”或“大的”。
+
+---
+
+### 用法：
+
+1. **Granda** - 形容词，用于修饰名词，表示“大”或“尺寸大”。
+   - 示例：**La granda domo estas bela.**  
+     那栋大房子很漂亮。
+   - **Mi havas grandan hundon.**  
+     我有一只大狗。
+
+2. **相关派生：**
+   - **Grandeco** - 大小或尺寸（名词）。  
+     - 示例：**La grandeco de la ĉambro estas sufiĉa.**  
+       房间的大小足够了。
+   - **Grandigi** - 放大（动词）。  
+     - 示例：**Ĉu vi povas grandigi la bildon?**  
+       你能放大这张图片吗？
+
+---
+
+### 构词说明：
+- 世界语中，“小”是 **malgranda**，通过添加前缀 **mal-**（表示相反）来构成与 **granda** 相反的词。
+
+---
+
+### 常见短语：
+- **Tre granda** = 非常大
+- **Granda urbo** = 大城市
+- **Ĉu ĝi estas granda?** = 它大吗？
+
+**Granda** 是基础词汇之一，用于描述大小时非常常用。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2b557-9342-4220-8da6-9fc6dfcca523,user,,['How to say young in Esperanton'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,c7b3de62-7fef-45b0-9bf2-c2f44238cdd8,assistant,,"['在世界语中，“young” 表达为 **juna**，意思是“年轻的”或“年少的”。
+
+---
+
+### 用法：
+
+1. **Juna** - 形容词，用于修饰名词，表示“年轻”或“年幼”。  
+   - 示例：**Ŝi estas juna kaj energia.**  
+     她既年轻又充满活力。  
+   - **La juna knabo lernas rapide.**  
+     那个年轻男孩学习得很快。
+
+2. **相关派生：**
+   - **Juneco** - 年轻、青春（名词）。  
+     - 示例：**Juneco estas bela tempo.**  
+       青春是美好的时光。
+   - **Junigi** - 使年轻（动词）。  
+     - 示例：**La nova hararanĝo ŝin junigis.**  
+       新发型让她看起来更年轻。
+
+---
+
+### 与年龄相关的词：
+- **Infano** = 小孩
+- **Adoleskanto** = 青少年
+- **Plenkreskulo** = 成年人
+
+---
+
+### 常见短语：
+- **Tre juna** = 非常年轻
+- **Junaj homoj** = 年轻人
+- **Ĉu vi estas juna?** = 你年轻吗？
+
+**Juna** 是描述年龄和青春的重要词汇，在对人或事物的评价中常用。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2e949-dc57-41d5-8a3d-994cd95d7540,user,,['bele'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,d6615435-55fb-4839-befd-97d062d067fe,assistant,,"['在世界语中，**bele** 是副词，表示“美丽地”或“优雅地”，相当于英语的 “beautifully”。
+
+---
+
+### 用法：
+
+1. **修饰动词**：表示某个动作或状态是美丽的、优雅的。
+   - 示例：**Ŝi kantas bele.**  
+     她唱得很美。
+   - **La suno brilas bele en la mateno.**  
+     太阳在清晨美丽地照耀。
+
+2. **独立使用**：可用于表达感叹，类似“真美！”  
+   - **Bele!**  
+     美极了！
+
+---
+
+### 与 **bela** 的区别：
+- **Bela** 是形容词，用于修饰名词，表示“美丽的”。  
+  例如：**Ŝi estas bela.** = 她很美丽。
+- **Bele** 是副词，用于修饰动词或整个句子，表示“美丽地”。  
+  例如：**Ŝi parolas bele.** = 她说得很美丽。
+
+---
+
+### 常见短语：
+- **Tre bele** = 非常美丽地
+- **Ĉio aspektas bele.** = 一切看起来很美。
+- **Vi bele faris tion.** = 你做得很漂亮。
+
+**Bele** 是世界语中一个常用的副词，特别是在描述某种优雅或美丽的状态时。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa2018f-4953-46a1-a357-342e4cbe21a7,user,,['dormas'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,d7b7da41-135d-4ad4-a7f2-f0d2c43a28bf,assistant,,"['在世界语中，**dormas** 是动词 **dormi** 的现在时形式，意思是“睡觉”或“正在睡觉”。
+
+---
+
+### 基本用法：
+
+1. **表示睡觉的动作：**
+   - **Mi dormas.**  
+     我在睡觉。
+   - **Ĉu vi dormas?**  
+     你在睡觉吗？
+
+2. **用于描述其他人的状态：**
+   - **La bebo dormas profunde.**  
+     宝宝睡得很熟。
+   - **Ili dormas en la tendo.**  
+     他们睡在帐篷里。
+
+---
+
+### 动词变位：
+世界语的动词变位非常规则，以下是 **dormi** 的基本形式：
+- **不定式：** **dormi**（睡觉）  
+- **现在时：** **dormas**（正在睡觉）  
+- **过去时：** **dormis**（睡过了）  
+- **将来时：** **dormos**（将会睡）  
+- **命令式：** **dormu**（请睡觉）  
+- **条件式：** **dormus**（可能会睡）
+
+---
+
+### 常见短语：
+- **Dormu bone!**  
+  睡个好觉！
+- **Mi ne povas dormi.**  
+  我睡不着。
+- **Ĉu vi bone dormis?**  
+  你睡得好吗？
+
+---
+
+### 延伸：
+- **Endormiĝi** = 入睡  
+  例如：**Mi endormiĝis rapide.** = 我很快就睡着了。
+- **Dormema** = 困倦的  
+  例如：**Mi estas dormema.** = 我很困。
+
+**Dormas** 是日常生活中非常常用的一个动词，非常适合用来描述状态和行动。']",finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,aaa21bd9-cf9d-45b6-b9bf-e9f34f52af76,user,,['junaj'],finished_successfully,all,
+674f3266-1208-8001-8790-f92390f883fd,Masculina en Esperanto,2024-12-03 16:31:34.272402944,2024-12-03 16:59:50.891879936,bc8f43c5-71f7-4d50-aae9-5c94e18a8d38,assistant,,"['在世界语中，**junaj** 是形容词 **juna** 的复数形式，意思是“年轻的（复数）”。
+
+---
+
+### 用法说明：
+
+1. **修饰复数名词**：  
+   形容词在修饰复数名词时，需要添加复数词尾 **-j**，与名词的复数形式保持一致。
+   - 示例：  
+     **Junaj knaboj ludas en la ĝardeno.**  
+     年轻的男孩们在花园里玩。  
+     **Junaj virinoj kantas bele.**  
+     年轻的女人们唱得很好听。
+
+2. **形容词一致性**：  
+   在世界语中，形容词的复数形式和名词的复数形式要一致，无论是单数还是复数、主格还是宾格。
+   - 单数：**juna knabo** = 一个年轻的男孩  
+   - 复数：**junaj knaboj** = 年轻的男孩们
+
+---
+
+### 例句：
+- **Junaj homoj amas lerni.**  
+  年轻人喜欢学习。
+- **Ili estas junaj kaj plenaj de energio.**  
+  他们年轻而充满活力。
+- **Ĉu tiuj junaj infanoj estas viaj?**  
+  这些小孩是你的吗？
+
+**Junaj** 常用来描述复数的人或事物的年轻状态，是基本的形容词复数变化形式之一。']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa2eaf4-1916-444b-a19b-16a5f86f9bf1,user,,['My ID is 01122024_1500_11'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,76024ca4-68b5-4b0e-93cc-7ea6e6bca6b6,assistant,,['Got it! How can I assist you with your ID or anything else? 😊'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa2198b-7b92-4f1c-bb6e-70c4fb1f71fd,user,,['is knabo boy in esperado'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,69414a98-390f-4c1e-be12-a51f22e34b7d,assistant,,"['In Esperanto, ""knabo"" translates to ""boy."" The term ""knabo"" was borrowed from the German word ""Knabe,"" which historically meant ""boy"" but has become less common in modern German usage. citeturn0search0
+
+The suffix ""-in-"" in Esperanto denotes the feminine form of a noun. Therefore, ""knabino"" means ""girl."" citeturn0search4
+
+Regarding the term ""esperado,"" it doesn't correspond to a standard word in Esperanto. It's possible you intended to refer to ""Esperanto,"" the constructed international auxiliary language.
+
+In summary, ""knabo"" means ""boy"" in Esperanto, and ""knabino"" means ""girl."" If you have further questions or need additional clarification, feel free to ask!']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa29865-3e81-4852-8ea0-4e9f54785cc1,user,,['what does amikoj mean in esperados'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,d774d101-0f08-4963-853c-71929ff77129,assistant,,"['In Esperanto, **amikoj** means **friends**. 
+
+The word ""amiko"" is singular and means ""friend."" The suffix **-j** indicates the plural form, so **amikoj** refers to multiple friends. 
+
+Let me know if you'd like help with other Esperanto words!']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa2cca6-3a2b-4e95-b886-36389e52b279,user,,['what does anna ne lernas mean in esperanto'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,6b9059fd-d691-47f3-a2da-be8b08dfb0e8,assistant,,"['In Esperanto, **Anna ne lernas** means **Anna does not learn** or **Anna is not learning**. 
+
+- **Anna** is a proper noun, the name Anna.  
+- **ne** means ""not"" (used for negation).  
+- **lernas** is the verb ""learns"" or ""is learning.""  
+
+So, the sentence expresses that Anna is not engaging in learning. Let me know if you'd like further assistance with Esperanto!']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa22a05-2fb3-4a3c-a0e7-2d68247876ed,user,,['anna lernis rapide transaltioi'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,94bf944b-23bb-40e7-9025-d85ffb6057e2,assistant,,"['The sentence **""Anna lernis rapide transaltioi""** in Esperanto seems to contain a typo or an unfamiliar word (**transaltioi**). Let's break it down to interpret:
+
+- **Anna**: Proper noun, the name Anna.
+- **lernis**: Past tense of ""lerni,"" meaning ""learned.""
+- **rapide**: Adverb meaning ""quickly.""
+
+The word **transaltioi** is not standard in Esperanto. If you meant **""transsalti""** (to jump over or skip), the sentence might translate to:
+
+**""Anna lernis rapide transsalti""** = ""Anna quickly learned to jump over.""
+
+If you intended a different word, could you clarify? 😊']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa25760-5662-413e-8043-be854def322f,user,,['la instruisto estis bona translation'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,74225520-5f64-4150-ac5e-fff117866b4c,assistant,,"['The Esperanto sentence **""La instruisto estis bona""** translates to:
+
+**""The teacher was good.""**
+
+- **La**: ""The.""
+- **instruisto**: ""Teacher.""
+- **estis**: Past tense of ""to be,"" meaning ""was.""
+- **bona**: ""Good.""
+
+Let me know if you'd like help with more translations! 😊']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa2ada4-4eb0-45a4-a7ff-71bb40b4bdc2,user,,['are plural nouns end in j in esperanto'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,b0564f2e-e22b-4ca2-afe4-987544acebf6,assistant,,"['Yes, in Esperanto, **plural nouns always end with -j**. This is a consistent rule in the language. To make a noun plural, you add **-j** to the singular form.
+
+### Examples:
+- **Knabo** (boy) → **Knaboj** (boys)
+- **Amiko** (friend) → **Amikoj** (friends)
+- **Libro** (book) → **Libroj** (books)
+
+If the noun is already modified by an adjective, the adjective also takes the **-j** ending to agree in number with the noun:
+
+- **Bona knabo** (a good boy) → **Bonaj knaboj** (good boys)
+
+Let me know if you'd like to practice with some examples! 😊']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa209c8-50fd-47b5-9c16-37d12e1430bb,user,,['paperoj translation in esperanto'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,6cc43f89-5370-45b0-92ac-4b2d63cee3c9,assistant,,"['The word **paperoj** in Esperanto translates to **papers** in English.
+
+- **Papero**: Paper (singular)
+- **-j**: Plural ending, making it ""papers.""
+
+Let me know if you'd like more examples or further help with Esperanto! 😊']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa2aefe-689d-48b9-b47b-7bb42f0032e5,user,,['La katoj estas malgrandaj translation'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,26e66889-a195-40a0-8c06-184fab861484,assistant,,"['The Esperanto sentence **""La katoj estas malgrandaj""** translates to:
+
+**""The cats are small.""**
+
+- **La**: ""The.""
+- **katoj**: ""Cats"" (plural of ""kato"" - cat).
+- **estas**: ""Are.""
+- **malgrandaj**: ""Small"" (plural form to agree with the plural noun ""katoj"").
+
+Let me know if you'd like more translations or explanations! 😊']",finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,aaa20cf8-0a0c-46be-955e-557078592692,user,,['la grandas viroj translation'],finished_successfully,all,
+674f2301-a09c-8001-8993-73e9955a02fc,ID Assistance,2024-12-03 15:25:53.816695808,2024-12-03 15:43:14.791193088,d7710f25-9e7c-416e-9002-df596f077e75,assistant,,"['The phrase **""la grandas viroj""** in Esperanto is not grammatically correct. It seems like there might be a mix-up with the adjective or verb. Let’s correct and translate it.
+
+### Correct Version:
+**""La grandaj viroj""** translates to **""The big men""** or **""The large men.""**
+
+### Explanation:
+- **La**: ""The.""
+- **grandaj**: ""Big"" or ""large"" (plural form of the adjective ""granda"").
+- **viroj**: ""Men"" (plural of ""viro"" - man).
+
+Adjectives in Esperanto must agree in number and case with the nouns they modify. Let me know if you need more help! 😊']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2bcdf-51e1-4bfc-aefd-80a2eac6aff3,user,,['what is esperanto'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,7f38af72-173b-4a47-a081-da071df4d26f,assistant,,"['Esperanto is an international constructed language created in 1887 by L. L. Zamenhof, a Polish ophthalmologist. It was designed to be an easy-to-learn, politically neutral second language to foster communication and understanding between people of different native languages.
+
+### Key Features:
+1. **Regular Grammar**: Esperanto has a highly regular grammar with no exceptions, making it easier to learn.
+2. **Phonetic Spelling**: Words are pronounced as they are written, with one sound per letter.
+3. **International Vocabulary**: Its vocabulary is derived mainly from European languages, but it is designed to be neutral and accessible.
+4. **Affix System**: A system of prefixes and suffixes allows for the creation of many words from a single root.
+
+### Popularity and Use:
+- Esperanto has an active global community, with speakers in over 100 countries.
+- It is used in literature, music, travel, and online communities.
+- While not an official language in any country, it is recognized by UNESCO and supported by organizations like the Universal Esperanto Association (UEA).
+
+### Learning Advantages:
+- It takes significantly less time to learn than natural languages.
+- It can serve as a ""springboard"" for learning other languages due to its structure and vocabulary connections.
+
+Are you interested in learning it or exploring its culture?']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa22c43-e628-42c6-8e60-8d5ea273d6ad,user,,['what is bird in esperano?'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,73805235-0c1b-42e3-a2c3-72b64e15625e,assistant,,"['The word for ""bird"" in Esperanto is **birdo**.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2e8b3-a7b9-4dc8-9ca1-d64f0e198880,user,,"['correct or not
+
+La hundo estas bele.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,65ee9090-5ad8-4c83-823d-3cbe28f58fd3,assistant,,"['Your sentence **""La hundo estas bele.""** is **not correct**. Here's why:
+
+- **""bele""** is an adverb, which means it describes actions, not nouns. However, in your sentence, you are describing ""la hundo"" (the dog), which is a noun. For describing nouns, you need an **adjective**.
+
+### Corrected Sentence:
+**La hundo estas bela.**  
+(""The dog is beautiful."")
+
+### Explanation:
+- **bela**: an adjective meaning ""beautiful.""
+- **bele**: an adverb meaning ""beautifully."" For example:
+  - **La birdo kantas bele.** (""The bird sings beautifully."")']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2307c-b1aa-44c3-adb4-28eef211f4b4,user,,['La birdo flugas bele. correct or not'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,6f707d8c-4cae-4bb5-8091-1a5e493bc1cd,assistant,,"['Yes, **La birdo flugas bele** is correct! 
+
+### Explanation:
+- **La birdo**: ""The bird"" (subject).
+- **flugas**: ""flies"" (verb in present tense).
+- **bele**: ""beautifully"" (adverb describing how the bird flies).
+
+The sentence means: **""The bird flies beautifully.""** Great job! 🌟']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2449a-157e-49a9-9272-2e26b9c981a3,user,,['correct or notMi estas granda viro.'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,685b2be2-648b-42a1-b434-5b38ae746a37,assistant,,"['Yes, **Mi estas granda viro** is correct! 🌟
+
+### Explanation:
+- **Mi**: ""I"" (subject pronoun).
+- **estas**: ""am"" (verb in present tense).
+- **granda**: ""big"" or ""tall"" (adjective modifying ""viro"").
+- **viro**: ""man"" (noun).
+
+The sentence means: **""I am a big man.""** Excellent work!']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2ae6b-ee49-429d-b8e6-0bf80e60a338,user,,"['correct or notMi estas granda viro./ Ĉar mi fartas bone, mi estas malgranda kato.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,3a35e7d0-b4f0-4f87-8f1c-04f9aeaab8af,assistant,,"['Let's analyze both sentences:
+
+### 1. **Mi estas granda viro.**
+This sentence is **correct**.
+
+- **Mi estas**: ""I am.""
+- **granda**: ""big"" or ""large"" (adjective).
+- **viro**: ""man.""
+
+Translation: **""I am a big man.""**
+
+### 2. **Ĉar mi fartas bone, mi estas malgranda kato.**
+This sentence is **grammatically correct**, but the meaning is quite humorous or unusual!
+
+- **Ĉar**: ""Because.""
+- **mi fartas bone**: ""I feel well"" (in Esperanto, ""farti"" means ""to feel"" in terms of well-being, not the English slang meaning!).
+- **mi estas malgranda kato**: ""I am a small cat.""
+
+Translation: **""Because I feel well, I am a small cat.""**
+
+While the grammar is spot-on, the logic of the sentence is whimsical. It might be intended as a joke or playful phrase. 😊']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa24014-505e-4173-811e-d75c8893f412,user,,['Tom kaj Anna _____ amikoj.'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,b1f86450-71d7-441e-bbbd-a9d6b6a80350,assistant,,"['The correct word to fill in the blank is **estas**.
+
+### Complete sentence:
+**Tom kaj Anna estas amikoj.**
+
+### Explanation:
+- **Tom kaj Anna**: ""Tom and Anna"" (plural subject).
+- **estas**: ""are"" (the verb ""to be"" in Esperanto, used for plural subjects).
+- **amikoj**: ""friends"" (plural noun).
+
+Translation: **""Tom and Anna are friends.""**']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa21be5-7227-4e90-a43f-02c5a1f31657,user,,"['Write the negative form of these sentences in Esperanto:
+
+Tom dormas.
+
+Anna lernas.
+
+La hundo flugas.
+
+La birdo estas granda.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,366c373b-1365-4661-b81a-18edf029d8fd,assistant,,"['Here are the negative forms of the sentences in Esperanto:
+
+1. **Tom dormas.** → **Tom ne dormas.**  
+   *(Tom is not sleeping.)*
+
+2. **Anna lernas.** → **Anna ne lernas.**  
+   *(Anna is not learning.)*
+
+3. **La hundo flugas.** → **La hundo ne flugas.**  
+   *(The dog is not flying.)*
+
+4. **La birdo estas granda.** → **La birdo ne estas granda.**  
+   *(The bird is not big.)*
+
+In Esperanto, the word **ne** is placed before the verb to negate the sentence.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2808a-86d0-452c-a3df-0c43abbcf904,user,,"['Complete the sentence with the correct past tense:
+
+Tom _____ bone hieraŭ. (to sleep)
+
+Anna _____ rapide. (to learn)
+
+La instruisto _____ bona. (to be)
+La birdo _____ _____ rapide. (to not fly)']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,d9b566d4-25ee-47de-a3a3-18a8e60bdbbc,assistant,,"['Here are the completed sentences with the correct past tense:
+
+1. **Tom dormis bone hieraŭ.**  
+   *(Tom slept well yesterday.)*
+
+2. **Anna lernis rapide.**  
+   *(Anna learned quickly.)*
+
+3. **La instruisto estis bona.**  
+   *(The teacher was good.)*
+
+4. **La birdo ne flugis rapide.**  
+   *(The bird did not fly quickly.)*
+
+### Explanation:
+- **dormis, lernis, flugis**: Past tense of the verbs ""to sleep,"" ""to learn,"" and ""to fly"" in Esperanto. The past tense is formed by replacing the verb ending **-as** (present) with **-is**.
+- **estis**: Past tense of ""to be"" (**estas** → **estis**).
+- **ne**: Used to negate the sentence.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa2ef74-1598-43fe-83d3-26c2ecbbeb6f,user,,"['Transform these singular nouns into plural. If the noun has an article, keep the article in the plural form:
+
+La kato.
+
+Apartamento.
+
+La instruisto.
+
+Papero.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,1358bbc2-d053-4741-9637-625bc20280c4,assistant,,"['Here are the plural forms of the given nouns:
+
+1. **La kato** → **La katoj**  
+   *(The cats)*
+
+2. **Apartamento** → **Apartamentoj**  
+   *(Apartments)*
+
+3. **La instruisto** → **La instruistoj**  
+   *(The teachers)*
+
+4. **Papero** → **Paperoj**  
+   *(Papers)*
+
+### Explanation:
+- In Esperanto, to form the plural of a noun, you add **-j** to the singular form.
+- If the noun has an article (**la**), it remains unchanged in the plural form.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa24221-6f39-4117-84b3-4a48fdfa6469,user,,['The man is happy because he lives in a beautiful apartment. trsanlate into'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,834c3f06-9526-4302-936a-ef5ed79a9155,assistant,,"['The translation into Esperanto is:
+
+**La viro estas feliĉa, ĉar li loĝas en bela apartamento.**']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa25979-f273-4f3b-9212-e4f2f1d77a2b,user,,"['transalate into chinese WAIT SCREEN
+The lab coordinator will now collect your notes. Please wait until you get the signal that you can continue.
+
+In the meantime, please go to ChatGPT and click on the three dots (...) next to the title of you conversation on the left-hand side. Click on ""Archive."" Please come back to this screen when you're done.
+
+Please read carefully the instructions for the test:
+
+- You will work on 15 questions.
+- Every correct answer is worth GBP 1.
+- The estimated duration is 10 minutes.
+- You will see questions similar to the ones you solved in the practice questions.
+- You are not allowed to go back to previous screens.
+- You don't need to understand every single Esperanto word that you see to be able to answer the questions. Inferences from the context help.
+- There are no external aids allowed in the test.
+- The test is individual.
+- Do not navigate away from the page where the survey is. Doing so will automatically finish the test for you and disqualify you from obtaining the incentives in the practice questions and the test.']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,a9a41788-cefe-434d-b8b2-fa605930ad01,assistant,,"['等待屏幕  
+
+实验室协调员现在将收集您的笔记。请等待，直到收到可以继续的信号。  
+
+同时，请前往 ChatGPT，点击左侧会话标题旁边的三个点（...）。选择“存档”。完成后，请返回此屏幕。  
+
+请仔细阅读测试说明：  
+
+- 您将完成15道题目。  
+- 每个正确答案价值1英镑。  
+- 预计测试时间为10分钟。  
+- 您将看到类似于练习题的问题。  
+- 不允许返回之前的屏幕。  
+- 您不需要完全理解看到的每个世界语单词，通过上下文推断即可。  
+- 测试中不允许使用外部辅助工具。  
+- 测试为个人测试。  
+- 请不要离开调查所在的页面。否则，测试将自动结束，您将失去获得练习题和测试奖励的资格。']",finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,aaa20486-5813-4836-beb9-19c99ae4885e,user,,['will'],finished_successfully,all,
+674f0cbd-e4a0-8001-a29a-617d28694669,What is Esperanto,2024-12-03 13:50:54.181946880,2024-12-03 14:21:48.660523008,ef35489d-d6aa-4a29-b25f-26a7035aac87,assistant,,"['In Esperanto, ""will"" (to express future tense) is not a separate word. Instead, verbs are conjugated into the **future tense** by replacing the verb ending with **-os**. 
+
+### Examples:
+- **Mi manĝos.** = ""I will eat.""
+- **Ŝi legos libron.** = ""She will read a book.""
+- **Ili venos morgaŭ.** = ""They will come tomorrow.""
+
+So, the future tense in Esperanto is formed directly within the verb itself.']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa2224f-9334-46d4-b06b-1357ef3eafd3,user,,['teach me esperamento'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,32a713b8-a78b-4c7c-beb5-6ea90bf0e4a8,assistant,,"['Ah, you mean **Esperanto**! Let’s dive into learning this wonderful language. Esperanto is known for its simplicity and regularity. Let’s start with the basics:
+
+---
+
+### **The Alphabet**
+Esperanto uses a 28-letter alphabet. Each letter has only one sound, and there are no silent letters.
+
+**A B C Ĉ D E F G Ĝ H Ĥ I J Ĵ K L M N O P R S Ŝ T U Ŭ V Z**
+
+Special characters:
+- **Ĉ, Ĝ, Ĥ, Ĵ, Ŝ, Ŭ**  
+  (If you can’t type these, you can use alternatives like ""cx,"" ""gx,"" ""hx,"" ""jx,"" ""sx,"" and ""ux."")
+
+---
+
+### **Pronunciation Basics**
+- **a** = like ""a"" in *father*  
+- **e** = like ""e"" in *bet*  
+- **i** = like ""ee"" in *see*  
+- **o** = like ""o"" in *go*  
+- **u** = like ""oo"" in *moon*
+
+---
+
+### **Basic Grammar**
+1. **No Gendered Nouns**
+   - Example: *patro* (father) vs. *patrino* (mother). Adding **-in** makes a word feminine.
+
+2. **Regular Endings**
+   - **Nouns** end in **-o**:  
+     e.g., *libro* (book), *hundo* (dog)
+   - **Adjectives** end in **-a**:  
+     e.g., *bela* (beautiful), *granda* (big)
+   - **Verbs** have fixed endings:
+     - Present tense: **-as** (e.g., mi amas = I love)
+     - Past tense: **-is** (e.g., mi amis = I loved)
+     - Future tense: **-os** (e.g., mi amos = I will love)
+
+3. **Word Order**
+   - Standard: Subject-Verb-Object.  
+     Example: *Mi amas vin* (I love you).  
+     But you can reorder for emphasis because endings clarify the meaning.
+
+---
+
+### **Basic Vocabulary**
+Here’s some essential Esperanto to get you started:
+
+| **English**  | **Esperanto** | **Pronunciation**       |
+|--------------|---------------|-------------------------|
+| Hello        | Saluton       | sah-LOO-ton            |
+| Goodbye      | Ĝis revido    | jees reh-VEE-doh        |
+| Please       | Bonvolu       | bon-VOH-loo            |
+| Thank you    | Dankon        | DAHN-kon               |
+| Yes          | Jes           | yes                    |
+| No           | Ne            | neh                    |
+| I            | Mi            | mee                    |
+| You          | Vi            | vee                    |
+| Love         | Amo           | AH-moh                 |
+| Peace        | Paco          | PAH-tsoh               |
+
+---
+
+### **Practice Sentence**
+- ""Mi amas Esperanton.""  
+  *(I love Esperanto.)*
+
+Would you like to practice more vocabulary, sentences, or grammar rules?']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,333dabc9-8ab1-4eed-a07b-a7bd2c78591d,assistant,,"['Hooray for learning Esperanto! Let's get started with the basics of this simple and logical language.  
+
+### **Alphabet**
+Esperanto has 28 letters:
+- **Vowels:** a, e, i, o, u  
+- **Consonants:** b, c, ĉ, d, f, g, ĝ, h, ĥ, j, ĵ, k, l, m, n, p, r, s, ŝ, t, v, z  
+- **Special Notes:** The letters q, w, x, and y are not used in Esperanto.
+
+### **Pronunciation**
+- Each letter has only one sound.
+- Example:
+  - **a** sounds like ""ah"" (as in ""father"").
+  - **e** sounds like ""eh"" (as in ""met"").
+  - **ĉ** sounds like ""ch"" (as in ""chair"").
+  - **ŝ** sounds like ""sh"" (as in ""she"").
+  - **j** sounds like ""y"" (as in ""yes"").
+  - **ŭ** sounds like ""w"" (as in ""cow"").
+
+### **Grammar Basics**
+Esperanto grammar is straightforward:
+1. **Nouns:** Always end in **-o**.
+   - Example: ""domo"" (house), ""kato"" (cat).
+2. **Adjectives:** Always end in **-a**.
+   - Example: ""bela"" (beautiful), ""granda"" (big).
+3. **Plural:** Add **-j** to the noun or adjective.
+   - Example: ""domoj"" (houses), ""belaj"" (beautiful ones).
+4. **Verb Tenses:**
+   - Present: Ends in **-as** (e.g., ""mi amas"" = ""I love"").
+   - Past: Ends in **-is** (e.g., ""mi amis"" = ""I loved"").
+   - Future: Ends in **-os** (e.g., ""mi amos"" = ""I will love"").
+
+### **Useful Phrases**
+- **Saluton!** - Hello!
+- **Kiel vi fartas?** - How are you?
+- **Mi fartas bone, dankon.** - I’m fine, thank you.
+- **Bonvenon!** - Welcome!
+- **Ĝis revido!** - Goodbye!
+- **Mi amas Esperanton.** - I love Esperanto.
+
+Would you like to practice building sentences or learn some specific phrases?']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa28b57-bf91-4ff1-a427-81f436aab8c1,user,,['more vocab'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,bb0a1eb6-3cf9-4982-bc4d-ed59509b6872,assistant,,"['Here’s more useful Esperanto vocabulary to expand your skills:
+
+---
+
+### **Common Everyday Words**
+
+| **English**        | **Esperanto**  | **Pronunciation**      |
+|--------------------|----------------|------------------------|
+| Friend             | Amiko          | ah-MEE-koh             |
+| Family             | Familio        | fah-mee-LEE-oh         |
+| Food               | Manĝo          | MAHN-joh               |
+| Drink              | Trinkaĵo       | treen-KAH-yoh          |
+| Water              | Akvo           | AHK-voh                |
+| House              | Domo           | DOH-moh                |
+| City               | Urbo           | OOR-boh                |
+| Work               | Laboro         | lah-BOH-roh            |
+| School             | Lernejo        | lehr-NAY-yoh           |
+| Book               | Libro          | LEE-bro                |
+| Chair              | Seĝo           | SEH-joh                |
+
+---
+
+### **Basic Actions (Verbs)**
+
+| **English**        | **Esperanto**  | **Pronunciation**      |
+|--------------------|----------------|------------------------|
+| To eat             | Manĝi          | MAHN-jee               |
+| To drink           | Trinki          | TREEN-kee              |
+| To sleep           | Dormi          | DOHR-mee               |
+| To read            | Legi           | LEH-gee                |
+| To write           | Skribi         | SKREE-bee              |
+| To walk            | Marŝi          | MAHR-shee              |
+| To run             | Kuri           | KOO-ree                |
+| To speak           | Paroli         | pah-ROH-lee            |
+| To listen          | Aŭskulti       | ow-SKOOL-tee           |
+| To love            | Ami            | AH-mee                 |
+
+---
+
+### **Numbers**
+
+| **English**  | **Esperanto**  | **Pronunciation**      |
+|--------------|----------------|------------------------|
+| One          | Unu            | OO-noo                 |
+| Two          | Du             | doo                    |
+| Three        | Tri            | tree                   |
+| Four         | Kvar           | kvar                   |
+| Five         | Kvin           | kveen                  |
+| Six          | Ses            | sess                   |
+| Seven        | Sep            | sep                    |
+| Eight        | Ok             | ok                     |
+| Nine         | Naŭ            | now                    |
+| Ten          | Dek            | dehk                   |
+
+---
+
+### **Common Phrases**
+
+| **English**              | **Esperanto**      | **Pronunciation**      |
+|--------------------------|--------------------|------------------------|
+| How are you?             | Kiel vi fartas?    | K']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa234ae-47d0-42f6-8e70-36b8c9e2b604,user,,['i do not need the pronounciation'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,c2c85826-1a33-4cdc-99d9-b96cad8d8926,assistant,,['User does not need pronunciation guides for Esperanto vocabulary.'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,f452f355-15ea-4a96-bd72-c94d41fcb071,tool,,['Model set context updated.'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,9c3bd133-cc6e-4184-815d-87b89e0cd574,assistant,,"['Got it! Here's more Esperanto vocabulary without pronunciation guides:
+
+---
+
+### **Common Words**
+
+| **English**        | **Esperanto**  |
+|--------------------|----------------|
+| Sky               | Ĉielo          |
+| Sun               | Suno           |
+| Moon              | Luno           |
+| Star              | Stelo          |
+| Tree              | Arbo           |
+| Flower            | Floro          |
+| Animal            | Besto          |
+| Cat               | Kato           |
+| Dog               | Hundo          |
+| Fish              | Fiŝo           |
+
+---
+
+### **Actions (Verbs)**
+
+| **English**        | **Esperanto**  |
+|--------------------|----------------|
+| To sing           | Kanti          |
+| To dance          | Danci          |
+| To jump           | Salti          |
+| To open           | Malfermi       |
+| To close          | Fermi          |
+| To help           | Helpi          |
+| To work           | Labori         |
+| To study          | Studi          |
+| To live           | Vivi           |
+| To travel         | Vojaĝi         |
+
+---
+
+### **Places**
+
+| **English**        | **Esperanto**  |
+|--------------------|----------------|
+| World             | Mondo          |
+| Country           | Lando          |
+| Village           | Vilaĝo         |
+| Street            | Strato         |
+| Park              | Parko          |
+| Hospital          | Hospitalo      |
+| Library           | Biblioteko     |
+| Market            | Merkato        |
+| Hotel             | Hotelo         |
+| Beach             | Plaĝo          |
+
+---
+
+### **Colors**
+
+| **English**        | **Esperanto**  |
+|--------------------|----------------|
+| Red               | Ruĝa           |
+| Blue              | Blua           |
+| Green             | Verda          |
+| Yellow            | Flava          |
+| Black             | Nigra          |
+| White             | Blanka         |
+| Orange            | Oranĝa         |
+| Purple            | Viola          |
+| Brown             | Bruna          |
+| Gray              | Griza          |
+
+Let me know if you'd like more or specific categories!']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa202c5-d49d-4381-add9-eef37d498495,user,,['give me the words that are most likely to come up in a test after having studied esperanto for 20 minutes'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,9d71a268-639a-44d8-b023-e7fcc7840194,assistant,,"['For a beginner-level Esperanto test after studying for about 20 minutes, the focus would likely be on **basic vocabulary, grammar rules, and common phrases**. Here's a curated list of words and concepts that are most likely to appear:
+
+---
+
+### **Basic Vocabulary**
+
+#### People & Pronouns:
+- Mi (I)
+- Vi (You)
+- Li (He)
+- Ŝi (She)
+- Ni (We)
+- Ili (They)
+- Amiko (Friend)
+- Familio (Family)
+
+#### Common Objects:
+- Libro (Book)
+- Domo (House)
+- Seĝo (Chair)
+- Manĝo (Meal)
+- Trinkaĵo (Drink)
+- Akvo (Water)
+
+#### Basic Actions (Verbs):
+- Manĝi (To eat)
+- Trinki (To drink)
+- Dormi (To sleep)
+- Paroli (To speak)
+- Legi (To read)
+- Skribi (To write)
+
+#### Adjectives:
+- Bona (Good)
+- Granda (Big)
+- Bela (Beautiful)
+- Nova (New)
+
+---
+
+### **Common Phrases**
+- Saluton (Hello)
+- Ĝis revido (Goodbye)
+- Dankon (Thank you)
+- Jes (Yes)
+- Ne (No)
+- Kiel vi fartas? (How are you?)
+- Mi fartas bone. (I am fine.)
+
+---
+
+### **Numbers**
+- Unu (1)
+- Du (2)
+- Tri (3)
+- Kvar (4)
+- Kvin (5)
+
+---
+
+### **Essential Grammar Concepts**
+1. **Noun endings:** Words ending in **-o** are nouns (e.g., *hundo* = dog).
+2. **Adjective endings:** Words ending in **-a** are adjectives (e.g., *bela* = beautiful).
+3. **Verb conjugation:**
+   - Present tense: **-as** (e.g., *mi manĝas* = I eat).
+   - Past tense: **-is** (e.g., *mi manĝis* = I ate).
+   - Future tense: **-os** (e.g., *mi manĝos* = I will eat).
+
+4. **Word order:** Standard Subject-Verb-Object (e.g., *Mi amas vin* = I love you).
+
+---
+
+### Sample Sentences Likely to Be Tested:
+- Mi estas lernanto. (I am a student.)
+- Ĉu vi komprenas? (Do you understand?)
+- Mi ŝatas legi librojn. (I like to read books.)
+- La domo estas granda. (The house is big.)
+
+---
+
+Let me know if you'd like help with practice questions or more specific phrases!']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa205b9-933a-4783-8458-61ccc87f93dc,user,,"['how can i go back to a previous part of a survey if i am stuck on the end screen, are there any work arounds']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,db49cc9e-285c-4d5f-b05e-46fcdb5a537c,assistant,,"['If you're stuck on the end screen of a survey and need to go back to a previous part, here are some common workarounds:
+
+### 1. **Browser Back Button**
+   - Try clicking your browser's back button. 
+   - Be cautious: some surveys disable this or cause you to lose progress when you do this.
+
+### 2. **URL Manipulation**
+   - Check the URL for parameters (e.g., `...page=5` or `...step=3`).
+   - Adjust the number to correspond to an earlier step and reload the page. 
+   - Note: This may not work if the survey uses session tracking.
+
+### 3. **Open in a New Tab**
+   - If the survey allows, open the survey link in a new tab.
+   - If progress is saved server-side, you might be able to access earlier parts without affecting your submission.
+
+### 4. **Clear Cache or Cookies**
+   - Clear your browser's cookies or cache for the survey's site. 
+   - This might reset the survey, allowing you to start over.
+
+### 5. **Look for Navigation Options**
+   - Some surveys have a hidden or unobvious option to ""Go Back"" or ""Review Answers.""
+   - Check the corners of the page or look for small text links.
+
+### 6. **Inspect Developer Tools**
+   - Use your browser’s developer tools (usually opened with `F12` or `Ctrl+Shift+I`) to inspect elements.
+   - Look for hidden buttons or links that might let you navigate backward.
+
+### 7. **Contact Support**
+   - Many survey platforms include contact information for technical support.
+   - They might be able to reset your survey or provide a direct link to the earlier part.
+
+### 8. **Access Earlier Steps via Cookies or Storage**
+   - Advanced: Use your browser's developer tools to view local storage or cookies related to the survey.
+   - Modify relevant values (like the current step) if the survey uses client-side data storage.
+
+### 9. **Restart the Survey**
+   - If your progress isn’t critical or already saved, restarting might be the simplest solution.
+
+---
+
+If you provide more details about the survey platform (e.g., Qualtrics, Google Forms), I can suggest platform-specific solutions!']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa2ce48-6432-4791-9b71-180af4de3da7,user,,['qualtrics'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,5c7225c7-1847-45e0-8939-28d90864359a,assistant,,"['In Qualtrics surveys, navigating back to previous sections from the end screen can be challenging, especially if the survey lacks a ""Back"" button or has specific navigation restrictions. Here are some strategies to consider:
+
+1. **Utilize the Browser's Back Button**:
+   - Clicking the browser's back button might return you to earlier survey pages.
+   - **Caution**: Some surveys disable this function or may not retain your previous responses when you navigate back.
+
+2. **Modify the Survey URL**:
+   - Examine the survey's URL for parameters indicating page numbers or steps (e.g., `...&page=5` or `...&step=3`).
+   - Adjust these parameters to correspond to the desired section and reload the page.
+   - **Note**: This method's effectiveness depends on how the survey is configured and may not always work.
+
+3. **Restart the Survey**:
+   - If permissible, restarting the survey allows you to revisit all sections.
+   - **Consideration**: This approach may result in the loss of previously entered data.
+
+4. **Contact the Survey Administrator**:
+   - Reach out to the survey's administrator or support team to request assistance in accessing previous sections or resetting your progress.
+
+It's important to note that Qualtrics surveys can be configured in various ways, and some may intentionally restrict backward navigation to preserve data integrity or survey flow. If the survey designer has disabled the ""Back"" button or implemented logic that prevents returning to previous sections, these workarounds might not be effective.
+
+For future surveys, consider enabling the ""Back Button"" option in the survey settings to allow respondents to navigate freely between sections. This can enhance the user experience and provide flexibility during survey completion.
+
+For more detailed guidance on enabling the back button in Qualtrics surveys, refer to Qualtrics' support documentation:
+
+citeturn0search0']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa2de2b-b487-4770-b3ca-694eca89f9ed,user,,['find me another workaround'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,05c3260a-9204-4b04-a2bd-f9fa6f11e81f,assistant,,"['In Qualtrics surveys, once you've reached the end screen, returning to previous sections can be challenging, especially if the survey lacks a ""Back"" button or has specific navigation restrictions. Here are some strategies to consider:
+
+1. **Browser's Back Button**:
+   - Clicking the browser's back button might return you to earlier survey pages.
+   - **Caution**: Some surveys disable this function or may not retain your previous responses when you navigate back.
+
+2. **URL Manipulation**:
+   - Examine the survey's URL for parameters indicating page numbers or steps (e.g., `...&page=5` or `...&step=3`).
+   - Adjust these parameters to correspond to the desired section and reload the page.
+   - **Note**: This method's effectiveness depends on how the survey is configured and may not always work.
+
+3. **Restart the Survey**:
+   - If permissible, restarting the survey allows you to revisit all sections.
+   - **Consideration**: This approach may result in the loss of previously entered data.
+
+4. **Contact the Survey Administrator**:
+   - Reach out to the survey's administrator or support team to request assistance in accessing previous sections or resetting your progress.
+
+It's important to note that Qualtrics surveys can be configured in various ways, and some may intentionally restrict backward navigation to preserve data integrity or survey flow. If the survey designer has disabled the ""Back"" button or implemented logic that prevents returning to previous sections, these workarounds might not be effective.
+
+For future surveys, consider enabling the ""Back Button"" option in the survey settings to allow respondents to navigate freely between sections. This can enhance the user experience and provide flexibility during survey completion.
+
+For more detailed guidance on enabling the back button in Qualtrics surveys, refer to Qualtrics' support documentation:
+
+citeturn0search2']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa228d6-0a92-4668-ad61-e85cb0d31c2f,user,,"['back to esperanto, give me some practice phrases']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,73bca608-11d6-41c2-b69f-dfbf4aeaa0ea,assistant,,"['Here are some **practice phrases** in Esperanto to help reinforce your skills. These cover a variety of everyday situations:
+
+---
+
+### **Greetings & Introductions**
+- Saluton, kiel vi fartas? *(Hello, how are you?)*
+- Mi fartas bone, dankon. *(I am fine, thank you.)*
+- Mi nomiĝas [via nomo]. *(My name is [your name].)*
+- Ĉu vi parolas Esperanton? *(Do you speak Esperanto?)*
+- Jes, mi lernas Esperanton. *(Yes, I am learning Esperanto.)*
+- Mi ĝojas renkonti vin. *(I am glad to meet you.)*
+
+---
+
+### **At Home**
+- Ĉi tio estas mia domo. *(This is my house.)*
+- La ĉambro estas granda. *(The room is big.)*
+- Mi legas libron en la salono. *(I am reading a book in the living room.)*
+- Ĉu vi volas kafon aŭ teon? *(Do you want coffee or tea?)*
+- Bonvolu malfermi la fenestron. *(Please open the window.)*
+
+---
+
+### **Shopping**
+- Kiom kostas ĉi tio? *(How much does this cost?)*
+- Mi volas aĉeti pomojn. *(I want to buy apples.)*
+- Ĉu vi havas panon? *(Do you have bread?)*
+- La merkato estas malproksima. *(The market is far away.)*
+- Dankon pro via helpo. *(Thank you for your help.)*
+
+---
+
+### **Travel**
+- Kie estas la hotelo? *(Where is the hotel?)*
+- Mi serĉas la stacidomon. *(I am looking for the train station.)*
+- Ĉu mi povas ricevi mapon? *(Can I get a map?)*
+- La vojaĝo estas longa. *(The journey is long.)*
+- Mi bezonas taksion. *(I need a taxi.)*
+
+---
+
+### **Daily Activities**
+- Mi manĝas matenmanĝon. *(I am eating breakfast.)*
+- Ni ludas en la parko. *(We are playing in the park.)*
+- Mi laboras en la oficejo. *(I work in the office.)*
+- Mi skribas leteron. *(I am writing a letter.)*
+- Ĉu vi ŝatas kuiri? *(Do you like cooking?)*
+
+---
+
+### **Questions**
+- Kio estas tio? *(What is that?)*
+- Kie vi loĝas? *(Where do you live?)*
+- Kiam vi alvenos? *(When will you arrive?)*
+- Kial vi lernas Esperanton? *(Why are you learning Esperanto?)*
+- Kiel mi povas helpi vin? *(How can I help you?)*
+
+---
+
+### **Statements**
+- Mi ŝatas muzikon. *(I like music.)*
+- La vetero estas bela hodiaŭ. *(The weather is nice today.)*
+- Mi amikas kun ĉiuj. *(I am friends with everyone.)*
+- La infanoj ludas ekster la domo. *(The children are playing outside the house.)*
+- Ĉio estas en ordo. *(Everything is in order.)*
+
+---
+
+Let me know if you'd like these expanded or tailored to specific scenarios!']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa26c42-07a7-4b7c-ae55-867c8547c4b3,user,,['i have 5 mins to learn as much esperanto as possible. teach me it in the most digestable way'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,b2f53742-7318-44af-a43c-9b24697a29da,assistant,,"['Let’s make the most of these 5 minutes with a super-condensed crash course in Esperanto!
+
+---
+
+### **Key Rules to Know**
+1. **Word Endings**:
+   - **Nouns** end in **-o**: *hundo* (dog), *libro* (book)
+   - **Adjectives** end in **-a**: *bela* (beautiful), *nova* (new)
+   - **Verbs**:
+     - Present: **-as** (*mi amas* = I love)
+     - Past: **-is** (*mi amis* = I loved)
+     - Future: **-os** (*mi amos* = I will love)
+
+2. **No Irregulars**:
+   - Every word follows the rules. No exceptions!
+
+3. **Word Order**: Subject-Verb-Object
+   - Example: *Mi amas vin.* (I love you.)
+
+---
+
+### **Essential Vocabulary**
+#### Pronouns:
+- Mi (I), Vi (You), Li (He), Ŝi (She), Ni (We), Ili (They), Ĝi (It)
+
+#### Common Words:
+- Jes (Yes), Ne (No), Dankon (Thank you), Saluton (Hello), Ĝis (Bye), Bonvolu (Please)
+
+#### Basic Nouns:
+- Hundo (Dog), Kato (Cat), Libro (Book), Domo (House), Akvo (Water)
+
+#### Basic Verbs:
+- Manĝi (To eat), Trinki (To drink), Dormi (To sleep), Paroli (To speak), Legi (To read)
+
+---
+
+### **5 Key Phrases**
+1. Saluton! Kiel vi fartas? *(Hello! How are you?)*
+2. Mi fartas bone, dankon. *(I’m fine, thank you.)*
+3. Mi volas kafon. *(I want coffee.)*
+4. Ĉu vi parolas Esperanton? *(Do you speak Esperanto?)*
+5. Mi amas Esperanton! *(I love Esperanto!)*
+
+---
+
+### **Fast Grammar Tips**
+1. **Negation**: Add ""ne"" before a verb.  
+   - *Mi ne scias.* (I don’t know.)
+2. **Questions**: Start with ""ĉu"".  
+   - *Ĉu vi estas laca?* (Are you tired?)
+3. **Plural**: Add **-j** to nouns/adjectives.  
+   - *hundoj* (dogs), *belaj hundoj* (beautiful dogs)
+
+---
+
+### **Lightning Practice**
+Translate these:
+1. I drink water. *(Mi trinkas akvon.)*
+2. The house is big. *(La domo estas granda.)*
+3. They read books. *(Ili legas librojn.)*
+
+---
+
+Done! In just 5 minutes, you’ve got the basics! Want a quick quiz or more phrases?']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa21b90-ab4f-4575-a5b1-3128c615796d,user,,['give me a quick quiz'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,c05d2b45-0d4e-4b66-a4bc-aa3902c053f0,assistant,,"['Here’s a **quick quiz** to test your new Esperanto skills! 📝
+
+---
+
+### **Translate to Esperanto**  
+1. I love cats.  
+2. Thank you very much.  
+3. Are you tired?  
+4. They drink water.  
+5. The dog is big.  
+
+---
+
+### **Translate to English**  
+6. Mi legas libron.  
+7. La domo estas nova.  
+8. Ĉu vi parolas Esperanton?  
+9. Mi manĝas pomon.  
+10. Ni amas nian amikon.
+
+---
+
+### **Fill in the Blanks**
+11. Jes, mi _____ kafon. *(want = volas)*  
+12. Ili ne _____ katojn. *(like = ŝatas)*  
+13. Mi _____ domon. *(build = konstruas)*  
+
+---
+
+### Let me know when you're ready for the answers!']",finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,aaa29310-99d0-496a-8d56-cacf065f7255,user,,['give me the answers'],finished_successfully,all,
+674eda35-0a30-8001-8cac-9c56805f22e0,Lernu Esperanton,2024-12-03 10:15:17.483237120,2024-12-03 10:36:56.420427008,504ecb7d-347d-45e5-aa61-e639f87e9a68,assistant,,"['Here are the answers to the quiz:
+
+---
+
+### **Translate to Esperanto**
+1. I love cats. → *Mi amas katojn.*  
+2. Thank you very much. → *Dankon tre multe.*  
+3. Are you tired? → *Ĉu vi estas laca?*  
+4. They drink water. → *Ili trinkas akvon.*  
+5. The dog is big. → *La hundo estas granda.*
+
+---
+
+### **Translate to English**
+6. *Mi legas libron.* → I am reading a book.  
+7. *La domo estas nova.* → The house is new.  
+8. *Ĉu vi parolas Esperanton?* → Do you speak Esperanto?  
+9. *Mi manĝas pomon.* → I am eating an apple.  
+10. *Ni amas nian amikon.* → We love our friend.
+
+---
+
+### **Fill in the Blanks**
+11. Jes, mi **volas** kafon.  
+12. Ili ne **ŝatas** katojn.  
+13. Mi **konstruas** domon.
+
+---
+
+How did you do? Let me know if you need further clarification or practice! 🎉']",finished_successfully,all,
+674d880c-90c8-8001-ad79-3208e14e8928,Hello assistance request,2024-12-02 10:12:28.832335104,2024-12-02 15:17:42.835400960,aaa2bf0f-43d7-483b-b5b8-e1f6779388b9,user,,['hello'],finished_successfully,all,
+674d880c-90c8-8001-ad79-3208e14e8928,Hello assistance request,2024-12-02 10:12:28.832335104,2024-12-02 15:17:42.835400960,b753c608-ffb2-42b4-89f2-ba6350f7b16c,assistant,,['Hello! How can I assist you today? 😊'],finished_successfully,all,
+6749fe9e-d514-8001-ad46-87d43a754854,Login Assistance Request,2024-11-29 17:49:18.985851136,2024-12-02 15:17:38.825186048,aaa20998-da5f-474d-8c4c-3f79f481de4e,user,,['login'],finished_successfully,all,
+6749fe9e-d514-8001-ad46-87d43a754854,Login Assistance Request,2024-11-29 17:49:18.985851136,2024-12-02 15:17:38.825186048,06dd868e-d3fa-4054-bfeb-c1171ea4c83e,assistant,,"['​summaryGoogleturn0navigation0
+To assist you effectively, could you please specify which account or service you're trying to log into? For example, are you attempting to access your Google account, Microsoft account, or another service? Providing more details will enable me to guide you accurately.']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa24a9c-ea9b-46c9-ae02-49af6d626501,user,,['My ID is 20471918_1221_1'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,4313678c-3181-4092-bbc7-a55f246b0296,assistant,,['Noted! How can I assist you today? 😊'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa21f5e-b627-42d9-86a5-73481ea47799,user,,['I am learning Esperanto'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,d5739b55-ccf0-4496-917a-46234bbf36f2,assistant,,['User is learning Esperanto.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,65242329-1c65-41f0-afa5-57ba1b38a651,tool,,['Model set context updated.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,a3c5695c-992c-4ac6-afeb-47d6a66412c8,assistant,,['That's wonderful! Esperanto is a fascinating and logical language. Ĉu mi povas helpi vin per io specifa? (Can I help you with anything specific?) 😊'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa2f592-44ed-4eb4-bf7c-71dad6817b80,user,,['what does this word mean amikoj'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,97ecec81-b435-4e80-bb26-6959b5852867,assistant,,"['The Esperanto word **""amikoj""** means **""friends""** in English. It is the plural form of **""amiko""** (friend). 
+
+- **amiko** = friend (singular)
+- **amikoj** = friends (plural)
+
+Keep up the great work! 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa2722f-1582-4c64-83f4-7353667446ea,user,,['how do  you say tom and anna are friends'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,04fdc921-c354-4e7d-a9c2-7b3e95dbc600,assistant,,"['In Esperanto, you would say:
+
+**Tom kaj Anna estas amikoj.**
+
+- **Tom** and **Anna** = Tom kaj Anna  
+- **estas** = are  
+- **amikoj** = friends  
+
+Simple and elegant! 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa20b6f-d1c9-418e-b39b-25afb9537b64,user,,['what is the missing word here La knabo _____ Esperanton'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,fe80a871-e211-4d36-a4a1-571cc3ad93b6,assistant,,"['The missing word in **""La knabo _____ Esperanton""** is likely **""parolas""**, which means ""speaks.""
+
+So the full sentence would be:
+
+**La knabo parolas Esperanton.**  
+(The boy speaks Esperanto.)
+
+Other possible verbs could fit depending on the context, such as ""lernas"" (learns) or ""amas"" (loves):
+
+- **La knabo lernas Esperanton.** (The boy is learning Esperanto.)  
+- **La knabo amas Esperanton.** (The boy loves Esperanto.)  
+
+Let me know if you meant something else! 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa259ea-9ed1-4dac-96af-766cc1800490,user,,['Write the negative form of these sentences in Esperanto = Tom dormas.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,8f0cb0c7-bcc7-41ad-a2f4-2c98c72d38f2,assistant,,"['The negative form of **""Tom dormas""** in Esperanto is:
+
+**Tom ne dormas.**
+
+Explanation:  
+- **ne** = not  
+- It is placed before the verb to make the sentence negative.
+
+So, **Tom ne dormas** means ""Tom does not sleep"" or ""Tom is not sleeping."" 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa2ae43-4291-46a4-bcc2-6b4e1320780e,user,,['La hundo flugas'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,e8a1fdda-fde8-4d9e-a8fb-0fb044f7d8b5,assistant,,"['The negative form of **""La hundo flugas""** in Esperanto is:
+
+**La hundo ne flugas.**
+
+This means ""The dog does not fly"" in English. 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa244a4-725f-43a1-a145-51e69e91cf48,user,,['La birdo estas granda'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,09489295-e472-468e-a6a2-d96bd1cc43be,assistant,,"['The negative form of **""La birdo estas granda""** in Esperanto is:
+
+**La birdo ne estas granda.**
+
+This means ""The bird is not big"" in English. 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa24c28-54ad-4d1a-8605-9b7f5737612d,user,,"['Transform these singular nouns into plural. If the noun has an article, keep the article in the plural form La virino']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,d0c5b305-487a-4f10-9341-b6b8057d436a,assistant,,"['The plural form of **""La virino""** is:
+
+**La virinoj**  
+
+Explanation:  
+- In Esperanto, to make a noun plural, you add **-j** to the end of the singular noun.  
+- **La** (the definite article) stays the same for both singular and plural.
+
+So, **""La virinoj""** means ""The women."" 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa25505-080f-443d-8cd4-5dd76c0d53c3,user,,['Papero'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,e2bc5591-5eb2-41ae-9489-6fbf9e9e32ce,assistant,,"['The plural form of **""papero""** is:
+
+**paperoj**
+
+Explanation:  
+- To make a noun plural in Esperanto, add **-j** to the singular form.  
+- Since there’s no article in this case, we just pluralize the noun.
+
+So, **""paperoj""** means ""papers."" 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa2608e-c87f-413b-b711-ca1beca8d8a7,user,,['Complete the sentences using the correct plural forms'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,7f42410e-56c0-4d09-92f7-3d41e8b2cbcd,assistant,,"['Please provide the sentences you'd like me to complete using the correct plural forms, and I’ll help you out! 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa24a59-f788-4847-a0e7-3a27d6b5608d,user,,['La _____ (man) dormas.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa229da-9d67-4fc9-83c4-90103e4addd7,user,,['La _____ (man) dormas.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,7125f701-8742-42d9-9c3f-2cb9186e689e,assistant,,"['The correct plural form of **""man""** in Esperanto is **""viroj""** (men).  
+
+The complete sentence would be:
+
+**La viroj dormas.**  
+(The men are sleeping.) 😊']",finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,aaa2b8b1-c39b-43a6-9477-4194c34af81f,user,,['La _____ (cat) estas malgrandaj.'],finished_successfully,all,
+674da645-4518-8001-9cef-a87cd1b4a1f0,ID Sharing and Assistance,2024-12-02 12:21:25.650279168,2024-12-02 12:38:02.747607040,c99ce005-722b-4c8f-bbb1-90e888aae879,assistant,,"['The correct plural form of **""cat""** in Esperanto is **""katoj""** (cats).
+
+The complete sentence would be:
+
+**La katoj estas malgrandaj.**  
+(The cats are small.) 😊']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2dcd7-f5f1-4d40-b548-925d194c87d6,user,,['28112024_1200_1'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,43e40b78-34f6-4b0a-b6df-d3db07b41c10,assistant,,"['The code ""28112024_1200_1"" appears to be a unique identifier, possibly representing a specific product, event, or document. Based on the structure, it could denote a date and time—28th November 2024 at 12:00—followed by an additional identifier, such as a version or item number.
+
+One potential match is the ""AIRnet 2811 2024 80 Wall Mount Manifold Block with 3 Way Outlet for 25mm 1\"" Aluminum Air Piping,"" a component used in air piping systems. citeturn0search8
+
+However, without more context, it's challenging to determine the exact reference of ""28112024_1200_1."" Could you please provide additional details or specify the context in which this code is used?']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa23850-660a-4c5d-8a4a-af50d177c9cf,user,,['28112024_1200_01'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,7932bace-6d7c-44ce-9416-bdb2443c25cb,assistant,,"['The code ""28112024_1200_01"" appears to be a unique identifier, possibly representing a specific product, event, or document. However, based on the available information, its exact significance is unclear.
+
+It's worth noting that ""28112024"" could correspond to the date 28th November 2024, and ""1200"" might indicate a time, such as 12:00 PM. The ""01"" at the end could denote a version or sequence number. This format is commonly used in event scheduling or document versioning.
+
+For instance, on 28th November 2024, there are several events scheduled:
+
+- **Grid Code Review Panel Meeting**: An online event from 10:00 AM to 2:00 PM, focusing on the transition to renewable energy. citeturn0search0
+
+- **Experimental Condensed Matter and Nanoscience Seminar**: Held at the University of Nottingham from 1:45 PM to 2:45 PM, featuring a talk on nanophotonics. citeturn0search3
+
+- **AGM + Establishing Sustainable DevSecOps Practices**: A meeting in London starting at 6:00 PM, discussing DevSecOps strategies. citeturn0search4
+
+- **The World in 2034 – Exploring Future Opportunities for Consultancy with AI**: Another London event at 6:30 PM, focusing on AI's impact on consultancy. citeturn0search5
+
+If ""28112024_1200_01"" refers to a specific event or document related to these or other activities, providing additional context would enable a more precise identification.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2056b-eb84-4a22-a8ae-b191e4432f66,user,,['what is the word flies in esparanto'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,418748cd-f388-415f-bfef-3d9bf4ac260d,assistant,,"['The word **""flies""** in Esperanto is **""flugas""**, which is the third-person singular present tense of the verb **""flugi""** (to fly). 
+
+For example:
+- ""The bird flies"" translates to **""La birdo flugas""**.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa21e88-103d-47bf-ae7f-04aede5e7b7d,user,,['what is flugas in a verb form in esparanto'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,ff6f88e3-e950-4699-84d7-479992289404,assistant,,"['In Esperanto, **""flugas""** is the present tense form of the verb **""flugi""** (to fly). Here's how it fits into the Esperanto verb system:
+
+### Root Form: **flugi**
+- **Infinitive:** flugi (to fly)
+
+### Conjugations:
+1. **Present Tense:** flugas  
+   - Used to describe actions happening now.  
+   - Example: ""La birdo flugas en la ĉielo."" (The bird is flying in the sky.)
+   
+2. **Past Tense:** flugis  
+   - Example: ""La birdo flugis hieraŭ."" (The bird flew yesterday.)
+
+3. **Future Tense:** flugos  
+   - Example: ""La birdo flugos morgaŭ."" (The bird will fly tomorrow.)
+
+4. **Conditional:** flugus  
+   - Example: ""Se mi povus, mi flugus."" (If I could, I would fly.)
+
+5. **Imperative:** flugu  
+   - Example: ""Flugu rapide!"" (Fly quickly!)
+
+In summary, **""flugas""** is the present tense form of the verb **""flugi""**.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2f0d3-cd72-4b94-b556-a4302527ca7c,user,,['what are some examples of appropriate esparanto verbs'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,d6d79d85-223f-477b-b22f-d55613b7ba41,assistant,,"['Esperanto verbs are regular and easy to learn, as they follow consistent conjugation rules. Here are some examples of commonly used Esperanto verbs across various contexts, along with their meanings:
+
+### Common Action Verbs
+1. **manĝi** – to eat  
+   - Mi manĝas pomon. (I eat an apple.)
+2. **trinki** – to drink  
+   - Ŝi trinkas akvon. (She drinks water.)
+3. **kuri** – to run  
+   - Ili kuras en la parko. (They run in the park.)
+4. **dormi** – to sleep  
+   - Ni dormas nokte. (We sleep at night.)
+5. **ludi** – to play  
+   - La infanoj ludas en la ĝardeno. (The children play in the garden.)
+
+### Sensory and Cognitive Verbs
+6. **vidi** – to see  
+   - Ĉu vi vidas la monton? (Do you see the mountain?)
+7. **aŭdi** – to hear  
+   - Mi aŭdas muzikon. (I hear music.)
+8. **senti** – to feel  
+   - Li sentas feliĉon. (He feels happiness.)
+9. **pensi** – to think  
+   - Mi pensas pri vi. (I think about you.)
+10. **scipovi** – to know how to (do something)  
+    - Ŝi scipovas kuiri bone. (She knows how to cook well.)
+
+### Verbs for Movement
+11. **iri** – to go  
+    - Ni iras al la lernejo. (We go to school.)
+12. **veni** – to come  
+    - Ili venas al la festo. (They come to the party.)
+13. **porti** – to carry/wear  
+    - Li portas grandan sakon. (He carries a big bag.)
+14. **flugi** – to fly  
+    - La birdo flugas super la maro. (The bird flies over the sea.)
+
+### Verbs for Communication
+15. **paroli** – to speak  
+    - Mi parolas Esperanton. (I speak Esperanto.)
+16. **skribi** – to write  
+    - Li skribas leteron. (He writes a letter.)
+17. **legi** – to read  
+    - Ŝi legas libron. (She reads a book.)
+18. **diri** – to say  
+    - Kion vi diras? (What are you saying?)
+
+### Other Useful Verbs
+19. **labori** – to work  
+    - Mi laboras en oficejo. (I work in an office.)
+20. **lavi** – to wash  
+    - Ŝi lavas la telerojn. (She washes the dishes.)
+21. **ŝati** – to like  
+    - Ili ŝatas ĉokoladon. (They like chocolate.)
+22. **kredi** – to believe  
+    - Mi kredas al vi. (I believe you.)
+23. **ami** – to love  
+    - Ni amas pacon. (We love peace.)
+
+### General Notes on Esperanto Verbs:
+1. All infinitives end in **-i** (e.g., **flugi**, **manĝi**).  
+2. Present tense ends in **-as** (e.g., **flugas**, **manĝas**).  
+3. Past tense ends in **-is** (e.g., **flugis**, **manĝis**).  
+4. Future tense ends in **-os** (e.g., **flugos**, **manĝos**).  
+5. Conditional ends in **-us** (e.g., **flugus**, **manĝus**).  
+6. Imperative ends in **-u** (e.g., **flugu**, **manĝu**).  
+
+These examples and rules demonstrate the logical simplicity of Esperanto verbs!']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa22765-8ae0-48bd-8a18-73819593bdef,user,,['amikoj meaning'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,8f9a7f96-fa0c-4e8c-979b-eb90cb69f864,assistant,,"['The word **""amikoj""** in Esperanto means **""friends""**. It is the plural form of **""amiko""** (friend). 
+
+### Breakdown:
+- **amiko** = friend (singular)  
+- **-j** = plural ending in Esperanto  
+  So, **amikoj** = friends.
+
+#### Example Sentences:
+- **Miaj amikoj estas tre bonaj.**  
+  (My friends are very good.)
+  
+- **Ĉu vi havas multajn amikojn?**  
+  (Do you have many friends?)
+
+### Related Words:
+- **amikino** = female friend  
+- **amikaro** = group of friends  
+- **amikeco** = friendship  
+- **amikiĝi** = to become friends']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2f6b9-b0e3-4f55-a5b9-4bcefb577ed8,user,,['what verb do i put in between Mi and anna'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,4b2c146c-5fdf-4c15-9b6c-d156e11be1b8,assistant,,"['To determine what verb you should put between **""Mi""** (I) and **""Anna""**, it depends on what action or relationship you want to describe. Here are some examples:
+
+### Common Verbs for ""Mi ... Anna""
+1. **konas** – know  
+   - **Mi konas Anna.** (I know Anna.)
+   
+2. **amas** – love  
+   - **Mi amas Anna.** (I love Anna.)
+   
+3. **vidas** – see  
+   - **Mi vidas Anna.** (I see Anna.)
+   
+4. **renkontas** – meet  
+   - **Mi renkontas Anna.** (I meet Anna.)
+   
+5. **parolas kun** – talk to  
+   - **Mi parolas kun Anna.** (I talk to Anna.)
+   
+6. **laboras kun** – work with  
+   - **Mi laboras kun Anna.** (I work with Anna.)
+   
+7. **ludas kun** – play with  
+   - **Mi ludas kun Anna.** (I play with Anna.)
+   
+8. **helpas** – help  
+   - **Mi helpas Anna.** (I help Anna.)
+
+If you're expressing an action involving Anna, the verb should clearly convey the relationship or activity. In some cases, you might also need prepositions like **kun** (with), **al** (to), or **por** (for), depending on the verb and context.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa24f5d-3c26-4200-9d03-20a513b5fbee,user,,"['what about for the ssentance, tom and anna - friends fill it in with a verb']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,a6e44518-53dd-46b9-83ce-d3b8f6dc83fa,assistant,,"['For the sentence **""Tom and Anna - friends""**, you can use the verb **""estas""** (are) in Esperanto. The complete sentence would be:
+
+**""Tom kaj Anna estas amikoj.""**  
+(Tom and Anna are friends.)
+
+### Breakdown:
+- **Tom kaj Anna** = Tom and Anna  
+- **estas** = are (verb ""to be"" in present tense)  
+- **amikoj** = friends (plural of ""amiko"")  
+
+This structure is simple and grammatically correct in Esperanto!']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2cc94-6527-4aac-bf1a-a600dc51c7b0,user,,['negative form of the sentence to dormas in esparanto'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,58c1b8dc-9739-48bd-ae4f-2de50a0c5a5a,assistant,,"['To make a sentence with **""dormas""** (sleeps/is sleeping) negative in Esperanto, you add **""ne""** (not) before the verb. 
+
+### Example Sentences:
+1. **Ŝi dormas.**  
+   (She sleeps.)  
+   → **Ŝi ne dormas.**  
+   (She does not sleep.)
+
+2. **Ili dormas en la lito.**  
+   (They are sleeping in the bed.)  
+   → **Ili ne dormas en la lito.**  
+   (They are not sleeping in the bed.)
+
+### General Rule:
+- Positive: Subject + Verb + (Optional Complements)  
+- Negative: Subject + **ne** + Verb + (Optional Complements)  
+
+The word **""ne""** always precedes the verb in a negative statement.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2b337-3291-465c-80f7-6186902e9b70,user,,['so would it be tom ne dormas'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,fec36daf-84ea-4b70-a44d-e8dd9c84e882,assistant,,"['Yes, that's correct! 
+
+**""Tom ne dormas.""** means **""Tom does not sleep""** or **""Tom is not sleeping""** in Esperanto. 
+
+This follows the standard rule:  
+- **ne** (not) is placed directly before the verb **dormas** (sleeps).  
+
+### Examples:
+- **Tom dormas.** (Tom sleeps.)  
+- **Tom ne dormas.** (Tom does not sleep.)']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2eb3b-27a3-4cd4-90c9-e5a51fae5822,user,,['and for anna lernas would it be anna ne lernas'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,d386278e-ac9d-4d88-bfd5-1260f2fb4354,assistant,,"['Yes, that's absolutely correct! 
+
+**""Anna ne lernas.""** means **""Anna does not learn""** or **""Anna is not learning""** in Esperanto. 
+
+### Examples:
+- **Anna lernas.** (Anna learns or Anna is learning.)  
+- **Anna ne lernas.** (Anna does not learn or Anna is not learning.)  
+
+The placement of **""ne""** before the verb remains consistent across all sentences.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa2723b-b1de-4ee1-9063-d332a0d87d71,user,,['complete this one sentense in a past tense tom - bone heirau (to sleep)'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,25d09dfc-135e-4107-9cd9-e8a3006dcd4f,assistant,,"['To complete the sentence in past tense:  
+
+**""Tom bone dormis hieraŭ.""**  
+(Tom slept well yesterday.)
+
+### Breakdown:
+- **Tom** = Tom  
+- **bone** = well  
+- **dormis** = slept (past tense of ""dormi"" - to sleep)  
+- **hieraŭ** = yesterday  
+
+This structure correctly conveys that Tom slept well the previous day.']",finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,aaa22e25-0e56-48c4-bcab-ebc37a75ba63,user,,['complete this one sentense in a past tense la instristo- bona (to be)'],finished_successfully,all,
+674861bb-e28c-8001-b7f0-443332f372a4,Code Identification Query,2024-11-28 12:27:40.141730048,2024-11-29 17:15:22.548794880,9e972937-b052-44f2-8e32-51c330f3a839,assistant,,"['The complete sentence in past tense would be:
+
+**""La instruisto estis bona.""**  
+(The teacher was good.)
+
+### Breakdown:
+- **La instruisto** = The teacher  
+- **estis** = was (past tense of ""esti"" - to be)  
+- **bona** = good']",finished_successfully,all,

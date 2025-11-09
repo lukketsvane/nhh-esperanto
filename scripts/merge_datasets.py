@@ -2,7 +2,7 @@
 """
 Esperanto Learning Dataset Alignment Script
 
-This script aligns and merges survey data from iverdata.csv with conversation data 
+This script aligns and merges survey data from iverdata.csv with conversation data
 from the unified_conversation_data CSV/JSON files, based on user IDs and timestamps.
 It also creates a schedule_sessions.csv file if it doesn't exist.
 
@@ -15,15 +15,29 @@ The script performs the following tasks:
 6. Outputs an enriched dataset with aligned data
 """
 
+from __future__ import annotations
+
 import os
 import re
 import json
-import pandas as pd
-import numpy as np
 from datetime import datetime
-import pytz
 import logging
 from typing import Dict, List, Tuple, Union, Optional
+
+try:  # pragma: no cover - optional dependency for import-only usage
+    import numpy as np
+except ImportError:  # pragma: no cover - handled for utility-only imports
+    np = None  # type: ignore
+
+try:  # pragma: no cover - optional dependency for import-only usage
+    import pytz
+except ImportError:  # pragma: no cover - handled for utility-only imports
+    pytz = None  # type: ignore
+
+try:  # pragma: no cover - optional dependency for import-only usage
+    import pandas as pd
+except ImportError:  # pragma: no cover - handled for utility-only imports
+    pd = None  # type: ignore
 
 # Set up logging
 logging.basicConfig(
@@ -39,8 +53,28 @@ OUTPUT_PATH = 'data/processed/aligned_unified_conversation_data.csv'
 SCHEDULE_SESSIONS_PATH = 'data/raw/schedule_sessions.csv'
 
 # Define constants
-USER_ID_PATTERN = r'(\d{2})(\d{2})(\d{4})_(\d{4})_Participant(\d+)'
-ALTERNATIVE_ID_PATTERN = r'ID(?:\s+is)?\s*(?::|-)?\s*(\d+)'
+USER_ID_PATTERN = re.compile(
+    r"\b(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})(?P<minute>\d{2})[_\s-]*Participant\s*(?P<participant>\d{1,3})(?![\w])",
+    re.IGNORECASE,
+)
+ALT_USER_ID_PATTERNS = [
+    re.compile(
+        r"\b(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})[:h](?P<minute>\d{2})[_\s-]*Participant\s*(?P<participant>\d{1,3})(?![\w])",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bParticipant\s*(?P<participant>\d{1,3})(?![\w])[_\s-]*(?P<day>\d{2})(?P<month>\d{2})(?P<year>\d{4})[_\s-]*(?P<hour>\d{2})(?P<minute>\d{2})\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?P<day>\d{1,2})[/-](?P<month>\d{1,2})[/-](?P<year>\d{2,4}).{0,40}?(?P<hour>\d{1,2})[:.h](?P<minute>\d{2}).{0,40}?Participant\s*(?P<participant>\d{1,3})(?![\w])",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bParticipant\s*(?P<participant>\d{1,3})(?![\w]).{0,40}?(?P<day>\d{1,2})[/-](?P<month>\d{1,2})[/-](?P<year>\d{2,4}).{0,40}?(?P<hour>\d{1,2})[:.h](?P<minute>\d{2})",
+        re.IGNORECASE,
+    ),
+]
 TIMESTAMP_TOLERANCE = 86400  # 24 hours in seconds
 
 
@@ -140,48 +174,70 @@ def extract_first_user_message(conversation_id: str, message_data: pd.DataFrame)
     return None
 
 
+def _normalize_user_id_components(day: str, month: str, year: str,
+                                  hour: str, minute: str, participant: str) -> Optional[str]:
+    """Validate and normalize captured ID components."""
+
+    try:
+        day_int = int(day)
+        month_int = int(month)
+        year_int = int(year) if len(year) == 4 else int(f"20{year}")
+        hour_int = int(hour)
+        minute_int = int(minute)
+        participant_int = int(participant)
+    except ValueError:
+        return None
+
+    if not (1 <= day_int <= 31 and 1 <= month_int <= 12):
+        return None
+    if not (0 <= hour_int <= 23 and 0 <= minute_int <= 59):
+        return None
+    if participant_int <= 0:
+        return None
+
+    # Reformat components with zero-padding
+    day_fmt = f"{day_int:02d}"
+    month_fmt = f"{month_int:02d}"
+    year_fmt = f"{year_int:04d}"
+    hour_fmt = f"{hour_int:02d}"
+    minute_fmt = f"{minute_int:02d}"
+    participant_fmt = str(participant_int)
+
+    return f"{day_fmt}{month_fmt}{year_fmt}_{hour_fmt}{minute_fmt}_Participant{participant_fmt}"
+
+
 def extract_user_id_from_message(message: str) -> Optional[str]:
     """
-    Extract user ID from message text.
-    
+    Extract user ID from message text, requiring a full timestamp + participant pattern.
+
     Args:
         message: Message text to search for user ID
-        
+
     Returns:
-        User ID string or None if not found
+        Normalized User ID string or None if no valid pattern is found
     """
     if not message:
         return None
-    
-    # Try standard format: DDMMYYYY_HHMM_Participant#
-    match = re.search(USER_ID_PATTERN, message)
-    if match:
-        day, month, year, time, participant = match.groups()
-        return f"{day}{month}{year}_{time}_Participant{participant}"
-    
-    # Try alternative format: "ID is 12345", "my ID: 12345", etc.
-    alt_match = re.search(ALTERNATIVE_ID_PATTERN, message)
-    if alt_match:
-        return alt_match.group(1)
-    
-    # Try to find any mention of Participant followed by a number
-    participant_match = re.search(r'[Pp]articipant\s*(\d+)', message)
-    if participant_match:
-        return f"Participant{participant_match.group(1)}"
-    
-    # Look for common date formats that might indicate a session time
-    date_match = re.search(r'(\d{1,2})[-/](\d{1,2})[-/](\d{2,4}).*?(\d{1,2})[:.h](\d{1,2})', message, re.IGNORECASE)
-    if date_match:
-        day, month, year, hour, minute = date_match.groups()
-        if len(year) == 2:
-            year = f"20{year}"  # Assume 21st century
-        return f"{day}{month}{year}_{hour}{minute}"
-    
-    # Try to find any decimal number that could be an ID
-    id_match = re.search(r'\b(\d{1,4})\b', message)
-    if id_match:
-        return id_match.group(1)
-    
+
+    text = message.strip()
+
+    for pattern in [USER_ID_PATTERN, *ALT_USER_ID_PATTERNS]:
+        match = pattern.search(text)
+        if not match:
+            continue
+
+        components = match.groupdict()
+        normalized = _normalize_user_id_components(
+            components['day'],
+            components['month'],
+            components['year'],
+            components['hour'],
+            components['minute'],
+            components['participant'],
+        )
+        if normalized:
+            return normalized
+
     return None
 
 

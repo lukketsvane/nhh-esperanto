@@ -11,3 +11,7 @@ yarn-debug.log
 
 # Large binary files
 **/*.node
+
+# Data backups and duplicates
+**/data/processed/*_backup_*.csv
+**/data/processed/*_updated_ids.csv
