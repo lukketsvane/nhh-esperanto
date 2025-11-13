@@ -1,0 +1,605 @@
+participant_number,ResponseId,has_conversation,conversation_id,UserID,MatchMethod,data_status,treatment,testscore,MessageCount,ConversationDurationMinutes,Session,start_time_unix
+1,R_2YrX7B6LLgDiXaH,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+2,R_81h5GKDmEdrx0GJ,True,6751c42b-acd4-8010-9cce-5c945ce8ced9,,ExplicitID,Complete,AI-assisted,5.0,6.0,0.0,Session 1,1732770000.0
+3,R_89xi5k2HqzeKlxL,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+4,R_8fTvMMXoB939sBz,True,674efe52-5750-800d-87ba-926471fc38cd,,ExplicitID,Duplicate,AI-assisted,7.0,31.0,0.0,Unknown Session,1733199120.0
+5,R_82tVJx9okB5OKA1,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+6,R_8jgEcFv6MClM2it,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+7,R_86nbBmMxJXVn9Kr,True,674da33b-b034-8012-8dd7-b7cd9fb964e4,Generated_02122024_1308,PromptData,Recovered from promptdata,AI-assisted,9.0,36.0,15.030816400051116,Unknown Session,1733212380.0
+8,R_2bJGScq1Sy6Chsz,True,674edc3d-4408-8002-b94c-6d32a573741d,Generated_03122024_1123,PromptData,Recovered from promptdata,AI-assisted,8.0,48.0,20.81125369866689,Unknown Session,1733216880.0
+9,R_28hngkufX8Dcjgl,True,67486406-1674-8009-8962-1cf4e5beddc6,,ExplicitID,Complete,AI-assisted,8.0,4.0,0.0,Unknown Session,1733221500.0
+10,R_2ckqOJsblpXwZZ4,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+11,R_2ZOtvsPWKQqsdj3,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+12,R_2ESbMx5RFZUw13Z,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+13,R_2XLJYIle88EM7Hb,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+14,R_8v0AcsCq2zXBM0F,True,675050af-f084-8008-8ebd-1a1de1ad32ed,Generated_04122024_1353,PromptData,Recovered from promptdata,AI-assisted,9.0,42.0,17.238211448987325,Unknown Session,1733298960.0
+15,R_2RV6SEA3Y0y3iub,True,67507416-f6fc-8013-a8ee-6f7ae115468d,Generated_04122024_1624,PromptData,Recovered from promptdata,AI-assisted,6.0,16.0,14.454881465435028,Unknown Session,1733303340.0
+16,R_2U3frWxT15wXgNs,True,675029ba-a330-8001-b58c-a5591d5e2a18,,RecoveredData,Recovered,AI-assisted,3.0,0.0,0.0,Unknown Session,1733307540.0
+17,R_2S8NBgTZocTf6yt,False,,,,No conversation data,AI-assisted,12.0,0.0,0.0,,
+18,R_8BXfzDlyRcERJQq,True,675182e8-8934-8008-ba8d-99b92caa557a,Generated_05122024_1139,PromptData,Recovered from promptdata,AI-assisted,9.0,4.0,0.0631635308265686,Unknown Session,1733385240.0
+19,R_8SHOwbT0jtDFOHn,True,6751d8b0-f324-8001-81ee-5cc12822fc41,,RecoveredData,Recovered,AI-assisted,6.0,0.0,0.0,Unknown Session,1733390160.0
+20,R_8PRIzzoVIIOh3EZ,False,,AutoID_VIIOh3EZ,,Missing conversation,Control,10.0,0.0,0.0,Session 1,1732762620.0
+21,R_2QLMZo8ihSAYAbl,True,67486288-3f38-8013-bd0c-101cc1692241,Generated_28112024_1331,PromptData,Recovered from promptdata,AI-assisted,10.0,18.0,11.106418347358703,Session 1,1732770000.0
+22,R_2gzI0KuYqLGPkOj,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+23,R_24ArDOMEaUdCL2V,False,,,,No conversation data,AI-assisted,11.0,0.0,0.0,,
+24,R_82FkHZiUiHzbz3P,True,674efdda-6028-8008-af5e-2be83ad87939,,Timestamp,Complete,AI-assisted,8.0,3.0,0.0,Unknown Session,1733199120.0
+25,R_8wouM6jVALkKe4A,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+26,R_2kYLjsIHMGF2tTt,True,674efdda-6028-8008-af5e-2be83ad87939,Generated_03122024_1347,PromptData,Recovered from promptdata,AI-assisted,9.0,2.0,0.0088248332341512,Unknown Session,1733212380.0
+27,R_838G1KIkokJlWcq,True,674eefef-99c0-8002-b28c-6d1acc07e608,Generated_03122024_1247,PromptData,Recovered from promptdata,AI-assisted,10.0,10.0,34.11343496640523,Unknown Session,1733216880.0
+28,R_8Nm1yRtY7vKjQYY,True,674f0355-8900-8001-91af-68750c07f9e5,,RecoveredData,Recovered,AI-assisted,7.0,0.0,0.0,Unknown Session,1733221500.0
+29,R_81Bk3vIbvTNt5lP,True,67502ba7-b380-8007-95f3-66c7c7d6cf72,,Timestamp,Complete,AI-assisted,9.0,48.0,0.0,Unknown Session,1733279220.0
+30,R_2s5stVU4dWQng0B,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+31,R_20ocwvS27vKryap,True,67506d12-5a28-8008-b8a3-07643b4d8db9,,Timestamp,Complete,AI-assisted,3.0,4.0,0.0,Unknown Session,1733290020.0
+32,R_8Djw6UCuYNSPiAk,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+33,R_81bB9caZ7BGY9t7,True,67506171-9620-8013-9ed4-2eef0d4d8e43,Generated_04122024_1504,PromptData,Recovered from promptdata,AI-assisted,9.0,36.0,16.296903582413993,Unknown Session,1733303340.0
+34,R_2xyFtyUerHApC5u,True,675029ba-a330-8001-b58c-a5591d5e2a18,Generated_04122024_1106,PromptData,Recovered from promptdata,AI-assisted,4.0,12.0,37.34853343168894,Unknown Session,1733307540.0
+35,R_8b3L27gHvUqzP3I,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+36,R_2c5i0dIWVTvRs5I,True,6751d4e7-f9c0-800c-9482-10d192afdc24,,Timestamp,Complete,AI-assisted,8.0,39.0,0.0,Unknown Session,1733385240.0
+37,R_2pYaB6oRGt1dja4,True,6751c400-b6c4-8001-b67f-859a87c2692f,,RecoveredData,Recovered,AI-assisted,9.0,0.0,0.0,Unknown Session,1733390160.0
+38,R_8w129IY0S3mU0IF,False,,AutoID_0S3mU0IF,,Missing conversation,Control,5.0,0.0,0.0,Session 1,1732762620.0
+39,R_8QFMPfV7dJ2oMeM,True,6748612d-c46c-8008-9a1e-0269d57a4fb1,Generated_28112024_1325,PromptData,Recovered from promptdata,AI-assisted,5.0,4.0,14.368676122029624,Session 1,1732770000.0
+40,R_2qfFvfpxeUcrT20,True,674da5ff-c5e0-8007-b3c9-5faf7fdd3d94,,Timestamp,Complete,AI-guided,10.0,43.0,0.0,Unknown Session,1733112540.0
+41,R_2rPhW2e1PRPslJC,False,,,,No conversation data,AI-assisted,12.0,0.0,0.0,,
+42,R_8cvpscYIiHvnK6d,True,674efdb5-9978-8007-bbc0-abfc0b195656,,Timestamp,Duplicate,AI-assisted,7.0,29.0,0.0,Unknown Session,1733199120.0
+43,R_2D2BmKGPSZ4c6tP,False,,,,No conversation data,AI-assisted,11.0,0.0,0.0,,
+44,R_8pR68CZX9jwGlcB,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+45,R_2fUCZukoRaAwccp,True,674f00d0-b794-8008-a2ba-d8837b71519f,Generated_03122024_1400,PromptData,Recovered from promptdata,AI-assisted,11.0,8.0,12.069118332862852,Unknown Session,1733212380.0
+46,R_89diZZs7lga7B2g,True,674f34c6-d01c-8007-8455-f7bb971cf8a3,Generated_03122024_1741,PromptData,Recovered from promptdata,AI-assisted,9.0,57.0,13.5903457681338,Unknown Session,1733216880.0
+47,R_2LnFUscidwlFx60,True,674efe79-840c-8001-90d5-887c4d79676c,,RecoveredData,Recovered,AI-assisted,9.0,0.0,0.0,Unknown Session,1733221500.0
+48,R_8aXll9OJMOYXbWX,True,67502ba9-fc50-8008-8521-2c82152c180e,,Timestamp,Duplicate,AI-assisted,6.0,3.0,0.0,Unknown Session,1733279220.0
+49,R_20ASZea1i6dqWav,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+50,R_2L0LaQIyGQQS3Nn,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+51,R_81zlNjOWPsunbSb,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+52,R_8zUO0XOn1Kc2J3y,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+53,R_8qIeaxATBQbZaXn,True,6750518b-6308-8013-bc44-01e138baf29b,Generated_04122024_1356,PromptData,Recovered from promptdata,AI-assisted,6.0,46.0,13.405008467038472,Unknown Session,1733303340.0
+54,R_2Fhc7u2XpiNnk6w,True,67508513-5df8-8002-b6fe-7996a00af6f2,Generated_04122024_1736,PromptData,Recovered from promptdata,AI-assisted,11.0,18.0,15.598201282819112,Unknown Session,1733307540.0
+55,R_2eqLNDOiR7OyOkn,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+56,R_2tUCajmH0ebSFG1,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+57,R_21NLPLVg2U9O9K4,True,67517f3b-39dc-8001-b00d-4aba7f609de4,,RecoveredData,Recovered,AI-assisted,10.0,0.0,0.0,Unknown Session,1733390160.0
+58,R_8E0sByifjmJ043l,True,67502e46-1074-8012-b7c2-417dcae3c523,,ExplicitID,Complete,Control,10.0,66.0,0.0,Session 1,1732762620.0
+59,R_2Hwyebe3i3gTbrC,True,67486246-f4a4-8008-b99e-4ba7578e3710,Generated_28112024_1329,PromptData,Recovered from promptdata,AI-assisted,11.0,22.0,12.262643682956696,Session 1,1732770000.0
+60,R_8diye1R5UeA6slb,True,674da5cb-aa6c-8005-9570-baef5e4d7f23,,Timestamp,Complete,AI-guided,10.0,15.0,0.0,Unknown Session,1733112540.0
+61,R_8esp0TKphxWLke6,False,,,,No conversation data,AI-assisted,12.0,0.0,0.0,,
+62,R_8XRI5kn1eFa62WJ,True,674ef11a-ec08-8005-ba47-c32a2918994c,,Timestamp,Duplicate,AI-assisted,9.0,3.0,0.0,Unknown Session,1733199120.0
+63,R_8dGFj5u4Veh5J2I,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+64,R_8bUoR8FZN1THuut,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+65,R_8AYBy6yORKqy0da,True,674eef4d-6888-8008-857f-941cb97d577a,Generated_03122024_1245,PromptData,Recovered from promptdata,AI-assisted,9.0,28.0,10.622575116157533,Unknown Session,1733212380.0
+66,R_2PFcYUuMpDh01rx,True,674f21dc-fe1c-8007-b2a2-a253acf76e0b,Generated_03122024_1621,PromptData,Recovered from promptdata,AI-assisted,8.0,25.0,12.051374900341036,Unknown Session,1733216880.0
+67,R_8FlH5hFoylOlnUl,True,674f481d-4fd8-8001-9778-b89ea4a08db9,,RecoveredData,Recovered,AI-assisted,5.0,0.0,0.0,Unknown Session,1733221500.0
+68,R_8qqvevaKXPddvBL,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+69,R_831lAuV4YKtTeX3,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+70,R_89Owaye7yhaTAGd,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+71,R_8Cjiuxcvuu8nO0d,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+72,R_8taPZ1SYAQqq5ln,True,6750949d-45ec-8012-9306-c1cc39ef8c38,,Timestamp,Complete,AI-assisted,9.0,31.0,0.0,Unknown Session,1733298960.0
+73,R_8Pz03hdwlaH2GFX,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+74,R_2zAx59ixCIAPBSd,True,67502efe-a3e4-8002-b6ab-d9e6c3176786,Generated_04122024_1129,PromptData,Recovered from promptdata,AI-assisted,4.0,8.0,10.564528648058571,Unknown Session,1733307540.0
+75,R_2s6obfcPZjvp5OZ,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+76,R_2msH3L5ggrv9UCC,True,6751d8b0-f324-8001-81ee-5cc12822fc41,Generated_05122024_1745,PromptData,Recovered from promptdata,AI-assisted,9.0,24.0,12.190179963906608,Unknown Session,1733390160.0
+77,R_8NDEaq6fAHLkaWf,False,,AutoID_fAHLkaWf,,Missing conversation,Control,6.0,0.0,0.0,Session 1,1732762620.0
+78,R_8DfAtmXCuZTtuMh,True,674860f8-0e94-8010-89d3-593f9d906f5f,Generated_28112024_1324,PromptData,Recovered from promptdata,AI-assisted,5.0,44.0,17.76524850130081,Session 1,1732770000.0
+79,R_2H1PJKPL5hueF5Z,False,,,,No conversation data,AI-guided,5.0,0.0,0.0,,
+80,R_8wuBOMGVzzH8pb3,True,674eddfa-88ec-8013-b8d0-1bd24cee2b97,,Timestamp,Complete,AI-assisted,8.0,17.0,0.0,Unknown Session,1733192760.0
+81,R_8aVTT7DV7SREk11,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+82,R_81bIEFEGeI6pThW,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+83,R_2kSq7NnY5jf6n6x,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+84,R_2mBZtJ2rmOxmT2p,True,674edca9-116c-8008-9edf-d11899a125ae,Generated_03122024_1125,PromptData,Recovered from promptdata,AI-assisted,,16.0,10.592050051689148,Unknown Session,1733212380.0
+85,R_2WJg4JnAIbT0hy1,True,674f125b-6e58-8007-9f57-e4c374e7ccdb,Generated_03122024_1514,PromptData,Recovered from promptdata,AI-assisted,9.0,21.0,7.980476717154185,Unknown Session,1733216880.0
+86,R_8na6Gud6ZTfk4Ap,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+87,R_8CJWYDT54iPipuH,True,6750417e-b030-8005-a01d-25f5ce0f035d,,Timestamp,Duplicate,AI-assisted,8.0,23.0,0.0,Unknown Session,1733285460.0
+88,R_27PzpybWZPq9hCs,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+89,R_20V68CMhLWRUGpY,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+90,R_8dfQ4UdSxO0B6j8,True,67504306-7c74-8013-8e06-e22adbbde8bd,Generated_04122024_1254,PromptData,Recovered from promptdata,AI-assisted,8.0,6.0,5.875976582368215,Unknown Session,1733303340.0
+91,R_2GdjsXfERFtzlt6,True,675072b0-c560-8002-b3be-273810499c3b,Generated_04122024_1618,PromptData,Recovered from promptdata,AI-assisted,8.0,28.0,18.938560350735983,Unknown Session,1733307540.0
+92,R_8CEgOiMVgFA3bXo,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+93,R_8roP20I2EySddnJ,True,6751c400-b6c4-8001-b67f-859a87c2692f,Generated_05122024_1617,PromptData,Recovered from promptdata,AI-assisted,10.0,24.0,20.03599344889323,Unknown Session,1733390160.0
+94,R_8LrB4g4Fpe3OUFz,False,,AutoID_Fpe3OUFz,,Missing conversation,Control,9.0,0.0,0.0,Session 1,1732762620.0
+95,R_2XigCBgFKhjZpsZ,True,67486406-1674-8009-8962-1cf4e5beddc6,Generated_28112024_1337,PromptData,Recovered from promptdata,AI-assisted,9.0,2.0,0.0135520219802856,Session 1,1732770000.0
+96,R_2VR8VDGEkYmej5R,False,,,,No conversation data,AI-guided,4.0,0.0,0.0,,
+97,R_8hEzdaPefGaVhEK,True,674ede81-777c-8012-824a-284bd8fe1241,,Timestamp,Duplicate,AI-assisted,7.0,33.0,0.0,Unknown Session,1733192760.0
+98,R_2bZQfsAIioKkGBZ,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+99,R_89ccd6xlVJmh8PV,True,674f1434-518c-800e-817a-ba555304ea7c,,Timestamp,Complete,AI-assisted,6.0,3.0,0.0,Unknown Session,1733203260.0
+100,R_2GvtngzOCpqBPJ8,True,674da5d4-4be8-8008-8dad-c3881fa4cd6c,Generated_02122024_1319,PromptData,Recovered from promptdata,AI-assisted,8.0,13.0,6.487933568159739,Unknown Session,1733212380.0
+101,R_8KwJcaR3CJk3APN,True,674efdb5-9978-8007-bbc0-abfc0b195656,Generated_03122024_1346,PromptData,Recovered from promptdata,AI-assisted,10.0,28.0,13.249606664975484,Unknown Session,1733216880.0
+102,R_81nL4SVb2Nf89tX,True,674f1596-5170-8001-a641-2b53debd296a,,RecoveredData,Recovered,AI-assisted,8.0,0.0,0.0,Unknown Session,1733221500.0
+103,R_8VliLrznxnYC9yl,True,67503181-87a0-8007-9e1d-5c2822502713,,Timestamp,Duplicate,AI-assisted,9.0,11.0,0.0,Unknown Session,1733279220.0
+104,R_2LGzngH02SW1kO8,True,674da5a6-cecc-8012-88a0-2c75e7e618fe,,ExplicitID,Complete,AI-assisted,7.0,36.0,0.0,Unknown Session,1733285460.0
+105,R_8kG5nV6apJ2sJfH,True,675053ab-b4c8-800c-bd72-628e68ad281b,,Timestamp,Duplicate,AI-assisted,8.0,6.0,0.0,Unknown Session,1733290020.0
+106,R_2yYqayPyPRba6ch,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+107,R_8U77vJOASXce58t,True,675040dc-e91c-8008-9786-ede500e1b96c,Generated_04122024_1245,PromptData,Recovered from promptdata,AI-assisted,7.0,8.0,8.245990399519602,Unknown Session,1733298960.0
+108,R_8rDsBRl2L5BMCcx,True,67502bad-2a84-8013-810a-63e43d281ea1,Generated_04122024_1115,PromptData,Recovered from promptdata,AI-assisted,6.0,48.0,28.007654535770417,Unknown Session,1733303340.0
+109,R_2PpcntDUipzDsdw,True,675050f1-8e74-8002-8d93-b7b3e14e2c48,Generated_04122024_1354,PromptData,Recovered from promptdata,AI-assisted,7.0,26.0,12.97387391726176,Unknown Session,1733307540.0
+110,R_2z8Bt8QybFrHy8P,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+111,R_2jZdfnH3p9OYaBW,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+112,R_8EaKc1PPHEfa3BZ,True,67517f3b-39dc-8001-b00d-4aba7f609de4,Generated_05122024_1123,PromptData,Recovered from promptdata,AI-assisted,8.0,28.0,17.695872902870178,Unknown Session,1733390160.0
+113,R_8IhOeYeqrVgfCVl,False,,AutoID_qrVgfCVl,,Missing conversation,Control,7.0,0.0,0.0,Session 1,1732762620.0
+114,R_8D5KwPx5XPc9GYQ,True,6748609d-6294-8007-8fbf-e4d175374104,Generated_28112024_1322,PromptData,Recovered from promptdata,AI-assisted,9.0,56.0,18.78763081630071,Session 1,1732770000.0
+115,R_2GddBaeyTfQjALo,True,674da633-b3d4-8012-ae50-723c2ee5dc26,,Timestamp,Duplicate,AI-guided,9.0,13.0,0.0,Unknown Session,1733112540.0
+116,R_2WlEj9bv8fbg2Mp,True,674eed44-ec0c-8005-877d-d9f1169339b8,,Timestamp,Complete,AI-assisted,8.0,146.0,0.0,Unknown Session,1733192760.0
+117,R_82L0mLLWv5EOP2p,False,,,,No conversation data,AI-assisted,11.0,0.0,0.0,,
+118,R_2GpTCSeozSzoEFN,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+119,R_2YYWPAFy4ZxHXHz,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+120,R_8CCln2gYZud42KR,True,674f4317-c830-8008-a1af-6abdffb1b9de,Generated_03122024_1842,PromptData,Recovered from promptdata,AI-assisted,9.0,69.0,32.80374058087667,Unknown Session,1733212380.0
+121,R_2FgOgiTJ061FD5U,True,674eeef3-f4fc-8007-a164-373289bb2bd1,Generated_03122024_1243,PromptData,Recovered from promptdata,AI-assisted,10.0,66.0,13.32952791849772,Unknown Session,1733216880.0
+122,R_8c0j4WjB7aVOuJ3,True,674f3266-1208-8001-8790-f92390f883fd,,RecoveredData,Recovered,AI-assisted,11.0,0.0,0.0,Unknown Session,1733221500.0
+123,R_8rQ7gpZL8IDJ51T,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+124,R_87iwwoN9aTz2YGR,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+125,R_8N9JXCOKrZ1SwiR,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+126,R_2f1v5uWXMHJwEQo,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+127,R_85HKcXyQLUYXNFT,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+128,R_82DuR70WJdriOVb,True,67506d12-5a28-8008-b8a3-07643b4d8db9,Generated_04122024_1554,PromptData,Recovered from promptdata,AI-assisted,8.0,2.0,0.1215391000111897,Unknown Session,1733303340.0
+129,R_2dB03Mf09zOeM4x,True,675040fe-8a4c-8002-bca7-8cda704da262,Generated_04122024_1246,PromptData,Recovered from promptdata,AI-assisted,6.0,52.0,15.946301849683126,Unknown Session,1733307540.0
+130,R_2Gw2v5whflW2n8l,True,67517be8-3f9c-800c-b322-9fc3338924bb,,Timestamp,Complete,AI-assisted,8.0,26.0,0.0,Unknown Session,1733366340.0
+131,R_2QK8y3PiiJ739uA,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+132,R_2LI5fximhtrwqVt,True,6751d69b-4d18-800e-a80a-4b649aac1206,Generated_05122024_1736,PromptData,Recovered from promptdata,AI-assisted,9.0,42.0,20.525120115280156,Unknown Session,1733390160.0
+133,R_8ffOman88fYnoXb,False,,AutoID_88fYnoXb,,Missing conversation,Control,8.0,0.0,0.0,Session 1,1732762620.0
+134,R_2htMpcciGwfEJ0O,False,,AutoID_iGwfEJ0O,,Missing conversation,AI-assisted,6.0,0.0,0.0,Session 1,1732766400.0
+135,R_8RwZHTn8RQOXmtH,True,674da4e4-ee00-8009-9d26-98c351663e12,,Timestamp,Complete,AI-guided,6.0,70.0,0.0,Unknown Session,1733112540.0
+136,R_2OiGj7c1qd9L01e,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+137,R_8iqkZkUY6XQpZoR,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+138,R_8cjbZ05HQ7XBuVc,True,6751c501-851c-8002-8978-5010ee03d753,,ExplicitID,Complete,AI-assisted,8.0,31.0,0.0,Unknown Session,1733203260.0
+139,R_8zvXJ457Rkiu50U,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+140,R_8MGQaEqOF8QApMJ,True,674f3403-4e30-8008-9aa5-afd019d4ae24,Generated_03122024_1738,PromptData,Recovered from promptdata,AI-assisted,6.0,20.0,18.64674266576767,Unknown Session,1733212380.0
+141,R_88UlvdtDUiwvoFS,True,674edb41-d378-8007-ac81-d6774480d5cf,Generated_03122024_1119,PromptData,Recovered from promptdata,AI-assisted,10.0,20.0,10.299891996383668,Unknown Session,1733216880.0
+142,R_862TqU5PmKaQTk1,True,674f2301-a09c-8001-8993-73e9955a02fc,,RecoveredData,Recovered,AI-assisted,9.0,0.0,0.0,Unknown Session,1733221500.0
+143,R_82tNxdfffvSUnok,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+144,R_2CCy9fIQuQxTLcH,True,67504189-7c74-8005-a28c-035875662958,,Timestamp,Complete,AI-assisted,10.0,33.0,0.0,Unknown Session,1733285460.0
+145,R_8fkCpcRlnC7qglJ,True,67505d60-f930-8012-8f0d-f3b1d667560c,,Timestamp,Duplicate,AI-assisted,5.0,12.0,0.0,Unknown Session,1733290020.0
+146,R_2GwaDkyjWGzGwmL,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+147,R_83qG7PtVgZkA5wG,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+148,R_83xLgfZ2z7JLH2y,True,67506445-6908-8008-bf40-738389895c63,Generated_04122024_1516,PromptData,Recovered from promptdata,AI-assisted,11.0,4.0,0.0446692665417989,Unknown Session,1733303340.0
+149,R_2qrRlo6F1thX30J,True,67509a06-0bb8-8007-a727-fb13bf605084,Generated_04122024_1905,PromptData,Recovered from promptdata,AI-assisted,,6.0,1.6984446009000145,Unknown Session,1733307540.0
+150,R_8Vayzfs4WnEh0G0,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+151,R_2LFCPopR67E5uB7,True,6751d825-07e4-8007-9d0f-9062466a11d0,,Timestamp,Duplicate,AI-assisted,10.0,27.0,0.0,Unknown Session,1733385240.0
+152,R_8dR0Uoy3xufVd4Z,True,6751c5aa-7a14-800e-a94c-a6bccd850f16,Generated_05122024_1624,PromptData,Recovered from promptdata,AI-assisted,7.0,28.0,17.090247750282288,Unknown Session,1733390160.0
+153,R_8H6XQZXyAaJEE6J,True,674da459-1424-8005-b712-9a1b27814535,,Timestamp,Duplicate,AI-guided,11.0,77.0,0.0,Unknown Session,1733112540.0
+154,R_2pbuLnTBCoK9hBQ,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+155,R_2uPQeg5rL4Yues2,True,674efdd0-5c64-8009-ba48-72d79c894da9,,Timestamp,Duplicate,AI-assisted,11.0,69.0,0.0,Unknown Session,1733199120.0
+156,R_2K2PDqyYjxlFYtK,False,,,,No conversation data,AI-assisted,4.0,0.0,0.0,,
+157,R_2HbxCa8nPoPaq8p,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+158,R_84NMlZE02dmkZ4U,True,674f10a4-9900-8008-b1c5-7190f81aa209,Generated_03122024_1507,PromptData,Recovered from promptdata,AI-assisted,10.0,2.0,0.02466668287913,Unknown Session,1733212380.0
+159,R_8D14OuXeagRqtTn,True,674f4836-adfc-8005-9527-3ebb13c87708,Generated_03122024_1904,PromptData,Recovered from promptdata,AI-assisted,7.0,18.0,8.707057213783264,Unknown Session,1733216880.0
+160,R_8raaFUaI4tkABah,True,67502bad-2a84-8013-810a-63e43d281ea1,,Timestamp,Duplicate,AI-assisted,,49.0,0.0,Unknown Session,1733279220.0
+161,R_8qmXrDyf3dMtO0H,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+162,R_2iPDbSbopoNR7wd,True,675068fe-2b28-800d-8d90-74f4f834118e,,Timestamp,Duplicate,AI-assisted,8.0,11.0,0.0,Unknown Session,1733290020.0
+163,R_29bsKva0U3diZEn,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+164,R_2hFpJLBVEGaCEBY,True,67508665-0278-8008-939e-20c11639e4cf,,Timestamp,Duplicate,AI-assisted,10.0,11.0,0.0,Unknown Session,1733298960.0
+165,R_84A8w0JG0W89gmf,True,675096bb-28d0-8008-adda-e851efd014d3,Generated_04122024_1851,PromptData,Recovered from promptdata,AI-assisted,8.0,14.0,11.080693952242534,Unknown Session,1733303340.0
+166,R_8zzN8wUT8oAbrgo,True,6750855a-1fd8-8007-9ed7-312a8e725b14,Generated_04122024_1737,PromptData,Recovered from promptdata,AI-assisted,9.0,14.0,13.829736852645874,Unknown Session,1733307540.0
+167,R_2pltKsQ1aoTVlux,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+168,R_8PIehlH6ppwID9h,True,67517fba-4f28-800e-9fe9-9fda484ba697,Generated_05122024_1126,PromptData,Recovered from promptdata,AI-assisted,8.0,32.0,11.84983968337377,Unknown Session,1733390160.0
+169,R_886igvX39wE2QiR,False,,,,No conversation data,AI-guided,11.0,0.0,0.0,,
+170,R_2G8vfS5DY1dgNSj,False,,,,No conversation data,AI-assisted,11.0,0.0,0.0,,
+171,R_2ph8kOwxW2DdSxu,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+172,R_2pYLTHBaVB47ccc,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+173,R_2nTkzQinJS5YTy9,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+174,R_2z6LN6REC1XoOel,True,674f017c-4e30-8008-a233-64ac198ef8c7,Generated_03122024_1402,PromptData,Recovered from promptdata,AI-assisted,7.0,16.0,10.589021599292757,Unknown Session,1733212380.0
+175,R_8CHL4ajGlLr9VB1,True,674f3477-b710-8005-adb3-8f50050a247a,Generated_03122024_1740,PromptData,Recovered from promptdata,AI-assisted,11.0,21.0,16.90845816532771,Unknown Session,1733216880.0
+176,R_8LQpYh0yLIx9SzT,True,674f0cbd-e4a0-8001-a29a-617d28694669,,RecoveredData,Recovered,AI-assisted,7.0,0.0,0.0,Unknown Session,1733221500.0
+177,R_83HfQzqMSZVdykF,False,,,,No conversation data,AI-assisted,4.0,0.0,0.0,,
+178,R_82nbJPSNlL5yHPq,True,675040fe-8a4c-8002-bca7-8cda704da262,,Timestamp,Duplicate,AI-assisted,8.0,54.0,0.0,Unknown Session,1733285460.0
+179,R_26sOmlaAxuwN1Yd,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+180,R_2FyOZgnmDrfoIqM,False,,,,No conversation data,AI-assisted,11.0,0.0,0.0,,
+181,R_8uJMcznGtIASwN5,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+182,R_81AIFSLQHsUCNi3,True,67508665-0278-8008-939e-20c11639e4cf,Generated_04122024_1742,PromptData,Recovered from promptdata,AI-assisted,8.0,10.0,9.092147699991862,Unknown Session,1733303340.0
+183,R_2XmiljtIdMrez29,True,67503181-87a0-8007-9e1d-5c2822502713,Generated_04122024_1140,PromptData,Recovered from promptdata,AI-assisted,8.0,10.0,4.732581849892934,Unknown Session,1733307540.0
+184,R_2pbDVDiRPmmM0yM,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+185,R_8eRxYskUHt0GRlq,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+186,R_2lDlmVuxpeLOTnU,True,6751da8c-8088-8002-ae6e-56e232820bf5,Generated_05122024_1753,PromptData,Recovered from promptdata,AI-assisted,8.0,16.0,4.934905465443929,Unknown Session,1733390160.0
+187,R_8Xocl1OV48ti437,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+188,R_2IPE98MlYuzInuN,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+189,R_8NPazZ5Juvbfv68,False,,,,No conversation data,AI-assisted,,0.0,0.0,,
+190,R_2OcgbloBG9cmx3q,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+191,R_83Dxvaxsbxce0Jf,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+192,R_802fCB8KoHpSeSF,True,674f353c-c7dc-8010-9a22-460304d7326e,Generated_03122024_1743,PromptData,Recovered from promptdata,AI-assisted,,26.0,16.26488363345464,Unknown Session,1733212380.0
+193,R_8fKcljZ60M1sIz7,True,674f00ae-3648-8005-bba1-35a4c549ce40,Generated_03122024_1359,PromptData,Recovered from promptdata,AI-assisted,11.0,10.0,4.698592066764832,Unknown Session,1733216880.0
+194,R_2B1b8VD2tv6L8hb,True,674eda35-0a30-8001-8cac-9c56805f22e0,,RecoveredData,Recovered,AI-assisted,10.0,0.0,0.0,Unknown Session,1733221500.0
+195,R_8Ja3Mv9TBGX0chc,True,67503dff-2694-800c-82af-3d5806569a6d,,Timestamp,Duplicate,AI-assisted,7.0,45.0,0.0,Unknown Session,1733279220.0
+196,R_8RWV8FNbZ21N0oS,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+197,R_8rYhwKJGooHrmXF,True,67506011-3a94-800d-a445-6ae53e3e2dbf,,Timestamp,Duplicate,AI-assisted,9.0,8.0,0.0,Unknown Session,1733290020.0
+198,R_8RyeKskCAsHOMF2,False,,,,No conversation data,AI-assisted,4.0,0.0,0.0,,
+199,R_2ZIJjjJ1cFe244o,True,6750943f-9ff0-8012-8822-5d7109720cea,,Timestamp,Duplicate,AI-assisted,10.0,52.0,0.0,Unknown Session,1733298960.0
+200,R_8v6oO1eP7AcfP4x,True,675074e6-8254-8008-8891-2c00a08c69b5,Generated_04122024_1627,PromptData,Recovered from promptdata,AI-assisted,10.0,24.0,8.666796282927196,Unknown Session,1733303340.0
+201,R_8ke2S4kDVBVL1Uh,True,67502e4d-07d8-8007-b411-942a5247cab3,Generated_04122024_1126,PromptData,Recovered from promptdata,AI-assisted,10.0,32.0,12.287073183059691,Unknown Session,1733307540.0
+202,R_2s6WOGDSpY7couL,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+203,R_8fl3iGC9GsLsxYU,True,6751c501-851c-8002-8978-5010ee03d753,Generated_05122024_1621,PromptData,Recovered from promptdata,AI-assisted,5.0,29.0,14.514740399519605,Unknown Session,1733390160.0
+204,R_2GqfBa8EVb5RwCR,False,,AutoID_EVb5RwCR,,Missing conversation,Control,8.0,0.0,0.0,Session 1,1732762620.0
+205,R_8hRQ1S7N9rhY5ev,False,,AutoID_N9rhY5ev,,Missing conversation,AI-guided,7.0,0.0,0.0,Session 1,1732766400.0
+206,R_8nVQtW7WN4z0eP0,True,674da645-4518-8001-9cef-a87cd1b4a1f0,Generated_02122024_1321,PromptData,Recovered from promptdata,AI-guided,9.0,29.0,13.466890966892242,Unknown Session,1733112660.0
+207,R_8aXdVWeeRPiIY3v,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+208,R_2t69biSprXdI46G,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+209,R_8YA0WpVjRHU0I8h,False,,,,No conversation data,AI-assisted,10.0,0.0,0.0,,
+210,R_8qy7RxYlFF3gxfk,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+211,R_8mGnGEa2qmKjUI1,True,674f2334-de2c-8010-8670-ff528e101311,Generated_03122024_1626,PromptData,Recovered from promptdata,AI-guided,9.0,44.0,13.011146799723308,Unknown Session,1733212380.0
+212,R_22KYHKhhombrM0y,True,674f22cc-b888-8005-ae01-e9b2a0106306,Generated_03122024_1625,PromptData,Recovered from promptdata,AI-guided,4.0,18.0,6.859514164924621,Unknown Session,1733216880.0
+213,R_2SvsFuy5fEwcHAt,True,674f413f-b8cc-8001-bfce-65f867969639,Generated_03122024_1834,PromptData,Recovered from promptdata,AI-guided,7.0,2.0,0.008333683013916,Unknown Session,1733221500.0
+214,R_2PWnohYBTUt3iOR,True,67502f33-aa70-8009-aca8-dab3b826de2f,,Timestamp,Duplicate,AI-guided,8.0,29.0,0.0,Unknown Session,1733279220.0
+215,R_8hYlBcmIWp5Q0iT,False,,,,No conversation data,AI-guided,,0.0,0.0,,
+216,R_8SIglk0C2MR2gau,True,675062d1-e0e0-8012-ba15-df793ae65273,,Timestamp,Duplicate,AI-guided,7.0,32.0,0.0,Unknown Session,1733290020.0
+217,R_2wmitgmySXv1b04,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+218,R_8JwHZsXCkBsjYip,False,,,,No conversation data,AI-guided,5.0,0.0,0.0,,
+219,R_2OHKRo95E2zVTs4,True,6750608d-3fa8-8007-a391-af0f45cc81dd,Generated_04122024_1500,PromptData,Recovered from promptdata,AI-guided,4.0,56.0,14.671609767278037,Unknown Session,1733303400.0
+220,R_2nVBzIvM3VBYoNb,True,67508449-da24-8001-8e65-69fc231fc334,,RecoveredData,Recovered,AI-guided,11.0,0.0,0.0,Unknown Session,1733307600.0
+221,R_8u9dCJBcJ4GMw93,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+222,R_8CH7n2cpb4EKbOE,True,675040fe-c13c-8008-b921-c98f4888a5c1,Generated_04122024_1246,PromptData,Recovered from promptdata,AI-guided,10.0,34.0,12.185851816336314,Unknown Session,1733385240.0
+223,R_8EmZ1fofAc4mDPS,True,6751d99a-e2b0-8007-a026-a3259819ee77,Generated_05122024_1749,PromptData,Recovered from promptdata,AI-guided,10.0,20.0,8.3965034365654,Unknown Session,1733390160.0
+224,R_2v1mbKKpTkG0Z0Z,False,,AutoID_pTkG0Z0Z,,Missing conversation,Control,5.0,0.0,0.0,Session 1,1732762620.0
+225,R_20CxBqgqJ59Eu3d,True,674860b4-2380-8008-afed-44c8bea888d2,Generated_28112024_1323,PromptData,Recovered from promptdata,AI-guided,6.0,32.0,18.80060335000356,Session 1,1732770000.0
+226,R_8074joer8GcAWxD,True,674d880c-90c8-8001-ad79-3208e14e8928,Generated_02122024_1112,PromptData,Recovered from promptdata,AI-guided,11.0,2.0,0.0094479997952779,Unknown Session,1733112720.0
+227,R_8RiqfZnBGKUyxyx,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+228,R_8LuL24DXpSIjZoi,True,674f0e3a-b8dc-8012-aa78-aff7a8827b1e,,Timestamp,Complete,AI-guided,9.0,36.0,0.0,Unknown Session,1733199180.0
+229,R_2Wok5Mely1KHyYp,False,,,,No conversation data,AI-assisted,5.0,0.0,0.0,,
+230,R_871mYYbHmgoE9ss,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+231,R_8bW8fbTSkaXFBzi,True,674f1176-7914-8010-9631-724d2b0fcb56,Generated_03122024_1511,PromptData,Recovered from promptdata,AI-guided,9.0,54.0,12.69006544748942,Unknown Session,1733212380.0
+232,R_8F2puAifmePTIbt,True,674eed44-ec0c-8005-877d-d9f1169339b8,Generated_03122024_1236,PromptData,Recovered from promptdata,AI-guided,5.0,144.0,163.63754241863887,Unknown Session,1733216880.0
+233,R_2nAH0q3aGvFXIq5,True,674f0355-8900-8001-91af-68750c07f9e5,Generated_03122024_1410,PromptData,Recovered from promptdata,AI-guided,6.0,6.0,0.2535701831181844,Unknown Session,1733221500.0
+234,R_87WnAD8rg8txSH8,True,67502ffe-9700-800d-848b-67f2a5e84fb4,,Timestamp,Duplicate,AI-guided,2.0,14.0,0.0,Unknown Session,1733279220.0
+235,R_2w15kFEjLswIogs,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+236,R_8EMuOMROJlmr8vj,True,675053e5-19cc-800e-8d5f-eb3994efb5da,,Timestamp,Duplicate,AI-guided,4.0,4.0,0.0,Unknown Session,1733290020.0
+237,R_2ZKdahSPPBZUaEa,True,675073f3-583c-8005-82a7-5a83c6d4056c,,Timestamp,Duplicate,AI-guided,9.0,24.0,0.0,Unknown Session,1733294160.0
+238,R_2EdCYtLJjEvCFc5,True,67502daf-8470-8008-be19-091cb20753e8,Generated_04122024_1123,PromptData,Recovered from promptdata,AI-guided,,18.0,9.872326731681824,Unknown Session,1733298960.0
+239,R_2DF5GhNAPH77QBP,True,675050b1-5354-8007-bf5e-a7de1941bcfe,Generated_04122024_1353,PromptData,Recovered from promptdata,AI-guided,9.0,10.0,10.205300466219583,Unknown Session,1733303400.0
+240,R_2V9gkpEfP96hM6Z,True,675073d1-b904-8001-91a8-be0865d0f1de,,RecoveredData,Recovered,AI-guided,7.0,0.0,0.0,Unknown Session,1733307600.0
+241,R_8DSZOBU5IVtSADf,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+242,R_2DYa2YELlIKFRGd,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+243,R_2gbZheupiwydWz5,True,6751c578-f8b0-8007-a96c-996f8af0f51c,Generated_05122024_1623,PromptData,Recovered from promptdata,AI-guided,12.0,38.0,15.28928386370341,Unknown Session,1733390160.0
+244,R_8Dx7CNlyg18staN,False,,AutoID_yg18staN,,Missing conversation,Control,8.0,0.0,0.0,Session 1,1732762620.0
+245,R_8OZracgEpS49sLU,True,6748614a-0b18-800c-bf63-bc944421acf4,Generated_28112024_1325,PromptData,Recovered from promptdata,AI-guided,6.0,10.0,16.328178350130717,Session 1,1732770000.0
+246,R_8EiQBhFFtzeUVYX,True,674da63b-5af4-800e-8caa-863c771b0472,Generated_02122024_1321,PromptData,Recovered from promptdata,AI-guided,5.0,22.0,10.960678696632383,Unknown Session,1733112600.0
+247,R_2CU9FSlQcMasje1,False,,,,No conversation data,AI-guided,5.0,0.0,0.0,,
+248,R_2b2zGNnik1EBlct,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+249,R_2d1cJl2Z7qW7UvH,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+250,R_2tePetn1S9nNGlb,True,674f4317-c830-8008-a1af-6abdffb1b9de,,Timestamp,Complete,AI-guided,7.0,70.0,0.0,Unknown Session,1733207820.0
+251,R_8ZPp5KrTrfpshfo,True,674f01a0-7578-8010-ba47-7fe2dd5b82c4,Generated_03122024_1403,PromptData,Recovered from promptdata,AI-guided,9.0,18.0,8.402045019467671,Unknown Session,1733212380.0
+252,R_2qe5kzzAxCwDZ8R,True,674edc43-cd40-8005-a9b1-8059d74b6ddd,Generated_03122024_1124,PromptData,Recovered from promptdata,AI-guided,6.0,2.0,0.0220257480939229,Unknown Session,1733216880.0
+253,R_2MlncIFkGiOjvu9,True,674efe79-840c-8001-90d5-887c4d79676c,Generated_03122024_1350,PromptData,Recovered from promptdata,AI-guided,7.0,28.0,15.451652566591898,Unknown Session,1733221500.0
+254,R_8JbliQyjtwbbfzU,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+255,R_2mttwHpj0uQAEuF,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+256,R_2yLwTYriUnyI06Z,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+257,R_2J1L8Hs8sa1DRUY,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+258,R_8KxrmcFnsbJgpIl,True,67506550-fd24-8008-83e4-989c090969d0,Generated_04122024_1521,PromptData,Recovered from promptdata,AI-guided,9.0,2.0,0.5053979992866516,Unknown Session,1733298960.0
+259,R_2HIziCvvmMkEbhD,True,67504251-2c10-8007-8d35-5cafaeaca939,Generated_04122024_1251,PromptData,Recovered from promptdata,AI-guided,10.0,8.0,2.655346981684367,Unknown Session,1733303400.0
+260,R_2GNYBaTQr1P83T7,True,675063f6-f51c-8001-86e1-3980abfcd04d,,RecoveredData,Recovered,AI-guided,8.0,0.0,0.0,Unknown Session,1733307600.0
+261,R_8k5UluM1dMa3s3v,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+262,R_8t3lx2VeEtdJqGR,True,6751d893-bdb8-8008-9e82-33a3cb5e1faa,,Timestamp,Duplicate,AI-guided,9.0,9.0,0.0,Unknown Session,1733385240.0
+263,R_8US7QTbGQ3rfkyJ,True,67518263-de38-8007-b0dc-7bd43af05201,Generated_05122024_1137,PromptData,Recovered from promptdata,AI-guided,8.0,6.0,1.1265464504559837,Unknown Session,1733390160.0
+264,R_8v7Z7xFIRB5pnoZ,False,,AutoID_IRB5pnoZ,,Missing conversation,Control,6.0,0.0,0.0,Session 1,1732762620.0
+265,R_2s1tFz3SFNk5sIG,True,67486110-e1e0-8012-a588-e06edc3812fd,Generated_28112024_1324,PromptData,Recovered from promptdata,AI-guided,8.0,36.0,16.485753150780997,Session 1,1732770000.0
+266,R_8ySWQdIkGNZljMt,False,,,,No conversation data,AI-guided,4.0,0.0,0.0,,
+267,R_80W9fsTDlF9qwE1,True,674ed8e6-dbf0-8005-9f2e-27ae1184720c,,Timestamp,Duplicate,AI-guided,5.0,35.0,0.0,Unknown Session,1733192760.0
+268,R_2kqgOLlf0HMpEyZ,True,674f01f4-f358-800c-b30e-c1a248c02133,,Timestamp,Complete,AI-guided,9.0,15.0,0.0,Unknown Session,1733199180.0
+269,R_2WOmr3gowlySP4v,True,674f2385-86e0-8009-b2a7-77faa572cdbb,,Timestamp,Duplicate,AI-assisted,9.0,19.0,0.0,Unknown Session,1733203260.0
+270,R_8LdU8fiXeyqOnOh,False,,,,No conversation data,AI-guided,12.0,0.0,0.0,,
+271,R_8sRy0BneNZqiLG3,True,674eee23-076c-8010-b208-c81bf28ab968,Generated_03122024_1240,PromptData,Recovered from promptdata,AI-guided,7.0,20.0,10.645281398296357,Unknown Session,1733212380.0
+272,R_2tvddtksLge3ALn,True,674f446a-adb8-8012-b8cb-6fc1d66e7443,Generated_03122024_1848,PromptData,Recovered from promptdata,AI-guided,7.0,72.0,21.35866621732712,Unknown Session,1733216880.0
+273,R_8TB22WcgsuXNtvb,True,674f481d-4fd8-8001-9778-b89ea4a08db9,Generated_03122024_1904,PromptData,Recovered from promptdata,AI-guided,4.0,2.0,0.0104165474573771,Unknown Session,1733221500.0
+274,R_2h6pjap0QjtdTwV,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+275,R_2GEvnGWqrzZ7Usb,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+276,R_2Lt9kN9TBEWGxxW,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+277,R_8ouIEiQjUI8dAYF,True,675077c2-e1a4-8012-b35e-82103ba1f58f,,Timestamp,Duplicate,AI-guided,12.0,7.0,0.0,Unknown Session,1733294160.0
+278,R_2sfpEnYBYRgHDCV,True,675097e0-5a04-800e-9ed5-cb59ae18a187,,Timestamp,Duplicate,AI-guided,6.0,33.0,0.0,Unknown Session,1733298960.0
+279,R_8LvXTcwwPYbpLs7,True,675099a5-2d78-8005-8f31-6b42411da49d,Generated_04122024_1904,PromptData,Recovered from promptdata,AI-guided,8.0,12.0,3.2772671500841777,Unknown Session,1733303400.0
+280,R_8wRCUHLBX327QsX,True,67505184-09ac-8001-a0a8-1651c3a57292,,RecoveredData,Recovered,AI-guided,9.0,0.0,0.0,Unknown Session,1733307600.0
+281,R_8kRBH9jzXs7sOeT,True,6751c410-6dbc-8008-8b11-eddcaeeab736,,Timestamp,Duplicate,AI-guided,8.0,25.0,0.0,Unknown Session,1733366400.0
+282,R_8uwcMjXdaLIAXtH,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+283,R_2BrZk8otzM26jzV,True,67518231-6c00-8005-adea-30729bd24064,Generated_05122024_1136,PromptData,Recovered from promptdata,AI-guided,10.0,6.0,0.8554320494333904,Unknown Session,1733390160.0
+284,R_8U4OqbqDVvcun6h,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+285,R_8OrTyyQxUapiN2h,True,6748628a-b840-8008-9a30-c50cd377cdb2,Generated_28112024_1331,PromptData,Recovered from promptdata,AI-guided,6.0,23.0,10.574093782901764,Session 1,1732770000.0
+286,R_8l4wamITs56Z31X,True,674da7bf-9a08-8002-8554-d288839a3385,Generated_02122024_1327,PromptData,Recovered from promptdata,AI-guided,9.0,7.0,9.010344386100767,Unknown Session,1733112600.0
+287,R_21QQA4gsTwDL8Oa,True,674eed2c-3014-8005-bb36-5940bcaee158,,Timestamp,Duplicate,AI-guided,9.0,18.0,0.0,Unknown Session,1733192760.0
+288,R_8Brl5m8V7tsg6vo,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+289,R_8rJsiVt13ocLYLr,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+290,R_8jGTfGfCZMDgn5r,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+291,R_8zkeKq8Eswo6WGC,True,674eda4e-41c0-8010-9583-36e64d4c1fba,Generated_03122024_1115,PromptData,Recovered from promptdata,AI-guided,6.0,74.0,16.697689100106558,Unknown Session,1733212380.0
+292,R_89Bwlcx2XpOk3Pb,True,674f3329-4194-8012-9a83-547749411f84,Generated_03122024_1734,PromptData,Recovered from promptdata,AI-guided,,45.0,22.58985943396886,Unknown Session,1733216880.0
+293,R_28Yz257ZTozADM5,True,674f1596-5170-8001-a641-2b53debd296a,Generated_03122024_1528,PromptData,Recovered from promptdata,AI-guided,5.0,6.0,1.2843530178070068,Unknown Session,1733221500.0
+294,R_81F7KCNY6085wDj,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+295,R_29tB2dlYXkT5MyL,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+296,R_2G7kNiSuVC0gFNF,True,67506427-d04c-8005-a90b-df5f03b04cdb,,Timestamp,Duplicate,AI-guided,10.0,5.0,0.0,Unknown Session,1733290020.0
+297,R_8M0DciwiR7b5M6s,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+298,R_2TXE0BIgESmAg4J,True,67502faa-4a14-8008-bc6e-3a8c165294e2,Generated_04122024_1132,PromptData,Recovered from promptdata,AI-guided,8.0,32.0,11.736253150304158,Unknown Session,1733298960.0
+299,R_8nVEHB67txukLji,True,6750843d-fb48-8005-b676-24fdb8bae34a,Generated_04122024_1733,PromptData,Recovered from promptdata,AI-guided,5.0,24.0,12.717936317125956,Unknown Session,1733303400.0
+300,R_8dFnCdNrlYAiGQN,True,67508449-da24-8001-8e65-69fc231fc334,Generated_04122024_1733,PromptData,Recovered from promptdata,AI-guided,8.0,6.0,2.0141573508580524,Unknown Session,1733307600.0
+301,R_81imI65RUXaZ7mO,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+302,R_8ANDNswAT4iIZEM,False,,,,No conversation data,AI-guided,11.0,0.0,0.0,,
+303,R_2s0jCpGmfrwMVRG,True,6751d75b-6688-8005-9e2e-663ac5ab1267,Generated_05122024_1739,PromptData,Recovered from promptdata,AI-guided,9.0,36.0,14.72913784980774,Unknown Session,1733390160.0
+304,R_8erc40ZIIJPGJBb,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+305,R_8l8rj2ZfctcRxS1,False,,AutoID_fctcRxS1,,Missing conversation,AI-guided,8.0,0.0,0.0,Session 1,1732770000.0
+306,R_2djYqncKQ1NPSql,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+307,R_2Hp64jFL9wJvilV,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+308,R_2Xd4pFj9nmxW5rP,True,674f0313-1700-800c-bc01-d49531b1e15f,,Timestamp,Duplicate,AI-guided,10.0,17.0,0.0,Unknown Session,1733199180.0
+309,R_8qZNxbCUXfX5uZd,False,,,,No conversation data,AI-assisted,8.0,0.0,0.0,,
+310,R_2Q4cXuEFPOgDtCx,True,674f332c-0608-800e-ae47-f592b3f98463,,Timestamp,Duplicate,AI-guided,7.0,31.0,0.0,Unknown Session,1733207820.0
+311,R_8g0k8alCGahCRUv,True,674da571-906c-8010-9401-3ca592632661,Generated_02122024_1317,PromptData,Recovered from promptdata,AI-guided,9.0,18.0,13.78477616707484,Unknown Session,1733212380.0
+312,R_2zvTybBZhdWqfbn,True,674f235d-f22c-8012-b608-dfed00500a43,Generated_03122024_1627,PromptData,Recovered from promptdata,AI-guided,9.0,26.0,11.11222779750824,Unknown Session,1733216880.0
+313,R_2Gq9nu4Iz7SYYvr,True,674f3266-1208-8001-8790-f92390f883fd,Generated_03122024_1731,PromptData,Recovered from promptdata,AI-guided,8.0,42.0,23.34622170130412,Unknown Session,1733221500.0
+314,R_8EYhHkjj1K1otSS,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+315,R_2cwuA0dZMK8JLG4,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+316,R_8lDhkLwdj59GguK,True,67506442-172c-8012-af63-0e6464fdff16,,Timestamp,Duplicate,AI-guided,6.0,26.0,0.0,Unknown Session,1733290020.0
+317,R_2i4BvnbUZszNLY7,True,67507929-12a4-8007-9271-e35991cffe5b,,Timestamp,Duplicate,AI-guided,6.0,7.0,0.0,Unknown Session,1733294160.0
+318,R_2MhrqRpSQZBTAnu,True,675098b3-5d34-8012-af9c-ce0348264320,,Timestamp,Duplicate,AI-guided,9.0,19.0,0.0,Unknown Session,1733298960.0
+319,R_215kHwAnB8Gvxmg,True,67507287-e5a0-8005-af63-fd44550944d6,Generated_04122024_1617,PromptData,Recovered from promptdata,AI-guided,4.0,4.0,0.1156442006429036,Unknown Session,1733303400.0
+320,R_8aks8yiJmGUThm7,True,675073d1-b904-8001-91a8-be0865d0f1de,Generated_04122024_1622,PromptData,Recovered from promptdata,AI-guided,9.0,16.0,13.201959665616354,Unknown Session,1733307600.0
+321,R_82ssQEqyCSQAn63,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+322,R_2J258SlZzwjxPdT,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+323,R_2e4c3rxUN7f4BRO,True,6751c74d-e404-8005-885f-89f319b7432f,Generated_05122024_1631,PromptData,Recovered from promptdata,AI-guided,6.0,10.0,8.475988248984018,Unknown Session,1733390160.0
+324,R_8i8xRKC1xV0RVTa,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+325,R_2ZjfFtiqQ7IgVGx,False,,AutoID_qQ7IgVGx,,Missing conversation,AI-guided,8.0,0.0,0.0,Session 1,1732770000.0
+326,R_8G1eecQHGlKadmP,True,674da26a-cec8-8008-85a4-ebe6eeff4476,,Timestamp,Duplicate,AI-guided,10.0,19.0,0.0,Unknown Session,1733112540.0
+327,R_80UGQbaGQq1CHhD,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+328,R_2BsKNaoNdDgz8j8,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+329,R_8l4EJcdUD1yOCw9,True,674f45cf-cab0-8009-aad7-11d49823384c,Generated_03122024_1854,PromptData,Recovered from promptdata,AI-guided,,30.0,21.35377921660741,Unknown Session,1733212380.0
+330,R_2PdB73Bd0cNA4r7,True,674f0e3a-b8dc-8012-aa78-aff7a8827b1e,Generated_03122024_1457,PromptData,Recovered from promptdata,AI-guided,7.0,34.0,17.965944600105285,Unknown Session,1733216880.0
+331,R_2rV4lAz5iMxlo2J,True,674f2301-a09c-8001-8993-73e9955a02fc,Generated_03122024_1625,PromptData,Recovered from promptdata,AI-guided,10.0,20.0,11.35114961862564,Unknown Session,1733221500.0
+332,R_8s5NqLlJDyiJgaC,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+333,R_8mrWMslvG5iVquJ,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+334,R_237cpNUtCicNYgS,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+335,R_8Nxp8Voq8SurVmh,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+336,R_8vdr5UcOkD9CHCN,True,675084c9-3fb4-8008-b912-57ae483321b2,Generated_04122024_1735,PromptData,Recovered from promptdata,AI-guided,8.0,28.0,16.565380382537843,Unknown Session,1733298960.0
+337,R_2WZuiPRmZOrqqCl,True,67506358-10c4-8005-992a-5488573a491b,Generated_04122024_1512,PromptData,Recovered from promptdata,AI-guided,11.0,24.0,8.871272683143616,Unknown Session,1733303400.0
+338,R_8mPI9XM8DoyviL0,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+339,R_2njA5H4OXQruxIk,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+340,R_2nCP6fCz6BaiK4V,True,6751d766-46d8-8012-a5d7-70aacb11a52a,Generated_05122024_1740,PromptData,Recovered from promptdata,AI-guided,10.0,16.0,8.496240317821503,Unknown Session,1733390160.0
+341,R_2rOM9wY7Br7zc11,True,674d880c-90c8-8001-ad79-3208e14e8928,,RecoveredData,Recovered,AI-guided,5.0,0.0,0.0,Unknown Session,1733122680.0
+342,R_28af9XybaRsflvj,False,,,,No conversation data,Control,13.0,0.0,0.0,,
+343,R_277rwFq7rk8deCB,False,,AutoID_7rk8deCB,,Missing conversation,AI-guided,7.0,0.0,0.0,Session 1,1732770000.0
+344,R_87VUvGxjk4fDIkx,True,674da645-4518-8001-9cef-a87cd1b4a1f0,,RecoveredData,Recovered,AI-guided,9.0,0.0,0.0,Unknown Session,1733112900.0
+345,R_2NsubXR8LhZD6LH,True,674ed886-f6f0-8008-b44b-bf331b817fa5,,Timestamp,Duplicate,AI-guided,7.0,5.0,0.0,Unknown Session,1733192760.0
+346,R_82XByP9JAwidnaU,False,,,,No conversation data,AI-guided,5.0,0.0,0.0,,
+347,R_8nI6pazFjmkAiUq,False,,,,No conversation data,AI-assisted,6.0,0.0,0.0,,
+348,R_2qgGc6F49e3lQC2,True,674f3477-b710-8005-adb3-8f50050a247a,,Timestamp,Duplicate,AI-guided,9.0,22.0,0.0,Unknown Session,1733207820.0
+349,R_8Kxu5OcvjCpzEiP,True,674f3609-7e10-8009-b714-ddc016967758,Generated_03122024_1747,PromptData,Recovered from promptdata,AI-guided,7.0,31.0,11.237325950463612,Unknown Session,1733212380.0
+350,R_8O9eUWpiRBkUktR,True,674f002b-ee88-8012-8b17-5672b9ef05dc,Generated_03122024_1357,PromptData,Recovered from promptdata,AI-guided,9.0,40.0,16.24179193576177,Unknown Session,1733216880.0
+351,R_2pvF73TmhhDLTeV,True,674f0cbd-e4a0-8001-a29a-617d28694669,Generated_03122024_1450,PromptData,Recovered from promptdata,AI-guided,7.0,26.0,30.10778301556905,Unknown Session,1733221500.0
+352,R_8MIT9DmJ5XOYcrT,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+353,R_2i51Xf2HKqFKOUF,True,67505069-1d8c-8008-a9b8-0ac732c5f8e3,,Timestamp,Duplicate,AI-guided,11.0,35.0,0.0,Unknown Session,1733285520.0
+354,R_2qrP1bI8e6Lk4EB,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+355,R_245mOkK0ZBq8rxD,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+356,R_245wmAD38OnfyCi,True,67504fdd-e380-8005-9e57-7d2c2d334549,Generated_04122024_1349,PromptData,Recovered from promptdata,AI-guided,8.0,8.0,15.507158966859182,Unknown Session,1733303400.0
+357,R_2nc4qBHmlrrEEw3,True,675063f6-f51c-8001-86e1-3980abfcd04d,Generated_04122024_1515,PromptData,Recovered from promptdata,AI-guided,9.0,16.0,9.865556967258453,Unknown Session,1733307600.0
+358,R_80PeY05hVrVv4Es,True,6751c3a2-3b18-8008-984d-956e31b53aeb,,Timestamp,Duplicate,AI-guided,9.0,41.0,0.0,Unknown Session,1733366400.0
+359,R_80buEqg5wgPktFv,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+360,R_2lSIHJiZh5RAj5b,True,6751c42a-bfb8-8012-8659-7b78f79db409,Generated_05122024_1618,PromptData,Recovered from promptdata,AI-guided,8.0,52.0,20.45018221537272,Unknown Session,1733390160.0
+361,R_2KrQaF7qexPxzMF,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+362,R_8rI73jMo7px8AlW,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+363,R_83fixpr8Ybv9FlJ,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+364,R_2QyqLltROt9S9fO,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+365,R_8Aw5rQ9ek5IPu2l,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+366,R_8FUPNEUM1UuXrwt,True,674f2385-86e0-8009-b2a7-77faa572cdbb,Generated_03122024_1628,PromptData,Recovered from promptdata,AI-guided,10.0,18.0,8.72525540192922,Unknown Session,1733212380.0
+367,R_8JEgbKUmkpulUMQ,True,674eec7e-6a48-8012-ac21-eca6682b8b07,Generated_03122024_1233,PromptData,Recovered from promptdata,AI-guided,5.0,84.0,23.829427285989127,Unknown Session,1733216880.0
+368,R_2C3icjM76Larbfm,True,674eda35-0a30-8001-8cac-9c56805f22e0,Generated_03122024_1115,PromptData,Recovered from promptdata,AI-guided,11.0,25.0,17.798959783713023,Unknown Session,1733221500.0
+369,R_2Ed4aBGbEfujJoT,False,,,,No conversation data,AI-guided,7.0,0.0,0.0,,
+370,R_2GpwN7mLM9wjwlP,False,,,,No conversation data,AI-guided,6.0,0.0,0.0,,
+371,R_8dDActHMIOFwZ1f,False,,,,No conversation data,AI-guided,10.0,0.0,0.0,,
+372,R_2diKBdyPxhWzVLZ,False,,,,No conversation data,AI-guided,11.0,0.0,0.0,,
+373,R_25Bp6o4vQbXHwER,True,67507312-4acc-8008-b57c-6a588a56f33e,Generated_04122024_1619,PromptData,Recovered from promptdata,AI-guided,10.0,32.0,13.952387396494547,Unknown Session,1733298960.0
+374,R_8LUROFr3t42l1MK,True,67504189-7c74-8005-a28c-035875662958,Generated_04122024_1248,PromptData,Recovered from promptdata,AI-guided,5.0,30.0,13.639437715212503,Unknown Session,1733303400.0
+375,R_82Q3ncNmRayzEKx,True,67505184-09ac-8001-a0a8-1651c3a57292,Generated_04122024_1356,PromptData,Recovered from promptdata,AI-guided,10.0,24.0,15.353435182571411,Unknown Session,1733307600.0
+376,R_8EneFc7QJhGsoS5,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+377,R_8UCNt86gvYKsDE5,True,6751c42b-acd4-8010-9cce-5c945ce8ced9,Generated_05122024_1618,PromptData,Recovered from promptdata,AI-guided,7.0,6.0,2.8801196972529093,Unknown Session,1733385240.0
+378,R_2l9OLVGr5pAePLu,True,675181af-0dd8-8012-8965-63ce27d2189b,Generated_05122024_1134,PromptData,Recovered from promptdata,AI-guided,6.0,16.0,5.414324716726939,Unknown Session,1733390160.0
+379,R_8wzgmOo7PR5whW8,True,674da5ba-4754-800d-8728-6a712f5ba880,,Timestamp,Duplicate,AI-guided,5.0,26.0,0.0,Unknown Session,1733112540.0
+380,R_2hNfDt58u49xkIh,True,674edc52-4ba8-8007-b07d-e55d177bea8b,,Timestamp,Duplicate,AI-guided,8.0,18.0,0.0,Unknown Session,1733192760.0
+381,R_2TNAoGYoMmySRxf,True,674eff08-3f7c-8005-95da-42bb850b3067,,Timestamp,Duplicate,AI-guided,8.0,31.0,0.0,Unknown Session,1733199180.0
+382,R_2UEvCkajVHtCC41,False,,,,No conversation data,AI-assisted,9.0,0.0,0.0,,
+383,R_2FJw1DkeP6J0aOr,True,674f432b-8278-8012-9664-83e43c70915a,,Timestamp,Duplicate,AI-guided,7.0,30.0,0.0,Unknown Session,1733207820.0
+384,R_8dvYAmBhsjKNEmB,True,674f104f-1b5c-8009-bdbd-b8305dc3e2fc,Generated_03122024_1506,PromptData,Recovered from promptdata,AI-guided,6.0,52.0,15.037445282936096,Unknown Session,1733212380.0
+385,R_2Y9vpXaVZCTyoO9,True,674ede81-777c-8012-824a-284bd8fe1241,Generated_03122024_1133,PromptData,Recovered from promptdata,Control,5.0,32.0,7.026365466912588,Unknown Session,1733216880.0
+386,R_82cFAqoBFHXw4a5,True,674f413f-b8cc-8001-bfce-65f867969639,,RecoveredData,Recovered,AI-guided,10.0,0.0,0.0,Unknown Session,1733221620.0
+387,R_2ypzI6PNzy0wuKM,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+388,R_27dHzMZJXIfs4v7,True,67504261-af80-8008-bc96-59d82aadc0c1,,Timestamp,Duplicate,AI-guided,,20.0,0.0,Unknown Session,1733285520.0
+389,R_8Z5TSQ3hYL8tQzf,True,67505463-41b4-8008-bf9e-cfa5e70777d7,,Timestamp,Duplicate,AI-guided,9.0,10.0,0.0,Unknown Session,1733290020.0
+390,R_21dBsYZ2gZm10H5,True,67507504-f97c-8008-a66b-16d49521d129,,Timestamp,Duplicate,AI-guided,,21.0,0.0,Unknown Session,1733294160.0
+391,R_8JKOZNvjf92AO4S,False,,,,No conversation data,AI-guided,5.0,0.0,0.0,,
+392,R_28G0lkJQWfdyAKA,True,67502fcd-fbfc-8005-9cce-6735c7830e4a,Generated_04122024_1132,PromptData,Recovered from promptdata,AI-guided,8.0,16.0,9.643101684252422,Unknown Session,1733303400.0
+393,R_8kd3z8o5je8CVCu,True,675097e0-5a04-800e-9ed5-cb59ae18a187,Generated_04122024_1856,PromptData,Recovered from promptdata,AI-guided,6.0,32.0,13.781262850761411,Unknown Session,1733307600.0
+394,R_8wKWCmrWNNJHmfx,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+395,R_2JfQNBeL9PDpl59,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+396,R_8eIDspwXcBH7Ny9,True,6751d914-a510-8013-a316-02a3ab996e4f,Generated_05122024_1747,PromptData,Recovered from promptdata,AI-guided,7.0,25.0,10.305251852671306,Unknown Session,1733390160.0
+397,R_8fkfvwK2fjVzQKh,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+398,R_22317AJ06zqaURy,True,674ee98f-66c4-8009-b156-601409bef13c,,Timestamp,Duplicate,AI-guided,6.0,13.0,0.0,Unknown Session,1733192760.0
+399,R_8cdF4uxhVksYZLr,False,,,,No conversation data,AI-guided,9.0,0.0,0.0,,
+400,R_2w49xkP0YBOm5BA,False,,,,No conversation data,AI-assisted,7.0,0.0,0.0,,
+401,R_8i34ElCw39ebJtb,True,674f3315-3934-8012-b416-99531f564e58,,Timestamp,Complete,AI-guided,6.0,65.0,0.0,Unknown Session,1733207820.0
+402,R_2jdjrFV67KVDqDT,True,674efdd0-5c64-8009-ba48-72d79c894da9,Generated_03122024_1347,PromptData,Recovered from promptdata,AI-guided,9.0,69.0,14.68939859867096,Unknown Session,1733212380.0
+403,R_2DZZZauzs8ZiyCl,True,674f4873-acd4-800e-9fd9-d1369151fffc,Generated_03122024_1905,PromptData,Recovered from promptdata,AI-guided,7.0,14.0,8.70841036637624,Unknown Session,1733221500.0
+404,R_2i9uLJNuiHtWQ3X,True,6750305a-caec-800c-8157-993bc7f63411,,Timestamp,Duplicate,AI-guided,11.0,26.0,0.0,Unknown Session,1733279220.0
+405,R_2gkbikihJ5EpfmF,True,67505101-eadc-800c-864d-5861a23f3ab0,,Timestamp,Duplicate,AI-guided,8.0,24.0,0.0,Unknown Session,1733285520.0
+406,R_2mfMPQ1sO3vsuhv,True,67506105-82e0-8012-a877-4739ea06cc11,,Timestamp,Duplicate,AI-guided,10.0,7.0,0.0,Unknown Session,1733290020.0
+407,R_2QyIMjtklxZcPhn,True,67507588-a5c4-8008-9845-f1ca498ed546,,Timestamp,Duplicate,AI-guided,6.0,12.0,0.0,Unknown Session,1733294160.0
+408,R_8roy4KiCT5cYGLc,False,,,,No conversation data,AI-guided,4.0,0.0,0.0,,
+409,R_8V3o2j2VvZWK1QB,True,675062d1-e0e0-8012-ba15-df793ae65273,Generated_04122024_1510,PromptData,Recovered from promptdata,AI-guided,5.0,32.0,15.680553948879242,Unknown Session,1733303400.0
+410,R_8NsRRSTrF6FPfyi,True,6751c52f-f1c8-8008-a951-9f252c2206d7,,Timestamp,Complete,AI-guided,8.0,43.0,0.0,Unknown Session,1733366400.0
+411,R_8prQ2rtPDGulejc,False,,,,No conversation data,AI-guided,8.0,0.0,0.0,,
+412,R_85UKRpwUwOPlU5P,True,6751c8b5-7a8c-8013-9be1-d660d8e4f65f,Generated_05122024_1637,PromptData,Recovered from promptdata,AI-guided,5.0,3.0,0.0482342481613159,Unknown Session,1733390160.0
+413,R_8qCzIIjxOTtrWA4,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+414,R_8gjtu8K99bXRioh,True,674861bb-e28c-8001-b7f0-443332f372a4,,RecoveredData,Recovered,Control,9.0,0.0,0.0,Session 1,1732770600.0
+415,R_26LIfacJte64Zyx,True,674da9f5-1754-8007-957e-8d3e9ec67d30,Generated_02122024_1337,PromptData,Recovered from promptdata,Control,10.0,4.0,0.0990249673525492,Unknown Session,1733112600.0
+416,R_8nt5wvzxZyTZDEZ,True,674edd72-9bdc-8012-b93f-b767dfbcb716,,Timestamp,Complete,Control,10.0,13.0,0.0,Unknown Session,1733192760.0
+417,R_8wzbEL9LphhFZ4l,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+418,R_2QAXgrLg39b4uh6,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+419,R_8NO1ptm3Ik0gPYh,True,674f4542-621c-800c-8623-e5b46111a818,,Timestamp,Complete,Control,10.0,21.0,0.0,Unknown Session,1733207820.0
+420,R_2ydZHcrhe4nEmv7,True,674ee98f-66c4-8009-b156-601409bef13c,Generated_03122024_1220,PromptData,Recovered from promptdata,Control,8.0,12.0,10.614181713263196,Unknown Session,1733212380.0
+421,R_2PZZZlWYgPfkZYm,True,674f481f-2fbc-8013-83c7-ff537f724369,Generated_03122024_1904,PromptData,Recovered from promptdata,Control,8.0,28.0,10.810524415969848,Unknown Session,1733216880.0
+422,R_2lzwFysfCJMlF3G,True,674f332c-0608-800e-ae47-f592b3f98463,Generated_03122024_1734,PromptData,Recovered from promptdata,Control,8.0,30.0,14.349865432580312,Unknown Session,1733221500.0
+423,R_2NagJw8EObvrjRT,True,67503743-deb0-8005-8f86-7c8c1ddf0de7,,Timestamp,Duplicate,Control,,4.0,0.0,Unknown Session,1733279220.0
+424,R_2gM6MkovkJz9o9X,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+425,R_80aMnNdex0m4njr,True,67506105-6a6c-8012-808c-550a16b728b4,,Timestamp,Complete,Control,12.0,57.0,0.0,Unknown Session,1733290020.0
+426,R_2K14isw0vo7pWao,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+427,R_2gRcoUxLrZQMxnr,True,67505f34-e510-8008-b48c-c492399446cb,Generated_04122024_1455,PromptData,Recovered from promptdata,Control,9.0,33.0,18.48044153054555,Unknown Session,1733298960.0
+428,R_2G3qCkAjdj6mdC2,True,67505d60-f930-8012-8f0d-f3b1d667560c,Generated_04122024_1447,PromptData,Recovered from promptdata,Control,7.0,16.0,23.959466616312664,Unknown Session,1733303400.0
+429,R_87d1MboujLoWSvk,True,6750856b-7db8-800e-a4fc-b4ce33321940,Generated_04122024_1738,PromptData,Recovered from promptdata,Control,8.0,31.0,16.43769688606262,Unknown Session,1733307600.0
+430,R_8iQ2kVTbdpMOjyY,False,,,,No conversation data,Control,11.0,0.0,0.0,,
+431,R_8tinxpxTMjNjBx5,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+432,R_2CJcdWpzksl6tEl,True,67517de8-96e8-8013-b686-58cbdd254615,Generated_05122024_1118,PromptData,Recovered from promptdata,Control,9.0,10.0,6.343293535709381,Unknown Session,1733390160.0
+433,R_8kmEQqPKqtEcKgj,True,6748612d-c46c-8008-9a1e-0269d57a4fb1,,Timestamp,Duplicate,Control,9.0,6.0,0.0,Session 1,1732760700.0
+434,R_8IYEZd0vJC0vCU8,True,674861bb-e28c-8001-b7f0-443332f372a4,Generated_28112024_1327,PromptData,Recovered from promptdata,Control,11.0,26.0,13.847119414806366,Session 1,1732770360.0
+435,R_20Pcee3winLwPvf,True,674edc3d-4408-8002-b94c-6d32a573741d,,Timestamp,Duplicate,Control,8.0,50.0,0.0,Unknown Session,1733192760.0
+436,R_2kePWvsLo0yw2wF,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+437,R_2QxtHi49Kcwvup0,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+438,R_8Olk8BIewElxW5R,False,,,,No conversation data,Control,5.0,0.0,0.0,,
+439,R_8qdJ5jTVr6nmTw9,True,674eedec-063c-8009-bd78-c0adc0d37838,Generated_03122024_1239,PromptData,Recovered from promptdata,Control,8.0,56.0,17.862971500555673,Unknown Session,1733212380.0
+440,R_2CYFWEI2Jtmi0pj,True,674f33b3-a94c-8013-8a64-c6d57d4c3d51,Generated_03122024_1737,PromptData,Recovered from promptdata,Control,8.0,30.0,15.016195185979209,Unknown Session,1733216880.0
+441,R_8rIzbD580oyaUHK,True,674f23bc-4304-800e-be8d-b43918a4eca9,Generated_03122024_1629,PromptData,Recovered from promptdata,Control,10.0,30.0,12.463653834660848,Unknown Session,1733221500.0
+442,R_2Xdtylp7fYm79kX,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+443,R_2qg97Pb1eujnwaM,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+444,R_2IYhDrJDzyVJz9j,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+445,R_2340jl0UI6SPHmU,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+446,R_8veUNQojfmcFVyE,True,675096e8-7a30-800c-a9cf-c2ad31aac457,,Timestamp,Duplicate,Control,9.0,13.0,0.0,Unknown Session,1733298960.0
+447,R_2IRUwPwxweseXfl,True,67506105-82e0-8012-a877-4739ea06cc11,Generated_04122024_1502,PromptData,Recovered from promptdata,Control,,6.0,2.230258667469025,Unknown Session,1733303400.0
+448,R_2dGHH22TJOeuY6p,True,675072f1-aac4-800e-99b0-57fe7e8c1c21,Generated_04122024_1619,PromptData,Recovered from promptdata,Control,10.0,6.0,5.464119497934977,Unknown Session,1733307600.0
+449,R_2KPm8ZKzPOLKVkt,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+450,R_2k1ujTNGsfSto9y,True,6751c657-1aa0-800d-9812-236f748d8f31,,Timestamp,Duplicate,Control,9.0,13.0,0.0,Unknown Session,1733385240.0
+451,R_8YxM21dWOy52cIV,True,67518181-d288-8008-86e1-b883e957268e,Generated_05122024_1133,PromptData,Recovered from promptdata,Control,7.0,4.0,0.0880537827809651,Unknown Session,1733390160.0
+452,R_8qkylSKLZxexxeN,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+453,R_81MDAtRBFJv8Q3U,False,,AutoID_BFJv8Q3U,,Missing conversation,Control,11.0,0.0,0.0,Session 1,1732769940.0
+454,R_8pKbjDqWlXRFrA2,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+455,R_2ty5qZrz4TrEl8Z,False,,,,No conversation data,Control,11.0,0.0,0.0,,
+456,R_2JrXocJuioWUqms,True,674f446a-adb8-8012-b8cb-6fc1d66e7443,,Timestamp,Duplicate,Control,11.0,73.0,0.0,Unknown Session,1733207820.0
+457,R_8En0jGtCK6qhjAG,True,674eda77-ed70-8009-a559-1b3a655d0301,Generated_03122024_1116,PromptData,Recovered from promptdata,Control,6.0,26.0,19.792059818903606,Unknown Session,1733212380.0
+458,R_8PgHiqSa1E67IN8,True,674f2642-1878-8013-86e8-de911110213f,Generated_03122024_1639,PromptData,Recovered from promptdata,Control,8.0,2.0,0.0140609502792358,Unknown Session,1733216880.0
+459,R_2wt6uB8TuCInl7b,True,674f1434-518c-800e-817a-ba555304ea7c,Generated_03122024_1522,PromptData,Recovered from promptdata,Control,8.0,2.0,0.080948531627655,Unknown Session,1733221500.0
+460,R_208DZoTvPHlJ1RX,True,67502ea9-dc54-8010-b2d8-ea694edf9f3c,,Timestamp,Duplicate,Control,8.0,22.0,0.0,Unknown Session,1733279220.0
+461,R_2ZNS8HsCLmB5EUV,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+462,R_2mkEZX34hwiSiSz,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+463,R_8YXRJf49vrFqNWx,True,675084b1-6470-8005-a7c2-d6e09f7aba9e,,Timestamp,Duplicate,Control,3.0,9.0,0.0,Unknown Session,1733294160.0
+464,R_2n9hSCUMDNG9qMD,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+465,R_89WctOcPECzzJVT,True,6750943f-9ff0-8012-8822-5d7109720cea,Generated_04122024_1841,PromptData,Recovered from promptdata,Control,10.0,50.0,25.190930700302125,Unknown Session,1733303400.0
+466,R_8gNGFlkydMIM6iH,True,67517e13-1904-8012-a7e8-2a39232af4c3,,Timestamp,Duplicate,Control,7.0,20.0,0.0,Unknown Session,1733366340.0
+467,R_8oSd4LTkRUXYFHq,True,67517f0f-a154-8010-adc4-0af2eb622e66,Generated_05122024_1123,PromptData,Recovered from promptdata,Control,8.0,26.0,13.643899548053742,Unknown Session,1733385240.0
+468,R_2EsdNhwmGwStrCA,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+469,R_2qnnHd3C995YD1D,False,,AutoID_C995YD1D,,Missing conversation,Control,5.0,0.0,0.0,Session 1,1732769940.0
+470,R_8OdedU6aM559xQd,True,674edca8-7b48-800c-8a6a-03f593c1306a,,Timestamp,Duplicate,Control,8.0,16.0,0.0,Unknown Session,1733192760.0
+471,R_2urcGBclQxr4idP,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+472,R_2hTlq898m3bI9YI,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+473,R_80YhI7hkSU6T3CP,True,674f3329-4194-8012-9a83-547749411f84,,Timestamp,Duplicate,Control,8.0,48.0,0.0,Unknown Session,1733207820.0
+474,R_8n3mh8IEdAZm92a,True,674da4e4-ee00-8009-9d26-98c351663e12,Generated_02122024_1315,PromptData,Recovered from promptdata,Control,6.0,69.0,18.648652120431265,Unknown Session,1733212380.0
+475,R_8mhdP6CyIU8WEgN,True,674f0f1a-bdd4-8013-add0-2f0d8ba99146,Generated_03122024_1500,PromptData,Recovered from promptdata,Control,9.0,36.0,12.68774146636327,Unknown Session,1733216880.0
+476,R_2xVkum1kdyE7pLx,True,674f009d-2098-800e-afec-4d08c111242c,Generated_03122024_1359,PromptData,Recovered from promptdata,Control,,22.0,11.12850468158722,Unknown Session,1733221500.0
+477,R_2Myusren8MG4757,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+478,R_8R9pC38a9gJdzTl,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+479,R_2nPUBmftSMSznZD,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+480,R_8ZTwe32nrTweQVl,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+481,R_2EF42HDgtOQxAiI,True,67505069-1d8c-8008-a9b8-0ac732c5f8e3,Generated_04122024_1351,PromptData,Recovered from promptdata,Control,10.0,34.0,18.81884298324585,Unknown Session,1733298960.0
+482,R_8VWI4HezWPs2f05,True,675087a2-a574-8012-945a-595f1aaeeb2d,Generated_04122024_1747,PromptData,Recovered from promptdata,Control,10.0,12.0,4.189482049147288,Unknown Session,1733303400.0
+483,R_83wHZKkSPlfRc89,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+484,R_8oCa3r9CHLKGD8i,False,,,,No conversation data,Control,11.0,0.0,0.0,,
+485,R_2LvxqPv2vr55MN9,True,6751d622-5e60-8008-9f27-4fa8a6609445,Generated_05122024_1734,PromptData,Recovered from promptdata,Control,8.0,52.0,22.82940444946289,Unknown Session,1733390160.0
+486,R_8Wai7DpJtvLPrNf,False,,,,No conversation data,Control,11.0,0.0,0.0,,
+487,R_2LXNfTdzI1qkRKp,False,,AutoID_zI1qkRKp,,Missing conversation,Control,6.0,0.0,0.0,Session 1,1732769940.0
+488,R_8CFxANC85q5otax,True,674da459-1424-8005-b712-9a1b27814535,Generated_02122024_1313,PromptData,Recovered from promptdata,Control,8.0,76.0,19.79195679823557,Unknown Session,1733112600.0
+489,R_8pTTRcCUUhS5TDH,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+490,R_2cTCwoGdIN4g5Nl,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+491,R_8CdDHgLRZS3Dz4l,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+492,R_27dNoKMyQVtxO0q,False,,,,No conversation data,Control,2.0,0.0,0.0,,
+493,R_8purCG9oK68vkZP,True,674f465c-fa58-8005-a894-dca15fd44a29,Generated_03122024_1856,PromptData,Recovered from promptdata,Control,10.0,2.0,0.0743242343266805,Unknown Session,1733212380.0
+494,R_27st177KTqr6NU5,True,674f0072-bbe4-8013-8c53-894a492b8567,Generated_03122024_1358,PromptData,Recovered from promptdata,Control,10.0,22.0,13.433180503050488,Unknown Session,1733216880.0
+495,R_2pmXYMLknxtVcyb,True,674eecb4-944c-800e-999a-691db58c1d1e,Generated_03122024_1234,PromptData,Recovered from promptdata,Control,9.0,45.0,17.807589447498323,Unknown Session,1733221500.0
+496,R_2zdcJbyfVO7kRGh,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+497,R_80ZtD40wP3ItUrh,False,,,,No conversation data,Control,2.0,0.0,0.0,,
+498,R_8PoLy8scMlZrsdo,False,,,,No conversation data,Control,11.0,0.0,0.0,,
+499,R_8B2KBdzvmuP45Q2,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+500,R_8cbaPl7MRdOxheO,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+501,R_2JEZBTEcw4mJVlV,True,6750750f-0f20-8012-b80b-9035766db89c,Generated_04122024_1628,PromptData,Recovered from promptdata,Control,8.0,4.0,0.1134844819704691,Unknown Session,1733303400.0
+502,R_2Pdnd6bKm1jZF17,True,67506146-7dc0-800e-b6a7-a70abd56437c,Generated_04122024_1503,PromptData,Recovered from promptdata,Control,6.0,42.0,12.8631476521492,Unknown Session,1733307600.0
+503,R_8tAnHIWHCZkVKQE,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+504,R_2pmbN49kWzDBJXH,True,6751c410-6dbc-8008-8b11-eddcaeeab736,Generated_05122024_1617,PromptData,Recovered from promptdata,Control,10.0,24.0,17.59642666975657,Unknown Session,1733390160.0
+505,R_8eFvjN6kbfuGmwz,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+506,R_2pWcpDrHA4jyEmY,True,674861b0-3b10-8007-b71d-5cc92f8a90f9,Generated_28112024_1327,PromptData,Recovered from promptdata,Control,9.0,45.0,16.106230302651724,Session 1,1732770360.0
+507,R_2IQpl4XWeCCizE0,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+508,R_8v1zzh1XTJu1TsI,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+509,R_2qERuXFUEA8U2kw,True,674f00ca-67e0-8012-afcb-c3ff1beb6ad1,,Timestamp,Complete,Control,7.0,33.0,0.0,Unknown Session,1733199180.0
+510,R_2sdcKrRCZNxuoqX,False,,,,No conversation data,Control,5.0,0.0,0.0,,
+511,R_8l3vWfYDKn9pYtw,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+512,R_8aykUkVkxS42AzP,True,674f0155-3814-8005-83c1-f9839e761850,Generated_03122024_1402,PromptData,Recovered from promptdata,Control,11.0,10.0,12.080318550268808,Unknown Session,1733212380.0
+513,R_2gF4x1YB5DztTmV,True,674eed5d-c0a8-8013-8c85-637b49e17a57,Generated_03122024_1237,PromptData,Recovered from promptdata,Control,9.0,35.0,12.376221136252086,Unknown Session,1733216880.0
+514,R_8ha6ZVW6QMiN0pK,True,674f46c9-7818-8002-9686-b8b8c1e64e5a,Generated_03122024_1858,PromptData,Recovered from promptdata,Control,10.0,6.0,4.270820415019989,Unknown Session,1733221500.0
+515,R_2jBd1qNxBEYs3F9,True,67502ec8-82f0-800d-8a37-12050f4b1b9b,,Timestamp,Duplicate,Control,8.0,16.0,0.0,Unknown Session,1733279220.0
+516,R_2yN8v2LqqTdkyKl,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+517,R_8kiYSGuwQWpqUrk,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+518,R_2P4w0Cz17dCvnh0,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+519,R_2ghdFpN9F0a1zP2,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+520,R_2yswPq1NyOcpelO,True,67505457-b44c-8012-a342-746116ceb0e0,Generated_04122024_1408,PromptData,Recovered from promptdata,Control,8.0,4.0,0.7344968318939209,Unknown Session,1733303400.0
+521,R_2IKiR2a1mXUMsDf,True,675053e5-19cc-800e-8d5f-eb3994efb5da,Generated_04122024_1406,PromptData,Recovered from promptdata,Control,8.0,2.0,0.1422393321990966,Unknown Session,1733307600.0
+522,R_8D7P7SinXxvbYaQ,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+523,R_8fcGK8GlBXkD70d,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+524,R_8HhjOWYe51N2WJE,True,67518181-ebcc-8008-8713-202feec43ad6,Generated_05122024_1133,PromptData,Recovered from promptdata,Control,6.0,22.0,6.125473515192668,Unknown Session,1733390160.0
+525,R_8ea29M7H225WKEs,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+526,R_84CtwNacDxM9twD,True,67486167-eb50-8012-87b0-b6efa6917ac2,Generated_28112024_1326,PromptData,Recovered from promptdata,Control,9.0,40.0,15.421157201131184,Session 1,1732770300.0
+527,R_2HcFKra4XYt3kKB,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+528,R_8QY5iCwjHjrVSoP,True,674f009d-2098-800e-afec-4d08c111242c,,Timestamp,Duplicate,Control,9.0,24.0,0.0,Unknown Session,1733199180.0
+529,R_8YDEG5RNMG6cNtB,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+530,R_8qWFjRSAvejpHTZ,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+531,R_8gTKgPiy6VtiYE8,True,674f32df-aae8-8005-a63b-212b5ac98964,Generated_03122024_1733,PromptData,Recovered from promptdata,Control,12.0,42.0,14.439259966214498,Unknown Session,1733212380.0
+532,R_2eysZM5c8d7f1xT,True,674eddfa-88ec-8013-b8d0-1bd24cee2b97,Generated_03122024_1131,PromptData,Recovered from promptdata,Control,9.0,16.0,5.082406834761302,Unknown Session,1733216880.0
+533,R_8LiebpyRygCrrq0,True,674f3527-9c50-8002-9cac-4adaacd30e53,Generated_03122024_1743,PromptData,Recovered from promptdata,Control,11.0,12.0,7.8927078485488895,Unknown Session,1733221500.0
+534,R_229WpdhUSUUkaRI,True,6750324e-32d0-8012-b51f-4675e4c1e33a,,Timestamp,Duplicate,Control,11.0,19.0,0.0,Unknown Session,1733279220.0
+535,R_2hfPJoz8F9ewxNL,True,67504ca7-f30c-8009-a5e2-dbfcbb0563f1,,Timestamp,Duplicate,Control,6.0,3.0,0.0,Unknown Session,1733285520.0
+536,R_28HcTYhqyZ07qpy,True,675054c2-319c-8012-a01c-54c697c6220e,,Timestamp,Duplicate,Control,9.0,3.0,0.0,Unknown Session,1733290020.0
+537,R_2hG9slS4e4UXbZh,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+538,R_81hFjo2XXEiYfqM,True,67508782-f744-800c-a42d-0d3fc57c2aa2,,Timestamp,Duplicate,Control,7.0,10.0,0.0,Unknown Session,1733298960.0
+539,R_263X1Ks7mtHVRlT,True,67505123-4af8-8012-9ec5-bf8dda049d8c,Generated_04122024_1354,PromptData,Recovered from promptdata,Control,10.0,4.0,3.4087252179781595,Unknown Session,1733303400.0
+540,R_8dgifdcS4bkU37n,True,675041a1-3c58-800e-8528-b93398c30474,Generated_04122024_1248,PromptData,Recovered from promptdata,Control,12.0,22.0,12.35036770105362,Unknown Session,1733307600.0
+541,R_2AxORAAq56K0Oqt,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+542,R_2DCbx70ILLK2HKh,False,,,,No conversation data,Control,4.0,0.0,0.0,,
+543,R_8LgR0asMWy2SeqR,True,6751d873-96a8-8008-a582-db1654bcc950,Generated_05122024_1744,PromptData,Recovered from promptdata,Control,7.0,20.0,10.729574147860207,Unknown Session,1733390160.0
+544,R_8Dbxi4w1mbXIcN0,False,,,,No conversation data,Control,4.0,0.0,0.0,,
+545,R_2zNpXqyudCh2xpK,True,67486389-79f8-8005-88b4-ab4922b5cb23,Generated_28112024_1335,PromptData,Recovered from promptdata,Control,8.0,12.0,9.236971600850422,Session 1,1732770360.0
+546,R_84jhNGlO9bqdExD,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+547,R_2tnXHJ4ZgD50lor,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+548,R_8BJIWX5dWMxU9cR,False,,,,No conversation data,Control,5.0,0.0,0.0,,
+549,R_8vdCn2oioivTyw0,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+550,R_8ibzjBsWILCadnN,True,674f22c4-6c88-8005-b2f7-9dc93c08ee41,Generated_03122024_1624,PromptData,Recovered from promptdata,Control,9.0,13.0,9.047414032618205,Unknown Session,1733212380.0
+551,R_25TkblYxkdHeiOd,True,674f44c9-0bac-8008-9326-dd0d9c9772b8,Generated_03122024_1850,PromptData,Recovered from promptdata,Control,9.0,10.0,3.378067147731781,Unknown Session,1733216880.0
+552,R_8dvsXZarS3qCLw5,True,674f23ae-c04c-8002-b5b2-9dec1f5889e9,Generated_03122024_1628,PromptData,Recovered from promptdata,Control,8.0,15.0,9.925089263916016,Unknown Session,1733221500.0
+553,R_2PCqHz2IHfDtofD,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+554,R_2VsYi08yMO4eEJ9,True,675047be-3f00-800d-84fc-16cd6c0ea217,,Timestamp,Duplicate,Control,5.0,13.0,0.0,Unknown Session,1733285520.0
+555,R_2erg7lNxths2j33,True,67505d75-bfdc-8012-9574-ad906ae1793b,,Timestamp,Duplicate,Control,8.0,78.0,0.0,Unknown Session,1733290020.0
+556,R_2SzxErXDfQCdWRr,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+557,R_2PyGEiyA0j8xxgL,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+558,R_2qfLDHU1z4vdd3H,True,67504123-b870-8012-83db-a7b7904ab247,Generated_04122024_1246,PromptData,Recovered from promptdata,Control,6.0,26.0,15.315124714374544,Unknown Session,1733303400.0
+559,R_2GAGWTD8Lw2IJOW,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+560,R_8mhgTfBQRKOHOIZ,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+561,R_2jpqy0FMvbpn55W,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+562,R_2U5TmDgdOBoEhHb,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+563,R_2Qy10cqgLCkwswa,True,674f248a-09cc-800c-98d1-638ef36f9310,,Timestamp,Duplicate,Control,7.0,6.0,0.0,Unknown Session,1733203260.0
+564,R_8diUly09cmkAB8m,False,,,,No conversation data,Control,10.0,0.0,0.0,,
+565,R_87g7p1EZQ2WQXux,True,674f0e23-f450-8005-8359-8542ad9368bc,Generated_03122024_1456,PromptData,Recovered from promptdata,Control,7.0,62.0,20.297920902570088,Unknown Session,1733212380.0
+566,R_8WWnc9Is93S4kpj,True,674f3849-26e8-8008-84c1-a2210f38a1fc,Generated_03122024_1756,PromptData,Recovered from promptdata,Control,5.0,4.0,4.019294881820679,Unknown Session,1733216880.0
+567,R_8QOojw4pDEjlmCZ,True,674f1176-2f50-8002-a787-baa1bd721b77,Generated_03122024_1511,PromptData,Recovered from promptdata,Control,9.0,20.0,11.829848198095958,Unknown Session,1733221500.0
+568,R_2DvcnA2OuNqe6Ih,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+569,R_815VoCbDxuk7upS,True,67504efe-0f40-8008-b400-87cbff0a7cc0,,Timestamp,Duplicate,Control,7.0,69.0,0.0,Unknown Session,1733285520.0
+570,R_2adweihzRvHxWtr,True,67505f34-e510-8008-b48c-c492399446cb,,Timestamp,Duplicate,Control,7.0,34.0,0.0,Unknown Session,1733290020.0
+571,R_2xJFAb38ed3fgFU,True,675078b3-1234-800c-89e9-d8c61d68d8ba,,Timestamp,Duplicate,Control,9.0,10.0,0.0,Unknown Session,1733294160.0
+572,R_2R1IEAmsTVerayj,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+573,R_2tTUHuDvHjbXP8t,True,67502e46-1074-8012-b7c2-417dcae3c523,Generated_04122024_1126,PromptData,Recovered from promptdata,Control,4.0,64.0,18.089259699980417,Unknown Session,1733303400.0
+574,R_8Bs4bhEt1qw8tqL,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+575,R_2KjWKmYkc7liKHc,True,6751d546-7824-8012-acd2-2041e145e547,,Timestamp,Duplicate,Control,6.0,36.0,0.0,Unknown Session,1733385240.0
+576,R_8JamVvdezen9DIB,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+577,R_8JVnfa3jvFCYR4L,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+578,R_2gi1CMEnMrSWJOi,True,674f31fe-08fc-8012-b075-876b868b0f56,,Timestamp,Duplicate,Control,9.0,42.0,0.0,Unknown Session,1733203260.0
+579,R_8yMtt5m4dJ7k5RT,False,,,,No conversation data,Control,8.0,0.0,0.0,,
+580,R_8Jy0iJjOuFKL48t,True,674f4907-3f7c-8012-a220-1f20ce664120,,Timestamp,Complete,Control,10.0,7.0,0.0,Unknown Session,1733212380.0
+581,R_81MglybDTZob0p7,True,674f248f-c2e0-8008-aebd-de781e5a8c92,Generated_03122024_1632,PromptData,Recovered from promptdata,Control,8.0,25.0,7.560756933689118,Unknown Session,1733216880.0
+582,R_8CKGZ7G579uv0eB,True,674eff1e-a248-8002-8f17-456722d4a36b,Generated_03122024_1352,PromptData,Recovered from promptdata,Control,10.0,6.0,9.931383816401164,Unknown Session,1733221500.0
+583,R_2LiTRTNpoiTjh97,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+584,R_20oTsYBJ6xa0LCX,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+585,R_2hxNn5PwMk7IqRD,True,67506550-fd24-8008-83e4-989c090969d0,,Timestamp,Duplicate,Control,8.0,3.0,0.0,Unknown Session,1733290020.0
+586,R_2IH3f8rtNAm7CRE,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+587,R_20T3RSb4nozGDA1,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+588,R_2dp96aQ3samgVGo,True,675097d2-5e00-8013-b7cd-151571497557,Generated_04122024_1856,PromptData,Recovered from promptdata,Control,9.0,14.0,9.68577659924825,Unknown Session,1733303400.0
+589,R_2YnwWsq1L2UPplf,True,67502ed5-4ed4-800e-afb6-8a2d3fc852e5,Generated_04122024_1128,PromptData,Recovered from promptdata,Control,6.0,44.0,14.74464706579844,Unknown Session,1733307600.0
+590,R_8S3Rp6F4UAGkPu1,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+591,R_8c588KWUzIUA5k5,False,,,,No conversation data,Control,5.0,0.0,0.0,,
+592,R_233TAD0LQmtYBQW,True,6751c4e2-9e7c-8008-ade1-815668b77369,Generated_05122024_1621,PromptData,Recovered from promptdata,Control,10.0,16.0,9.858129898707071,Unknown Session,1733390160.0
+593,R_2rokfxjCacAzD14,False,,,,No conversation data,Control,7.0,0.0,0.0,,
+594,R_8EpcA3enrbWIko0,True,674f0f18-e508-800c-9965-827afa850708,,Timestamp,Complete,Control,9.0,39.0,0.0,Unknown Session,1733199480.0
+595,R_2T7v93IeCW4hWjn,True,674f146a-4a90-8012-a43b-d630b332f275,,Timestamp,Duplicate,Control,7.0,21.0,0.0,Unknown Session,1733203260.0
+596,R_2E0LlrcpqnEjRPq,False,,,,No conversation data,Control,6.0,0.0,0.0,,
+597,R_2YlCRgd0scw99IQ,True,674eed2c-3014-8005-bb36-5940bcaee158,Generated_03122024_1236,PromptData,Recovered from promptdata,Control,10.0,16.0,9.791921416918436,Unknown Session,1733212380.0
+598,R_2VsReUn0ISSgfQX,True,674f104d-7da4-8008-ae29-91ff20c4c3be,Generated_03122024_1506,PromptData,Recovered from promptdata,Control,9.0,20.0,16.119174083073933,Unknown Session,1733216880.0
+599,R_82rRAaQlw3zg3Wm,True,675029e7-5af8-8008-9b14-0cf8a867eab3,,Timestamp,Duplicate,Control,4.0,3.0,0.0,Unknown Session,1733279220.0
+600,R_2NaAY24sZSFN93s,False,,,,No conversation data,Control,9.0,0.0,0.0,,
+601,R_2dQG26ELCafff0t,False,,,,No conversation data,Control,1.0,0.0,0.0,,
+602,R_8eE3TRA88c2VZYK,True,67508494-b510-8013-a467-b1eb79c20339,Generated_04122024_1734,PromptData,Recovered from promptdata,Control,8.0,38.0,17.768537533283233,Unknown Session,1733303400.0
+603,R_8ML5MX91ihgE0Eh,True,67509668-e394-8002-bd5f-5d5780a66f37,Generated_04122024_1850,PromptData,Recovered from promptdata,Control,9.0,12.0,9.507014950116476,Unknown Session,1733307600.0
+604,R_2OMQhsJYmz9k0uZ,False,,,,No conversation data,Control,9.0,0.0,0.0,,
