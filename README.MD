@@ -1,18 +1,22 @@
 # NHH Esperanto - Language Learning Experiment Dataset
 
-This repository contains a dataset and analysis tools from an experiment on Esperanto language learning with AI assistance.
+**Final Consolidated Dataset** - All 604 survey responses with matched ChatGPT conversation data
 
-## 🎉 Data Recovery Success
+## 🎉 Dataset Complete - 604 Entries Ready for Analysis!
 
-**Major Achievement**: Successfully recovered 361 participants who forgot to state their ID in the ChatGPT conversation!
+**Major Achievement**: Successfully recovered 361 participants (92.8% of matches) who forgot to state their ID!
 
-- **Total surveys**: 604
-- **Successfully matched**: 389 (64.4%)
-- **Participants who forgot their ID**: 361 (recovered via timestamp matching!)
-- **Additional recovered conversations**: 20 from old data exports
-- **Match success rate**: 98.0% of all available conversations
+### Quick Stats
+- ✅ **604 total entries** (all survey responses)
+- ✅ **389 matched** (64.4%) with ChatGPT conversation data
+- ✅ **361 participants who forgot their ID** - successfully recovered via timestamp matching!
+- ✅ **20 additional conversations** recovered from old data exports
+- ✅ **98.0% match success rate** of all available conversations
 
-See [FINAL_MATCHING_REPORT.md](FINAL_MATCHING_REPORT.md) for complete details.
+### Main Dataset File
+📊 **`data/processed/nhh_esperanto_final_consolidated_dataset.csv`** (3.29 MB)
+
+See [FINAL_DATASET_DOCUMENTATION.md](FINAL_DATASET_DOCUMENTATION.md) for complete documentation.
 
 ## Repository Structure
 
@@ -23,33 +27,33 @@ nhh-esperanto/
 │   │   ├── iverdata.csv         # Survey responses (604)
 │   │   └── unified_conversation_data_complete.csv  # All conversations (397)
 │   │
-│   ├── processed/                # Processed and matched datasets
-│   │   ├── nhh_esperanto_finalized_dataset.csv  # 🔑 MAIN DATASET (use this!)
-│   │   ├── nhh_esperanto_participants.csv       # Participant demographics
-│   │   ├── nhh_esperanto_conversations.csv      # Conversation metadata
-│   │   ├── nhh_esperanto_messages.csv           # Individual messages
-│   │   ├── recovered_conversation_messages.csv  # Recovered data
-│   │   ├── recovered_matches.csv                # Recovery match details
-│   │   ├── backups/             # Dataset backups
-│   │   └── intermediate/        # Intermediate processing outputs
+│   ├── processed/                # Final processed datasets
+│   │   ├── nhh_esperanto_final_consolidated_dataset.csv  # 🔑 MAIN DATASET (604 entries)
+│   │   ├── nhh_esperanto_participants.csv      # Participant demographics
+│   │   ├── nhh_esperanto_conversations.csv     # Conversation metadata
+│   │   ├── nhh_esperanto_messages.csv          # Individual messages
+│   │   ├── nhh_esperanto_data_dictionary.csv   # Variable descriptions
+│   │   ├── recovered_conversation_messages.csv # Recovered data (366 messages)
+│   │   ├── recovered_matches.csv               # Recovery match details (20 matches)
+│   │   └── DATASET_SUMMARY.txt                 # Quick statistics
 │   │
 │   └── old/                      # Archive of historical data exports
 │       └── Unified_CSN_Data_-_16-12-2024.csv  # Source of recovered data
 │
-├── scripts/                      # Data processing and recovery scripts
-│   ├── merge_datasets.py        # Merges survey and conversation data
-│   ├── enhance_dataset.py       # Enhances dataset for analysis
-│   ├── regenerate_ids_and_verify.py  # ⭐ Extracts/generates IDs
-│   ├── extract_using_ast.py     # ⭐ Recovers data from CSN file
-│   ├── match_recovered_conversations.py  # Matches recovered data
-│   └── README.md                # Complete scripts documentation
+├── scripts/                    # Processing and recovery scripts
+│   ├── create_final_consolidated_dataset.py  # ⭐ Creates final 604-entry dataset
+│   ├── cleanup_old_files.py                  # Cleans up old files
+│   ├── regenerate_ids_and_verify.py          # Extracts/generates participant IDs
+│   ├── extract_using_ast.py                  # Recovers data from CSN file
+│   ├── match_recovered_conversations.py      # Matches recovered conversations
+│   └── README.md                             # Scripts documentation
 │
-├── explorer/                     # Data exploration application (Next.js)
-│   └── explorer-clean.tar.gz    # Archived code for the explorer app
+├── explorer/                   # Data exploration app (Next.js)
 │
-├── FINAL_MATCHING_REPORT.md     # 📊 Comprehensive recovery report
-├── DATA_RECOVERY_SUMMARY.md     # Recovery process summary
-└── MATCHING_ANALYSIS.md         # Technical matching methodology
+├── FINAL_DATASET_DOCUMENTATION.md  # 📊 Complete dataset documentation
+├── RECOVERY_VERIFICATION_REPORT.md # Recovery verification details
+├── FINAL_MATCHING_REPORT.md        # Matching methodology
+└── README.MD                        # This file
 ```
 
 ## Dataset Description

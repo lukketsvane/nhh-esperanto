@@ -1,0 +1,31 @@
+================================================================================
+NHH ESPERANTO FINAL CONSOLIDATED DATASET SUMMARY
+================================================================================
+
+Dataset: data/processed/nhh_esperanto_final_consolidated_dataset.csv
+Created: 2025-11-13 19:53:25
+
+Total entries: 604
+Unique participants: 584
+
+Matched (with conversation data): 389 (64.4%)
+Unmatched (no conversation data): 215 (35.6%)
+
+--------------------------------------------------------------------------------
+TREATMENT GROUPS
+--------------------------------------------------------------------------------
+
+AI-guided:
+  Total: 199
+  Matched: 122
+  Unmatched: 77
+
+AI-assisted:
+  Total: 196
+  Matched: 136
+  Unmatched: 60
+
+Control:
+  Total: 16
+  Matched: 6
+  Unmatched: 10
