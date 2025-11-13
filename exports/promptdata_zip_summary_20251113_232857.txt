@@ -1,0 +1,42 @@
+NHH Esperanto Promptdata Archive Summary
+============================================================
+
+Archive Created: 2025-11-13 23:28:59
+Archive Name: nhh_esperanto_promptdata_updated_20251113_232857.zip
+Archive Size: 4.20 MB
+Original Size: 48.42 MB
+Compression: 91.3%
+
+Total Files: 125
+Total Folders: 23
+
+Contents:
+------------------------------------------------------------
+- 22 CSN folders (CSN1-CSN22)
+- Updated conversation JSON files with participant information
+- User data, chat HTML, and conversation metadata
+- 268 conversations matched to survey participants
+- 397 total conversations available
+
+Data Structure:
+------------------------------------------------------------
+promptdata/
+  - CSN1/
+    - csn1/conversations.json (updated with participant IDs)
+    - user.json
+    - chat.html
+    - ...
+  - CSN2/
+    - ...
+  - ...
+
+Updated Conversation Fields:
+------------------------------------------------------------
+Each matched conversation now includes:
+  - participant_id: Survey ResponseId
+  - participant_user_id: User ID
+  - participant_email: Email address
+  - participant_name: Full name
+  - match_method: How participant was matched
+  - survey_start_time: Survey start timestamp
+  - metadata: Additional matching information

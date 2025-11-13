@@ -1,0 +1,22 @@
+================================================================================
+NHH ESPERANTO STUDY - COMPLETE PARTICIPANT STATISTICS
+================================================================================
+
+TOTAL PARTICIPANTS: 604
+
+CONVERSATION DATA:
+  With conversations: 329
+  Without conversations: 275
+  Coverage rate: 54.5%
+
+DATA STATUS BREAKDOWN:
+  No conversation data: 257 (42.5%)
+  Recovered from promptdata: 197 (32.6%)
+  Duplicate: 83 (13.7%)
+  Complete: 29 (4.8%)
+  Recovered: 20 (3.3%)
+  Missing conversation: 18 (3.0%)
+
+================================================================================
+Generated: 2025-11-13 23:28:27.228435
+================================================================================
