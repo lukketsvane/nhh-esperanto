@@ -9,7 +9,12 @@
       "Bash(git push:*)",
       "Bash(xargs:*)",
       "Bash(git remote get-url:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(pdflatex:*)",
+      "Bash(where:*)",
+      "Bash(choco install:*)",
+      "Bash(\"/c/Users/Shadow/AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode nhh_esperanto_paper.tex)",
+      "Bash(pdfinfo:*)"
     ],
     "deny": [],
     "ask": []
